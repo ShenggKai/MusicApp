@@ -30,7 +30,9 @@
         {
             this.pnPlay = new System.Windows.Forms.Panel();
             this.pnMenu = new System.Windows.Forms.Panel();
+            this.lbLogo = new System.Windows.Forms.Label();
             this.pnMain = new System.Windows.Forms.Panel();
+            this.pnMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -45,11 +47,24 @@
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.pnMenu.Controls.Add(this.lbLogo);
             this.pnMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnMenu.Location = new System.Drawing.Point(0, 0);
             this.pnMenu.Name = "pnMenu";
             this.pnMenu.Size = new System.Drawing.Size(272, 452);
             this.pnMenu.TabIndex = 1;
+            // 
+            // lbLogo
+            // 
+            this.lbLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbLogo.Font = new System.Drawing.Font("Cascadia Mono", 28F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbLogo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.lbLogo.Location = new System.Drawing.Point(0, 0);
+            this.lbLogo.Name = "lbLogo";
+            this.lbLogo.Size = new System.Drawing.Size(272, 86);
+            this.lbLogo.TabIndex = 0;
+            this.lbLogo.Text = "MusicApp";
+            this.lbLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnMain
             // 
@@ -71,6 +86,7 @@
             this.Name = "HomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MusicApp";
+            this.pnMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -80,5 +96,6 @@
         private Panel pnPlay;
         private Panel pnMenu;
         private Panel pnMain;
+        private Label lbLogo;
     }
 }
