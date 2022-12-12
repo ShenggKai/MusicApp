@@ -31,9 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.pnPlay = new System.Windows.Forms.Panel();
             this.pnMenu = new System.Windows.Forms.Panel();
+            this.btnCollection = new System.Windows.Forms.Button();
+            this.btnFind = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.lbLogo = new System.Windows.Forms.Label();
             this.pnMain = new System.Windows.Forms.Panel();
-            this.btHome = new System.Windows.Forms.Button();
             this.pnMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,21 +43,86 @@
             // 
             this.pnPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.pnPlay.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnPlay.Location = new System.Drawing.Point(0, 452);
+            this.pnPlay.Location = new System.Drawing.Point(0, 621);
             this.pnPlay.Name = "pnPlay";
-            this.pnPlay.Size = new System.Drawing.Size(1004, 135);
+            this.pnPlay.Size = new System.Drawing.Size(1104, 135);
             this.pnPlay.TabIndex = 0;
             // 
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.pnMenu.Controls.Add(this.btHome);
+            this.pnMenu.Controls.Add(this.btnCollection);
+            this.pnMenu.Controls.Add(this.btnFind);
+            this.pnMenu.Controls.Add(this.btnHome);
             this.pnMenu.Controls.Add(this.lbLogo);
             this.pnMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnMenu.Location = new System.Drawing.Point(0, 0);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(272, 452);
+            this.pnMenu.Size = new System.Drawing.Size(272, 621);
             this.pnMenu.TabIndex = 1;
+            // 
+            // btnCollection
+            // 
+            this.btnCollection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnCollection.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCollection.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCollection.FlatAppearance.BorderSize = 0;
+            this.btnCollection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCollection.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCollection.ForeColor = System.Drawing.Color.White;
+            this.btnCollection.Image = global::MusicApp.Properties.Resources.collection;
+            this.btnCollection.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCollection.Location = new System.Drawing.Point(0, 246);
+            this.btnCollection.Name = "btnCollection";
+            this.btnCollection.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnCollection.Size = new System.Drawing.Size(272, 80);
+            this.btnCollection.TabIndex = 3;
+            this.btnCollection.Text = " Thư Viện";
+            this.btnCollection.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCollection.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCollection.UseVisualStyleBackColor = false;
+            // 
+            // btnFind
+            // 
+            this.btnFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnFind.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFind.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFind.FlatAppearance.BorderSize = 0;
+            this.btnFind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFind.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnFind.ForeColor = System.Drawing.Color.White;
+            this.btnFind.Image = global::MusicApp.Properties.Resources.search;
+            this.btnFind.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFind.Location = new System.Drawing.Point(0, 166);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnFind.Size = new System.Drawing.Size(272, 80);
+            this.btnFind.TabIndex = 2;
+            this.btnFind.Text = " Tìm Kiếm";
+            this.btnFind.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFind.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFind.UseVisualStyleBackColor = false;
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::MusicApp.Properties.Resources.home;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(0, 86);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnHome.Size = new System.Drawing.Size(272, 80);
+            this.btnHome.TabIndex = 1;
+            this.btnHome.Text = " Trang Chủ";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = false;
             // 
             // lbLogo
             // 
@@ -75,32 +142,18 @@
             this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnMain.Location = new System.Drawing.Point(272, 0);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(732, 452);
+            this.pnMain.Size = new System.Drawing.Size(832, 621);
             this.pnMain.TabIndex = 2;
-            // 
-            // btHome
-            // 
-            this.btHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btHome.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btHome.Image = ((System.Drawing.Image)(resources.GetObject("btHome.Image")));
-            this.btHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btHome.Location = new System.Drawing.Point(0, 86);
-            this.btHome.Name = "btHome";
-            this.btHome.Size = new System.Drawing.Size(272, 80);
-            this.btHome.TabIndex = 1;
-            this.btHome.Text = "Trang Chủ";
-            this.btHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btHome.UseVisualStyleBackColor = true;
             // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 587);
+            this.ClientSize = new System.Drawing.Size(1104, 756);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.pnPlay);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MusicApp";
@@ -115,6 +168,8 @@
         private Panel pnMenu;
         private Panel pnMain;
         private Label lbLogo;
-        private Button btHome;
+        private Button btnHome;
+        private Button btnCollection;
+        private Button btnFind;
     }
 }
