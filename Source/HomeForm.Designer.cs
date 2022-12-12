@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.pnPlay = new System.Windows.Forms.Panel();
             this.pnMenu = new System.Windows.Forms.Panel();
             this.lbLogo = new System.Windows.Forms.Label();
             this.pnMain = new System.Windows.Forms.Panel();
+            this.btHome = new System.Windows.Forms.Button();
             this.pnMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +49,7 @@
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.pnMenu.Controls.Add(this.btHome);
             this.pnMenu.Controls.Add(this.lbLogo);
             this.pnMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnMenu.Location = new System.Drawing.Point(0, 0);
@@ -75,6 +78,21 @@
             this.pnMain.Size = new System.Drawing.Size(732, 452);
             this.pnMain.TabIndex = 2;
             // 
+            // btHome
+            // 
+            this.btHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btHome.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btHome.Image = ((System.Drawing.Image)(resources.GetObject("btHome.Image")));
+            this.btHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btHome.Location = new System.Drawing.Point(0, 86);
+            this.btHome.Name = "btHome";
+            this.btHome.Size = new System.Drawing.Size(272, 80);
+            this.btHome.TabIndex = 1;
+            this.btHome.Text = "Trang Chủ";
+            this.btHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btHome.UseVisualStyleBackColor = true;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -97,5 +115,6 @@
         private Panel pnMenu;
         private Panel pnMain;
         private Label lbLogo;
+        private Button btHome;
     }
 }
