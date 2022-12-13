@@ -36,8 +36,9 @@
             this.btnHome = new System.Windows.Forms.Button();
             this.lbLogo = new System.Windows.Forms.Label();
             this.pnMain = new System.Windows.Forms.Panel();
-            this.lbHistory = new System.Windows.Forms.Label();
             this.lbSongs = new System.Windows.Forms.Label();
+            this.lbHistory = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pnMenu.SuspendLayout();
             this.pnMain.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +49,7 @@
             this.pnPlay.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnPlay.Location = new System.Drawing.Point(0, 693);
             this.pnPlay.Name = "pnPlay";
-            this.pnPlay.Size = new System.Drawing.Size(1678, 135);
+            this.pnPlay.Size = new System.Drawing.Size(1896, 135);
             this.pnPlay.TabIndex = 0;
             // 
             // pnMenu
@@ -143,41 +144,50 @@
             // pnMain
             // 
             this.pnMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnMain.Controls.Add(this.flowLayoutPanel1);
             this.pnMain.Controls.Add(this.lbSongs);
             this.pnMain.Controls.Add(this.lbHistory);
             this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnMain.Location = new System.Drawing.Point(272, 0);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(1406, 693);
+            this.pnMain.Size = new System.Drawing.Size(1624, 693);
             this.pnMain.TabIndex = 2;
-            // 
-            // lbHistory
-            // 
-            this.lbHistory.AutoSize = true;
-            this.lbHistory.Font = new System.Drawing.Font("Segoe UI", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbHistory.ForeColor = System.Drawing.Color.White;
-            this.lbHistory.Location = new System.Drawing.Point(45, 20);
-            this.lbHistory.Name = "lbHistory";
-            this.lbHistory.Size = new System.Drawing.Size(327, 52);
-            this.lbHistory.TabIndex = 0;
-            this.lbHistory.Text = "Mới phát gần đây";
             // 
             // lbSongs
             // 
-            this.lbSongs.AutoSize = true;
-            this.lbSongs.Font = new System.Drawing.Font("Segoe UI", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbSongs.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbSongs.ForeColor = System.Drawing.Color.White;
             this.lbSongs.Location = new System.Drawing.Point(45, 449);
             this.lbSongs.Name = "lbSongs";
             this.lbSongs.Size = new System.Drawing.Size(139, 52);
             this.lbSongs.TabIndex = 1;
             this.lbSongs.Text = "Bài hát";
+            this.lbSongs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbHistory
+            // 
+            this.lbHistory.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbHistory.ForeColor = System.Drawing.Color.White;
+            this.lbHistory.Location = new System.Drawing.Point(45, 20);
+            this.lbHistory.Name = "lbHistory";
+            this.lbHistory.Size = new System.Drawing.Size(248, 36);
+            this.lbHistory.TabIndex = 0;
+            this.lbHistory.Text = "Mới phát gần đây";
+            this.lbHistory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(80, 81);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1505, 293);
+            this.flowLayoutPanel1.TabIndex = 2;
             // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1678, 828);
+            this.ClientSize = new System.Drawing.Size(1896, 828);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.pnPlay);
@@ -187,7 +197,6 @@
             this.Text = "MusicApp";
             this.pnMenu.ResumeLayout(false);
             this.pnMain.ResumeLayout(false);
-            this.pnMain.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -203,5 +212,6 @@
         private Button btnFind;
         private Label lbHistory;
         private Label lbSongs;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
