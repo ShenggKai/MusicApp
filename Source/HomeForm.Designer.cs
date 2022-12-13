@@ -1,4 +1,6 @@
-﻿namespace MusicApp
+﻿using System.ComponentModel;
+
+namespace MusicApp
 {
     partial class HomeForm
     {

@@ -37,11 +37,11 @@
             // 
             // lbHistory
             // 
-            this.lbHistory.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbHistory.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbHistory.ForeColor = System.Drawing.Color.White;
             this.lbHistory.Location = new System.Drawing.Point(45, 20);
             this.lbHistory.Name = "lbHistory";
-            this.lbHistory.Size = new System.Drawing.Size(243, 36);
+            this.lbHistory.Size = new System.Drawing.Size(252, 36);
             this.lbHistory.TabIndex = 1;
             this.lbHistory.Text = "Mới phát gần đây";
             this.lbHistory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -56,11 +56,11 @@
             // 
             // lbSongs
             // 
-            this.lbSongs.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbSongs.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbSongs.ForeColor = System.Drawing.Color.White;
             this.lbSongs.Location = new System.Drawing.Point(45, 449);
             this.lbSongs.Name = "lbSongs";
-            this.lbSongs.Size = new System.Drawing.Size(105, 36);
+            this.lbSongs.Size = new System.Drawing.Size(107, 36);
             this.lbSongs.TabIndex = 4;
             this.lbSongs.Text = "Bài hát";
             this.lbSongs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
