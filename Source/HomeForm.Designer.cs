@@ -36,16 +36,19 @@
             this.btnHome = new System.Windows.Forms.Button();
             this.lbLogo = new System.Windows.Forms.Label();
             this.pnMain = new System.Windows.Forms.Panel();
+            this.lbHistory = new System.Windows.Forms.Label();
+            this.lbSongs = new System.Windows.Forms.Label();
             this.pnMenu.SuspendLayout();
+            this.pnMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
             // 
             this.pnPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.pnPlay.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnPlay.Location = new System.Drawing.Point(0, 621);
+            this.pnPlay.Location = new System.Drawing.Point(0, 693);
             this.pnPlay.Name = "pnPlay";
-            this.pnPlay.Size = new System.Drawing.Size(1104, 135);
+            this.pnPlay.Size = new System.Drawing.Size(1678, 135);
             this.pnPlay.TabIndex = 0;
             // 
             // pnMenu
@@ -58,7 +61,7 @@
             this.pnMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnMenu.Location = new System.Drawing.Point(0, 0);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(272, 621);
+            this.pnMenu.Size = new System.Drawing.Size(272, 693);
             this.pnMenu.TabIndex = 1;
             // 
             // btnCollection
@@ -140,17 +143,41 @@
             // pnMain
             // 
             this.pnMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnMain.Controls.Add(this.lbSongs);
+            this.pnMain.Controls.Add(this.lbHistory);
             this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnMain.Location = new System.Drawing.Point(272, 0);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(832, 621);
+            this.pnMain.Size = new System.Drawing.Size(1406, 693);
             this.pnMain.TabIndex = 2;
+            // 
+            // lbHistory
+            // 
+            this.lbHistory.AutoSize = true;
+            this.lbHistory.Font = new System.Drawing.Font("Segoe UI", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbHistory.ForeColor = System.Drawing.Color.White;
+            this.lbHistory.Location = new System.Drawing.Point(45, 20);
+            this.lbHistory.Name = "lbHistory";
+            this.lbHistory.Size = new System.Drawing.Size(327, 52);
+            this.lbHistory.TabIndex = 0;
+            this.lbHistory.Text = "Mới phát gần đây";
+            // 
+            // lbSongs
+            // 
+            this.lbSongs.AutoSize = true;
+            this.lbSongs.Font = new System.Drawing.Font("Segoe UI", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbSongs.ForeColor = System.Drawing.Color.White;
+            this.lbSongs.Location = new System.Drawing.Point(45, 449);
+            this.lbSongs.Name = "lbSongs";
+            this.lbSongs.Size = new System.Drawing.Size(139, 52);
+            this.lbSongs.TabIndex = 1;
+            this.lbSongs.Text = "Bài hát";
             // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 756);
+            this.ClientSize = new System.Drawing.Size(1678, 828);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.pnPlay);
@@ -159,6 +186,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MusicApp";
             this.pnMenu.ResumeLayout(false);
+            this.pnMain.ResumeLayout(false);
+            this.pnMain.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -172,5 +201,7 @@
         private Button btnHome;
         private Button btnCollection;
         private Button btnFind;
+        private Label lbHistory;
+        private Label lbSongs;
     }
 }
