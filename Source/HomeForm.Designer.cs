@@ -48,6 +48,7 @@ namespace MusicApp
             this.btnHome = new System.Windows.Forms.Button();
             this.lbLogo = new System.Windows.Forms.Label();
             this.pnMain = new System.Windows.Forms.Panel();
+            this.btnPlay = new Bunifu.UI.WinForms.BunifuImageButton();
             this.pnPlay.SuspendLayout();
             this.pnMenu.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +56,7 @@ namespace MusicApp
             // pnPlay
             // 
             this.pnPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.pnPlay.Controls.Add(this.btnPlay);
             this.pnPlay.Controls.Add(this.bunifuhSlider1);
             this.pnPlay.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnPlay.Location = new System.Drawing.Point(0, 878);
@@ -82,7 +84,7 @@ namespace MusicApp
             this.bunifuhSlider1.DurationBeforeShrink = 2000;
             this.bunifuhSlider1.ElapsedColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             this.bunifuhSlider1.LargeChange = 10;
-            this.bunifuhSlider1.Location = new System.Drawing.Point(654, 82);
+            this.bunifuhSlider1.Location = new System.Drawing.Point(654, 86);
             this.bunifuhSlider1.Maximum = 100;
             this.bunifuhSlider1.Minimum = 0;
             this.bunifuhSlider1.MinimumSize = new System.Drawing.Size(0, 31);
@@ -208,6 +210,41 @@ namespace MusicApp
             this.pnMain.Size = new System.Drawing.Size(1624, 878);
             this.pnMain.TabIndex = 2;
             // 
+            // btnPlay
+            // 
+            this.btnPlay.ActiveImage = null;
+            this.btnPlay.AllowAnimations = true;
+            this.btnPlay.AllowBuffering = false;
+            this.btnPlay.AllowToggling = false;
+            this.btnPlay.AllowZooming = true;
+            this.btnPlay.AllowZoomingOnFocus = false;
+            this.btnPlay.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlay.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnPlay.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnPlay.ErrorImage")));
+            this.btnPlay.FadeWhenInactive = false;
+            this.btnPlay.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.btnPlay.Image = global::MusicApp.Properties.Resources.play;
+            this.btnPlay.ImageActive = null;
+            this.btnPlay.ImageLocation = null;
+            this.btnPlay.ImageMargin = 0;
+            this.btnPlay.ImageSize = new System.Drawing.Size(54, 54);
+            this.btnPlay.ImageZoomSize = new System.Drawing.Size(55, 55);
+            this.btnPlay.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnPlay.InitialImage")));
+            this.btnPlay.Location = new System.Drawing.Point(923, 21);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Rotation = 0;
+            this.btnPlay.ShowActiveImage = true;
+            this.btnPlay.ShowCursorChanges = true;
+            this.btnPlay.ShowImageBorders = true;
+            this.btnPlay.ShowSizeMarkers = false;
+            this.btnPlay.Size = new System.Drawing.Size(55, 55);
+            this.btnPlay.TabIndex = 1;
+            this.btnPlay.ToolTipText = "";
+            this.btnPlay.WaitOnLoad = false;
+            this.btnPlay.Zoom = 0;
+            this.btnPlay.ZoomSpeed = 10;
+            this.btnPlay.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -237,5 +274,6 @@ namespace MusicApp
         private Button btnCollection;
         private Button btnFind;
         private Bunifu.UI.WinForms.BunifuHSlider bunifuhSlider1;
+        private Bunifu.UI.WinForms.BunifuImageButton btnPlay;
     }
 }
