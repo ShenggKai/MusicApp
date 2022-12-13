@@ -38,6 +38,7 @@ namespace MusicApp
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.pnPlay = new System.Windows.Forms.Panel();
             this.pnMenu = new System.Windows.Forms.Panel();
@@ -46,12 +47,15 @@ namespace MusicApp
             this.btnHome = new System.Windows.Forms.Button();
             this.lbLogo = new System.Windows.Forms.Label();
             this.pnMain = new System.Windows.Forms.Panel();
+            this.bunifuhSlider1 = new Bunifu.UI.WinForms.BunifuHSlider();
+            this.pnPlay.SuspendLayout();
             this.pnMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
             // 
             this.pnPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.pnPlay.Controls.Add(this.bunifuhSlider1);
             this.pnPlay.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnPlay.Location = new System.Drawing.Point(0, 878);
             this.pnPlay.Name = "pnPlay";
@@ -158,6 +162,52 @@ namespace MusicApp
             this.pnMain.Size = new System.Drawing.Size(1624, 878);
             this.pnMain.TabIndex = 2;
             // 
+            // bunifuhSlider1
+            // 
+            this.bunifuhSlider1.AllowCursorChanges = true;
+            this.bunifuhSlider1.AllowHomeEndKeysDetection = false;
+            this.bunifuhSlider1.AllowIncrementalClickMoves = true;
+            this.bunifuhSlider1.AllowMouseDownEffects = false;
+            this.bunifuhSlider1.AllowMouseHoverEffects = false;
+            this.bunifuhSlider1.AllowScrollingAnimations = true;
+            this.bunifuhSlider1.AllowScrollKeysDetection = true;
+            this.bunifuhSlider1.AllowScrollOptionsMenu = true;
+            this.bunifuhSlider1.AllowShrinkingOnFocusLost = false;
+            this.bunifuhSlider1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuhSlider1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuhSlider1.BackgroundImage")));
+            this.bunifuhSlider1.BindingContainer = null;
+            this.bunifuhSlider1.BorderRadius = 1;
+            this.bunifuhSlider1.BorderThickness = 1;
+            this.bunifuhSlider1.DrawThickBorder = false;
+            this.bunifuhSlider1.DurationBeforeShrink = 2000;
+            this.bunifuhSlider1.ElapsedColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuhSlider1.LargeChange = 10;
+            this.bunifuhSlider1.Location = new System.Drawing.Point(340, 45);
+            this.bunifuhSlider1.Maximum = 100;
+            this.bunifuhSlider1.Minimum = 0;
+            this.bunifuhSlider1.MinimumSize = new System.Drawing.Size(0, 31);
+            this.bunifuhSlider1.MinimumThumbLength = 18;
+            this.bunifuhSlider1.Name = "bunifuhSlider1";
+            this.bunifuhSlider1.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.bunifuhSlider1.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
+            this.bunifuhSlider1.OnDisable.ThumbColor = System.Drawing.Color.Silver;
+            this.bunifuhSlider1.ScrollBarBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bunifuhSlider1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bunifuhSlider1.ShrinkSizeLimit = 3;
+            this.bunifuhSlider1.Size = new System.Drawing.Size(511, 49);
+            this.bunifuhSlider1.SliderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bunifuhSlider1.SliderStyle = Bunifu.UI.WinForms.BunifuHSlider.SliderStyles.Thin;
+            this.bunifuhSlider1.SliderThumbStyle = Utilities.BunifuSlider.BunifuHScrollBar.SliderThumbStyles.Circular;
+            this.bunifuhSlider1.SmallChange = 1;
+            this.bunifuhSlider1.TabIndex = 0;
+            this.bunifuhSlider1.ThumbColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuhSlider1.ThumbFillColor = System.Drawing.SystemColors.Control;
+            this.bunifuhSlider1.ThumbLength = 50;
+            this.bunifuhSlider1.ThumbMargin = 1;
+            this.bunifuhSlider1.ThumbSize = Bunifu.UI.WinForms.BunifuHSlider.ThumbSizes.Medium;
+            this.bunifuhSlider1.ThumbStyle = Bunifu.UI.WinForms.BunifuHSlider.ThumbStyles.Outline;
+            this.bunifuhSlider1.Value = 50;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -170,6 +220,7 @@ namespace MusicApp
             this.Name = "HomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MusicApp";
+            this.pnPlay.ResumeLayout(false);
             this.pnMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -184,5 +235,6 @@ namespace MusicApp
         private Button btnHome;
         private Button btnCollection;
         private Button btnFind;
+        private Bunifu.UI.WinForms.BunifuHSlider bunifuhSlider1;
     }
 }
