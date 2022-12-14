@@ -23,12 +23,12 @@ namespace MusicApp
         }
 
         // Auto click button 'Trang Chu' when the form start
-        protected override void OnShown(EventArgs e)
-        {
-            //base.OnShown(e);
-            //this.btnHome_Click(null, null);
-            btnHome.PerformClick();
-        }
+        //protected override void OnShown(EventArgs e)
+        //{
+        //    //base.OnShown(e);
+        //    //this.btnHome_Click(null, null);
+        //    btnHome.PerformClick();
+        //}
 
         #region Windows Form Designer generated code
 
@@ -40,6 +40,7 @@ namespace MusicApp
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             this.pnPlay = new System.Windows.Forms.Panel();
             this.btnOther = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnVolume = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -61,10 +62,14 @@ namespace MusicApp
             this.btnFind = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.lbLogo = new System.Windows.Forms.Label();
-            this.pnMain = new System.Windows.Forms.Panel();
+            this.pageMain = new Bunifu.UI.WinForms.BunifuPages();
+            this.pageHome = new System.Windows.Forms.TabPage();
+            this.pageFind = new System.Windows.Forms.TabPage();
+            this.pageCollection = new System.Windows.Forms.TabPage();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
+            this.pageMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -605,21 +610,78 @@ namespace MusicApp
             this.lbLogo.Text = "MusicApp";
             this.lbLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnMain
+            // pageMain
             // 
-            this.pnMain.BackColor = System.Drawing.Color.Transparent;
-            this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnMain.Location = new System.Drawing.Point(272, 0);
-            this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(1624, 878);
-            this.pnMain.TabIndex = 2;
+            this.pageMain.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.pageMain.AllowTransitions = false;
+            this.pageMain.Controls.Add(this.pageHome);
+            this.pageMain.Controls.Add(this.pageFind);
+            this.pageMain.Controls.Add(this.pageCollection);
+            this.pageMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pageMain.Location = new System.Drawing.Point(272, 0);
+            this.pageMain.Multiline = true;
+            this.pageMain.Name = "pageMain";
+            this.pageMain.Page = this.pageCollection;
+            this.pageMain.PageIndex = 2;
+            this.pageMain.PageName = "pageCollection";
+            this.pageMain.PageTitle = "Thư viện";
+            this.pageMain.SelectedIndex = 0;
+            this.pageMain.Size = new System.Drawing.Size(1624, 878);
+            this.pageMain.TabIndex = 2;
+            animation1.AnimateOnlyDifferences = false;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.pageMain.Transition = animation1;
+            this.pageMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            // 
+            // pageHome
+            // 
+            this.pageHome.Location = new System.Drawing.Point(4, 4);
+            this.pageHome.Name = "pageHome";
+            this.pageHome.Padding = new System.Windows.Forms.Padding(3);
+            this.pageHome.Size = new System.Drawing.Size(1616, 845);
+            this.pageHome.TabIndex = 0;
+            this.pageHome.Text = "Trang chủ";
+            this.pageHome.UseVisualStyleBackColor = true;
+            // 
+            // pageFind
+            // 
+            this.pageFind.Location = new System.Drawing.Point(4, 4);
+            this.pageFind.Name = "pageFind";
+            this.pageFind.Padding = new System.Windows.Forms.Padding(3);
+            this.pageFind.Size = new System.Drawing.Size(1616, 845);
+            this.pageFind.TabIndex = 1;
+            this.pageFind.Text = "Tìm kiếm";
+            this.pageFind.UseVisualStyleBackColor = true;
+            // 
+            // pageCollection
+            // 
+            this.pageCollection.Location = new System.Drawing.Point(4, 4);
+            this.pageCollection.Name = "pageCollection";
+            this.pageCollection.Padding = new System.Windows.Forms.Padding(3);
+            this.pageCollection.Size = new System.Drawing.Size(1616, 845);
+            this.pageCollection.TabIndex = 2;
+            this.pageCollection.Text = "Thư viện";
+            this.pageCollection.UseVisualStyleBackColor = true;
             // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1896, 1013);
-            this.Controls.Add(this.pnMain);
+            this.Controls.Add(this.pageMain);
             this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.pnPlay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -630,6 +692,7 @@ namespace MusicApp
             this.pnPlay.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).EndInit();
             this.pnMenu.ResumeLayout(false);
+            this.pageMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -638,7 +701,6 @@ namespace MusicApp
 
         private Panel pnPlay;
         private Panel pnMenu;
-        private Panel pnMain;
         private Label lbLogo;
         private Button btnHome;
         private Button btnCollection;
@@ -658,5 +720,9 @@ namespace MusicApp
         private Bunifu.UI.WinForms.BunifuImageButton btnLyric;
         private Bunifu.UI.WinForms.BunifuImageButton btnVolume;
         private Bunifu.UI.WinForms.BunifuImageButton btnOther;
+        private Bunifu.UI.WinForms.BunifuPages pageMain;
+        private TabPage pageHome;
+        private TabPage pageFind;
+        private TabPage pageCollection;
     }
 }

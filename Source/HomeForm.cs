@@ -9,7 +9,6 @@ namespace MusicApp
         public HomeForm()
         {
             InitializeComponent();
-            OpenChildForm(new MainForm());
         }
 
         #region Effect when click menu
@@ -28,8 +27,8 @@ namespace MusicApp
             btnHome.ForeColor = Color.White;
             btnHome.Image = global::MusicApp.Properties.Resources.home_white;
 
-            //Open child form
-            OpenChildForm(new MainForm());
+            ////Open child form
+            //OpenChildForm(new MainForm());
         }
 
         private void btnFind_Click(object sender, EventArgs e)
@@ -69,44 +68,7 @@ namespace MusicApp
         }
         #endregion
 
-        #region function to open child form
-        private void OpenChildForm(Form childForm)
-        {
-            if (currentChildForm != null)
-            {
-                currentChildForm.Close();
-            }
-            currentChildForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            pnMain.Controls.Add(childForm);
-            pnMain.Tag= childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-        #endregion
-
-
-        int count = 0;
-        private void btnHeart_Click(object sender, EventArgs e)
-        {
-            if (count == 0 ) 
-            {
-                btnHeart.Image = global::MusicApp.Properties.Resources.heart_green;
-
-                count = 1;
-            }
-            else
-            {
-                btnHeart.Image = global::MusicApp.Properties.Resources.heart_gray;
-
-                count = 0;
-            }
-        }
-
-        #region Hover function
+        #region  Effect when hover menu
 
         // shuffle button
         private void btnShuffle_MouseHover(object sender, EventArgs e)
@@ -197,6 +159,45 @@ namespace MusicApp
         }
 
         #endregion
+
+        //#region function to open child form
+        //private void OpenChildForm(Form childForm)
+        //{
+        //    if (currentChildForm != null)
+        //    {
+        //        currentChildForm.Close();
+        //    }
+        //    currentChildForm = childForm;
+        //    childForm.TopLevel = false;
+        //    childForm.FormBorderStyle = FormBorderStyle.None;
+        //    childForm.Dock = DockStyle.Fill;
+        //    pnMain.Controls.Add(childForm);
+        //    pnMain.Tag= childForm;
+        //    childForm.BringToFront();
+        //    childForm.Show();
+        //}
+
+        //#endregion
+
+
+        int count = 0;
+        private void btnHeart_Click(object sender, EventArgs e)
+        {
+            if (count == 0 ) 
+            {
+                btnHeart.Image = global::MusicApp.Properties.Resources.heart_green;
+
+                count = 1;
+            }
+            else
+            {
+                btnHeart.Image = global::MusicApp.Properties.Resources.heart_gray;
+
+                count = 0;
+            }
+        }
+
+        
 
 
     }
