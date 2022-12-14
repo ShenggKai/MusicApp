@@ -73,7 +73,7 @@ namespace MusicApp
             this.pageFind = new System.Windows.Forms.TabPage();
             this.pageCollection = new System.Windows.Forms.TabPage();
             this.pageAllSong = new System.Windows.Forms.TabPage();
-            this.tabulate1 = new Tabulate.Tabulate();
+            this.tabulateSongs = new Tabulate.Tabulate();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -632,10 +632,10 @@ namespace MusicApp
             this.pageMain.Location = new System.Drawing.Point(272, 0);
             this.pageMain.Multiline = true;
             this.pageMain.Name = "pageMain";
-            this.pageMain.Page = this.pageAllSong;
-            this.pageMain.PageIndex = 3;
-            this.pageMain.PageName = "pageAllSong";
-            this.pageMain.PageTitle = "Tất cả bài";
+            this.pageMain.Page = this.pageFind;
+            this.pageMain.PageIndex = 1;
+            this.pageMain.PageName = "pageFind";
+            this.pageMain.PageTitle = "Tìm kiếm";
             this.pageMain.SelectedIndex = 0;
             this.pageMain.Size = new System.Drawing.Size(1624, 920);
             this.pageMain.TabIndex = 2;
@@ -749,13 +749,13 @@ namespace MusicApp
             // 
             // pageFind
             // 
+            this.pageFind.BackColor = System.Drawing.Color.Gray;
             this.pageFind.Location = new System.Drawing.Point(4, 4);
             this.pageFind.Name = "pageFind";
             this.pageFind.Padding = new System.Windows.Forms.Padding(3);
             this.pageFind.Size = new System.Drawing.Size(1616, 887);
             this.pageFind.TabIndex = 1;
             this.pageFind.Text = "Tìm kiếm";
-            this.pageFind.UseVisualStyleBackColor = true;
             // 
             // pageCollection
             // 
@@ -770,7 +770,7 @@ namespace MusicApp
             // pageAllSong
             // 
             this.pageAllSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageAllSong.Controls.Add(this.tabulate1);
+            this.pageAllSong.Controls.Add(this.tabulateSongs);
             this.pageAllSong.Location = new System.Drawing.Point(4, 4);
             this.pageAllSong.Name = "pageAllSong";
             this.pageAllSong.Padding = new System.Windows.Forms.Padding(3);
@@ -778,28 +778,35 @@ namespace MusicApp
             this.pageAllSong.TabIndex = 3;
             this.pageAllSong.Text = "Tất cả bài";
             // 
-            // tabulate1
+            // tabulateSongs
             // 
-            this.tabulate1.EnableRowSelection = false;
-            this.tabulate1.EnableSelection = true;
-            this.tabulate1.HTMLFooter = "";
-            this.tabulate1.HTMLHeader = "";
-            this.tabulate1.InjectCSS = "";
-            this.tabulate1.InjectJS = "";
-            this.tabulate1.LoaderDelay = 1000;
-            this.tabulate1.LoaderImage = ((System.Drawing.Image)(resources.GetObject("tabulate1.LoaderImage")));
-            this.tabulate1.Location = new System.Drawing.Point(7, 19);
-            this.tabulate1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabulate1.Name = "tabulate1";
-            this.tabulate1.ScrollbarsEnabled = false;
-            this.tabulate1.Size = new System.Drawing.Size(1600, 860);
-            this.tabulate1.TabIndex = 0;
-            this.tabulate1.TableBordered = true;
-            this.tabulate1.TableCompact = false;
-            this.tabulate1.TableConfiguration = ((Tabulate.TableConfig)(resources.GetObject("tabulate1.TableConfiguration")));
-            this.tabulate1.TableHoverEffect = true;
-            this.tabulate1.TableStriped = true;
-            this.tabulate1.Theme = Tabulate.Tabulate.theme.@default;
+            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns"))));
+            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns1"))));
+            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns2"))));
+            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns3"))));
+            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns4"))));
+            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns5"))));
+            this.tabulateSongs.EnableRowSelection = false;
+            this.tabulateSongs.EnableSelection = true;
+            this.tabulateSongs.HTMLFooter = "";
+            this.tabulateSongs.HTMLHeader = "<button type=\"button\" class=\"btn btn-primary\">Primary</button>\r\n<button type=\"but" +
+    "ton\" class=\"btn btn-secondary\">Secondary</button>\r\n<br>\r\n<br>";
+            this.tabulateSongs.InjectCSS = "";
+            this.tabulateSongs.InjectJS = "";
+            this.tabulateSongs.LoaderDelay = 1000;
+            this.tabulateSongs.LoaderImage = ((System.Drawing.Image)(resources.GetObject("tabulateSongs.LoaderImage")));
+            this.tabulateSongs.Location = new System.Drawing.Point(7, 19);
+            this.tabulateSongs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabulateSongs.Name = "tabulateSongs";
+            this.tabulateSongs.ScrollbarsEnabled = false;
+            this.tabulateSongs.Size = new System.Drawing.Size(1600, 860);
+            this.tabulateSongs.TabIndex = 0;
+            this.tabulateSongs.TableBordered = true;
+            this.tabulateSongs.TableCompact = false;
+            this.tabulateSongs.TableConfiguration = ((Tabulate.TableConfig)(resources.GetObject("tabulateSongs.TableConfiguration")));
+            this.tabulateSongs.TableHoverEffect = true;
+            this.tabulateSongs.TableStriped = true;
+            this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
             // 
             // HomeForm
             // 
@@ -814,6 +821,7 @@ namespace MusicApp
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MusicApp";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Shown += new System.EventHandler(this.HomeForm_Shown);
             this.pnPlay.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).EndInit();
             this.pnMenu.ResumeLayout(false);
@@ -858,6 +866,6 @@ namespace MusicApp
         private Button btnMore1;
         private Button btnMore2;
         private TabPage pageAllSong;
-        private Tabulate.Tabulate tabulate1;
+        private Tabulate.Tabulate tabulateSongs;
     }
 }

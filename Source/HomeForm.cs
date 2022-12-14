@@ -197,8 +197,9 @@ namespace MusicApp
             }
         }
 
-        
-
-
+        private void HomeForm_Shown(object sender, EventArgs e)
+        {
+            //add fake songs data
+        }
     }
 }
