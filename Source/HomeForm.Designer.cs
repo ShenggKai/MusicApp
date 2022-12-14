@@ -64,12 +64,14 @@ namespace MusicApp
             this.lbLogo = new System.Windows.Forms.Label();
             this.pageMain = new Bunifu.UI.WinForms.BunifuPages();
             this.pageHome = new System.Windows.Forms.TabPage();
+            this.btnMore1 = new System.Windows.Forms.Button();
+            this.fpnSongs = new System.Windows.Forms.FlowLayoutPanel();
+            this.lbSongs = new System.Windows.Forms.Label();
+            this.fpnHistory = new System.Windows.Forms.FlowLayoutPanel();
+            this.lbHistory = new System.Windows.Forms.Label();
             this.pageFind = new System.Windows.Forms.TabPage();
             this.pageCollection = new System.Windows.Forms.TabPage();
-            this.lbHistory = new System.Windows.Forms.Label();
-            this.fpnHistory = new System.Windows.Forms.FlowLayoutPanel();
-            this.lbSongs = new System.Windows.Forms.Label();
-            this.fpnSongs = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -654,6 +656,8 @@ namespace MusicApp
             // pageHome
             // 
             this.pageHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageHome.Controls.Add(this.button1);
+            this.pageHome.Controls.Add(this.btnMore1);
             this.pageHome.Controls.Add(this.fpnSongs);
             this.pageHome.Controls.Add(this.lbSongs);
             this.pageHome.Controls.Add(this.fpnHistory);
@@ -665,44 +669,31 @@ namespace MusicApp
             this.pageHome.TabIndex = 0;
             this.pageHome.Text = "Trang chủ";
             // 
-            // pageFind
+            // btnMore1
             // 
-            this.pageFind.Location = new System.Drawing.Point(4, 4);
-            this.pageFind.Name = "pageFind";
-            this.pageFind.Padding = new System.Windows.Forms.Padding(3);
-            this.pageFind.Size = new System.Drawing.Size(1616, 845);
-            this.pageFind.TabIndex = 1;
-            this.pageFind.Text = "Tìm kiếm";
-            this.pageFind.UseVisualStyleBackColor = true;
+            this.btnMore1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnMore1.FlatAppearance.BorderSize = 0;
+            this.btnMore1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMore1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMore1.ForeColor = System.Drawing.Color.White;
+            this.btnMore1.Image = global::MusicApp.Properties.Resources.angle_right;
+            this.btnMore1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMore1.Location = new System.Drawing.Point(1451, 30);
+            this.btnMore1.Name = "btnMore1";
+            this.btnMore1.Size = new System.Drawing.Size(134, 40);
+            this.btnMore1.TabIndex = 8;
+            this.btnMore1.Text = "Xem thêm";
+            this.btnMore1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMore1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnMore1.UseVisualStyleBackColor = false;
             // 
-            // pageCollection
+            // fpnSongs
             // 
-            this.pageCollection.Location = new System.Drawing.Point(4, 4);
-            this.pageCollection.Name = "pageCollection";
-            this.pageCollection.Padding = new System.Windows.Forms.Padding(3);
-            this.pageCollection.Size = new System.Drawing.Size(1616, 845);
-            this.pageCollection.TabIndex = 2;
-            this.pageCollection.Text = "Thư viện";
-            this.pageCollection.UseVisualStyleBackColor = true;
-            // 
-            // lbHistory
-            // 
-            this.lbHistory.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbHistory.ForeColor = System.Drawing.Color.White;
-            this.lbHistory.Location = new System.Drawing.Point(45, 20);
-            this.lbHistory.Name = "lbHistory";
-            this.lbHistory.Size = new System.Drawing.Size(252, 36);
-            this.lbHistory.TabIndex = 2;
-            this.lbHistory.Text = "Mới phát gần đây";
-            this.lbHistory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // fpnHistory
-            // 
-            this.fpnHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.fpnHistory.Location = new System.Drawing.Point(80, 81);
-            this.fpnHistory.Name = "fpnHistory";
-            this.fpnHistory.Size = new System.Drawing.Size(1505, 293);
-            this.fpnHistory.TabIndex = 4;
+            this.fpnSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.fpnSongs.Location = new System.Drawing.Point(80, 502);
+            this.fpnSongs.Name = "fpnSongs";
+            this.fpnSongs.Size = new System.Drawing.Size(1505, 360);
+            this.fpnSongs.TabIndex = 6;
             // 
             // lbSongs
             // 
@@ -715,13 +706,62 @@ namespace MusicApp
             this.lbSongs.Text = "Bài hát";
             this.lbSongs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // fpnSongs
+            // fpnHistory
             // 
-            this.fpnSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.fpnSongs.Location = new System.Drawing.Point(80, 502);
-            this.fpnSongs.Name = "fpnSongs";
-            this.fpnSongs.Size = new System.Drawing.Size(1505, 360);
-            this.fpnSongs.TabIndex = 6;
+            this.fpnHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.fpnHistory.Location = new System.Drawing.Point(80, 81);
+            this.fpnHistory.Name = "fpnHistory";
+            this.fpnHistory.Size = new System.Drawing.Size(1505, 293);
+            this.fpnHistory.TabIndex = 4;
+            // 
+            // lbHistory
+            // 
+            this.lbHistory.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbHistory.ForeColor = System.Drawing.Color.White;
+            this.lbHistory.Location = new System.Drawing.Point(45, 20);
+            this.lbHistory.Name = "lbHistory";
+            this.lbHistory.Size = new System.Drawing.Size(252, 36);
+            this.lbHistory.TabIndex = 2;
+            this.lbHistory.Text = "Mới phát gần đây";
+            this.lbHistory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pageFind
+            // 
+            this.pageFind.Location = new System.Drawing.Point(4, 4);
+            this.pageFind.Name = "pageFind";
+            this.pageFind.Padding = new System.Windows.Forms.Padding(3);
+            this.pageFind.Size = new System.Drawing.Size(1616, 887);
+            this.pageFind.TabIndex = 1;
+            this.pageFind.Text = "Tìm kiếm";
+            this.pageFind.UseVisualStyleBackColor = true;
+            // 
+            // pageCollection
+            // 
+            this.pageCollection.Location = new System.Drawing.Point(4, 4);
+            this.pageCollection.Name = "pageCollection";
+            this.pageCollection.Padding = new System.Windows.Forms.Padding(3);
+            this.pageCollection.Size = new System.Drawing.Size(1616, 887);
+            this.pageCollection.TabIndex = 2;
+            this.pageCollection.Text = "Thư viện";
+            this.pageCollection.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::MusicApp.Properties.Resources.angle_right;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(1451, 445);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 40);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Xem thêm";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // HomeForm
             // 
@@ -776,5 +816,7 @@ namespace MusicApp
         private FlowLayoutPanel fpnHistory;
         private Label lbSongs;
         private FlowLayoutPanel fpnSongs;
+        private Button btnMore1;
+        private Button button1;
     }
 }
