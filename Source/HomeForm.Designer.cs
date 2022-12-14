@@ -40,7 +40,7 @@ namespace MusicApp
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             this.pnPlay = new System.Windows.Forms.Panel();
             this.btnOther = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnVolume = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -72,11 +72,14 @@ namespace MusicApp
             this.lbHistory = new System.Windows.Forms.Label();
             this.pageFind = new System.Windows.Forms.TabPage();
             this.pageCollection = new System.Windows.Forms.TabPage();
+            this.pageAllSong = new System.Windows.Forms.TabPage();
+            this.tabulate1 = new Tabulate.Tabulate();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.pageHome.SuspendLayout();
+            this.pageAllSong.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -624,33 +627,34 @@ namespace MusicApp
             this.pageMain.Controls.Add(this.pageHome);
             this.pageMain.Controls.Add(this.pageFind);
             this.pageMain.Controls.Add(this.pageCollection);
+            this.pageMain.Controls.Add(this.pageAllSong);
             this.pageMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pageMain.Location = new System.Drawing.Point(272, 0);
             this.pageMain.Multiline = true;
             this.pageMain.Name = "pageMain";
-            this.pageMain.Page = this.pageHome;
-            this.pageMain.PageIndex = 0;
-            this.pageMain.PageName = "pageHome";
-            this.pageMain.PageTitle = "Trang chủ";
+            this.pageMain.Page = this.pageAllSong;
+            this.pageMain.PageIndex = 3;
+            this.pageMain.PageName = "pageAllSong";
+            this.pageMain.PageTitle = "Tất cả bài";
             this.pageMain.SelectedIndex = 0;
             this.pageMain.Size = new System.Drawing.Size(1624, 920);
             this.pageMain.TabIndex = 2;
-            animation2.AnimateOnlyDifferences = false;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.pageMain.Transition = animation2;
+            animation1.AnimateOnlyDifferences = false;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.pageMain.Transition = animation1;
             this.pageMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // pageHome
@@ -763,6 +767,40 @@ namespace MusicApp
             this.pageCollection.Text = "Thư viện";
             this.pageCollection.UseVisualStyleBackColor = true;
             // 
+            // pageAllSong
+            // 
+            this.pageAllSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageAllSong.Controls.Add(this.tabulate1);
+            this.pageAllSong.Location = new System.Drawing.Point(4, 4);
+            this.pageAllSong.Name = "pageAllSong";
+            this.pageAllSong.Padding = new System.Windows.Forms.Padding(3);
+            this.pageAllSong.Size = new System.Drawing.Size(1616, 887);
+            this.pageAllSong.TabIndex = 3;
+            this.pageAllSong.Text = "Tất cả bài";
+            // 
+            // tabulate1
+            // 
+            this.tabulate1.EnableRowSelection = false;
+            this.tabulate1.EnableSelection = true;
+            this.tabulate1.HTMLFooter = "";
+            this.tabulate1.HTMLHeader = "";
+            this.tabulate1.InjectCSS = "";
+            this.tabulate1.InjectJS = "";
+            this.tabulate1.LoaderDelay = 1000;
+            this.tabulate1.LoaderImage = ((System.Drawing.Image)(resources.GetObject("tabulate1.LoaderImage")));
+            this.tabulate1.Location = new System.Drawing.Point(7, 19);
+            this.tabulate1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabulate1.Name = "tabulate1";
+            this.tabulate1.ScrollbarsEnabled = false;
+            this.tabulate1.Size = new System.Drawing.Size(1600, 860);
+            this.tabulate1.TabIndex = 0;
+            this.tabulate1.TableBordered = true;
+            this.tabulate1.TableCompact = false;
+            this.tabulate1.TableConfiguration = ((Tabulate.TableConfig)(resources.GetObject("tabulate1.TableConfiguration")));
+            this.tabulate1.TableHoverEffect = true;
+            this.tabulate1.TableStriped = true;
+            this.tabulate1.Theme = Tabulate.Tabulate.theme.@default;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -781,6 +819,7 @@ namespace MusicApp
             this.pnMenu.ResumeLayout(false);
             this.pageMain.ResumeLayout(false);
             this.pageHome.ResumeLayout(false);
+            this.pageAllSong.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -818,5 +857,7 @@ namespace MusicApp
         private FlowLayoutPanel fpnSongs;
         private Button btnMore1;
         private Button btnMore2;
+        private TabPage pageAllSong;
+        private Tabulate.Tabulate tabulate1;
     }
 }
