@@ -105,5 +105,99 @@ namespace MusicApp
                 count = 0;
             }
         }
+
+        #region Hover function
+
+        // shuffle button
+        private void btnShuffle_MouseHover(object sender, EventArgs e)
+        {
+            btnShuffle.Image = global::MusicApp.Properties.Resources.shuffle_white;
+        }
+
+        private void btnShuffle_MouseLeave(object sender, EventArgs e)
+        {
+            btnShuffle.Image = global::MusicApp.Properties.Resources.shuffle_gray;
+        }
+
+        // previous button
+        private void btnPrevious_MouseHover(object sender, EventArgs e)
+        {
+            btnPrevious.Image = global::MusicApp.Properties.Resources.left;
+        }
+
+        private void btnPrevious_MouseLeave(object sender, EventArgs e)
+        {
+            btnPrevious.Image = global::MusicApp.Properties.Resources.left_gray;
+        }
+
+        // next button
+        private void btnNext_MouseHover(object sender, EventArgs e)
+        {
+            btnNext.Image = global::MusicApp.Properties.Resources.right;
+        }
+
+        private void btnNext_MouseLeave(object sender, EventArgs e)
+        {
+            btnNext.Image = global::MusicApp.Properties.Resources.right_gray;
+        }
+
+        // repeat button
+        private void btnRepeat_MouseHover(object sender, EventArgs e)
+        {
+            btnRepeat.Image = global::MusicApp.Properties.Resources.repeat_white;
+        }
+
+        private void btnRepeat_MouseLeave(object sender, EventArgs e)
+        {
+            btnRepeat.Image = global::MusicApp.Properties.Resources.repeat_gray;
+        }
+
+        // heart button
+        private void btnHeart_MouseHover(object sender, EventArgs e)
+        {
+            btnHeart.Image = global::MusicApp.Properties.Resources.heart_white;
+        }
+
+        private void btnHeart_MouseLeave(object sender, EventArgs e)
+        {
+            btnHeart.Image = global::MusicApp.Properties.Resources.heart_gray;
+        }
+
+        // Lyric button
+        private void btnLyric_MouseHover(object sender, EventArgs e)
+        {
+            btnLyric.Image = global::MusicApp.Properties.Resources.lyric_white;
+        }
+
+        private void btnLyric_MouseLeave(object sender, EventArgs e)
+        {
+            btnLyric.Image = global::MusicApp.Properties.Resources.lyric_gray;
+        }
+
+        // volume button
+        private void btnVolume_MouseHover(object sender, EventArgs e)
+        {
+            btnVolume.Image = global::MusicApp.Properties.Resources.volume_white;
+        }
+
+        private void btnVolume_MouseLeave(object sender, EventArgs e)
+        {
+            btnVolume.Image = global::MusicApp.Properties.Resources.volume_gray;
+        }
+
+        // other button
+        private void btnOther_MouseHover(object sender, EventArgs e)
+        {
+            btnOther.Image = global::MusicApp.Properties.Resources.dots_white;
+        }
+
+        private void btnOther_MouseLeave(object sender, EventArgs e)
+        {
+            btnOther.Image = global::MusicApp.Properties.Resources.dots_gray;
+        }
+
+        #endregion
+
+
     }
 }
