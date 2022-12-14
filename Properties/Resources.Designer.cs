@@ -63,6 +63,26 @@ namespace MusicApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dots_gray {
+            get {
+                object obj = ResourceManager.GetObject("dots_gray", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dots_white {
+            get {
+                object obj = ResourceManager.GetObject("dots_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap folder {
             get {
                 object obj = ResourceManager.GetObject("folder", resourceCulture);
@@ -76,6 +96,26 @@ namespace MusicApp.Properties {
         internal static System.Drawing.Bitmap folder_white {
             get {
                 object obj = ResourceManager.GetObject("folder_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heart_gray {
+            get {
+                object obj = ResourceManager.GetObject("heart_gray", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heart_green {
+            get {
+                object obj = ResourceManager.GetObject("heart_green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +156,16 @@ namespace MusicApp.Properties {
         internal static System.Drawing.Bitmap loop {
             get {
                 object obj = ResourceManager.GetObject("loop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lyric_gray {
+            get {
+                object obj = ResourceManager.GetObject("lyric_gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +236,16 @@ namespace MusicApp.Properties {
         internal static System.Drawing.Bitmap srltdln {
             get {
                 object obj = ResourceManager.GetObject("srltdln", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap volume_gray {
+            get {
+                object obj = ResourceManager.GetObject("volume_gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

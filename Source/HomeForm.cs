@@ -92,5 +92,22 @@ namespace MusicApp
         {
 
         }
+
+        int count = 0;
+        private void btnHeart_Click(object sender, EventArgs e)
+        {
+            if (count == 0 ) 
+            {
+                btnHeart.Image = global::MusicApp.Properties.Resources.heart_green;
+
+                count = 1;
+            }
+            else
+            {
+                btnHeart.Image = global::MusicApp.Properties.Resources.heart_gray;
+
+                count = 0;
+            }
+        }
     }
 }

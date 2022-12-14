@@ -41,6 +41,12 @@ namespace MusicApp
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.pnPlay = new System.Windows.Forms.Panel();
+            this.bunifuImageButton7 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.bunifuImageButton6 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.btnLyric = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.btnHeart = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.lbTimeEnd = new System.Windows.Forms.Label();
+            this.lbTimeStart = new System.Windows.Forms.Label();
             this.lbArtist = new System.Windows.Forms.Label();
             this.lbSongName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -64,6 +70,12 @@ namespace MusicApp
             // pnPlay
             // 
             this.pnPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.pnPlay.Controls.Add(this.bunifuImageButton7);
+            this.pnPlay.Controls.Add(this.bunifuImageButton6);
+            this.pnPlay.Controls.Add(this.btnLyric);
+            this.pnPlay.Controls.Add(this.btnHeart);
+            this.pnPlay.Controls.Add(this.lbTimeEnd);
+            this.pnPlay.Controls.Add(this.lbTimeStart);
             this.pnPlay.Controls.Add(this.lbArtist);
             this.pnPlay.Controls.Add(this.lbSongName);
             this.pnPlay.Controls.Add(this.pictureBox1);
@@ -78,6 +90,165 @@ namespace MusicApp
             this.pnPlay.Name = "pnPlay";
             this.pnPlay.Size = new System.Drawing.Size(1896, 135);
             this.pnPlay.TabIndex = 0;
+            // 
+            // bunifuImageButton7
+            // 
+            this.bunifuImageButton7.ActiveImage = null;
+            this.bunifuImageButton7.AllowAnimations = true;
+            this.bunifuImageButton7.AllowBuffering = false;
+            this.bunifuImageButton7.AllowToggling = false;
+            this.bunifuImageButton7.AllowZooming = true;
+            this.bunifuImageButton7.AllowZoomingOnFocus = false;
+            this.bunifuImageButton7.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton7.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuImageButton7.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton7.ErrorImage")));
+            this.bunifuImageButton7.FadeWhenInactive = false;
+            this.bunifuImageButton7.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bunifuImageButton7.Image = global::MusicApp.Properties.Resources.dots_gray;
+            this.bunifuImageButton7.ImageActive = null;
+            this.bunifuImageButton7.ImageLocation = null;
+            this.bunifuImageButton7.ImageMargin = 0;
+            this.bunifuImageButton7.ImageSize = new System.Drawing.Size(39, 39);
+            this.bunifuImageButton7.ImageZoomSize = new System.Drawing.Size(40, 40);
+            this.bunifuImageButton7.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton7.InitialImage")));
+            this.bunifuImageButton7.Location = new System.Drawing.Point(1814, 48);
+            this.bunifuImageButton7.Name = "bunifuImageButton7";
+            this.bunifuImageButton7.Rotation = 0;
+            this.bunifuImageButton7.ShowActiveImage = true;
+            this.bunifuImageButton7.ShowCursorChanges = true;
+            this.bunifuImageButton7.ShowImageBorders = true;
+            this.bunifuImageButton7.ShowSizeMarkers = false;
+            this.bunifuImageButton7.Size = new System.Drawing.Size(40, 40);
+            this.bunifuImageButton7.TabIndex = 14;
+            this.bunifuImageButton7.ToolTipText = "";
+            this.bunifuImageButton7.WaitOnLoad = false;
+            this.bunifuImageButton7.Zoom = 0;
+            this.bunifuImageButton7.ZoomSpeed = 10;
+            // 
+            // bunifuImageButton6
+            // 
+            this.bunifuImageButton6.ActiveImage = null;
+            this.bunifuImageButton6.AllowAnimations = true;
+            this.bunifuImageButton6.AllowBuffering = false;
+            this.bunifuImageButton6.AllowToggling = false;
+            this.bunifuImageButton6.AllowZooming = true;
+            this.bunifuImageButton6.AllowZoomingOnFocus = false;
+            this.bunifuImageButton6.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton6.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuImageButton6.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton6.ErrorImage")));
+            this.bunifuImageButton6.FadeWhenInactive = false;
+            this.bunifuImageButton6.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bunifuImageButton6.Image = global::MusicApp.Properties.Resources.volume_gray;
+            this.bunifuImageButton6.ImageActive = null;
+            this.bunifuImageButton6.ImageLocation = null;
+            this.bunifuImageButton6.ImageMargin = 0;
+            this.bunifuImageButton6.ImageSize = new System.Drawing.Size(39, 39);
+            this.bunifuImageButton6.ImageZoomSize = new System.Drawing.Size(40, 40);
+            this.bunifuImageButton6.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton6.InitialImage")));
+            this.bunifuImageButton6.Location = new System.Drawing.Point(1714, 48);
+            this.bunifuImageButton6.Name = "bunifuImageButton6";
+            this.bunifuImageButton6.Rotation = 0;
+            this.bunifuImageButton6.ShowActiveImage = true;
+            this.bunifuImageButton6.ShowCursorChanges = true;
+            this.bunifuImageButton6.ShowImageBorders = true;
+            this.bunifuImageButton6.ShowSizeMarkers = false;
+            this.bunifuImageButton6.Size = new System.Drawing.Size(40, 40);
+            this.bunifuImageButton6.TabIndex = 13;
+            this.bunifuImageButton6.ToolTipText = "";
+            this.bunifuImageButton6.WaitOnLoad = false;
+            this.bunifuImageButton6.Zoom = 0;
+            this.bunifuImageButton6.ZoomSpeed = 10;
+            // 
+            // btnLyric
+            // 
+            this.btnLyric.ActiveImage = null;
+            this.btnLyric.AllowAnimations = true;
+            this.btnLyric.AllowBuffering = false;
+            this.btnLyric.AllowToggling = false;
+            this.btnLyric.AllowZooming = true;
+            this.btnLyric.AllowZoomingOnFocus = false;
+            this.btnLyric.BackColor = System.Drawing.Color.Transparent;
+            this.btnLyric.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnLyric.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnLyric.ErrorImage")));
+            this.btnLyric.FadeWhenInactive = false;
+            this.btnLyric.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.btnLyric.Image = global::MusicApp.Properties.Resources.lyric_gray;
+            this.btnLyric.ImageActive = null;
+            this.btnLyric.ImageLocation = null;
+            this.btnLyric.ImageMargin = 0;
+            this.btnLyric.ImageSize = new System.Drawing.Size(39, 39);
+            this.btnLyric.ImageZoomSize = new System.Drawing.Size(40, 40);
+            this.btnLyric.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnLyric.InitialImage")));
+            this.btnLyric.Location = new System.Drawing.Point(1614, 48);
+            this.btnLyric.Name = "btnLyric";
+            this.btnLyric.Rotation = 0;
+            this.btnLyric.ShowActiveImage = true;
+            this.btnLyric.ShowCursorChanges = true;
+            this.btnLyric.ShowImageBorders = true;
+            this.btnLyric.ShowSizeMarkers = false;
+            this.btnLyric.Size = new System.Drawing.Size(40, 40);
+            this.btnLyric.TabIndex = 12;
+            this.btnLyric.ToolTipText = "";
+            this.btnLyric.WaitOnLoad = false;
+            this.btnLyric.Zoom = 0;
+            this.btnLyric.ZoomSpeed = 10;
+            // 
+            // btnHeart
+            // 
+            this.btnHeart.ActiveImage = null;
+            this.btnHeart.AllowAnimations = true;
+            this.btnHeart.AllowBuffering = false;
+            this.btnHeart.AllowToggling = false;
+            this.btnHeart.AllowZooming = true;
+            this.btnHeart.AllowZoomingOnFocus = false;
+            this.btnHeart.BackColor = System.Drawing.Color.Transparent;
+            this.btnHeart.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnHeart.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnHeart.ErrorImage")));
+            this.btnHeart.FadeWhenInactive = false;
+            this.btnHeart.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.btnHeart.Image = global::MusicApp.Properties.Resources.heart_gray;
+            this.btnHeart.ImageActive = null;
+            this.btnHeart.ImageLocation = null;
+            this.btnHeart.ImageMargin = 0;
+            this.btnHeart.ImageSize = new System.Drawing.Size(39, 39);
+            this.btnHeart.ImageZoomSize = new System.Drawing.Size(40, 40);
+            this.btnHeart.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnHeart.InitialImage")));
+            this.btnHeart.Location = new System.Drawing.Point(1514, 48);
+            this.btnHeart.Name = "btnHeart";
+            this.btnHeart.Rotation = 0;
+            this.btnHeart.ShowActiveImage = true;
+            this.btnHeart.ShowCursorChanges = true;
+            this.btnHeart.ShowImageBorders = true;
+            this.btnHeart.ShowSizeMarkers = false;
+            this.btnHeart.Size = new System.Drawing.Size(40, 40);
+            this.btnHeart.TabIndex = 11;
+            this.btnHeart.ToolTipText = "";
+            this.btnHeart.WaitOnLoad = false;
+            this.btnHeart.Zoom = 0;
+            this.btnHeart.ZoomSpeed = 10;
+            this.btnHeart.Click += new System.EventHandler(this.btnHeart_Click);
+            // 
+            // lbTimeEnd
+            // 
+            this.lbTimeEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbTimeEnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.lbTimeEnd.Location = new System.Drawing.Point(1277, 86);
+            this.lbTimeEnd.Name = "lbTimeEnd";
+            this.lbTimeEnd.Size = new System.Drawing.Size(49, 24);
+            this.lbTimeEnd.TabIndex = 10;
+            this.lbTimeEnd.Text = "4:50";
+            this.lbTimeEnd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTimeStart
+            // 
+            this.lbTimeStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbTimeStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.lbTimeStart.Location = new System.Drawing.Point(581, 86);
+            this.lbTimeStart.Name = "lbTimeStart";
+            this.lbTimeStart.Size = new System.Drawing.Size(49, 24);
+            this.lbTimeStart.TabIndex = 9;
+            this.lbTimeStart.Text = "0:30";
+            this.lbTimeStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbArtist
             // 
@@ -302,7 +473,7 @@ namespace MusicApp
             this.bunifuhSlider1.DurationBeforeShrink = 2000;
             this.bunifuhSlider1.ElapsedColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             this.bunifuhSlider1.LargeChange = 10;
-            this.bunifuhSlider1.Location = new System.Drawing.Point(654, 86);
+            this.bunifuhSlider1.Location = new System.Drawing.Point(645, 86);
             this.bunifuhSlider1.Maximum = 100;
             this.bunifuhSlider1.Minimum = 0;
             this.bunifuhSlider1.MinimumSize = new System.Drawing.Size(0, 31);
@@ -466,5 +637,11 @@ namespace MusicApp
         private PictureBox pictureBox1;
         private Label lbSongName;
         private Label lbArtist;
+        private Label lbTimeStart;
+        private Label lbTimeEnd;
+        private Bunifu.UI.WinForms.BunifuImageButton btnHeart;
+        private Bunifu.UI.WinForms.BunifuImageButton btnLyric;
+        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton6;
+        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton7;
     }
 }
