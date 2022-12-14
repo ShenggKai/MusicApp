@@ -40,7 +40,7 @@ namespace MusicApp
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             this.pnPlay = new System.Windows.Forms.Panel();
             this.btnOther = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnVolume = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -64,7 +64,7 @@ namespace MusicApp
             this.lbLogo = new System.Windows.Forms.Label();
             this.pageMain = new Bunifu.UI.WinForms.BunifuPages();
             this.pageHome = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMore2 = new System.Windows.Forms.Button();
             this.btnMore1 = new System.Windows.Forms.Button();
             this.fpnSongs = new System.Windows.Forms.FlowLayoutPanel();
             this.lbSongs = new System.Windows.Forms.Label();
@@ -635,28 +635,28 @@ namespace MusicApp
             this.pageMain.SelectedIndex = 0;
             this.pageMain.Size = new System.Drawing.Size(1624, 920);
             this.pageMain.TabIndex = 2;
-            animation1.AnimateOnlyDifferences = false;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.pageMain.Transition = animation1;
+            animation2.AnimateOnlyDifferences = false;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.pageMain.Transition = animation2;
             this.pageMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // pageHome
             // 
             this.pageHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageHome.Controls.Add(this.button1);
+            this.pageHome.Controls.Add(this.btnMore2);
             this.pageHome.Controls.Add(this.btnMore1);
             this.pageHome.Controls.Add(this.fpnSongs);
             this.pageHome.Controls.Add(this.lbSongs);
@@ -669,23 +669,23 @@ namespace MusicApp
             this.pageHome.TabIndex = 0;
             this.pageHome.Text = "Trang chủ";
             // 
-            // button1
+            // btnMore2
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.button1.Image = global::MusicApp.Properties.Resources.angle_right;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(1451, 445);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 40);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Xem thêm";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnMore2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnMore2.FlatAppearance.BorderSize = 0;
+            this.btnMore2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMore2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMore2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.btnMore2.Image = global::MusicApp.Properties.Resources.angle_right;
+            this.btnMore2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMore2.Location = new System.Drawing.Point(1451, 445);
+            this.btnMore2.Name = "btnMore2";
+            this.btnMore2.Size = new System.Drawing.Size(134, 40);
+            this.btnMore2.TabIndex = 9;
+            this.btnMore2.Text = "Xem thêm";
+            this.btnMore2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMore2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnMore2.UseVisualStyleBackColor = false;
             // 
             // btnMore1
             // 
@@ -817,6 +817,6 @@ namespace MusicApp
         private Label lbSongs;
         private FlowLayoutPanel fpnSongs;
         private Button btnMore1;
-        private Button button1;
+        private Button btnMore2;
     }
 }
