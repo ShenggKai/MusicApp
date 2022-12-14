@@ -64,6 +64,7 @@ namespace MusicApp
             this.lbLogo = new System.Windows.Forms.Label();
             this.pageMain = new Bunifu.UI.WinForms.BunifuPages();
             this.pageHome = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnMore1 = new System.Windows.Forms.Button();
             this.fpnSongs = new System.Windows.Forms.FlowLayoutPanel();
             this.lbSongs = new System.Windows.Forms.Label();
@@ -71,7 +72,6 @@ namespace MusicApp
             this.lbHistory = new System.Windows.Forms.Label();
             this.pageFind = new System.Windows.Forms.TabPage();
             this.pageCollection = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -669,13 +669,31 @@ namespace MusicApp
             this.pageHome.TabIndex = 0;
             this.pageHome.Text = "Trang chủ";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.button1.Image = global::MusicApp.Properties.Resources.angle_right;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(1451, 445);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 40);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Xem thêm";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // btnMore1
             // 
             this.btnMore1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.btnMore1.FlatAppearance.BorderSize = 0;
             this.btnMore1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMore1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMore1.ForeColor = System.Drawing.Color.White;
+            this.btnMore1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
             this.btnMore1.Image = global::MusicApp.Properties.Resources.angle_right;
             this.btnMore1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMore1.Location = new System.Drawing.Point(1451, 30);
@@ -744,24 +762,6 @@ namespace MusicApp
             this.pageCollection.TabIndex = 2;
             this.pageCollection.Text = "Thư viện";
             this.pageCollection.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::MusicApp.Properties.Resources.angle_right;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(1451, 445);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 40);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Xem thêm";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // HomeForm
             // 
