@@ -88,10 +88,6 @@ namespace MusicApp
 
         #endregion
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         int count = 0;
         private void btnHeart_Click(object sender, EventArgs e)

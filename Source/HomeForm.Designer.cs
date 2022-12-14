@@ -120,7 +120,7 @@ namespace MusicApp
             this.bunifuImageButton7.ShowSizeMarkers = false;
             this.bunifuImageButton7.Size = new System.Drawing.Size(40, 40);
             this.bunifuImageButton7.TabIndex = 14;
-            this.bunifuImageButton7.ToolTipText = "";
+            this.bunifuImageButton7.ToolTipText = "Khác";
             this.bunifuImageButton7.WaitOnLoad = false;
             this.bunifuImageButton7.Zoom = 0;
             this.bunifuImageButton7.ZoomSpeed = 10;
@@ -154,7 +154,7 @@ namespace MusicApp
             this.bunifuImageButton6.ShowSizeMarkers = false;
             this.bunifuImageButton6.Size = new System.Drawing.Size(40, 40);
             this.bunifuImageButton6.TabIndex = 13;
-            this.bunifuImageButton6.ToolTipText = "";
+            this.bunifuImageButton6.ToolTipText = "Tắt âm";
             this.bunifuImageButton6.WaitOnLoad = false;
             this.bunifuImageButton6.Zoom = 0;
             this.bunifuImageButton6.ZoomSpeed = 10;
@@ -188,7 +188,7 @@ namespace MusicApp
             this.btnLyric.ShowSizeMarkers = false;
             this.btnLyric.Size = new System.Drawing.Size(40, 40);
             this.btnLyric.TabIndex = 12;
-            this.btnLyric.ToolTipText = "";
+            this.btnLyric.ToolTipText = "Xem lời bài hát";
             this.btnLyric.WaitOnLoad = false;
             this.btnLyric.Zoom = 0;
             this.btnLyric.ZoomSpeed = 10;
@@ -222,7 +222,7 @@ namespace MusicApp
             this.btnHeart.ShowSizeMarkers = false;
             this.btnHeart.Size = new System.Drawing.Size(40, 40);
             this.btnHeart.TabIndex = 11;
-            this.btnHeart.ToolTipText = "";
+            this.btnHeart.ToolTipText = "Thêm vào yêu thích";
             this.btnHeart.WaitOnLoad = false;
             this.btnHeart.Zoom = 0;
             this.btnHeart.ZoomSpeed = 10;
@@ -311,7 +311,7 @@ namespace MusicApp
             this.bunifuImageButton4.ShowSizeMarkers = false;
             this.bunifuImageButton4.Size = new System.Drawing.Size(45, 45);
             this.bunifuImageButton4.TabIndex = 5;
-            this.bunifuImageButton4.ToolTipText = "";
+            this.bunifuImageButton4.ToolTipText = "Bật/tắt trộn bài";
             this.bunifuImageButton4.WaitOnLoad = false;
             this.bunifuImageButton4.Zoom = 0;
             this.bunifuImageButton4.ZoomSpeed = 10;
@@ -345,7 +345,7 @@ namespace MusicApp
             this.bunifuImageButton3.ShowSizeMarkers = false;
             this.bunifuImageButton3.Size = new System.Drawing.Size(45, 45);
             this.bunifuImageButton3.TabIndex = 4;
-            this.bunifuImageButton3.ToolTipText = "";
+            this.bunifuImageButton3.ToolTipText = "Kích hoạt phát lại";
             this.bunifuImageButton3.WaitOnLoad = false;
             this.bunifuImageButton3.Zoom = 0;
             this.bunifuImageButton3.ZoomSpeed = 10;
@@ -451,7 +451,6 @@ namespace MusicApp
             this.btnPlay.WaitOnLoad = false;
             this.btnPlay.Zoom = 0;
             this.btnPlay.ZoomSpeed = 10;
-            this.btnPlay.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // bunifuhSlider1
             // 
