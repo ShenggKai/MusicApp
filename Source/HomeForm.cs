@@ -4,7 +4,7 @@ namespace MusicApp
 {
     public partial class HomeForm : Form
     {
-        private Form currentChildForm;
+        //private Form currentChildForm;
 
         public HomeForm()
         {

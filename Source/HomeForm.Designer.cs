@@ -66,10 +66,15 @@ namespace MusicApp
             this.pageHome = new System.Windows.Forms.TabPage();
             this.pageFind = new System.Windows.Forms.TabPage();
             this.pageCollection = new System.Windows.Forms.TabPage();
+            this.lbHistory = new System.Windows.Forms.Label();
+            this.fpnHistory = new System.Windows.Forms.FlowLayoutPanel();
+            this.lbSongs = new System.Windows.Forms.Label();
+            this.fpnSongs = new System.Windows.Forms.FlowLayoutPanel();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
+            this.pageHome.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -91,7 +96,7 @@ namespace MusicApp
             this.pnPlay.Controls.Add(this.btnPlay);
             this.pnPlay.Controls.Add(this.btnSlider);
             this.pnPlay.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnPlay.Location = new System.Drawing.Point(0, 878);
+            this.pnPlay.Location = new System.Drawing.Point(0, 920);
             this.pnPlay.Name = "pnPlay";
             this.pnPlay.Size = new System.Drawing.Size(1896, 135);
             this.pnPlay.TabIndex = 0;
@@ -529,7 +534,7 @@ namespace MusicApp
             this.pnMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnMenu.Location = new System.Drawing.Point(0, 0);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(272, 878);
+            this.pnMenu.Size = new System.Drawing.Size(272, 920);
             this.pnMenu.TabIndex = 1;
             // 
             // btnCollection
@@ -621,12 +626,12 @@ namespace MusicApp
             this.pageMain.Location = new System.Drawing.Point(272, 0);
             this.pageMain.Multiline = true;
             this.pageMain.Name = "pageMain";
-            this.pageMain.Page = this.pageCollection;
-            this.pageMain.PageIndex = 2;
-            this.pageMain.PageName = "pageCollection";
-            this.pageMain.PageTitle = "Thư viện";
+            this.pageMain.Page = this.pageHome;
+            this.pageMain.PageIndex = 0;
+            this.pageMain.PageName = "pageHome";
+            this.pageMain.PageTitle = "Trang chủ";
             this.pageMain.SelectedIndex = 0;
-            this.pageMain.Size = new System.Drawing.Size(1624, 878);
+            this.pageMain.Size = new System.Drawing.Size(1624, 920);
             this.pageMain.TabIndex = 2;
             animation1.AnimateOnlyDifferences = false;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -636,7 +641,7 @@ namespace MusicApp
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
@@ -648,13 +653,17 @@ namespace MusicApp
             // 
             // pageHome
             // 
+            this.pageHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageHome.Controls.Add(this.fpnSongs);
+            this.pageHome.Controls.Add(this.lbSongs);
+            this.pageHome.Controls.Add(this.fpnHistory);
+            this.pageHome.Controls.Add(this.lbHistory);
             this.pageHome.Location = new System.Drawing.Point(4, 4);
             this.pageHome.Name = "pageHome";
             this.pageHome.Padding = new System.Windows.Forms.Padding(3);
-            this.pageHome.Size = new System.Drawing.Size(1616, 845);
+            this.pageHome.Size = new System.Drawing.Size(1616, 887);
             this.pageHome.TabIndex = 0;
             this.pageHome.Text = "Trang chủ";
-            this.pageHome.UseVisualStyleBackColor = true;
             // 
             // pageFind
             // 
@@ -676,11 +685,49 @@ namespace MusicApp
             this.pageCollection.Text = "Thư viện";
             this.pageCollection.UseVisualStyleBackColor = true;
             // 
+            // lbHistory
+            // 
+            this.lbHistory.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbHistory.ForeColor = System.Drawing.Color.White;
+            this.lbHistory.Location = new System.Drawing.Point(45, 20);
+            this.lbHistory.Name = "lbHistory";
+            this.lbHistory.Size = new System.Drawing.Size(252, 36);
+            this.lbHistory.TabIndex = 2;
+            this.lbHistory.Text = "Mới phát gần đây";
+            this.lbHistory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fpnHistory
+            // 
+            this.fpnHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.fpnHistory.Location = new System.Drawing.Point(80, 81);
+            this.fpnHistory.Name = "fpnHistory";
+            this.fpnHistory.Size = new System.Drawing.Size(1505, 293);
+            this.fpnHistory.TabIndex = 4;
+            // 
+            // lbSongs
+            // 
+            this.lbSongs.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbSongs.ForeColor = System.Drawing.Color.White;
+            this.lbSongs.Location = new System.Drawing.Point(45, 449);
+            this.lbSongs.Name = "lbSongs";
+            this.lbSongs.Size = new System.Drawing.Size(107, 36);
+            this.lbSongs.TabIndex = 5;
+            this.lbSongs.Text = "Bài hát";
+            this.lbSongs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fpnSongs
+            // 
+            this.fpnSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.fpnSongs.Location = new System.Drawing.Point(80, 502);
+            this.fpnSongs.Name = "fpnSongs";
+            this.fpnSongs.Size = new System.Drawing.Size(1505, 360);
+            this.fpnSongs.TabIndex = 6;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1896, 1013);
+            this.ClientSize = new System.Drawing.Size(1896, 1055);
             this.Controls.Add(this.pageMain);
             this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.pnPlay);
@@ -693,6 +740,7 @@ namespace MusicApp
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).EndInit();
             this.pnMenu.ResumeLayout(false);
             this.pageMain.ResumeLayout(false);
+            this.pageHome.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -724,5 +772,9 @@ namespace MusicApp
         private TabPage pageHome;
         private TabPage pageFind;
         private TabPage pageCollection;
+        private Label lbHistory;
+        private FlowLayoutPanel fpnHistory;
+        private Label lbSongs;
+        private FlowLayoutPanel fpnSongs;
     }
 }
