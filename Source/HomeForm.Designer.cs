@@ -40,7 +40,7 @@ namespace MusicApp
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             this.pnPlay = new System.Windows.Forms.Panel();
             this.btnOther = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnVolume = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -322,8 +322,8 @@ namespace MusicApp
             this.btnShuffle.ImageActive = null;
             this.btnShuffle.ImageLocation = null;
             this.btnShuffle.ImageMargin = 0;
-            this.btnShuffle.ImageSize = new System.Drawing.Size(44, 44);
-            this.btnShuffle.ImageZoomSize = new System.Drawing.Size(45, 45);
+            this.btnShuffle.ImageSize = new System.Drawing.Size(39, 39);
+            this.btnShuffle.ImageZoomSize = new System.Drawing.Size(40, 40);
             this.btnShuffle.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnShuffle.InitialImage")));
             this.btnShuffle.Location = new System.Drawing.Point(723, 26);
             this.btnShuffle.Name = "btnShuffle";
@@ -332,7 +332,7 @@ namespace MusicApp
             this.btnShuffle.ShowCursorChanges = true;
             this.btnShuffle.ShowImageBorders = true;
             this.btnShuffle.ShowSizeMarkers = false;
-            this.btnShuffle.Size = new System.Drawing.Size(45, 45);
+            this.btnShuffle.Size = new System.Drawing.Size(40, 40);
             this.btnShuffle.TabIndex = 5;
             this.btnShuffle.ToolTipText = "Bật/tắt trộn bài";
             this.btnShuffle.WaitOnLoad = false;
@@ -358,8 +358,8 @@ namespace MusicApp
             this.btnRepeat.ImageActive = null;
             this.btnRepeat.ImageLocation = null;
             this.btnRepeat.ImageMargin = 0;
-            this.btnRepeat.ImageSize = new System.Drawing.Size(44, 44);
-            this.btnRepeat.ImageZoomSize = new System.Drawing.Size(45, 45);
+            this.btnRepeat.ImageSize = new System.Drawing.Size(39, 39);
+            this.btnRepeat.ImageZoomSize = new System.Drawing.Size(40, 40);
             this.btnRepeat.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnRepeat.InitialImage")));
             this.btnRepeat.Location = new System.Drawing.Point(1133, 26);
             this.btnRepeat.Name = "btnRepeat";
@@ -368,7 +368,7 @@ namespace MusicApp
             this.btnRepeat.ShowCursorChanges = true;
             this.btnRepeat.ShowImageBorders = true;
             this.btnRepeat.ShowSizeMarkers = false;
-            this.btnRepeat.Size = new System.Drawing.Size(45, 45);
+            this.btnRepeat.Size = new System.Drawing.Size(40, 40);
             this.btnRepeat.TabIndex = 4;
             this.btnRepeat.ToolTipText = "Kích hoạt phát lại";
             this.btnRepeat.WaitOnLoad = false;
@@ -394,8 +394,8 @@ namespace MusicApp
             this.btnNext.ImageActive = null;
             this.btnNext.ImageLocation = null;
             this.btnNext.ImageMargin = 0;
-            this.btnNext.ImageSize = new System.Drawing.Size(44, 44);
-            this.btnNext.ImageZoomSize = new System.Drawing.Size(45, 45);
+            this.btnNext.ImageSize = new System.Drawing.Size(39, 39);
+            this.btnNext.ImageZoomSize = new System.Drawing.Size(40, 40);
             this.btnNext.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnNext.InitialImage")));
             this.btnNext.Location = new System.Drawing.Point(1033, 26);
             this.btnNext.Name = "btnNext";
@@ -404,7 +404,7 @@ namespace MusicApp
             this.btnNext.ShowCursorChanges = true;
             this.btnNext.ShowImageBorders = true;
             this.btnNext.ShowSizeMarkers = false;
-            this.btnNext.Size = new System.Drawing.Size(45, 45);
+            this.btnNext.Size = new System.Drawing.Size(40, 40);
             this.btnNext.TabIndex = 3;
             this.btnNext.ToolTipText = "";
             this.btnNext.WaitOnLoad = false;
@@ -430,8 +430,8 @@ namespace MusicApp
             this.btnPrevious.ImageActive = null;
             this.btnPrevious.ImageLocation = null;
             this.btnPrevious.ImageMargin = 0;
-            this.btnPrevious.ImageSize = new System.Drawing.Size(44, 44);
-            this.btnPrevious.ImageZoomSize = new System.Drawing.Size(45, 45);
+            this.btnPrevious.ImageSize = new System.Drawing.Size(39, 39);
+            this.btnPrevious.ImageZoomSize = new System.Drawing.Size(40, 40);
             this.btnPrevious.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnPrevious.InitialImage")));
             this.btnPrevious.Location = new System.Drawing.Point(823, 26);
             this.btnPrevious.Name = "btnPrevious";
@@ -440,7 +440,7 @@ namespace MusicApp
             this.btnPrevious.ShowCursorChanges = true;
             this.btnPrevious.ShowImageBorders = true;
             this.btnPrevious.ShowSizeMarkers = false;
-            this.btnPrevious.Size = new System.Drawing.Size(45, 45);
+            this.btnPrevious.Size = new System.Drawing.Size(40, 40);
             this.btnPrevious.TabIndex = 2;
             this.btnPrevious.ToolTipText = "";
             this.btnPrevious.WaitOnLoad = false;
@@ -466,8 +466,8 @@ namespace MusicApp
             this.btnPlay.ImageActive = null;
             this.btnPlay.ImageLocation = null;
             this.btnPlay.ImageMargin = 0;
-            this.btnPlay.ImageSize = new System.Drawing.Size(54, 54);
-            this.btnPlay.ImageZoomSize = new System.Drawing.Size(55, 55);
+            this.btnPlay.ImageSize = new System.Drawing.Size(49, 49);
+            this.btnPlay.ImageZoomSize = new System.Drawing.Size(50, 50);
             this.btnPlay.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnPlay.InitialImage")));
             this.btnPlay.Location = new System.Drawing.Point(923, 21);
             this.btnPlay.Name = "btnPlay";
@@ -476,7 +476,7 @@ namespace MusicApp
             this.btnPlay.ShowCursorChanges = true;
             this.btnPlay.ShowImageBorders = true;
             this.btnPlay.ShowSizeMarkers = false;
-            this.btnPlay.Size = new System.Drawing.Size(55, 55);
+            this.btnPlay.Size = new System.Drawing.Size(50, 50);
             this.btnPlay.TabIndex = 1;
             this.btnPlay.ToolTipText = "";
             this.btnPlay.WaitOnLoad = false;
@@ -487,12 +487,12 @@ namespace MusicApp
             // 
             this.btnSlider.AllowCursorChanges = true;
             this.btnSlider.AllowHomeEndKeysDetection = false;
-            this.btnSlider.AllowIncrementalClickMoves = true;
+            this.btnSlider.AllowIncrementalClickMoves = false;
             this.btnSlider.AllowMouseDownEffects = false;
             this.btnSlider.AllowMouseHoverEffects = false;
             this.btnSlider.AllowScrollingAnimations = true;
             this.btnSlider.AllowScrollKeysDetection = true;
-            this.btnSlider.AllowScrollOptionsMenu = true;
+            this.btnSlider.AllowScrollOptionsMenu = false;
             this.btnSlider.AllowShrinkingOnFocusLost = false;
             this.btnSlider.BackColor = System.Drawing.Color.Transparent;
             this.btnSlider.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlider.BackgroundImage")));
@@ -639,22 +639,22 @@ namespace MusicApp
             this.pageMain.SelectedIndex = 0;
             this.pageMain.Size = new System.Drawing.Size(1624, 920);
             this.pageMain.TabIndex = 2;
-            animation1.AnimateOnlyDifferences = false;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.pageMain.Transition = animation1;
+            animation2.AnimateOnlyDifferences = false;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.pageMain.Transition = animation2;
             this.pageMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // pageHome
