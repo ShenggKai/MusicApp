@@ -676,6 +676,7 @@ namespace MusicApp
             // btnMore2
             // 
             this.btnMore2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnMore2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMore2.FlatAppearance.BorderSize = 0;
             this.btnMore2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMore2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -695,6 +696,7 @@ namespace MusicApp
             // btnMore1
             // 
             this.btnMore1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnMore1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMore1.FlatAppearance.BorderSize = 0;
             this.btnMore1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMore1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -750,7 +752,7 @@ namespace MusicApp
             // 
             // pageFind
             // 
-            this.pageFind.BackColor = System.Drawing.Color.Gray;
+            this.pageFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.pageFind.Location = new System.Drawing.Point(4, 4);
             this.pageFind.Name = "pageFind";
             this.pageFind.Padding = new System.Windows.Forms.Padding(3);

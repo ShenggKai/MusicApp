@@ -46,7 +46,7 @@ namespace MusicApp
             btnFind.ForeColor = Color.White;
             btnFind.Image = global::MusicApp.Properties.Resources.search_white;
 
-            //Open child form
+            //navigation to find
         }
 
         private void btnCollection_Click(object sender, EventArgs e)
@@ -64,7 +64,8 @@ namespace MusicApp
             btnCollection.ForeColor = Color.White;
             btnCollection.Image = global::MusicApp.Properties.Resources.folder_white;
 
-            //Open child form
+            //navigation to collection
+
         }
         #endregion
 
