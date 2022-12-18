@@ -26,9 +26,9 @@ namespace MusicApp
             btnHome.BackColor = Color.FromArgb(25, 143, 15);
             btnHome.ForeColor = Color.White;
             btnHome.Image = global::MusicApp.Properties.Resources.home_white;
-
-            ////Open child form
-            //OpenChildForm(new MainForm());
+            
+            //navigation to trang chu
+            pageMain.PageIndex = 0;
         }
 
         private void btnFind_Click(object sender, EventArgs e)
@@ -201,5 +201,12 @@ namespace MusicApp
         {
             //add fake songs data
         }
+
+        #region when click button
+        private void btnMore2_Click(object sender, EventArgs e)
+        {
+            pageMain.PageIndex = 3;
+        }
+        #endregion
     }
 }
