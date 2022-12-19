@@ -99,6 +99,16 @@ namespace MusicApp
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageAllSong = new System.Windows.Forms.TabPage();
             this.tabulateSongs = new Tabulate.Tabulate();
+            this.playlist2 = new MusicApp.Source.Playlist();
+            this.playlist3 = new MusicApp.Source.Playlist();
+            this.playlist4 = new MusicApp.Source.Playlist();
+            this.playlist5 = new MusicApp.Source.Playlist();
+            this.playlist6 = new MusicApp.Source.Playlist();
+            this.playlist7 = new MusicApp.Source.Playlist();
+            this.playlist8 = new MusicApp.Source.Playlist();
+            this.playlist9 = new MusicApp.Source.Playlist();
+            this.playlist10 = new MusicApp.Source.Playlist();
+            this.playlist11 = new MusicApp.Source.Playlist();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -1071,6 +1081,16 @@ namespace MusicApp
             this.fpnPlaylist.BackColor = System.Drawing.Color.Transparent;
             this.fpnPlaylist.Controls.Add(this.liked1);
             this.fpnPlaylist.Controls.Add(this.playlist1);
+            this.fpnPlaylist.Controls.Add(this.playlist2);
+            this.fpnPlaylist.Controls.Add(this.playlist3);
+            this.fpnPlaylist.Controls.Add(this.playlist4);
+            this.fpnPlaylist.Controls.Add(this.playlist5);
+            this.fpnPlaylist.Controls.Add(this.playlist6);
+            this.fpnPlaylist.Controls.Add(this.playlist7);
+            this.fpnPlaylist.Controls.Add(this.playlist8);
+            this.fpnPlaylist.Controls.Add(this.playlist9);
+            this.fpnPlaylist.Controls.Add(this.playlist10);
+            this.fpnPlaylist.Controls.Add(this.playlist11);
             this.fpnPlaylist.Location = new System.Drawing.Point(63, 0);
             this.fpnPlaylist.Name = "fpnPlaylist";
             this.fpnPlaylist.Size = new System.Drawing.Size(1555, 787);
@@ -1088,11 +1108,13 @@ namespace MusicApp
             // playlist1
             // 
             this.playlist1.BackColor = System.Drawing.Color.Transparent;
+            this.playlist1.Image = ((System.Drawing.Image)(resources.GetObject("playlist1.Image")));
             this.playlist1.Location = new System.Drawing.Point(311, 0);
             this.playlist1.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
             this.playlist1.Name = "playlist1";
             this.playlist1.Size = new System.Drawing.Size(261, 292);
             this.playlist1.TabIndex = 1;
+            this.playlist1.Title = "Danh sách phát số 1";
             // 
             // tabPage3
             // 
@@ -1236,6 +1258,116 @@ namespace MusicApp
             this.tabulateSongs.TableStriped = true;
             this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
             // 
+            // playlist2
+            // 
+            this.playlist2.BackColor = System.Drawing.Color.Transparent;
+            this.playlist2.Image = ((System.Drawing.Image)(resources.GetObject("playlist2.Image")));
+            this.playlist2.Location = new System.Drawing.Point(622, 0);
+            this.playlist2.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.playlist2.Name = "playlist2";
+            this.playlist2.Size = new System.Drawing.Size(261, 292);
+            this.playlist2.TabIndex = 2;
+            this.playlist2.Title = "Danh sách phát số 1";
+            // 
+            // playlist3
+            // 
+            this.playlist3.BackColor = System.Drawing.Color.Transparent;
+            this.playlist3.Image = ((System.Drawing.Image)(resources.GetObject("playlist3.Image")));
+            this.playlist3.Location = new System.Drawing.Point(933, 0);
+            this.playlist3.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.playlist3.Name = "playlist3";
+            this.playlist3.Size = new System.Drawing.Size(261, 292);
+            this.playlist3.TabIndex = 3;
+            this.playlist3.Title = "Danh sách phát số 1";
+            // 
+            // playlist4
+            // 
+            this.playlist4.BackColor = System.Drawing.Color.Transparent;
+            this.playlist4.Image = ((System.Drawing.Image)(resources.GetObject("playlist4.Image")));
+            this.playlist4.Location = new System.Drawing.Point(1244, 0);
+            this.playlist4.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.playlist4.Name = "playlist4";
+            this.playlist4.Size = new System.Drawing.Size(261, 292);
+            this.playlist4.TabIndex = 4;
+            this.playlist4.Title = "Danh sách phát số 1";
+            // 
+            // playlist5
+            // 
+            this.playlist5.BackColor = System.Drawing.Color.Transparent;
+            this.playlist5.Image = ((System.Drawing.Image)(resources.GetObject("playlist5.Image")));
+            this.playlist5.Location = new System.Drawing.Point(0, 352);
+            this.playlist5.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.playlist5.Name = "playlist5";
+            this.playlist5.Size = new System.Drawing.Size(261, 292);
+            this.playlist5.TabIndex = 5;
+            this.playlist5.Title = "Danh sách phát số 1";
+            // 
+            // playlist6
+            // 
+            this.playlist6.BackColor = System.Drawing.Color.Transparent;
+            this.playlist6.Image = ((System.Drawing.Image)(resources.GetObject("playlist6.Image")));
+            this.playlist6.Location = new System.Drawing.Point(311, 352);
+            this.playlist6.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.playlist6.Name = "playlist6";
+            this.playlist6.Size = new System.Drawing.Size(261, 292);
+            this.playlist6.TabIndex = 6;
+            this.playlist6.Title = "Danh sách phát số 1";
+            // 
+            // playlist7
+            // 
+            this.playlist7.BackColor = System.Drawing.Color.Transparent;
+            this.playlist7.Image = ((System.Drawing.Image)(resources.GetObject("playlist7.Image")));
+            this.playlist7.Location = new System.Drawing.Point(622, 352);
+            this.playlist7.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.playlist7.Name = "playlist7";
+            this.playlist7.Size = new System.Drawing.Size(261, 292);
+            this.playlist7.TabIndex = 7;
+            this.playlist7.Title = "Danh sách phát số 1";
+            // 
+            // playlist8
+            // 
+            this.playlist8.BackColor = System.Drawing.Color.Transparent;
+            this.playlist8.Image = ((System.Drawing.Image)(resources.GetObject("playlist8.Image")));
+            this.playlist8.Location = new System.Drawing.Point(933, 352);
+            this.playlist8.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.playlist8.Name = "playlist8";
+            this.playlist8.Size = new System.Drawing.Size(261, 292);
+            this.playlist8.TabIndex = 8;
+            this.playlist8.Title = "Danh sách phát số 1";
+            // 
+            // playlist9
+            // 
+            this.playlist9.BackColor = System.Drawing.Color.Transparent;
+            this.playlist9.Image = ((System.Drawing.Image)(resources.GetObject("playlist9.Image")));
+            this.playlist9.Location = new System.Drawing.Point(1244, 352);
+            this.playlist9.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.playlist9.Name = "playlist9";
+            this.playlist9.Size = new System.Drawing.Size(261, 292);
+            this.playlist9.TabIndex = 9;
+            this.playlist9.Title = "Danh sách phát số 1";
+            // 
+            // playlist10
+            // 
+            this.playlist10.BackColor = System.Drawing.Color.Transparent;
+            this.playlist10.Image = ((System.Drawing.Image)(resources.GetObject("playlist10.Image")));
+            this.playlist10.Location = new System.Drawing.Point(0, 704);
+            this.playlist10.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.playlist10.Name = "playlist10";
+            this.playlist10.Size = new System.Drawing.Size(261, 292);
+            this.playlist10.TabIndex = 10;
+            this.playlist10.Title = "Danh sách phát số 1";
+            // 
+            // playlist11
+            // 
+            this.playlist11.BackColor = System.Drawing.Color.Transparent;
+            this.playlist11.Image = ((System.Drawing.Image)(resources.GetObject("playlist11.Image")));
+            this.playlist11.Location = new System.Drawing.Point(311, 704);
+            this.playlist11.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.playlist11.Name = "playlist11";
+            this.playlist11.Size = new System.Drawing.Size(261, 292);
+            this.playlist11.TabIndex = 11;
+            this.playlist11.Title = "Danh sách phát số 1";
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1322,5 +1454,15 @@ namespace MusicApp
         private FlowLayoutPanel fpnPlaylist;
         private Source.Liked liked1;
         private Source.Playlist playlist1;
+        private Source.Playlist playlist2;
+        private Source.Playlist playlist3;
+        private Source.Playlist playlist4;
+        private Source.Playlist playlist5;
+        private Source.Playlist playlist6;
+        private Source.Playlist playlist7;
+        private Source.Playlist playlist8;
+        private Source.Playlist playlist9;
+        private Source.Playlist playlist10;
+        private Source.Playlist playlist11;
     }
 }
