@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Playlist));
             this.pnPlaylist = new Bunifu.UI.WinForms.BunifuPanel();
-            this.pPlaylist = new System.Windows.Forms.PictureBox();
             this.txtPlaylist = new System.Windows.Forms.Label();
+            this.pPlaylist = new System.Windows.Forms.PictureBox();
             this.pnPlaylist.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pPlaylist)).BeginInit();
             this.SuspendLayout();
@@ -54,16 +54,6 @@
             this.pnPlaylist.Size = new System.Drawing.Size(261, 292);
             this.pnPlaylist.TabIndex = 0;
             // 
-            // pPlaylist
-            // 
-            this.pPlaylist.Image = global::MusicApp.Properties.Resources.music;
-            this.pPlaylist.Location = new System.Drawing.Point(23, 0);
-            this.pPlaylist.Name = "pPlaylist";
-            this.pPlaylist.Size = new System.Drawing.Size(215, 215);
-            this.pPlaylist.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pPlaylist.TabIndex = 0;
-            this.pPlaylist.TabStop = false;
-            // 
             // txtPlaylist
             // 
             this.txtPlaylist.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -75,12 +65,23 @@
             this.txtPlaylist.Text = "Danh sách phát số 1";
             this.txtPlaylist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pPlaylist
+            // 
+            this.pPlaylist.Image = global::MusicApp.Properties.Resources.music;
+            this.pPlaylist.Location = new System.Drawing.Point(23, 0);
+            this.pPlaylist.Name = "pPlaylist";
+            this.pPlaylist.Size = new System.Drawing.Size(215, 215);
+            this.pPlaylist.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pPlaylist.TabIndex = 0;
+            this.pPlaylist.TabStop = false;
+            // 
             // Playlist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.pnPlaylist);
+            this.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
             this.Name = "Playlist";
             this.Size = new System.Drawing.Size(261, 292);
             this.pnPlaylist.ResumeLayout(false);

@@ -98,6 +98,7 @@ namespace MusicApp
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageAllSong = new System.Windows.Forms.TabPage();
             this.tabulateSongs = new Tabulate.Tabulate();
+            this.playlist1 = new MusicApp.Source.Playlist();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -1065,7 +1066,10 @@ namespace MusicApp
             // 
             // fpnPlaylist
             // 
+            this.fpnPlaylist.AllowDrop = true;
+            this.fpnPlaylist.AutoScroll = true;
             this.fpnPlaylist.Controls.Add(this.liked1);
+            this.fpnPlaylist.Controls.Add(this.playlist1);
             this.fpnPlaylist.Location = new System.Drawing.Point(63, 0);
             this.fpnPlaylist.Name = "fpnPlaylist";
             this.fpnPlaylist.Size = new System.Drawing.Size(1555, 644);
@@ -1222,6 +1226,14 @@ namespace MusicApp
             this.tabulateSongs.TableStriped = true;
             this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
             // 
+            // playlist1
+            // 
+            this.playlist1.BackColor = System.Drawing.Color.Transparent;
+            this.playlist1.Location = new System.Drawing.Point(314, 3);
+            this.playlist1.Name = "playlist1";
+            this.playlist1.Size = new System.Drawing.Size(261, 292);
+            this.playlist1.TabIndex = 1;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1307,5 +1319,6 @@ namespace MusicApp
         private TabPage tabPage3;
         private FlowLayoutPanel fpnPlaylist;
         private Source.Liked liked1;
+        private Source.Playlist playlist1;
     }
 }
