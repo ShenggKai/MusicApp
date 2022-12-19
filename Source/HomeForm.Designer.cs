@@ -86,6 +86,12 @@ namespace MusicApp
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageAllSong = new System.Windows.Forms.TabPage();
             this.tabulateSongs = new Tabulate.Tabulate();
+            this.fpnGenre = new System.Windows.Forms.FlowLayoutPanel();
+            this.genre1 = new MusicApp.Source.Genre();
+            this.genre2 = new MusicApp.Source.Genre();
+            this.genre3 = new MusicApp.Source.Genre();
+            this.genre4 = new MusicApp.Source.Genre();
+            this.genre5 = new MusicApp.Source.Genre();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -94,8 +100,10 @@ namespace MusicApp
             this.pageFind.SuspendLayout();
             this.pnFind.SuspendLayout();
             this.pageGenre.SuspendLayout();
+            this.tabpageGenre.SuspendLayout();
             this.pageCollection.SuspendLayout();
             this.pageAllSong.SuspendLayout();
+            this.fpnGenre.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -902,6 +910,7 @@ namespace MusicApp
             // tabpageGenre
             // 
             this.tabpageGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.tabpageGenre.Controls.Add(this.fpnGenre);
             this.tabpageGenre.Location = new System.Drawing.Point(4, 4);
             this.tabpageGenre.Name = "tabpageGenre";
             this.tabpageGenre.Padding = new System.Windows.Forms.Padding(3);
@@ -1062,6 +1071,74 @@ namespace MusicApp
             this.tabulateSongs.TableStriped = true;
             this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
             // 
+            // fpnGenre
+            // 
+            this.fpnGenre.BackColor = System.Drawing.Color.Transparent;
+            this.fpnGenre.Controls.Add(this.genre1);
+            this.fpnGenre.Controls.Add(this.genre2);
+            this.fpnGenre.Controls.Add(this.genre3);
+            this.fpnGenre.Controls.Add(this.genre4);
+            this.fpnGenre.Controls.Add(this.genre5);
+            this.fpnGenre.Location = new System.Drawing.Point(143, 134);
+            this.fpnGenre.Name = "fpnGenre";
+            this.fpnGenre.Size = new System.Drawing.Size(1444, 666);
+            this.fpnGenre.TabIndex = 0;
+            // 
+            // genre1
+            // 
+            this.genre1.BackColor = System.Drawing.Color.Transparent;
+            this.genre1.Image = ((System.Drawing.Image)(resources.GetObject("genre1.Image")));
+            this.genre1.Label = "Nhạc Việt";
+            this.genre1.Location = new System.Drawing.Point(0, 0);
+            this.genre1.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre1.Name = "genre1";
+            this.genre1.Size = new System.Drawing.Size(261, 292);
+            this.genre1.TabIndex = 0;
+            // 
+            // genre2
+            // 
+            this.genre2.BackColor = System.Drawing.Color.Transparent;
+            this.genre2.Image = ((System.Drawing.Image)(resources.GetObject("genre2.Image")));
+            this.genre2.Label = "Nhạc Việt";
+            this.genre2.Location = new System.Drawing.Point(361, 0);
+            this.genre2.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre2.Name = "genre2";
+            this.genre2.Size = new System.Drawing.Size(261, 292);
+            this.genre2.TabIndex = 1;
+            // 
+            // genre3
+            // 
+            this.genre3.BackColor = System.Drawing.Color.Transparent;
+            this.genre3.Image = ((System.Drawing.Image)(resources.GetObject("genre3.Image")));
+            this.genre3.Label = "Nhạc Việt";
+            this.genre3.Location = new System.Drawing.Point(722, 0);
+            this.genre3.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre3.Name = "genre3";
+            this.genre3.Size = new System.Drawing.Size(261, 292);
+            this.genre3.TabIndex = 2;
+            // 
+            // genre4
+            // 
+            this.genre4.BackColor = System.Drawing.Color.Transparent;
+            this.genre4.Image = ((System.Drawing.Image)(resources.GetObject("genre4.Image")));
+            this.genre4.Label = "Nhạc Việt";
+            this.genre4.Location = new System.Drawing.Point(1083, 0);
+            this.genre4.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre4.Name = "genre4";
+            this.genre4.Size = new System.Drawing.Size(261, 292);
+            this.genre4.TabIndex = 3;
+            // 
+            // genre5
+            // 
+            this.genre5.BackColor = System.Drawing.Color.Transparent;
+            this.genre5.Image = ((System.Drawing.Image)(resources.GetObject("genre5.Image")));
+            this.genre5.Label = "Nhạc Việt";
+            this.genre5.Location = new System.Drawing.Point(0, 374);
+            this.genre5.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre5.Name = "genre5";
+            this.genre5.Size = new System.Drawing.Size(261, 292);
+            this.genre5.TabIndex = 4;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1084,8 +1161,10 @@ namespace MusicApp
             this.pageFind.ResumeLayout(false);
             this.pnFind.ResumeLayout(false);
             this.pageGenre.ResumeLayout(false);
+            this.tabpageGenre.ResumeLayout(false);
             this.pageCollection.ResumeLayout(false);
             this.pageAllSong.ResumeLayout(false);
+            this.fpnGenre.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1131,5 +1210,11 @@ namespace MusicApp
         private TabPage tabpageGenre;
         private TabPage tabPage2;
         private Panel pnFind;
+        private FlowLayoutPanel fpnGenre;
+        private Source.Genre genre1;
+        private Source.Genre genre2;
+        private Source.Genre genre3;
+        private Source.Genre genre4;
+        private Source.Genre genre5;
     }
 }
