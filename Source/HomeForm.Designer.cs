@@ -96,7 +96,7 @@ namespace MusicApp
             this.pageLike = new Bunifu.UI.WinForms.BunifuPages();
             this.tabpagePlaylist = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.fpnPlaylist = new System.Windows.Forms.FlowLayoutPanel();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -1154,7 +1154,7 @@ namespace MusicApp
             this.pageLike.Controls.Add(this.tabpagePlaylist);
             this.pageLike.Controls.Add(this.tabPage3);
             this.pageLike.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pageLike.Location = new System.Drawing.Point(3, 106);
+            this.pageLike.Location = new System.Drawing.Point(3, 121);
             this.pageLike.Multiline = true;
             this.pageLike.Name = "pageLike";
             this.pageLike.Page = this.tabpagePlaylist;
@@ -1162,7 +1162,7 @@ namespace MusicApp
             this.pageLike.PageName = "tabpagePlaylist";
             this.pageLike.PageTitle = "playlist";
             this.pageLike.SelectedIndex = 0;
-            this.pageLike.Size = new System.Drawing.Size(1610, 778);
+            this.pageLike.Size = new System.Drawing.Size(1610, 763);
             this.pageLike.TabIndex = 1;
             animation2.AnimateOnlyDifferences = false;
             animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
@@ -1172,7 +1172,7 @@ namespace MusicApp
             animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
             animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
             animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation2.Padding = new System.Windows.Forms.Padding(0);
             animation2.RotateCoeff = 0F;
             animation2.RotateLimit = 0F;
             animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
@@ -1185,11 +1185,11 @@ namespace MusicApp
             // tabpagePlaylist
             // 
             this.tabpagePlaylist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.tabpagePlaylist.Controls.Add(this.bunifuTileButton1);
+            this.tabpagePlaylist.Controls.Add(this.fpnPlaylist);
             this.tabpagePlaylist.Location = new System.Drawing.Point(4, 4);
             this.tabpagePlaylist.Name = "tabpagePlaylist";
             this.tabpagePlaylist.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpagePlaylist.Size = new System.Drawing.Size(1602, 745);
+            this.tabpagePlaylist.Size = new System.Drawing.Size(1602, 730);
             this.tabpagePlaylist.TabIndex = 0;
             this.tabpagePlaylist.Text = "playlist";
             // 
@@ -1198,28 +1198,18 @@ namespace MusicApp
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(534, 393);
+            this.tabPage3.Size = new System.Drawing.Size(1602, 730);
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // bunifuTileButton1
+            // fpnPlaylist
             // 
-            this.bunifuTileButton1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuTileButton1.color = System.Drawing.Color.SeaGreen;
-            this.bunifuTileButton1.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.bunifuTileButton1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton1.Image")));
-            this.bunifuTileButton1.ImagePosition = 20;
-            this.bunifuTileButton1.ImageZoom = 50;
-            this.bunifuTileButton1.LabelPosition = 41;
-            this.bunifuTileButton1.LabelText = "Tile 1";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(194, 96);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuTileButton1.Name = "bunifuTileButton1";
-            this.bunifuTileButton1.Size = new System.Drawing.Size(206, 231);
-            this.bunifuTileButton1.TabIndex = 0;
+            this.fpnPlaylist.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fpnPlaylist.Location = new System.Drawing.Point(3, 3);
+            this.fpnPlaylist.Name = "fpnPlaylist";
+            this.fpnPlaylist.Size = new System.Drawing.Size(1596, 724);
+            this.fpnPlaylist.TabIndex = 0;
             // 
             // HomeForm
             // 
@@ -1303,6 +1293,6 @@ namespace MusicApp
         private Bunifu.UI.WinForms.BunifuPages pageLike;
         private TabPage tabpagePlaylist;
         private TabPage tabPage3;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
+        private FlowLayoutPanel fpnPlaylist;
     }
 }
