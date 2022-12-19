@@ -632,10 +632,10 @@ namespace MusicApp
             this.pageMain.Location = new System.Drawing.Point(272, 0);
             this.pageMain.Multiline = true;
             this.pageMain.Name = "pageMain";
-            this.pageMain.Page = this.pageHome;
-            this.pageMain.PageIndex = 0;
-            this.pageMain.PageName = "pageHome";
-            this.pageMain.PageTitle = "Trang chủ";
+            this.pageMain.Page = this.pageFind;
+            this.pageMain.PageIndex = 1;
+            this.pageMain.PageName = "pageFind";
+            this.pageMain.PageTitle = "Tìm kiếm";
             this.pageMain.SelectedIndex = 0;
             this.pageMain.Size = new System.Drawing.Size(1624, 920);
             this.pageMain.TabIndex = 2;
