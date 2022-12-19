@@ -79,14 +79,14 @@ namespace MusicApp
             this.fpnGenre = new System.Windows.Forms.FlowLayoutPanel();
             this.genre1 = new MusicApp.Source.Genre();
             this.genre2 = new MusicApp.Source.Genre();
+            this.genre3 = new MusicApp.Source.Genre();
+            this.genre4 = new MusicApp.Source.Genre();
+            this.genre5 = new MusicApp.Source.Genre();
             this.txboxFind = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pageCollection = new System.Windows.Forms.TabPage();
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageAllSong = new System.Windows.Forms.TabPage();
             this.tabulateSongs = new Tabulate.Tabulate();
-            this.genre3 = new MusicApp.Source.Genre();
-            this.genre4 = new MusicApp.Source.Genre();
-            this.genre5 = new MusicApp.Source.Genre();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -793,6 +793,8 @@ namespace MusicApp
             // genre1
             // 
             this.genre1.BackColor = System.Drawing.Color.Transparent;
+            this.genre1.Image = ((System.Drawing.Image)(resources.GetObject("genre1.Image")));
+            this.genre1.Label = "Nhạc Việt";
             this.genre1.Location = new System.Drawing.Point(0, 0);
             this.genre1.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
             this.genre1.Name = "genre1";
@@ -803,12 +805,50 @@ namespace MusicApp
             // genre2
             // 
             this.genre2.BackColor = System.Drawing.Color.Transparent;
+            this.genre2.Image = ((System.Drawing.Image)(resources.GetObject("genre2.Image")));
+            this.genre2.Label = "Nhạc Hàn";
             this.genre2.Location = new System.Drawing.Point(361, 0);
             this.genre2.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
             this.genre2.Name = "genre2";
             this.genre2.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
             this.genre2.Size = new System.Drawing.Size(261, 292);
             this.genre2.TabIndex = 1;
+            // 
+            // genre3
+            // 
+            this.genre3.BackColor = System.Drawing.Color.Transparent;
+            this.genre3.Image = ((System.Drawing.Image)(resources.GetObject("genre3.Image")));
+            this.genre3.Label = "Nhạc Âu Mỹ";
+            this.genre3.Location = new System.Drawing.Point(722, 0);
+            this.genre3.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre3.Name = "genre3";
+            this.genre3.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.genre3.Size = new System.Drawing.Size(261, 292);
+            this.genre3.TabIndex = 2;
+            // 
+            // genre4
+            // 
+            this.genre4.BackColor = System.Drawing.Color.Transparent;
+            this.genre4.Image = ((System.Drawing.Image)(resources.GetObject("genre4.Image")));
+            this.genre4.Label = "Nhạc không lời";
+            this.genre4.Location = new System.Drawing.Point(1083, 0);
+            this.genre4.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre4.Name = "genre4";
+            this.genre4.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.genre4.Size = new System.Drawing.Size(261, 292);
+            this.genre4.TabIndex = 3;
+            // 
+            // genre5
+            // 
+            this.genre5.BackColor = System.Drawing.Color.Transparent;
+            this.genre5.Image = ((System.Drawing.Image)(resources.GetObject("genre5.Image")));
+            this.genre5.Label = "Nhạc Trịnh";
+            this.genre5.Location = new System.Drawing.Point(0, 374);
+            this.genre5.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre5.Name = "genre5";
+            this.genre5.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.genre5.Size = new System.Drawing.Size(261, 292);
+            this.genre5.TabIndex = 4;
             // 
             // txboxFind
             // 
@@ -1028,36 +1068,6 @@ namespace MusicApp
             this.tabulateSongs.TableHoverEffect = true;
             this.tabulateSongs.TableStriped = true;
             this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
-            // 
-            // genre3
-            // 
-            this.genre3.BackColor = System.Drawing.Color.Transparent;
-            this.genre3.Location = new System.Drawing.Point(722, 0);
-            this.genre3.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre3.Name = "genre3";
-            this.genre3.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.genre3.Size = new System.Drawing.Size(261, 292);
-            this.genre3.TabIndex = 2;
-            // 
-            // genre4
-            // 
-            this.genre4.BackColor = System.Drawing.Color.Transparent;
-            this.genre4.Location = new System.Drawing.Point(1083, 0);
-            this.genre4.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre4.Name = "genre4";
-            this.genre4.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.genre4.Size = new System.Drawing.Size(261, 292);
-            this.genre4.TabIndex = 3;
-            // 
-            // genre5
-            // 
-            this.genre5.BackColor = System.Drawing.Color.Transparent;
-            this.genre5.Location = new System.Drawing.Point(0, 374);
-            this.genre5.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre5.Name = "genre5";
-            this.genre5.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.genre5.Size = new System.Drawing.Size(261, 292);
-            this.genre5.TabIndex = 4;
             // 
             // HomeForm
             // 

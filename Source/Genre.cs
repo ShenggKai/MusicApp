@@ -30,7 +30,7 @@ namespace MusicApp.Source
             }
         }
 
-        public string Text
+        public string Label
         {
             get
             {
