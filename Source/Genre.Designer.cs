@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.sdPanel = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pGenre = new System.Windows.Forms.PictureBox();
             this.lbGenre = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sdPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pGenre)).BeginInit();
             this.SuspendLayout();
             // 
             // sdPanel
@@ -41,7 +41,7 @@
             this.sdPanel.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.sdPanel.BorderRadius = 10;
             this.sdPanel.BorderThickness = 0;
-            this.sdPanel.Controls.Add(this.pictureBox1);
+            this.sdPanel.Controls.Add(this.pGenre);
             this.sdPanel.Controls.Add(this.lbGenre);
             this.sdPanel.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.sdPanel.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
@@ -58,6 +58,16 @@
             this.sdPanel.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.sdPanel.TabIndex = 1;
             // 
+            // pGenre
+            // 
+            this.pGenre.Image = global::MusicApp.Properties.Resources.HoaVangNayTan;
+            this.pGenre.Location = new System.Drawing.Point(0, 55);
+            this.pGenre.Name = "pGenre";
+            this.pGenre.Size = new System.Drawing.Size(258, 237);
+            this.pGenre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pGenre.TabIndex = 2;
+            this.pGenre.TabStop = false;
+            // 
             // lbGenre
             // 
             this.lbGenre.Font = new System.Drawing.Font("Segoe UI Semibold", 15.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -69,26 +79,17 @@
             this.lbGenre.Text = "Nhạc Việt";
             this.lbGenre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MusicApp.Properties.Resources.HoaVangNayTan;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(258, 237);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // Genre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.sdPanel);
+            this.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
             this.Name = "Genre";
             this.Size = new System.Drawing.Size(261, 292);
             this.sdPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pGenre)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -97,6 +98,6 @@
 
         private Bunifu.UI.WinForms.BunifuShadowPanel sdPanel;
         private Label lbGenre;
-        private PictureBox pictureBox1;
+        private PictureBox pGenre;
     }
 }
