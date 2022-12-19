@@ -94,11 +94,11 @@ namespace MusicApp
             this.tabpagePlaylist = new System.Windows.Forms.TabPage();
             this.fpnPlaylist = new System.Windows.Forms.FlowLayoutPanel();
             this.liked1 = new MusicApp.Source.Liked();
+            this.playlist1 = new MusicApp.Source.Playlist();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageAllSong = new System.Windows.Forms.TabPage();
             this.tabulateSongs = new Tabulate.Tabulate();
-            this.playlist1 = new MusicApp.Source.Playlist();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -1025,7 +1025,7 @@ namespace MusicApp
             this.pageLike.Controls.Add(this.tabpagePlaylist);
             this.pageLike.Controls.Add(this.tabPage3);
             this.pageLike.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pageLike.Location = new System.Drawing.Point(3, 121);
+            this.pageLike.Location = new System.Drawing.Point(3, 91);
             this.pageLike.Multiline = true;
             this.pageLike.Name = "pageLike";
             this.pageLike.Page = this.tabpagePlaylist;
@@ -1033,7 +1033,7 @@ namespace MusicApp
             this.pageLike.PageName = "tabpagePlaylist";
             this.pageLike.PageTitle = "playlist";
             this.pageLike.SelectedIndex = 0;
-            this.pageLike.Size = new System.Drawing.Size(1610, 763);
+            this.pageLike.Size = new System.Drawing.Size(1610, 793);
             this.pageLike.TabIndex = 1;
             animation2.AnimateOnlyDifferences = false;
             animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
@@ -1060,7 +1060,7 @@ namespace MusicApp
             this.tabpagePlaylist.Location = new System.Drawing.Point(4, 4);
             this.tabpagePlaylist.Name = "tabpagePlaylist";
             this.tabpagePlaylist.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpagePlaylist.Size = new System.Drawing.Size(1602, 730);
+            this.tabpagePlaylist.Size = new System.Drawing.Size(1602, 760);
             this.tabpagePlaylist.TabIndex = 0;
             this.tabpagePlaylist.Text = "playlist";
             // 
@@ -1068,11 +1068,12 @@ namespace MusicApp
             // 
             this.fpnPlaylist.AllowDrop = true;
             this.fpnPlaylist.AutoScroll = true;
+            this.fpnPlaylist.BackColor = System.Drawing.Color.Red;
             this.fpnPlaylist.Controls.Add(this.liked1);
             this.fpnPlaylist.Controls.Add(this.playlist1);
             this.fpnPlaylist.Location = new System.Drawing.Point(63, 0);
             this.fpnPlaylist.Name = "fpnPlaylist";
-            this.fpnPlaylist.Size = new System.Drawing.Size(1555, 644);
+            this.fpnPlaylist.Size = new System.Drawing.Size(1555, 787);
             this.fpnPlaylist.TabIndex = 0;
             // 
             // liked1
@@ -1084,12 +1085,21 @@ namespace MusicApp
             this.liked1.Size = new System.Drawing.Size(261, 292);
             this.liked1.TabIndex = 0;
             // 
+            // playlist1
+            // 
+            this.playlist1.BackColor = System.Drawing.Color.Transparent;
+            this.playlist1.Location = new System.Drawing.Point(311, 0);
+            this.playlist1.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.playlist1.Name = "playlist1";
+            this.playlist1.Size = new System.Drawing.Size(261, 292);
+            this.playlist1.TabIndex = 1;
+            // 
             // tabPage3
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1602, 730);
+            this.tabPage3.Size = new System.Drawing.Size(1602, 760);
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1225,14 +1235,6 @@ namespace MusicApp
             this.tabulateSongs.TableHoverEffect = true;
             this.tabulateSongs.TableStriped = true;
             this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
-            // 
-            // playlist1
-            // 
-            this.playlist1.BackColor = System.Drawing.Color.Transparent;
-            this.playlist1.Location = new System.Drawing.Point(314, 3);
-            this.playlist1.Name = "playlist1";
-            this.playlist1.Size = new System.Drawing.Size(261, 292);
-            this.playlist1.TabIndex = 1;
             // 
             // HomeForm
             // 
