@@ -28,34 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.sdPanel = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pGenre = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.lbGenre = new System.Windows.Forms.Label();
+            this.sdPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pGenre)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // sdPanel
             // 
-            this.pictureBox1.Image = global::MusicApp.Properties.Resources.srltdln;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 215);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.sdPanel.BackColor = System.Drawing.Color.Transparent;
+            this.sdPanel.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.sdPanel.BorderRadius = 10;
+            this.sdPanel.BorderThickness = 0;
+            this.sdPanel.Controls.Add(this.lbGenre);
+            this.sdPanel.Controls.Add(this.pGenre);
+            this.sdPanel.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.sdPanel.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.sdPanel.Location = new System.Drawing.Point(0, 0);
+            this.sdPanel.Name = "sdPanel";
+            this.sdPanel.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
+            this.sdPanel.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
+            this.sdPanel.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.sdPanel.ShadowDept = 2;
+            this.sdPanel.ShadowDepth = 4;
+            this.sdPanel.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.ForwardDiagonal;
+            this.sdPanel.ShadowTopLeftVisible = false;
+            this.sdPanel.Size = new System.Drawing.Size(261, 292);
+            this.sdPanel.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.sdPanel.TabIndex = 1;
+            // 
+            // pGenre
+            // 
+            this.pGenre.AllowFocused = false;
+            this.pGenre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pGenre.AutoSizeHeight = false;
+            this.pGenre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pGenre.BorderRadius = 10;
+            this.pGenre.Image = global::MusicApp.Properties.Resources.HoaVangNayTan;
+            this.pGenre.IsCircle = true;
+            this.pGenre.Location = new System.Drawing.Point(0, 55);
+            this.pGenre.Name = "pGenre";
+            this.pGenre.Size = new System.Drawing.Size(258, 237);
+            this.pGenre.TabIndex = 0;
+            this.pGenre.TabStop = false;
+            this.pGenre.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // lbGenre
+            // 
+            this.lbGenre.Font = new System.Drawing.Font("Segoe UI Semibold", 15.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbGenre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.lbGenre.Location = new System.Drawing.Point(0, 0);
+            this.lbGenre.Name = "lbGenre";
+            this.lbGenre.Size = new System.Drawing.Size(258, 52);
+            this.lbGenre.TabIndex = 1;
+            this.lbGenre.Text = "Nhạc Việt";
+            this.lbGenre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Genre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox1);
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.sdPanel);
             this.Name = "Genre";
             this.Size = new System.Drawing.Size(261, 292);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.sdPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pGenre)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private Bunifu.UI.WinForms.BunifuShadowPanel sdPanel;
+        private Bunifu.UI.WinForms.BunifuPictureBox pGenre;
+        private Label lbGenre;
     }
 }
