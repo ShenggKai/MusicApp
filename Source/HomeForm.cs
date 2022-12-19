@@ -210,5 +210,10 @@ namespace MusicApp
             pageMain.PageIndex = 3;
         }
         #endregion
+
+        private void btnAddList_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

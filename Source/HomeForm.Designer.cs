@@ -1196,6 +1196,7 @@ namespace MusicApp
             this.btnAddList.TextMarginLeft = 0;
             this.btnAddList.TextPadding = new System.Windows.Forms.Padding(23, 0, 0, 0);
             this.btnAddList.UseDefaultRadiusAndThickness = true;
+            this.btnAddList.Click += new System.EventHandler(this.btnAddList_Click);
             // 
             // pageAllSong
             // 
