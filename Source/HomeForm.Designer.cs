@@ -641,10 +641,10 @@ namespace MusicApp
             this.pageMain.Location = new System.Drawing.Point(272, 0);
             this.pageMain.Multiline = true;
             this.pageMain.Name = "pageMain";
-            this.pageMain.Page = this.pageFind;
-            this.pageMain.PageIndex = 1;
-            this.pageMain.PageName = "pageFind";
-            this.pageMain.PageTitle = "Tìm kiếm";
+            this.pageMain.Page = this.pageCollection;
+            this.pageMain.PageIndex = 2;
+            this.pageMain.PageName = "pageCollection";
+            this.pageMain.PageTitle = "Thư viện";
             this.pageMain.SelectedIndex = 0;
             this.pageMain.Size = new System.Drawing.Size(1624, 920);
             this.pageMain.TabIndex = 2;
@@ -788,7 +788,7 @@ namespace MusicApp
             this.txboxFind.BorderRadius = 40;
             this.txboxFind.BorderThickness = 0;
             this.txboxFind.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txboxFind.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txboxFind.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txboxFind.DefaultText = "";
             this.txboxFind.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
             this.txboxFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
@@ -840,7 +840,7 @@ namespace MusicApp
             this.txboxFind.TabIndex = 0;
             this.txboxFind.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txboxFind.TextMarginBottom = 0;
-            this.txboxFind.TextMarginLeft = 50;
+            this.txboxFind.TextMarginLeft = 15;
             this.txboxFind.TextMarginTop = 0;
             this.txboxFind.TextPlaceholder = "Tìm kiếm bài hát, nghệ sĩ, lời bài hát, ...";
             this.txboxFind.UseSystemPasswordChar = false;
@@ -894,7 +894,7 @@ namespace MusicApp
             this.btnAddList.IconLeftPadding = new System.Windows.Forms.Padding(0);
             this.btnAddList.IconMarginLeft = 11;
             this.btnAddList.IconPadding = 0;
-            this.btnAddList.IconRight = ((System.Drawing.Image)(resources.GetObject("btnAddList.IconRight")));
+            this.btnAddList.IconRight = global::MusicApp.Properties.Resources.plus;
             this.btnAddList.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddList.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btnAddList.IconRightPadding = new System.Windows.Forms.Padding(0, 0, 22, 0);
@@ -904,7 +904,7 @@ namespace MusicApp
             this.btnAddList.IdleBorderThickness = 0;
             this.btnAddList.IdleFillColor = System.Drawing.Color.Empty;
             this.btnAddList.IdleIconLeftImage = null;
-            this.btnAddList.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnAddList.IdleIconRightImage")));
+            this.btnAddList.IdleIconRightImage = global::MusicApp.Properties.Resources.plus;
             this.btnAddList.IndicateFocus = false;
             this.btnAddList.Location = new System.Drawing.Point(70, 30);
             this.btnAddList.Name = "btnAddList";
@@ -931,7 +931,7 @@ namespace MusicApp
             this.btnAddList.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(148)))), ((int)(((byte)(20)))));
             this.btnAddList.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btnAddList.OnIdleState.IconLeftImage = null;
-            this.btnAddList.OnIdleState.IconRightImage = ((System.Drawing.Image)(resources.GetObject("btnAddList.OnIdleState.IconRightImage")));
+            this.btnAddList.OnIdleState.IconRightImage = global::MusicApp.Properties.Resources.plus;
             this.btnAddList.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(148)))), ((int)(((byte)(20)))));
             this.btnAddList.OnPressedState.BorderRadius = 30;
             this.btnAddList.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
