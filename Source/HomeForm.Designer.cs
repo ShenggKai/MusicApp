@@ -40,11 +40,12 @@ namespace MusicApp
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnPlay = new System.Windows.Forms.Panel();
             this.btnOther = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -76,13 +77,11 @@ namespace MusicApp
             this.fpnHistory = new System.Windows.Forms.FlowLayoutPanel();
             this.lbHistory = new System.Windows.Forms.Label();
             this.pageFind = new System.Windows.Forms.TabPage();
-            this.fpnGenre = new System.Windows.Forms.FlowLayoutPanel();
-            this.genre1 = new MusicApp.Source.Genre();
-            this.genre2 = new MusicApp.Source.Genre();
-            this.genre3 = new MusicApp.Source.Genre();
-            this.genre4 = new MusicApp.Source.Genre();
-            this.genre5 = new MusicApp.Source.Genre();
+            this.pnFind = new System.Windows.Forms.Panel();
             this.txboxFind = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.pageGenre = new Bunifu.UI.WinForms.BunifuPages();
+            this.tabpageGenre = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pageCollection = new System.Windows.Forms.TabPage();
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageAllSong = new System.Windows.Forms.TabPage();
@@ -93,7 +92,8 @@ namespace MusicApp
             this.pageMain.SuspendLayout();
             this.pageHome.SuspendLayout();
             this.pageFind.SuspendLayout();
-            this.fpnGenre.SuspendLayout();
+            this.pnFind.SuspendLayout();
+            this.pageGenre.SuspendLayout();
             this.pageCollection.SuspendLayout();
             this.pageAllSong.SuspendLayout();
             this.SuspendLayout();
@@ -655,22 +655,22 @@ namespace MusicApp
             this.pageMain.SelectedIndex = 0;
             this.pageMain.Size = new System.Drawing.Size(1624, 920);
             this.pageMain.TabIndex = 2;
-            animation1.AnimateOnlyDifferences = false;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.pageMain.Transition = animation1;
+            animation2.AnimateOnlyDifferences = false;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.pageMain.Transition = animation2;
             this.pageMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // pageHome
@@ -769,8 +769,8 @@ namespace MusicApp
             // pageFind
             // 
             this.pageFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageFind.Controls.Add(this.fpnGenre);
-            this.pageFind.Controls.Add(this.txboxFind);
+            this.pageFind.Controls.Add(this.pnFind);
+            this.pageFind.Controls.Add(this.pageGenre);
             this.pageFind.Location = new System.Drawing.Point(4, 4);
             this.pageFind.Name = "pageFind";
             this.pageFind.Padding = new System.Windows.Forms.Padding(3);
@@ -778,77 +778,15 @@ namespace MusicApp
             this.pageFind.TabIndex = 1;
             this.pageFind.Text = "Tìm kiếm";
             // 
-            // fpnGenre
+            // pnFind
             // 
-            this.fpnGenre.Controls.Add(this.genre1);
-            this.fpnGenre.Controls.Add(this.genre2);
-            this.fpnGenre.Controls.Add(this.genre3);
-            this.fpnGenre.Controls.Add(this.genre4);
-            this.fpnGenre.Controls.Add(this.genre5);
-            this.fpnGenre.Location = new System.Drawing.Point(143, 134);
-            this.fpnGenre.Name = "fpnGenre";
-            this.fpnGenre.Size = new System.Drawing.Size(1444, 666);
-            this.fpnGenre.TabIndex = 1;
-            // 
-            // genre1
-            // 
-            this.genre1.BackColor = System.Drawing.Color.Transparent;
-            this.genre1.Image = ((System.Drawing.Image)(resources.GetObject("genre1.Image")));
-            this.genre1.Label = "Nhạc Việt";
-            this.genre1.Location = new System.Drawing.Point(0, 0);
-            this.genre1.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre1.Name = "genre1";
-            this.genre1.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.genre1.Size = new System.Drawing.Size(261, 292);
-            this.genre1.TabIndex = 0;
-            // 
-            // genre2
-            // 
-            this.genre2.BackColor = System.Drawing.Color.Transparent;
-            this.genre2.Image = ((System.Drawing.Image)(resources.GetObject("genre2.Image")));
-            this.genre2.Label = "Nhạc Hàn";
-            this.genre2.Location = new System.Drawing.Point(361, 0);
-            this.genre2.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre2.Name = "genre2";
-            this.genre2.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.genre2.Size = new System.Drawing.Size(261, 292);
-            this.genre2.TabIndex = 1;
-            // 
-            // genre3
-            // 
-            this.genre3.BackColor = System.Drawing.Color.Transparent;
-            this.genre3.Image = ((System.Drawing.Image)(resources.GetObject("genre3.Image")));
-            this.genre3.Label = "Nhạc Âu Mỹ";
-            this.genre3.Location = new System.Drawing.Point(722, 0);
-            this.genre3.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre3.Name = "genre3";
-            this.genre3.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.genre3.Size = new System.Drawing.Size(261, 292);
-            this.genre3.TabIndex = 2;
-            // 
-            // genre4
-            // 
-            this.genre4.BackColor = System.Drawing.Color.Transparent;
-            this.genre4.Image = ((System.Drawing.Image)(resources.GetObject("genre4.Image")));
-            this.genre4.Label = "Nhạc không lời";
-            this.genre4.Location = new System.Drawing.Point(1083, 0);
-            this.genre4.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre4.Name = "genre4";
-            this.genre4.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.genre4.Size = new System.Drawing.Size(261, 292);
-            this.genre4.TabIndex = 3;
-            // 
-            // genre5
-            // 
-            this.genre5.BackColor = System.Drawing.Color.Transparent;
-            this.genre5.Image = ((System.Drawing.Image)(resources.GetObject("genre5.Image")));
-            this.genre5.Label = "Nhạc Trịnh";
-            this.genre5.Location = new System.Drawing.Point(0, 374);
-            this.genre5.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre5.Name = "genre5";
-            this.genre5.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.genre5.Size = new System.Drawing.Size(261, 292);
-            this.genre5.TabIndex = 4;
+            this.pnFind.BackColor = System.Drawing.Color.Transparent;
+            this.pnFind.Controls.Add(this.txboxFind);
+            this.pnFind.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnFind.Location = new System.Drawing.Point(3, 3);
+            this.pnFind.Name = "pnFind";
+            this.pnFind.Size = new System.Drawing.Size(1610, 85);
+            this.pnFind.TabIndex = 3;
             // 
             // txboxFind
             // 
@@ -925,6 +863,61 @@ namespace MusicApp
             this.txboxFind.TextPlaceholder = "Tìm kiếm bài hát, nghệ sĩ, lời bài hát, ...";
             this.txboxFind.UseSystemPasswordChar = false;
             this.txboxFind.WordWrap = true;
+            // 
+            // pageGenre
+            // 
+            this.pageGenre.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.pageGenre.AllowTransitions = false;
+            this.pageGenre.Controls.Add(this.tabpageGenre);
+            this.pageGenre.Controls.Add(this.tabPage2);
+            this.pageGenre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pageGenre.Location = new System.Drawing.Point(3, 3);
+            this.pageGenre.Multiline = true;
+            this.pageGenre.Name = "pageGenre";
+            this.pageGenre.Page = this.tabpageGenre;
+            this.pageGenre.PageIndex = 0;
+            this.pageGenre.PageName = "tabpageGenre";
+            this.pageGenre.PageTitle = "Thể loại";
+            this.pageGenre.SelectedIndex = 0;
+            this.pageGenre.Size = new System.Drawing.Size(1610, 881);
+            this.pageGenre.TabIndex = 2;
+            animation1.AnimateOnlyDifferences = false;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.pageGenre.Transition = animation1;
+            this.pageGenre.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            // 
+            // tabpageGenre
+            // 
+            this.tabpageGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.tabpageGenre.Location = new System.Drawing.Point(4, 4);
+            this.tabpageGenre.Name = "tabpageGenre";
+            this.tabpageGenre.Padding = new System.Windows.Forms.Padding(3);
+            this.tabpageGenre.Size = new System.Drawing.Size(1602, 848);
+            this.tabpageGenre.TabIndex = 0;
+            this.tabpageGenre.Text = "Thể loại";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.tabPage2.Location = new System.Drawing.Point(4, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1602, 848);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
             // 
             // pageCollection
             // 
@@ -1089,7 +1082,8 @@ namespace MusicApp
             this.pageMain.ResumeLayout(false);
             this.pageHome.ResumeLayout(false);
             this.pageFind.ResumeLayout(false);
-            this.fpnGenre.ResumeLayout(false);
+            this.pnFind.ResumeLayout(false);
+            this.pageGenre.ResumeLayout(false);
             this.pageCollection.ResumeLayout(false);
             this.pageAllSong.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1133,11 +1127,9 @@ namespace MusicApp
         private Tabulate.Tabulate tabulateSongs;
         private Bunifu.UI.WinForms.BunifuTextBox txboxFind;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAddList;
-        private FlowLayoutPanel fpnGenre;
-        private Source.Genre genre1;
-        private Source.Genre genre2;
-        private Source.Genre genre3;
-        private Source.Genre genre4;
-        private Source.Genre genre5;
+        private Bunifu.UI.WinForms.BunifuPages pageGenre;
+        private TabPage tabpageGenre;
+        private TabPage tabPage2;
+        private Panel pnFind;
     }
 }
