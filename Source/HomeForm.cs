@@ -47,6 +47,7 @@ namespace MusicApp
             btnFind.Image = global::MusicApp.Properties.Resources.search_white;
 
             //navigation to find
+            pageMain.PageIndex = 1;
         }
 
         private void btnCollection_Click(object sender, EventArgs e)
@@ -65,7 +66,7 @@ namespace MusicApp
             btnCollection.Image = global::MusicApp.Properties.Resources.folder_white;
 
             //navigation to collection
-
+            pageMain.PageIndex = 2;
         }
         #endregion
 
