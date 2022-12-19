@@ -41,6 +41,10 @@ namespace MusicApp
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.pnPlay = new System.Windows.Forms.Panel();
             this.btnOther = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnVolume = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -74,11 +78,13 @@ namespace MusicApp
             this.pageCollection = new System.Windows.Forms.TabPage();
             this.pageAllSong = new System.Windows.Forms.TabPage();
             this.tabulateSongs = new Tabulate.Tabulate();
+            this.txboxFind = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.pageHome.SuspendLayout();
+            this.pageFind.SuspendLayout();
             this.pageAllSong.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -753,6 +759,7 @@ namespace MusicApp
             // pageFind
             // 
             this.pageFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageFind.Controls.Add(this.txboxFind);
             this.pageFind.Location = new System.Drawing.Point(4, 4);
             this.pageFind.Name = "pageFind";
             this.pageFind.Padding = new System.Windows.Forms.Padding(3);
@@ -811,6 +818,80 @@ namespace MusicApp
             this.tabulateSongs.TableStriped = true;
             this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
             // 
+            // txboxFind
+            // 
+            this.txboxFind.AcceptsReturn = false;
+            this.txboxFind.AcceptsTab = false;
+            this.txboxFind.AnimationSpeed = 200;
+            this.txboxFind.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txboxFind.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txboxFind.AutoSizeHeight = true;
+            this.txboxFind.BackColor = System.Drawing.Color.Transparent;
+            this.txboxFind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txboxFind.BackgroundImage")));
+            this.txboxFind.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txboxFind.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txboxFind.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txboxFind.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txboxFind.BorderRadius = 25;
+            this.txboxFind.BorderThickness = 1;
+            this.txboxFind.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txboxFind.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txboxFind.DefaultText = "";
+            this.txboxFind.FillColor = System.Drawing.Color.White;
+            this.txboxFind.HideSelection = true;
+            this.txboxFind.IconLeft = null;
+            this.txboxFind.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txboxFind.IconPadding = 10;
+            this.txboxFind.IconRight = null;
+            this.txboxFind.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txboxFind.Lines = new string[0];
+            this.txboxFind.Location = new System.Drawing.Point(390, 15);
+            this.txboxFind.MaxLength = 32767;
+            this.txboxFind.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txboxFind.Modified = false;
+            this.txboxFind.Multiline = false;
+            this.txboxFind.Name = "txboxFind";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txboxFind.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txboxFind.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txboxFind.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txboxFind.OnIdleState = stateProperties4;
+            this.txboxFind.Padding = new System.Windows.Forms.Padding(3);
+            this.txboxFind.PasswordChar = '\0';
+            this.txboxFind.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txboxFind.PlaceholderText = "Enter text";
+            this.txboxFind.ReadOnly = false;
+            this.txboxFind.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txboxFind.SelectedText = "";
+            this.txboxFind.SelectionLength = 0;
+            this.txboxFind.SelectionStart = 0;
+            this.txboxFind.ShortcutsEnabled = true;
+            this.txboxFind.Size = new System.Drawing.Size(850, 50);
+            this.txboxFind.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txboxFind.TabIndex = 0;
+            this.txboxFind.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txboxFind.TextMarginBottom = 0;
+            this.txboxFind.TextMarginLeft = 3;
+            this.txboxFind.TextMarginTop = 1;
+            this.txboxFind.TextPlaceholder = "Enter text";
+            this.txboxFind.UseSystemPasswordChar = false;
+            this.txboxFind.WordWrap = true;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -830,6 +911,7 @@ namespace MusicApp
             this.pnMenu.ResumeLayout(false);
             this.pageMain.ResumeLayout(false);
             this.pageHome.ResumeLayout(false);
+            this.pageFind.ResumeLayout(false);
             this.pageAllSong.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -870,5 +952,6 @@ namespace MusicApp
         private Button btnMore2;
         private TabPage pageAllSong;
         private Tabulate.Tabulate tabulateSongs;
+        private Bunifu.UI.WinForms.BunifuTextBox txboxFind;
     }
 }
