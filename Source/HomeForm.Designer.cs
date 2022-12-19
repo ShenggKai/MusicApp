@@ -45,6 +45,7 @@ namespace MusicApp
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnPlay = new System.Windows.Forms.Panel();
             this.btnOther = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnVolume = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -75,16 +76,18 @@ namespace MusicApp
             this.fpnHistory = new System.Windows.Forms.FlowLayoutPanel();
             this.lbHistory = new System.Windows.Forms.Label();
             this.pageFind = new System.Windows.Forms.TabPage();
+            this.txboxFind = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pageCollection = new System.Windows.Forms.TabPage();
             this.pageAllSong = new System.Windows.Forms.TabPage();
             this.tabulateSongs = new Tabulate.Tabulate();
-            this.txboxFind = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.pageHome.SuspendLayout();
             this.pageFind.SuspendLayout();
+            this.pageCollection.SuspendLayout();
             this.pageAllSong.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -638,10 +641,10 @@ namespace MusicApp
             this.pageMain.Location = new System.Drawing.Point(272, 0);
             this.pageMain.Multiline = true;
             this.pageMain.Name = "pageMain";
-            this.pageMain.Page = this.pageFind;
-            this.pageMain.PageIndex = 1;
-            this.pageMain.PageName = "pageFind";
-            this.pageMain.PageTitle = "Tìm kiếm";
+            this.pageMain.Page = this.pageCollection;
+            this.pageMain.PageIndex = 2;
+            this.pageMain.PageName = "pageCollection";
+            this.pageMain.PageTitle = "Thư viện";
             this.pageMain.SelectedIndex = 0;
             this.pageMain.Size = new System.Drawing.Size(1624, 920);
             this.pageMain.TabIndex = 2;
@@ -767,57 +770,6 @@ namespace MusicApp
             this.pageFind.TabIndex = 1;
             this.pageFind.Text = "Tìm kiếm";
             // 
-            // pageCollection
-            // 
-            this.pageCollection.Location = new System.Drawing.Point(4, 4);
-            this.pageCollection.Name = "pageCollection";
-            this.pageCollection.Padding = new System.Windows.Forms.Padding(3);
-            this.pageCollection.Size = new System.Drawing.Size(1616, 887);
-            this.pageCollection.TabIndex = 2;
-            this.pageCollection.Text = "Thư viện";
-            this.pageCollection.UseVisualStyleBackColor = true;
-            // 
-            // pageAllSong
-            // 
-            this.pageAllSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageAllSong.Controls.Add(this.tabulateSongs);
-            this.pageAllSong.Location = new System.Drawing.Point(4, 4);
-            this.pageAllSong.Name = "pageAllSong";
-            this.pageAllSong.Padding = new System.Windows.Forms.Padding(3);
-            this.pageAllSong.Size = new System.Drawing.Size(1616, 887);
-            this.pageAllSong.TabIndex = 3;
-            this.pageAllSong.Text = "Tất cả bài";
-            // 
-            // tabulateSongs
-            // 
-            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns"))));
-            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns1"))));
-            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns2"))));
-            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns3"))));
-            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns4"))));
-            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns5"))));
-            this.tabulateSongs.EnableRowSelection = false;
-            this.tabulateSongs.EnableSelection = true;
-            this.tabulateSongs.HTMLFooter = "";
-            this.tabulateSongs.HTMLHeader = "<button type=\"button\" class=\"btn btn-primary\">Primary</button>\r\n<button type=\"but" +
-    "ton\" class=\"btn btn-secondary\">Secondary</button>\r\n<br>\r\n<br>";
-            this.tabulateSongs.InjectCSS = "";
-            this.tabulateSongs.InjectJS = "";
-            this.tabulateSongs.LoaderDelay = 1000;
-            this.tabulateSongs.LoaderImage = ((System.Drawing.Image)(resources.GetObject("tabulateSongs.LoaderImage")));
-            this.tabulateSongs.Location = new System.Drawing.Point(7, 19);
-            this.tabulateSongs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabulateSongs.Name = "tabulateSongs";
-            this.tabulateSongs.ScrollbarsEnabled = false;
-            this.tabulateSongs.Size = new System.Drawing.Size(1600, 860);
-            this.tabulateSongs.TabIndex = 0;
-            this.tabulateSongs.TableBordered = true;
-            this.tabulateSongs.TableCompact = false;
-            this.tabulateSongs.TableConfiguration = ((Tabulate.TableConfig)(resources.GetObject("tabulateSongs.TableConfiguration")));
-            this.tabulateSongs.TableHoverEffect = true;
-            this.tabulateSongs.TableStriped = true;
-            this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
-            // 
             // txboxFind
             // 
             this.txboxFind.AcceptsReturn = false;
@@ -892,6 +844,148 @@ namespace MusicApp
             this.txboxFind.UseSystemPasswordChar = false;
             this.txboxFind.WordWrap = true;
             // 
+            // pageCollection
+            // 
+            this.pageCollection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageCollection.Controls.Add(this.btnAddList);
+            this.pageCollection.Location = new System.Drawing.Point(4, 4);
+            this.pageCollection.Name = "pageCollection";
+            this.pageCollection.Padding = new System.Windows.Forms.Padding(3);
+            this.pageCollection.Size = new System.Drawing.Size(1616, 887);
+            this.pageCollection.TabIndex = 2;
+            this.pageCollection.Text = "Thư viện";
+            // 
+            // pageAllSong
+            // 
+            this.pageAllSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageAllSong.Controls.Add(this.tabulateSongs);
+            this.pageAllSong.Location = new System.Drawing.Point(4, 4);
+            this.pageAllSong.Name = "pageAllSong";
+            this.pageAllSong.Padding = new System.Windows.Forms.Padding(3);
+            this.pageAllSong.Size = new System.Drawing.Size(1616, 887);
+            this.pageAllSong.TabIndex = 3;
+            this.pageAllSong.Text = "Tất cả bài";
+            // 
+            // tabulateSongs
+            // 
+            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns"))));
+            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns1"))));
+            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns2"))));
+            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns3"))));
+            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns4"))));
+            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns5"))));
+            this.tabulateSongs.EnableRowSelection = false;
+            this.tabulateSongs.EnableSelection = true;
+            this.tabulateSongs.HTMLFooter = "";
+            this.tabulateSongs.HTMLHeader = "<button type=\"button\" class=\"btn btn-primary\">Primary</button>\r\n<button type=\"but" +
+    "ton\" class=\"btn btn-secondary\">Secondary</button>\r\n<br>\r\n<br>";
+            this.tabulateSongs.InjectCSS = "";
+            this.tabulateSongs.InjectJS = "";
+            this.tabulateSongs.LoaderDelay = 1000;
+            this.tabulateSongs.LoaderImage = ((System.Drawing.Image)(resources.GetObject("tabulateSongs.LoaderImage")));
+            this.tabulateSongs.Location = new System.Drawing.Point(7, 19);
+            this.tabulateSongs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabulateSongs.Name = "tabulateSongs";
+            this.tabulateSongs.ScrollbarsEnabled = false;
+            this.tabulateSongs.Size = new System.Drawing.Size(1600, 860);
+            this.tabulateSongs.TabIndex = 0;
+            this.tabulateSongs.TableBordered = true;
+            this.tabulateSongs.TableCompact = false;
+            this.tabulateSongs.TableConfiguration = ((Tabulate.TableConfig)(resources.GetObject("tabulateSongs.TableConfiguration")));
+            this.tabulateSongs.TableHoverEffect = true;
+            this.tabulateSongs.TableStriped = true;
+            this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
+            // 
+            // btnAddList
+            // 
+            this.btnAddList.AllowAnimations = true;
+            this.btnAddList.AllowMouseEffects = true;
+            this.btnAddList.AllowToggling = false;
+            this.btnAddList.AnimationSpeed = 200;
+            this.btnAddList.AutoGenerateColors = false;
+            this.btnAddList.AutoRoundBorders = true;
+            this.btnAddList.AutoSizeLeftIcon = true;
+            this.btnAddList.AutoSizeRightIcon = true;
+            this.btnAddList.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddList.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.btnAddList.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddList.BackgroundImage")));
+            this.btnAddList.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAddList.ButtonText = "Tạo playlist";
+            this.btnAddList.ButtonTextMarginLeft = 0;
+            this.btnAddList.ColorContrastOnClick = 45;
+            this.btnAddList.ColorContrastOnHover = 45;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnAddList.CustomizableEdges = borderEdges1;
+            this.btnAddList.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAddList.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnAddList.DisabledFillColor = System.Drawing.Color.Empty;
+            this.btnAddList.DisabledForecolor = System.Drawing.Color.Empty;
+            this.btnAddList.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnAddList.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddList.ForeColor = System.Drawing.Color.White;
+            this.btnAddList.IconLeft = null;
+            this.btnAddList.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddList.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnAddList.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnAddList.IconMarginLeft = 11;
+            this.btnAddList.IconPadding = 15;
+            this.btnAddList.IconRight = ((System.Drawing.Image)(resources.GetObject("btnAddList.IconRight")));
+            this.btnAddList.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddList.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnAddList.IconRightPadding = new System.Windows.Forms.Padding(0, 0, 23, 0);
+            this.btnAddList.IconSize = 1;
+            this.btnAddList.IdleBorderColor = System.Drawing.Color.Empty;
+            this.btnAddList.IdleBorderRadius = 0;
+            this.btnAddList.IdleBorderThickness = 0;
+            this.btnAddList.IdleFillColor = System.Drawing.Color.Empty;
+            this.btnAddList.IdleIconLeftImage = null;
+            this.btnAddList.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnAddList.IdleIconRightImage")));
+            this.btnAddList.IndicateFocus = false;
+            this.btnAddList.Location = new System.Drawing.Point(70, 30);
+            this.btnAddList.Name = "btnAddList";
+            this.btnAddList.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnAddList.OnDisabledState.BorderRadius = 55;
+            this.btnAddList.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAddList.OnDisabledState.BorderThickness = 1;
+            this.btnAddList.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnAddList.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnAddList.OnDisabledState.IconLeftImage = null;
+            this.btnAddList.OnDisabledState.IconRightImage = null;
+            this.btnAddList.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnAddList.onHoverState.BorderRadius = 55;
+            this.btnAddList.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAddList.onHoverState.BorderThickness = 1;
+            this.btnAddList.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnAddList.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAddList.onHoverState.IconLeftImage = null;
+            this.btnAddList.onHoverState.IconRightImage = null;
+            this.btnAddList.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddList.OnIdleState.BorderRadius = 55;
+            this.btnAddList.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAddList.OnIdleState.BorderThickness = 1;
+            this.btnAddList.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddList.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnAddList.OnIdleState.IconLeftImage = null;
+            this.btnAddList.OnIdleState.IconRightImage = ((System.Drawing.Image)(resources.GetObject("btnAddList.OnIdleState.IconRightImage")));
+            this.btnAddList.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnAddList.OnPressedState.BorderRadius = 55;
+            this.btnAddList.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAddList.OnPressedState.BorderThickness = 1;
+            this.btnAddList.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnAddList.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnAddList.OnPressedState.IconLeftImage = null;
+            this.btnAddList.OnPressedState.IconRightImage = null;
+            this.btnAddList.Size = new System.Drawing.Size(189, 55);
+            this.btnAddList.TabIndex = 0;
+            this.btnAddList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddList.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAddList.TextMarginLeft = 0;
+            this.btnAddList.TextPadding = new System.Windows.Forms.Padding(23, 0, 0, 0);
+            this.btnAddList.UseDefaultRadiusAndThickness = true;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -912,6 +1006,7 @@ namespace MusicApp
             this.pageMain.ResumeLayout(false);
             this.pageHome.ResumeLayout(false);
             this.pageFind.ResumeLayout(false);
+            this.pageCollection.ResumeLayout(false);
             this.pageAllSong.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -953,5 +1048,6 @@ namespace MusicApp
         private TabPage pageAllSong;
         private Tabulate.Tabulate tabulateSongs;
         private Bunifu.UI.WinForms.BunifuTextBox txboxFind;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAddList;
     }
 }
