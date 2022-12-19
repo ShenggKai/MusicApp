@@ -16,5 +16,31 @@ namespace MusicApp.Source
         {
             InitializeComponent();
         }
+
+        public Image Image
+        {
+            get
+            {
+                return pGenre.Image;
+            }
+
+            set
+            {
+                pGenre.Image = value;
+            }
+        }
+
+        public string Text
+        {
+            get
+            {
+                return lbGenre.Text;
+            }
+
+            set
+            {
+                lbGenre.Text = value;
+            }
+        }
     }
 }
