@@ -1068,7 +1068,7 @@ namespace MusicApp
             // 
             this.fpnPlaylist.AllowDrop = true;
             this.fpnPlaylist.AutoScroll = true;
-            this.fpnPlaylist.BackColor = System.Drawing.Color.Red;
+            this.fpnPlaylist.BackColor = System.Drawing.Color.Transparent;
             this.fpnPlaylist.Controls.Add(this.liked1);
             this.fpnPlaylist.Controls.Add(this.playlist1);
             this.fpnPlaylist.Location = new System.Drawing.Point(63, 0);
