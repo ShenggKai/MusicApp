@@ -93,11 +93,16 @@ namespace MusicApp
             this.pageLike = new Bunifu.UI.WinForms.BunifuPages();
             this.tabpagePlaylist = new System.Windows.Forms.TabPage();
             this.fpnPlaylist = new System.Windows.Forms.FlowLayoutPanel();
+            this.liked1 = new MusicApp.Source.Liked();
+            this.liked2 = new MusicApp.Source.Liked();
+            this.liked3 = new MusicApp.Source.Liked();
+            this.liked4 = new MusicApp.Source.Liked();
+            this.liked5 = new MusicApp.Source.Liked();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageAllSong = new System.Windows.Forms.TabPage();
             this.tabulateSongs = new Tabulate.Tabulate();
-            this.liked1 = new MusicApp.Source.Liked();
+            this.liked6 = new MusicApp.Source.Liked();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -1066,10 +1071,60 @@ namespace MusicApp
             // fpnPlaylist
             // 
             this.fpnPlaylist.Controls.Add(this.liked1);
+            this.fpnPlaylist.Controls.Add(this.liked2);
+            this.fpnPlaylist.Controls.Add(this.liked3);
+            this.fpnPlaylist.Controls.Add(this.liked4);
+            this.fpnPlaylist.Controls.Add(this.liked5);
+            this.fpnPlaylist.Controls.Add(this.liked6);
             this.fpnPlaylist.Location = new System.Drawing.Point(63, 0);
             this.fpnPlaylist.Name = "fpnPlaylist";
-            this.fpnPlaylist.Size = new System.Drawing.Size(1505, 644);
+            this.fpnPlaylist.Size = new System.Drawing.Size(1555, 644);
             this.fpnPlaylist.TabIndex = 0;
+            // 
+            // liked1
+            // 
+            this.liked1.BackColor = System.Drawing.Color.Transparent;
+            this.liked1.Location = new System.Drawing.Point(0, 0);
+            this.liked1.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.liked1.Name = "liked1";
+            this.liked1.Size = new System.Drawing.Size(261, 292);
+            this.liked1.TabIndex = 0;
+            // 
+            // liked2
+            // 
+            this.liked2.BackColor = System.Drawing.Color.Transparent;
+            this.liked2.Location = new System.Drawing.Point(311, 0);
+            this.liked2.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.liked2.Name = "liked2";
+            this.liked2.Size = new System.Drawing.Size(261, 292);
+            this.liked2.TabIndex = 1;
+            // 
+            // liked3
+            // 
+            this.liked3.BackColor = System.Drawing.Color.Transparent;
+            this.liked3.Location = new System.Drawing.Point(622, 0);
+            this.liked3.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.liked3.Name = "liked3";
+            this.liked3.Size = new System.Drawing.Size(261, 292);
+            this.liked3.TabIndex = 2;
+            // 
+            // liked4
+            // 
+            this.liked4.BackColor = System.Drawing.Color.Transparent;
+            this.liked4.Location = new System.Drawing.Point(933, 0);
+            this.liked4.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.liked4.Name = "liked4";
+            this.liked4.Size = new System.Drawing.Size(261, 292);
+            this.liked4.TabIndex = 3;
+            // 
+            // liked5
+            // 
+            this.liked5.BackColor = System.Drawing.Color.Transparent;
+            this.liked5.Location = new System.Drawing.Point(1244, 0);
+            this.liked5.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.liked5.Name = "liked5";
+            this.liked5.Size = new System.Drawing.Size(261, 292);
+            this.liked5.TabIndex = 4;
             // 
             // tabPage3
             // 
@@ -1213,13 +1268,14 @@ namespace MusicApp
             this.tabulateSongs.TableStriped = true;
             this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
             // 
-            // liked1
+            // liked6
             // 
-            this.liked1.BackColor = System.Drawing.Color.Transparent;
-            this.liked1.Location = new System.Drawing.Point(3, 3);
-            this.liked1.Name = "liked1";
-            this.liked1.Size = new System.Drawing.Size(261, 292);
-            this.liked1.TabIndex = 0;
+            this.liked6.BackColor = System.Drawing.Color.Transparent;
+            this.liked6.Location = new System.Drawing.Point(0, 352);
+            this.liked6.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.liked6.Name = "liked6";
+            this.liked6.Size = new System.Drawing.Size(261, 292);
+            this.liked6.TabIndex = 5;
             // 
             // HomeForm
             // 
@@ -1306,5 +1362,10 @@ namespace MusicApp
         private TabPage tabPage3;
         private FlowLayoutPanel fpnPlaylist;
         private Source.Liked liked1;
+        private Source.Liked liked2;
+        private Source.Liked liked3;
+        private Source.Liked liked4;
+        private Source.Liked liked5;
+        private Source.Liked liked6;
     }
 }

@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Liked));
             this.panelLiked = new Bunifu.UI.WinForms.BunifuPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbLiked = new System.Windows.Forms.Label();
+            this.pHeart = new System.Windows.Forms.PictureBox();
             this.panelLiked.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHeart)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLiked
@@ -45,7 +45,7 @@
             this.panelLiked.BorderRadius = 20;
             this.panelLiked.BorderThickness = 1;
             this.panelLiked.Controls.Add(this.lbLiked);
-            this.panelLiked.Controls.Add(this.pictureBox1);
+            this.panelLiked.Controls.Add(this.pHeart);
             this.panelLiked.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLiked.Location = new System.Drawing.Point(0, 0);
             this.panelLiked.Margin = new System.Windows.Forms.Padding(0);
@@ -53,16 +53,6 @@
             this.panelLiked.ShowBorders = true;
             this.panelLiked.Size = new System.Drawing.Size(261, 292);
             this.panelLiked.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MusicApp.Properties.Resources.green_love;
-            this.pictureBox1.Location = new System.Drawing.Point(76, 65);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(110, 110);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // lbLiked
             // 
@@ -75,16 +65,28 @@
             this.lbLiked.Text = "Bài hát đã thích";
             this.lbLiked.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pHeart
+            // 
+            this.pHeart.Image = global::MusicApp.Properties.Resources.green_love;
+            this.pHeart.Location = new System.Drawing.Point(76, 65);
+            this.pHeart.Name = "pHeart";
+            this.pHeart.Size = new System.Drawing.Size(110, 110);
+            this.pHeart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pHeart.TabIndex = 0;
+            this.pHeart.TabStop = false;
+            // 
             // Liked
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.panelLiked);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
             this.Name = "Liked";
             this.Size = new System.Drawing.Size(261, 292);
             this.panelLiked.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHeart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -92,7 +94,7 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuPanel panelLiked;
-        private PictureBox pictureBox1;
+        private PictureBox pHeart;
         private Label lbLiked;
     }
 }
