@@ -35,20 +35,37 @@ namespace MusicApp.Source
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Playlist pl = new Playlist();
-            pl.Title = txtboxName.Text;
-            pl.Image = pPlaylist.Image;
+            bool bValidName = ValidateName();
+            if (bValidName)
+            {
+                Playlist pl = new Playlist();
+                pl.Title = txtboxName.Text;
+                pl.Image = pPlaylist.Image;
 
-            HomeForm.instance.fpnlist.Controls.Add(pl);
-            this.Close();
+                HomeForm.instance.fpnlist.Controls.Add(pl);
+                this.Close();
+            }
         }
 
         private void txtboxName_Validating(object sender, CancelEventArgs e)
         {
-            if (txtboxName.Text == null)
-            {
+            ValidateName();
+        }
 
+        private bool ValidateName()
+        {
+            bool bStatus = true;
+
+            if (txtboxName.Text == "")
+            {
+                errorProvider1.SetError(txtboxName, "required");
+                bStatus = false;
             }
+            else
+            {
+                errorProvider1.SetError(txtboxName, "");
+            }
+            return bStatus;
         }
     }
 }
