@@ -43,5 +43,12 @@ namespace MusicApp.Source
             this.Close();
         }
 
+        private void txtboxName_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtboxName.Text == null)
+            {
+
+            }
+        }
     }
 }

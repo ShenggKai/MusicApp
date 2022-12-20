@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InputPlaylist));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnPlaylist = new Bunifu.UI.WinForms.BunifuPanel();
@@ -38,8 +39,10 @@
             this.txtAdd = new System.Windows.Forms.Label();
             this.btnClose = new Bunifu.UI.WinForms.BunifuImageButton();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.pnPlaylist.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pPlaylist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnPlaylist
@@ -180,6 +183,7 @@
             this.txtboxName.PlaceholderText = "Nhập tên Playlist";
             this.txtboxName.Size = new System.Drawing.Size(390, 32);
             this.txtboxName.TabIndex = 3;
+            this.txtboxName.Validating += new System.ComponentModel.CancelEventHandler(this.txtboxName_Validating);
             // 
             // pnLine
             // 
@@ -243,6 +247,10 @@
             this.openFileDialog.Filter = "(*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
             this.openFileDialog.Title = "Chọn ảnh playlist";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // InputPlaylist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -261,6 +269,7 @@
             this.pnPlaylist.ResumeLayout(false);
             this.pnPlaylist.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pPlaylist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -274,5 +283,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAdd;
         private PictureBox pPlaylist;
         private OpenFileDialog openFileDialog;
+        private ErrorProvider errorProvider1;
     }
 }
