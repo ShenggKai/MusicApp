@@ -213,7 +213,8 @@ namespace MusicApp
 
         private void btnAddList_Click(object sender, EventArgs e)
         {
-
+            InputPlaylist form= new InputPlaylist();
+            form.ShowDialog();
         }
     }
 }
