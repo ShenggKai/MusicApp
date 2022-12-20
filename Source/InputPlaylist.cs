@@ -21,5 +21,11 @@ namespace MusicApp.Source
         {
             this.Close();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Playlist pl = new Playlist();
+            pl.Title = txtboxName.Text;
+        }
     }
 }
