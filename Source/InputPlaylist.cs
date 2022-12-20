@@ -32,5 +32,11 @@ namespace MusicApp.Source
             HomeForm.instance.fpnlist.Controls.Add(pl);
             this.Close();
         }
+
+        private void pPlaylist_Click(object sender, EventArgs e)
+        {
+            openFileDialog.ShowDialog();
+            pPlaylist.ImageLocation = openFileDialog.FileName;
+        }
     }
 }

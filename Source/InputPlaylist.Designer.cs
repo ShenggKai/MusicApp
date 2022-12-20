@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InputPlaylist));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnPlaylist = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pPlaylist = new System.Windows.Forms.PictureBox();
             this.btnAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtboxName = new System.Windows.Forms.TextBox();
             this.pnLine = new System.Windows.Forms.Panel();
             this.txtAdd = new System.Windows.Forms.Label();
             this.btnClose = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.pPlaylist = new System.Windows.Forms.PictureBox();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.pnPlaylist.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pPlaylist)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +64,19 @@
             this.pnPlaylist.Size = new System.Drawing.Size(734, 273);
             this.pnPlaylist.TabIndex = 1;
             // 
+            // pPlaylist
+            // 
+            this.pPlaylist.BackColor = System.Drawing.Color.Transparent;
+            this.pPlaylist.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pPlaylist.Image = global::MusicApp.Properties.Resources.music;
+            this.pPlaylist.Location = new System.Drawing.Point(35, 31);
+            this.pPlaylist.Name = "pPlaylist";
+            this.pPlaylist.Size = new System.Drawing.Size(212, 212);
+            this.pPlaylist.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pPlaylist.TabIndex = 5;
+            this.pPlaylist.TabStop = false;
+            this.pPlaylist.Click += new System.EventHandler(this.pPlaylist_Click);
+            // 
             // btnAdd
             // 
             this.btnAdd.AllowAnimations = true;
@@ -81,6 +95,7 @@
             this.btnAdd.ButtonTextMarginLeft = 0;
             this.btnAdd.ColorContrastOnClick = 45;
             this.btnAdd.ColorContrastOnHover = 45;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges1.BottomLeft = true;
             borderEdges1.BottomRight = true;
             borderEdges1.TopLeft = true;
@@ -223,17 +238,10 @@
             this.btnClose.ZoomSpeed = 10;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // pPlaylist
+            // openFileDialog
             // 
-            this.pPlaylist.BackColor = System.Drawing.Color.Transparent;
-            this.pPlaylist.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pPlaylist.Image = global::MusicApp.Properties.Resources.music;
-            this.pPlaylist.Location = new System.Drawing.Point(35, 31);
-            this.pPlaylist.Name = "pPlaylist";
-            this.pPlaylist.Size = new System.Drawing.Size(212, 212);
-            this.pPlaylist.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pPlaylist.TabIndex = 5;
-            this.pPlaylist.TabStop = false;
+            this.openFileDialog.Filter = "(*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
+            this.openFileDialog.Title = "Chọn ảnh playlist";
             // 
             // InputPlaylist
             // 
@@ -265,5 +273,6 @@
         private TextBox txtboxName;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAdd;
         private PictureBox pPlaylist;
+        private OpenFileDialog openFileDialog;
     }
 }
