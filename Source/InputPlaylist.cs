@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace MusicApp.Source
 {
-    public partial class InputPlaylist : Form
+    public partial class InputPlaylist : Form //form 2
     {
+        public static InputPlaylist instance;
         public InputPlaylist()
         {
             InitializeComponent();
+            instance = this;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

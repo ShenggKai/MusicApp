@@ -2,13 +2,14 @@ using MusicApp.Source;
 
 namespace MusicApp
 {
-    public partial class HomeForm : Form
+    public partial class HomeForm : Form //form 1
     {
-        //private Form currentChildForm;
-
+        public static HomeForm instance;
+        public TextBox tbName;
         public HomeForm()
         {
             InitializeComponent();
+            instance= this;
         }
 
         #region Effect when click menu
@@ -162,26 +163,7 @@ namespace MusicApp
 
         #endregion
 
-        //#region function to open child form
-        //private void OpenChildForm(Form childForm)
-        //{
-        //    if (currentChildForm != null)
-        //    {
-        //        currentChildForm.Close();
-        //    }
-        //    currentChildForm = childForm;
-        //    childForm.TopLevel = false;
-        //    childForm.FormBorderStyle = FormBorderStyle.None;
-        //    childForm.Dock = DockStyle.Fill;
-        //    pnMain.Controls.Add(childForm);
-        //    pnMain.Tag= childForm;
-        //    childForm.BringToFront();
-        //    childForm.Show();
-        //}
-
-        //#endregion
-
-
+        #region temp
         int count = 0;
         private void btnHeart_Click(object sender, EventArgs e)
         {
@@ -203,6 +185,7 @@ namespace MusicApp
         {
             //add fake songs data
         }
+        #endregion
 
         #region when click button
         private void btnMore2_Click(object sender, EventArgs e)
@@ -212,38 +195,38 @@ namespace MusicApp
 
         private void btnAddList_Click(object sender, EventArgs e)
         {
-            Form formBackground = new Form();
+            //Form formBackground = new Form();
 
-            try
-            {
-                using (InputPlaylist popup = new InputPlaylist())
-                {
-                    formBackground.StartPosition = FormStartPosition.Manual;
-                    formBackground.FormBorderStyle = FormBorderStyle.None;
-                    formBackground.Opacity = .50d;
-                    formBackground.BackColor = Color.Black;
-                    formBackground.WindowState = FormWindowState.Maximized;
-                    formBackground.TopMost = true;
-                    formBackground.Location = this.Location;
-                    formBackground.ShowInTaskbar = false;
-                    formBackground.Show();
+            //try
+            //{
+            //    using (InputPlaylist popup = new InputPlaylist())
+            //    {
+            //        formBackground.StartPosition = FormStartPosition.Manual;
+            //        formBackground.FormBorderStyle = FormBorderStyle.None;
+            //        formBackground.Opacity = .50d;
+            //        formBackground.BackColor = Color.Black;
+            //        formBackground.WindowState = FormWindowState.Maximized;
+            //        formBackground.TopMost = true;
+            //        formBackground.Location = this.Location;
+            //        formBackground.ShowInTaskbar = false;
+            //        formBackground.Show();
 
-                    popup.Owner = formBackground;
-                    popup.ShowDialog();
+            //        popup.Owner = formBackground;
+            //        popup.ShowDialog();
 
-                    formBackground.Dispose();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                formBackground.Dispose();
-            }
-
-
+            //        formBackground.Dispose();
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //finally
+            //{
+            //    formBackground.Dispose();
+            //}
+            Playlist pl = new Playlist();
+            fpnPlaylist.Controls.Add(pl);
         }
         #endregion
 
