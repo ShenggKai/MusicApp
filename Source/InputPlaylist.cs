@@ -17,26 +17,31 @@ namespace MusicApp.Source
         {
             InitializeComponent();
             instance = this;
+
+            //no need to click text box to add input when load form
+            this.ActiveControl = txtboxName;
+            txtboxName.Focus();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            Playlist pl = new Playlist();
-            pl.Title = txtboxName.Text;
-
-            HomeForm.instance.fpnlist.Controls.Add(pl);
-            this.Close();
-        }
-
         private void pPlaylist_Click(object sender, EventArgs e)
         {
             openFileDialog.ShowDialog();
             pPlaylist.ImageLocation = openFileDialog.FileName;
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Playlist pl = new Playlist();
+            pl.Title = txtboxName.Text;
+            pl.Image = pPlaylist.Image;
+
+            HomeForm.instance.fpnlist.Controls.Add(pl);
+            this.Close();
+        }
+
     }
 }
