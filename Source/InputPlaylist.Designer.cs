@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InputPlaylist));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnPlaylist = new Bunifu.UI.WinForms.BunifuPanel();
+            this.txtboxName = new System.Windows.Forms.TextBox();
+            this.pnLine = new System.Windows.Forms.Panel();
             this.txtAdd = new System.Windows.Forms.Label();
             this.btnClose = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.pnLine = new System.Windows.Forms.Panel();
-            this.txtboxName = new System.Windows.Forms.TextBox();
+            this.btnAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pnPlaylist.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +47,7 @@
             this.pnPlaylist.BorderColor = System.Drawing.Color.Transparent;
             this.pnPlaylist.BorderRadius = 30;
             this.pnPlaylist.BorderThickness = 1;
+            this.pnPlaylist.Controls.Add(this.btnAdd);
             this.pnPlaylist.Controls.Add(this.txtboxName);
             this.pnPlaylist.Controls.Add(this.pnLine);
             this.pnPlaylist.Controls.Add(this.txtAdd);
@@ -56,6 +59,26 @@
             this.pnPlaylist.ShowBorders = true;
             this.pnPlaylist.Size = new System.Drawing.Size(474, 273);
             this.pnPlaylist.TabIndex = 1;
+            // 
+            // txtboxName
+            // 
+            this.txtboxName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.txtboxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxName.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            this.txtboxName.Location = new System.Drawing.Point(42, 97);
+            this.txtboxName.Name = "txtboxName";
+            this.txtboxName.PlaceholderText = "Nhập tên Playlist";
+            this.txtboxName.Size = new System.Drawing.Size(390, 32);
+            this.txtboxName.TabIndex = 3;
+            // 
+            // pnLine
+            // 
+            this.pnLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            this.pnLine.Location = new System.Drawing.Point(42, 132);
+            this.pnLine.Name = "pnLine";
+            this.pnLine.Size = new System.Drawing.Size(390, 1);
+            this.pnLine.TabIndex = 2;
             // 
             // txtAdd
             // 
@@ -106,25 +129,95 @@
             this.btnClose.ZoomSpeed = 10;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // pnLine
+            // btnAdd
             // 
-            this.pnLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.pnLine.Location = new System.Drawing.Point(42, 132);
-            this.pnLine.Name = "pnLine";
-            this.pnLine.Size = new System.Drawing.Size(390, 1);
-            this.pnLine.TabIndex = 2;
-            // 
-            // txtboxName
-            // 
-            this.txtboxName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.txtboxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxName.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.txtboxName.Location = new System.Drawing.Point(42, 97);
-            this.txtboxName.Name = "txtboxName";
-            this.txtboxName.PlaceholderText = "Nhập tên Playlist";
-            this.txtboxName.Size = new System.Drawing.Size(390, 32);
-            this.txtboxName.TabIndex = 3;
+            this.btnAdd.AllowAnimations = true;
+            this.btnAdd.AllowMouseEffects = true;
+            this.btnAdd.AllowToggling = false;
+            this.btnAdd.AnimationSpeed = 200;
+            this.btnAdd.AutoGenerateColors = false;
+            this.btnAdd.AutoRoundBorders = false;
+            this.btnAdd.AutoSizeLeftIcon = true;
+            this.btnAdd.AutoSizeRightIcon = true;
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
+            this.btnAdd.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAdd.ButtonText = "bunifuButton1";
+            this.btnAdd.ButtonTextMarginLeft = 0;
+            this.btnAdd.ColorContrastOnClick = 45;
+            this.btnAdd.ColorContrastOnHover = 45;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnAdd.CustomizableEdges = borderEdges1;
+            this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAdd.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnAdd.DisabledFillColor = System.Drawing.Color.Empty;
+            this.btnAdd.DisabledForecolor = System.Drawing.Color.Empty;
+            this.btnAdd.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.IconLeft = null;
+            this.btnAdd.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnAdd.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnAdd.IconMarginLeft = 11;
+            this.btnAdd.IconPadding = 10;
+            this.btnAdd.IconRight = null;
+            this.btnAdd.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdd.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnAdd.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnAdd.IconSize = 25;
+            this.btnAdd.IdleBorderColor = System.Drawing.Color.Empty;
+            this.btnAdd.IdleBorderRadius = 0;
+            this.btnAdd.IdleBorderThickness = 0;
+            this.btnAdd.IdleFillColor = System.Drawing.Color.Empty;
+            this.btnAdd.IdleIconLeftImage = null;
+            this.btnAdd.IdleIconRightImage = null;
+            this.btnAdd.IndicateFocus = false;
+            this.btnAdd.Location = new System.Drawing.Point(42, 165);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnAdd.OnDisabledState.BorderRadius = 1;
+            this.btnAdd.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAdd.OnDisabledState.BorderThickness = 1;
+            this.btnAdd.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnAdd.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnAdd.OnDisabledState.IconLeftImage = null;
+            this.btnAdd.OnDisabledState.IconRightImage = null;
+            this.btnAdd.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnAdd.onHoverState.BorderRadius = 1;
+            this.btnAdd.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAdd.onHoverState.BorderThickness = 1;
+            this.btnAdd.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnAdd.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.onHoverState.IconLeftImage = null;
+            this.btnAdd.onHoverState.IconRightImage = null;
+            this.btnAdd.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnAdd.OnIdleState.BorderRadius = 1;
+            this.btnAdd.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAdd.OnIdleState.BorderThickness = 1;
+            this.btnAdd.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnAdd.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.OnIdleState.IconLeftImage = null;
+            this.btnAdd.OnIdleState.IconRightImage = null;
+            this.btnAdd.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnAdd.OnPressedState.BorderRadius = 1;
+            this.btnAdd.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAdd.OnPressedState.BorderThickness = 1;
+            this.btnAdd.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.OnPressedState.IconLeftImage = null;
+            this.btnAdd.OnPressedState.IconRightImage = null;
+            this.btnAdd.Size = new System.Drawing.Size(390, 64);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAdd.TextMarginLeft = 0;
+            this.btnAdd.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnAdd.UseDefaultRadiusAndThickness = true;
             // 
             // InputPlaylist
             // 
@@ -151,5 +244,6 @@
         private Label txtAdd;
         private Panel pnLine;
         private TextBox txtboxName;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAdd;
     }
 }
