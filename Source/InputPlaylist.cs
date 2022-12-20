@@ -28,6 +28,9 @@ namespace MusicApp.Source
         {
             Playlist pl = new Playlist();
             pl.Title = txtboxName.Text;
+
+            HomeForm.instance.fpnlist.Controls.Add(pl);
+            this.Close();
         }
     }
 }

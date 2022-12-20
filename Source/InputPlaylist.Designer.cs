@@ -36,7 +36,9 @@
             this.pnLine = new System.Windows.Forms.Panel();
             this.txtAdd = new System.Windows.Forms.Label();
             this.btnClose = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.pPlaylist = new System.Windows.Forms.PictureBox();
             this.pnPlaylist.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pPlaylist)).BeginInit();
             this.SuspendLayout();
             // 
             // pnPlaylist
@@ -47,6 +49,7 @@
             this.pnPlaylist.BorderColor = System.Drawing.Color.Transparent;
             this.pnPlaylist.BorderRadius = 30;
             this.pnPlaylist.BorderThickness = 1;
+            this.pnPlaylist.Controls.Add(this.pPlaylist);
             this.pnPlaylist.Controls.Add(this.btnAdd);
             this.pnPlaylist.Controls.Add(this.txtboxName);
             this.pnPlaylist.Controls.Add(this.pnLine);
@@ -57,7 +60,7 @@
             this.pnPlaylist.Margin = new System.Windows.Forms.Padding(0);
             this.pnPlaylist.Name = "pnPlaylist";
             this.pnPlaylist.ShowBorders = true;
-            this.pnPlaylist.Size = new System.Drawing.Size(474, 273);
+            this.pnPlaylist.Size = new System.Drawing.Size(734, 273);
             this.pnPlaylist.TabIndex = 1;
             // 
             // btnAdd
@@ -108,7 +111,7 @@
             this.btnAdd.IdleIconLeftImage = null;
             this.btnAdd.IdleIconRightImage = null;
             this.btnAdd.IndicateFocus = false;
-            this.btnAdd.Location = new System.Drawing.Point(42, 172);
+            this.btnAdd.Location = new System.Drawing.Point(287, 172);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAdd.OnDisabledState.BorderRadius = 40;
@@ -157,7 +160,7 @@
             this.txtboxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtboxName.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.txtboxName.Location = new System.Drawing.Point(42, 97);
+            this.txtboxName.Location = new System.Drawing.Point(287, 97);
             this.txtboxName.Name = "txtboxName";
             this.txtboxName.PlaceholderText = "Nhập tên Playlist";
             this.txtboxName.Size = new System.Drawing.Size(390, 32);
@@ -166,7 +169,7 @@
             // pnLine
             // 
             this.pnLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.pnLine.Location = new System.Drawing.Point(42, 132);
+            this.pnLine.Location = new System.Drawing.Point(287, 132);
             this.pnLine.Name = "pnLine";
             this.pnLine.Size = new System.Drawing.Size(390, 1);
             this.pnLine.TabIndex = 2;
@@ -176,7 +179,7 @@
             this.txtAdd.BackColor = System.Drawing.Color.Transparent;
             this.txtAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtAdd.ForeColor = System.Drawing.Color.White;
-            this.txtAdd.Location = new System.Drawing.Point(132, 20);
+            this.txtAdd.Location = new System.Drawing.Point(377, 20);
             this.txtAdd.Name = "txtAdd";
             this.txtAdd.Size = new System.Drawing.Size(227, 38);
             this.txtAdd.TabIndex = 1;
@@ -205,7 +208,7 @@
             this.btnClose.ImageZoomSize = new System.Drawing.Size(22, 22);
             this.btnClose.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.btnClose.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnClose.InitialImage")));
-            this.btnClose.Location = new System.Drawing.Point(432, 20);
+            this.btnClose.Location = new System.Drawing.Point(677, 30);
             this.btnClose.Name = "btnClose";
             this.btnClose.Rotation = 0;
             this.btnClose.ShowActiveImage = true;
@@ -220,12 +223,24 @@
             this.btnClose.ZoomSpeed = 10;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // pPlaylist
+            // 
+            this.pPlaylist.BackColor = System.Drawing.Color.Transparent;
+            this.pPlaylist.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pPlaylist.Image = global::MusicApp.Properties.Resources.music;
+            this.pPlaylist.Location = new System.Drawing.Point(35, 31);
+            this.pPlaylist.Name = "pPlaylist";
+            this.pPlaylist.Size = new System.Drawing.Size(212, 212);
+            this.pPlaylist.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pPlaylist.TabIndex = 5;
+            this.pPlaylist.TabStop = false;
+            // 
             // InputPlaylist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.ClientSize = new System.Drawing.Size(474, 273);
+            this.ClientSize = new System.Drawing.Size(734, 273);
             this.Controls.Add(this.pnPlaylist);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InputPlaylist";
@@ -237,6 +252,7 @@
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.pnPlaylist.ResumeLayout(false);
             this.pnPlaylist.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pPlaylist)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -248,5 +264,6 @@
         private Panel pnLine;
         private TextBox txtboxName;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAdd;
+        private PictureBox pPlaylist;
     }
 }

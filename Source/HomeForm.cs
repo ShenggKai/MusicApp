@@ -5,11 +5,12 @@ namespace MusicApp
     public partial class HomeForm : Form //form 1
     {
         public static HomeForm instance;
-        public TextBox tbName;
+        public FlowLayoutPanel fpnlist;
         public HomeForm()
         {
             InitializeComponent();
             instance= this;
+            fpnlist = fpnPlaylist;
         }
 
         #region Effect when click menu
@@ -195,38 +196,36 @@ namespace MusicApp
 
         private void btnAddList_Click(object sender, EventArgs e)
         {
-            //Form formBackground = new Form();
+            Form formBackground = new Form();
 
-            //try
-            //{
-            //    using (InputPlaylist popup = new InputPlaylist())
-            //    {
-            //        formBackground.StartPosition = FormStartPosition.Manual;
-            //        formBackground.FormBorderStyle = FormBorderStyle.None;
-            //        formBackground.Opacity = .50d;
-            //        formBackground.BackColor = Color.Black;
-            //        formBackground.WindowState = FormWindowState.Maximized;
-            //        formBackground.TopMost = true;
-            //        formBackground.Location = this.Location;
-            //        formBackground.ShowInTaskbar = false;
-            //        formBackground.Show();
+            try
+            {
+                using (InputPlaylist popup = new InputPlaylist())
+                {
+                    formBackground.StartPosition = FormStartPosition.Manual;
+                    formBackground.FormBorderStyle = FormBorderStyle.None;
+                    formBackground.Opacity = .50d;
+                    formBackground.BackColor = Color.Black;
+                    formBackground.WindowState = FormWindowState.Maximized;
+                    formBackground.TopMost = true;
+                    formBackground.Location = this.Location;
+                    formBackground.ShowInTaskbar = false;
+                    formBackground.Show();
 
-            //        popup.Owner = formBackground;
-            //        popup.ShowDialog();
+                    popup.Owner = formBackground;
+                    popup.ShowDialog();
 
-            //        formBackground.Dispose();
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
-            //finally
-            //{
-            //    formBackground.Dispose();
-            //}
-            Playlist pl = new Playlist();
-            fpnPlaylist.Controls.Add(pl);
+                    formBackground.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                formBackground.Dispose();
+            }
         }
         #endregion
 
