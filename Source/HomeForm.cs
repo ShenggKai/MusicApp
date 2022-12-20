@@ -26,7 +26,7 @@ namespace MusicApp
             btnHome.BackColor = Color.FromArgb(25, 143, 15);
             btnHome.ForeColor = Color.White;
             btnHome.Image = global::MusicApp.Properties.Resources.home_white;
-            
+
             //navigation to trang chu
             pageMain.PageIndex = 0;
         }
@@ -185,7 +185,7 @@ namespace MusicApp
         int count = 0;
         private void btnHeart_Click(object sender, EventArgs e)
         {
-            if (count == 0 ) 
+            if (count == 0)
             {
                 btnHeart.Image = global::MusicApp.Properties.Resources.heart_green;
 
@@ -209,12 +209,43 @@ namespace MusicApp
         {
             pageMain.PageIndex = 3;
         }
-        #endregion
 
         private void btnAddList_Click(object sender, EventArgs e)
         {
-            InputPlaylist form= new InputPlaylist();
-            form.ShowDialog();
+            Form formBackground = new Form();
+
+            try
+            {
+                using (InputPlaylist popup = new InputPlaylist())
+                {
+                    formBackground.StartPosition = FormStartPosition.Manual;
+                    formBackground.FormBorderStyle = FormBorderStyle.None;
+                    formBackground.Opacity = .50d;
+                    formBackground.BackColor = Color.Black;
+                    formBackground.WindowState = FormWindowState.Maximized;
+                    formBackground.TopMost = true;
+                    formBackground.Location = this.Location;
+                    formBackground.ShowInTaskbar = false;
+                    formBackground.Show();
+
+                    popup.Owner = formBackground;
+                    popup.ShowDialog();
+
+                    formBackground.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                formBackground.Dispose();
+            }
+
+
         }
+        #endregion
+
     }
 }
