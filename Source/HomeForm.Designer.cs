@@ -666,10 +666,10 @@ namespace MusicApp
             this.pageMain.Location = new System.Drawing.Point(272, 0);
             this.pageMain.Multiline = true;
             this.pageMain.Name = "pageMain";
-            this.pageMain.Page = this.pageCollection;
-            this.pageMain.PageIndex = 2;
-            this.pageMain.PageName = "pageCollection";
-            this.pageMain.PageTitle = "Thư viện";
+            this.pageMain.Page = this.pageAllSong;
+            this.pageMain.PageIndex = 3;
+            this.pageMain.PageName = "pageAllSong";
+            this.pageMain.PageTitle = "Tất cả bài";
             this.pageMain.SelectedIndex = 0;
             this.pageMain.Size = new System.Drawing.Size(1624, 920);
             this.pageMain.TabIndex = 2;
@@ -1220,8 +1220,8 @@ namespace MusicApp
             this.tabulateSongs.EnableRowSelection = false;
             this.tabulateSongs.EnableSelection = true;
             this.tabulateSongs.HTMLFooter = "";
-            this.tabulateSongs.HTMLHeader = "<button type=\"button\" class=\"btn btn-primary\">Primary</button>\r\n<button type=\"but" +
-    "ton\" class=\"btn btn-secondary\">Secondary</button>\r\n<br>\r\n<br>";
+            this.tabulateSongs.HTMLHeader = "<button type=\"button\" class=\"btn btn-secondary\">Thêm bài hát</button>\r\n<br>\r\n<br>" +
+    "";
             this.tabulateSongs.InjectCSS = "";
             this.tabulateSongs.InjectJS = "";
             this.tabulateSongs.LoaderDelay = 1000;
