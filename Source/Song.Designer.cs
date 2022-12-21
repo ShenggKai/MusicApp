@@ -48,10 +48,10 @@
             this.txtNum.ForeColor = System.Drawing.Color.White;
             this.txtNum.Location = new System.Drawing.Point(14, 25);
             this.txtNum.Name = "txtNum";
-            this.txtNum.Size = new System.Drawing.Size(39, 39);
+            this.txtNum.Size = new System.Drawing.Size(68, 39);
             this.txtNum.TabIndex = 0;
             this.txtNum.Text = "1";
-            this.txtNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pSong
             // 
