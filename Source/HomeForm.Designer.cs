@@ -72,6 +72,16 @@ namespace MusicApp
             this.pageMain = new Bunifu.UI.WinForms.BunifuPages();
             this.pageHome = new System.Windows.Forms.TabPage();
             this.fpnSongs = new System.Windows.Forms.FlowLayoutPanel();
+            this.song1 = new MusicApp.Source.Song();
+            this.song2 = new MusicApp.Source.Song();
+            this.song3 = new MusicApp.Source.Song();
+            this.song4 = new MusicApp.Source.Song();
+            this.song5 = new MusicApp.Source.Song();
+            this.song6 = new MusicApp.Source.Song();
+            this.song7 = new MusicApp.Source.Song();
+            this.song8 = new MusicApp.Source.Song();
+            this.song9 = new MusicApp.Source.Song();
+            this.song10 = new MusicApp.Source.Song();
             this.lbSongs = new System.Windows.Forms.Label();
             this.pageFind = new System.Windows.Forms.TabPage();
             this.pnFind = new System.Windows.Forms.Panel();
@@ -95,16 +105,6 @@ namespace MusicApp
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageAllSong = new System.Windows.Forms.TabPage();
             this.tabulateSongs = new Tabulate.Tabulate();
-            this.song1 = new MusicApp.Source.Song();
-            this.song2 = new MusicApp.Source.Song();
-            this.song3 = new MusicApp.Source.Song();
-            this.song4 = new MusicApp.Source.Song();
-            this.song5 = new MusicApp.Source.Song();
-            this.song6 = new MusicApp.Source.Song();
-            this.song7 = new MusicApp.Source.Song();
-            this.song8 = new MusicApp.Source.Song();
-            this.song9 = new MusicApp.Source.Song();
-            this.song10 = new MusicApp.Source.Song();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -731,15 +731,146 @@ namespace MusicApp
             this.fpnSongs.Size = new System.Drawing.Size(1610, 802);
             this.fpnSongs.TabIndex = 6;
             // 
+            // song1
+            // 
+            this.song1.Artist = "Emcee L, Badbies";
+            this.song1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.song1.ImageSong = ((System.Drawing.Image)(resources.GetObject("song1.ImageSong")));
+            this.song1.Location = new System.Drawing.Point(3, 3);
+            this.song1.Name = "song1";
+            this.song1.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song1.Number = "1";
+            this.song1.Size = new System.Drawing.Size(1610, 90);
+            this.song1.TabIndex = 0;
+            this.song1.Time = "03:54";
+            // 
+            // song2
+            // 
+            this.song2.Artist = "Emcee L, Badbies";
+            this.song2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.song2.ImageSong = ((System.Drawing.Image)(resources.GetObject("song2.ImageSong")));
+            this.song2.Location = new System.Drawing.Point(3, 99);
+            this.song2.Name = "song2";
+            this.song2.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song2.Number = "1";
+            this.song2.Size = new System.Drawing.Size(1610, 90);
+            this.song2.TabIndex = 1;
+            this.song2.Time = "03:54";
+            // 
+            // song3
+            // 
+            this.song3.Artist = "Emcee L, Badbies";
+            this.song3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.song3.ImageSong = ((System.Drawing.Image)(resources.GetObject("song3.ImageSong")));
+            this.song3.Location = new System.Drawing.Point(3, 195);
+            this.song3.Name = "song3";
+            this.song3.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song3.Number = "1";
+            this.song3.Size = new System.Drawing.Size(1610, 90);
+            this.song3.TabIndex = 2;
+            this.song3.Time = "03:54";
+            // 
+            // song4
+            // 
+            this.song4.Artist = "Emcee L, Badbies";
+            this.song4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.song4.ImageSong = ((System.Drawing.Image)(resources.GetObject("song4.ImageSong")));
+            this.song4.Location = new System.Drawing.Point(3, 291);
+            this.song4.Name = "song4";
+            this.song4.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song4.Number = "1";
+            this.song4.Size = new System.Drawing.Size(1610, 90);
+            this.song4.TabIndex = 3;
+            this.song4.Time = "03:54";
+            // 
+            // song5
+            // 
+            this.song5.Artist = "Emcee L, Badbies";
+            this.song5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.song5.ImageSong = ((System.Drawing.Image)(resources.GetObject("song5.ImageSong")));
+            this.song5.Location = new System.Drawing.Point(3, 387);
+            this.song5.Name = "song5";
+            this.song5.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song5.Number = "1";
+            this.song5.Size = new System.Drawing.Size(1610, 90);
+            this.song5.TabIndex = 4;
+            this.song5.Time = "03:54";
+            // 
+            // song6
+            // 
+            this.song6.Artist = "Emcee L, Badbies";
+            this.song6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.song6.ImageSong = ((System.Drawing.Image)(resources.GetObject("song6.ImageSong")));
+            this.song6.Location = new System.Drawing.Point(3, 483);
+            this.song6.Name = "song6";
+            this.song6.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song6.Number = "1";
+            this.song6.Size = new System.Drawing.Size(1610, 90);
+            this.song6.TabIndex = 5;
+            this.song6.Time = "03:54";
+            // 
+            // song7
+            // 
+            this.song7.Artist = "Emcee L, Badbies";
+            this.song7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.song7.ImageSong = ((System.Drawing.Image)(resources.GetObject("song7.ImageSong")));
+            this.song7.Location = new System.Drawing.Point(3, 579);
+            this.song7.Name = "song7";
+            this.song7.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song7.Number = "1";
+            this.song7.Size = new System.Drawing.Size(1610, 90);
+            this.song7.TabIndex = 6;
+            this.song7.Time = "03:54";
+            // 
+            // song8
+            // 
+            this.song8.Artist = "Emcee L, Badbies";
+            this.song8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.song8.ImageSong = ((System.Drawing.Image)(resources.GetObject("song8.ImageSong")));
+            this.song8.Location = new System.Drawing.Point(3, 675);
+            this.song8.Name = "song8";
+            this.song8.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song8.Number = "1";
+            this.song8.Size = new System.Drawing.Size(1610, 90);
+            this.song8.TabIndex = 7;
+            this.song8.Time = "03:54";
+            // 
+            // song9
+            // 
+            this.song9.Artist = "Emcee L, Badbies";
+            this.song9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.song9.ImageSong = ((System.Drawing.Image)(resources.GetObject("song9.ImageSong")));
+            this.song9.Location = new System.Drawing.Point(3, 771);
+            this.song9.Name = "song9";
+            this.song9.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song9.Number = "1";
+            this.song9.Size = new System.Drawing.Size(1610, 90);
+            this.song9.TabIndex = 8;
+            this.song9.Time = "03:54";
+            // 
+            // song10
+            // 
+            this.song10.Artist = "Emcee L, Badbies";
+            this.song10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.song10.ImageSong = ((System.Drawing.Image)(resources.GetObject("song10.ImageSong")));
+            this.song10.Location = new System.Drawing.Point(3, 867);
+            this.song10.Name = "song10";
+            this.song10.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song10.Number = "1";
+            this.song10.Size = new System.Drawing.Size(1610, 90);
+            this.song10.TabIndex = 9;
+            this.song10.Time = "03:54";
+            // 
             // lbSongs
             // 
-            this.lbSongs.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbSongs.AutoSize = true;
+            this.lbSongs.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbSongs.ForeColor = System.Drawing.Color.White;
-            this.lbSongs.Location = new System.Drawing.Point(45, 23);
+            this.lbSongs.Location = new System.Drawing.Point(48, 22);
             this.lbSongs.Name = "lbSongs";
-            this.lbSongs.Size = new System.Drawing.Size(107, 36);
+            this.lbSongs.Size = new System.Drawing.Size(220, 46);
             this.lbSongs.TabIndex = 5;
-            this.lbSongs.Text = "Bài hát";
+            this.lbSongs.Text = "Tất cả bài hát";
             this.lbSongs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pageFind
@@ -1197,136 +1328,6 @@ namespace MusicApp
             this.tabulateSongs.TableStriped = true;
             this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
             // 
-            // song1
-            // 
-            this.song1.Artist = "Emcee L, Badbies";
-            this.song1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song1.ImageSong = ((System.Drawing.Image)(resources.GetObject("song1.ImageSong")));
-            this.song1.Location = new System.Drawing.Point(3, 3);
-            this.song1.Name = "song1";
-            this.song1.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song1.Number = "1";
-            this.song1.Size = new System.Drawing.Size(1610, 90);
-            this.song1.TabIndex = 0;
-            this.song1.Time = "03:54";
-            // 
-            // song2
-            // 
-            this.song2.Artist = "Emcee L, Badbies";
-            this.song2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song2.ImageSong = ((System.Drawing.Image)(resources.GetObject("song2.ImageSong")));
-            this.song2.Location = new System.Drawing.Point(3, 99);
-            this.song2.Name = "song2";
-            this.song2.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song2.Number = "1";
-            this.song2.Size = new System.Drawing.Size(1610, 90);
-            this.song2.TabIndex = 1;
-            this.song2.Time = "03:54";
-            // 
-            // song3
-            // 
-            this.song3.Artist = "Emcee L, Badbies";
-            this.song3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song3.ImageSong = ((System.Drawing.Image)(resources.GetObject("song3.ImageSong")));
-            this.song3.Location = new System.Drawing.Point(3, 195);
-            this.song3.Name = "song3";
-            this.song3.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song3.Number = "1";
-            this.song3.Size = new System.Drawing.Size(1610, 90);
-            this.song3.TabIndex = 2;
-            this.song3.Time = "03:54";
-            // 
-            // song4
-            // 
-            this.song4.Artist = "Emcee L, Badbies";
-            this.song4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song4.ImageSong = ((System.Drawing.Image)(resources.GetObject("song4.ImageSong")));
-            this.song4.Location = new System.Drawing.Point(3, 291);
-            this.song4.Name = "song4";
-            this.song4.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song4.Number = "1";
-            this.song4.Size = new System.Drawing.Size(1610, 90);
-            this.song4.TabIndex = 3;
-            this.song4.Time = "03:54";
-            // 
-            // song5
-            // 
-            this.song5.Artist = "Emcee L, Badbies";
-            this.song5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song5.ImageSong = ((System.Drawing.Image)(resources.GetObject("song5.ImageSong")));
-            this.song5.Location = new System.Drawing.Point(3, 387);
-            this.song5.Name = "song5";
-            this.song5.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song5.Number = "1";
-            this.song5.Size = new System.Drawing.Size(1610, 90);
-            this.song5.TabIndex = 4;
-            this.song5.Time = "03:54";
-            // 
-            // song6
-            // 
-            this.song6.Artist = "Emcee L, Badbies";
-            this.song6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song6.ImageSong = ((System.Drawing.Image)(resources.GetObject("song6.ImageSong")));
-            this.song6.Location = new System.Drawing.Point(3, 483);
-            this.song6.Name = "song6";
-            this.song6.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song6.Number = "1";
-            this.song6.Size = new System.Drawing.Size(1610, 90);
-            this.song6.TabIndex = 5;
-            this.song6.Time = "03:54";
-            // 
-            // song7
-            // 
-            this.song7.Artist = "Emcee L, Badbies";
-            this.song7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song7.ImageSong = ((System.Drawing.Image)(resources.GetObject("song7.ImageSong")));
-            this.song7.Location = new System.Drawing.Point(3, 579);
-            this.song7.Name = "song7";
-            this.song7.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song7.Number = "1";
-            this.song7.Size = new System.Drawing.Size(1610, 90);
-            this.song7.TabIndex = 6;
-            this.song7.Time = "03:54";
-            // 
-            // song8
-            // 
-            this.song8.Artist = "Emcee L, Badbies";
-            this.song8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song8.ImageSong = ((System.Drawing.Image)(resources.GetObject("song8.ImageSong")));
-            this.song8.Location = new System.Drawing.Point(3, 675);
-            this.song8.Name = "song8";
-            this.song8.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song8.Number = "1";
-            this.song8.Size = new System.Drawing.Size(1610, 90);
-            this.song8.TabIndex = 7;
-            this.song8.Time = "03:54";
-            // 
-            // song9
-            // 
-            this.song9.Artist = "Emcee L, Badbies";
-            this.song9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song9.ImageSong = ((System.Drawing.Image)(resources.GetObject("song9.ImageSong")));
-            this.song9.Location = new System.Drawing.Point(3, 771);
-            this.song9.Name = "song9";
-            this.song9.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song9.Number = "1";
-            this.song9.Size = new System.Drawing.Size(1610, 90);
-            this.song9.TabIndex = 8;
-            this.song9.Time = "03:54";
-            // 
-            // song10
-            // 
-            this.song10.Artist = "Emcee L, Badbies";
-            this.song10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song10.ImageSong = ((System.Drawing.Image)(resources.GetObject("song10.ImageSong")));
-            this.song10.Location = new System.Drawing.Point(3, 867);
-            this.song10.Name = "song10";
-            this.song10.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song10.Number = "1";
-            this.song10.Size = new System.Drawing.Size(1610, 90);
-            this.song10.TabIndex = 9;
-            this.song10.Time = "03:54";
-            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1346,6 +1347,7 @@ namespace MusicApp
             this.pnMenu.ResumeLayout(false);
             this.pageMain.ResumeLayout(false);
             this.pageHome.ResumeLayout(false);
+            this.pageHome.PerformLayout();
             this.fpnSongs.ResumeLayout(false);
             this.pageFind.ResumeLayout(false);
             this.pnFind.ResumeLayout(false);
