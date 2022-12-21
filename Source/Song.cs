@@ -17,7 +17,7 @@ namespace MusicApp.Source
             InitializeComponent();
         }
 
-        public Image aImageSong
+        public Image ImageSong
         {
             get
             {
@@ -29,25 +29,25 @@ namespace MusicApp.Source
             }
         }
 
-        public String aNameSong
+        public String NameSong
         {
             get { return txtName.Text; }
             set { txtName.Text = value; }
         }
 
-        public String aArtist
+        public String Artist
         {
             get { return txtArtist.Text; }
             set { txtArtist.Text = value; }
         }
 
-        public String aNumber
+        public String Number
         {
             get { return txtNum.Text; }
             set { txtNum.Text = value; }
         }
 
-        public String aTime
+        public String Time
         { 
             get { return txtTime.Text; }
             set { txtTime.Text = value; }
