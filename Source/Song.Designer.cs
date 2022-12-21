@@ -69,7 +69,7 @@
             this.txtName.ForeColor = System.Drawing.Color.White;
             this.txtName.Location = new System.Drawing.Point(202, 23);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(308, 28);
+            this.txtName.Size = new System.Drawing.Size(413, 28);
             this.txtName.TabIndex = 2;
             this.txtName.Text = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
             // 
@@ -78,7 +78,7 @@
             this.txtArtist.ForeColor = System.Drawing.Color.White;
             this.txtArtist.Location = new System.Drawing.Point(202, 55);
             this.txtArtist.Name = "txtArtist";
-            this.txtArtist.Size = new System.Drawing.Size(126, 18);
+            this.txtArtist.Size = new System.Drawing.Size(413, 18);
             this.txtArtist.TabIndex = 3;
             this.txtArtist.Text = "Emcee L, Badbies";
             // 

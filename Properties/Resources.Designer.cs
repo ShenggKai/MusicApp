@@ -63,9 +63,39 @@ namespace MusicApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AiDuaEmVe {
+            get {
+                object obj = ResourceManager.GetObject("AiDuaEmVe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap angle_right {
             get {
                 object obj = ResourceManager.GetObject("angle_right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AnswerLoveMyself {
+            get {
+                object obj = ResourceManager.GetObject("AnswerLoveMyself", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BadHabits {
+            get {
+                object obj = ResourceManager.GetObject("BadHabits", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,6 +143,16 @@ namespace MusicApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EndlessLove {
+            get {
+                object obj = ResourceManager.GetObject("EndlessLove", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap folder {
             get {
                 object obj = ResourceManager.GetObject("folder", resourceCulture);
@@ -133,9 +173,39 @@ namespace MusicApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GlimpseOfUs {
+            get {
+                object obj = ResourceManager.GetObject("GlimpseOfUs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GoingHome {
+            get {
+                object obj = ResourceManager.GetObject("GoingHome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap green_love {
             get {
                 object obj = ResourceManager.GetObject("green-love", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HeadInTheCloud {
+            get {
+                object obj = ResourceManager.GetObject("HeadInTheCloud", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
