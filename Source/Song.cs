@@ -17,6 +17,7 @@ namespace MusicApp.Source
             InitializeComponent();
         }
 
+        [Category("aMusic")]
         public Image ImageSong
         {
             get
@@ -29,24 +30,28 @@ namespace MusicApp.Source
             }
         }
 
+        [Category("aMusic")]
         public String NameSong
         {
             get { return txtName.Text; }
             set { txtName.Text = value; }
         }
 
+        [Category("aMusic")]
         public String Artist
         {
             get { return txtArtist.Text; }
             set { txtArtist.Text = value; }
         }
 
+        [Category("aMusic")]
         public String Number
         {
             get { return txtNum.Text; }
             set { txtNum.Text = value; }
         }
 
+        [Category("aMusic")]
         public String Time
         { 
             get { return txtTime.Text; }
