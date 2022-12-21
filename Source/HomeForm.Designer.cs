@@ -71,8 +71,6 @@ namespace MusicApp
             this.lbLogo = new System.Windows.Forms.Label();
             this.pageMain = new Bunifu.UI.WinForms.BunifuPages();
             this.pageHome = new System.Windows.Forms.TabPage();
-            this.btnMore2 = new System.Windows.Forms.Button();
-            this.btnMore1 = new System.Windows.Forms.Button();
             this.fpnSongs = new System.Windows.Forms.FlowLayoutPanel();
             this.lbSongs = new System.Windows.Forms.Label();
             this.pageFind = new System.Windows.Forms.TabPage();
@@ -692,8 +690,6 @@ namespace MusicApp
             // pageHome
             // 
             this.pageHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageHome.Controls.Add(this.btnMore2);
-            this.pageHome.Controls.Add(this.btnMore1);
             this.pageHome.Controls.Add(this.fpnSongs);
             this.pageHome.Controls.Add(this.lbSongs);
             this.pageHome.Location = new System.Drawing.Point(4, 4);
@@ -703,47 +699,10 @@ namespace MusicApp
             this.pageHome.TabIndex = 0;
             this.pageHome.Text = "Trang chủ";
             // 
-            // btnMore2
-            // 
-            this.btnMore2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.btnMore2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMore2.FlatAppearance.BorderSize = 0;
-            this.btnMore2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMore2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMore2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.btnMore2.Image = global::MusicApp.Properties.Resources.angle_right;
-            this.btnMore2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMore2.Location = new System.Drawing.Point(1451, 445);
-            this.btnMore2.Name = "btnMore2";
-            this.btnMore2.Size = new System.Drawing.Size(134, 40);
-            this.btnMore2.TabIndex = 9;
-            this.btnMore2.Text = "Xem thêm";
-            this.btnMore2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMore2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnMore2.UseVisualStyleBackColor = false;
-            this.btnMore2.Click += new System.EventHandler(this.btnMore2_Click);
-            // 
-            // btnMore1
-            // 
-            this.btnMore1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.btnMore1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMore1.FlatAppearance.BorderSize = 0;
-            this.btnMore1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMore1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMore1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.btnMore1.Image = global::MusicApp.Properties.Resources.angle_right;
-            this.btnMore1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMore1.Location = new System.Drawing.Point(1451, 30);
-            this.btnMore1.Name = "btnMore1";
-            this.btnMore1.Size = new System.Drawing.Size(134, 40);
-            this.btnMore1.TabIndex = 8;
-            this.btnMore1.Text = "Xem thêm";
-            this.btnMore1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMore1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnMore1.UseVisualStyleBackColor = false;
-            // 
             // fpnSongs
             // 
+            this.fpnSongs.AllowDrop = true;
+            this.fpnSongs.AutoScroll = true;
             this.fpnSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.fpnSongs.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fpnSongs.Location = new System.Drawing.Point(3, 82);
@@ -1279,8 +1238,6 @@ namespace MusicApp
         private TabPage pageCollection;
         private Label lbSongs;
         private FlowLayoutPanel fpnSongs;
-        private Button btnMore1;
-        private Button btnMore2;
         private TabPage pageAllSong;
         private Tabulate.Tabulate tabulateSongs;
         private Bunifu.UI.WinForms.BunifuTextBox txboxFind;
