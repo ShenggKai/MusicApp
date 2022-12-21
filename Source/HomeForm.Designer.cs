@@ -745,16 +745,17 @@ namespace MusicApp
             // fpnSongs
             // 
             this.fpnSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.fpnSongs.Location = new System.Drawing.Point(80, 502);
+            this.fpnSongs.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.fpnSongs.Location = new System.Drawing.Point(3, 82);
             this.fpnSongs.Name = "fpnSongs";
-            this.fpnSongs.Size = new System.Drawing.Size(1505, 360);
+            this.fpnSongs.Size = new System.Drawing.Size(1610, 802);
             this.fpnSongs.TabIndex = 6;
             // 
             // lbSongs
             // 
             this.lbSongs.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbSongs.ForeColor = System.Drawing.Color.White;
-            this.lbSongs.Location = new System.Drawing.Point(45, 449);
+            this.lbSongs.Location = new System.Drawing.Point(45, 23);
             this.lbSongs.Name = "lbSongs";
             this.lbSongs.Size = new System.Drawing.Size(107, 36);
             this.lbSongs.TabIndex = 5;
