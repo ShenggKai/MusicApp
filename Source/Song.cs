@@ -60,15 +60,5 @@ namespace MusicApp.Source
             set { txtTime.Text = value; }
         }
         #endregion
-
-        private void Song_MouseHover(object sender, EventArgs e)
-        {
-            this.BackColor = Color.FromArgb(80, 80, 80);
-        }
-
-        private void Song_MouseLeave(object sender, EventArgs e)
-        {
-            this.BackColor = Color.FromArgb(24, 24, 24);
-        }
     }
 }

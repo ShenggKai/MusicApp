@@ -102,11 +102,15 @@ namespace MusicApp
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageHistory = new System.Windows.Forms.TabPage();
+            this.song1 = new MusicApp.Source.Song();
+            this.song2 = new MusicApp.Source.Song();
+            this.song3 = new MusicApp.Source.Song();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
             this.ppageMain.SuspendLayout();
             this.pageHome.SuspendLayout();
+            this.fpnSongs.SuspendLayout();
             this.pnHeader.SuspendLayout();
             this.pageGenreMain.SuspendLayout();
             this.ppageGenre.SuspendLayout();
@@ -1012,6 +1016,9 @@ namespace MusicApp
             // 
             this.fpnSongs.AllowDrop = true;
             this.fpnSongs.AutoScroll = true;
+            this.fpnSongs.Controls.Add(this.song1);
+            this.fpnSongs.Controls.Add(this.song2);
+            this.fpnSongs.Controls.Add(this.song3);
             this.fpnSongs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fpnSongs.Location = new System.Drawing.Point(3, 181);
             this.fpnSongs.Name = "fpnSongs";
@@ -1487,6 +1494,48 @@ namespace MusicApp
             this.pageHistory.TabIndex = 4;
             this.pageHistory.Text = "Lịch sử";
             // 
+            // song1
+            // 
+            this.song1.Artist = "Emcee L, Badbies";
+            this.song1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song1.ImageSong = ((System.Drawing.Image)(resources.GetObject("song1.ImageSong")));
+            this.song1.Location = new System.Drawing.Point(0, 0);
+            this.song1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song1.Name = "song1";
+            this.song1.NameSong = "Nhạc không lời";
+            this.song1.Number = "1";
+            this.song1.Size = new System.Drawing.Size(1620, 90);
+            this.song1.TabIndex = 0;
+            this.song1.Time = "03:54";
+            // 
+            // song2
+            // 
+            this.song2.Artist = "Emcee L, Badbies";
+            this.song2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song2.ImageSong = ((System.Drawing.Image)(resources.GetObject("song2.ImageSong")));
+            this.song2.Location = new System.Drawing.Point(0, 93);
+            this.song2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song2.Name = "song2";
+            this.song2.NameSong = "Nhạc không lời";
+            this.song2.Number = "1";
+            this.song2.Size = new System.Drawing.Size(1620, 90);
+            this.song2.TabIndex = 1;
+            this.song2.Time = "03:54";
+            // 
+            // song3
+            // 
+            this.song3.Artist = "Emcee L, Badbies";
+            this.song3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song3.ImageSong = ((System.Drawing.Image)(resources.GetObject("song3.ImageSong")));
+            this.song3.Location = new System.Drawing.Point(0, 186);
+            this.song3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song3.Name = "song3";
+            this.song3.NameSong = "Nhạc không lời";
+            this.song3.Number = "1";
+            this.song3.Size = new System.Drawing.Size(1620, 90);
+            this.song3.TabIndex = 2;
+            this.song3.Time = "03:54";
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1506,6 +1555,7 @@ namespace MusicApp
             this.pnMenu.ResumeLayout(false);
             this.ppageMain.ResumeLayout(false);
             this.pageHome.ResumeLayout(false);
+            this.fpnSongs.ResumeLayout(false);
             this.pnHeader.ResumeLayout(false);
             this.pageGenreMain.ResumeLayout(false);
             this.ppageGenre.ResumeLayout(false);
@@ -1571,5 +1621,8 @@ namespace MusicApp
         private Label txtGenre;
         private Label txtTime;
         private FlowLayoutPanel fpnSongs;
+        private Source.Song song1;
+        private Source.Song song2;
+        private Source.Song song3;
     }
 }
