@@ -159,9 +159,7 @@
             this.Controls.Add(this.txtNum);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Song";
-            this.Size = new System.Drawing.Size(1610, 90);
-            this.MouseLeave += new System.EventHandler(this.Song_MouseLeave);
-            this.MouseHover += new System.EventHandler(this.Song_MouseHover);
+            this.Size = new System.Drawing.Size(1620, 90);
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInfor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHeart)).EndInit();
