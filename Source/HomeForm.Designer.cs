@@ -97,8 +97,6 @@ namespace MusicApp
             this.playlist1 = new MusicApp.Source.Playlist();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.pageAllSong = new System.Windows.Forms.TabPage();
-            this.tabulateSongs = new Tabulate.Tabulate();
             this.pageHistory = new System.Windows.Forms.TabPage();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
@@ -114,7 +112,6 @@ namespace MusicApp
             this.pageLike.SuspendLayout();
             this.tabpagePlaylist.SuspendLayout();
             this.fpnPlaylist.SuspendLayout();
-            this.pageAllSong.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -668,6 +665,7 @@ namespace MusicApp
             this.btnHistory.TextMarginLeft = 0;
             this.btnHistory.TextPadding = new System.Windows.Forms.Padding(73, 0, 0, 0);
             this.btnHistory.UseDefaultRadiusAndThickness = true;
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
             // 
             // btnCollection
             // 
@@ -759,6 +757,7 @@ namespace MusicApp
             this.btnCollection.TextMarginLeft = 0;
             this.btnCollection.TextPadding = new System.Windows.Forms.Padding(73, 0, 0, 0);
             this.btnCollection.UseDefaultRadiusAndThickness = true;
+            this.btnCollection.Click += new System.EventHandler(this.btnCollection_Click);
             // 
             // btnGenre
             // 
@@ -850,6 +849,7 @@ namespace MusicApp
             this.btnGenre.TextMarginLeft = 0;
             this.btnGenre.TextPadding = new System.Windows.Forms.Padding(73, 0, 0, 0);
             this.btnGenre.UseDefaultRadiusAndThickness = true;
+            this.btnGenre.Click += new System.EventHandler(this.btnGenre_Click);
             // 
             // btnHome
             // 
@@ -941,6 +941,7 @@ namespace MusicApp
             this.btnHome.TextMarginLeft = 0;
             this.btnHome.TextPadding = new System.Windows.Forms.Padding(73, 0, 0, 0);
             this.btnHome.UseDefaultRadiusAndThickness = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // lbLogo
             // 
@@ -961,16 +962,15 @@ namespace MusicApp
             this.ppageMain.Controls.Add(this.pageHome);
             this.ppageMain.Controls.Add(this.pageGenreMain);
             this.ppageMain.Controls.Add(this.pageCollection);
-            this.ppageMain.Controls.Add(this.pageAllSong);
             this.ppageMain.Controls.Add(this.pageHistory);
             this.ppageMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ppageMain.Location = new System.Drawing.Point(272, 0);
             this.ppageMain.Multiline = true;
             this.ppageMain.Name = "ppageMain";
-            this.ppageMain.Page = this.pageHistory;
-            this.ppageMain.PageIndex = 4;
-            this.ppageMain.PageName = "pageHistory";
-            this.ppageMain.PageTitle = "Lịch sử";
+            this.ppageMain.Page = this.pageHome;
+            this.ppageMain.PageIndex = 0;
+            this.ppageMain.PageName = "pageHome";
+            this.ppageMain.PageTitle = "Trang chủ";
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
             this.ppageMain.TabIndex = 2;
@@ -1428,47 +1428,6 @@ namespace MusicApp
             this.btnAddList.UseDefaultRadiusAndThickness = true;
             this.btnAddList.Click += new System.EventHandler(this.btnAddList_Click);
             // 
-            // pageAllSong
-            // 
-            this.pageAllSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageAllSong.Controls.Add(this.tabulateSongs);
-            this.pageAllSong.Location = new System.Drawing.Point(4, 4);
-            this.pageAllSong.Name = "pageAllSong";
-            this.pageAllSong.Padding = new System.Windows.Forms.Padding(3);
-            this.pageAllSong.Size = new System.Drawing.Size(1622, 865);
-            this.pageAllSong.TabIndex = 3;
-            this.pageAllSong.Text = "Tất cả bài";
-            // 
-            // tabulateSongs
-            // 
-            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns"))));
-            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns1"))));
-            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns2"))));
-            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns3"))));
-            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns4"))));
-            this.tabulateSongs.Columns.Add(((Tabulate.Column)(resources.GetObject("tabulateSongs.Columns5"))));
-            this.tabulateSongs.EnableRowSelection = false;
-            this.tabulateSongs.EnableSelection = true;
-            this.tabulateSongs.HTMLFooter = "";
-            this.tabulateSongs.HTMLHeader = "<button type=\"button\" class=\"btn btn-secondary\">Thêm bài hát</button>\r\n<br>\r\n<br>" +
-    "";
-            this.tabulateSongs.InjectCSS = "";
-            this.tabulateSongs.InjectJS = "";
-            this.tabulateSongs.LoaderDelay = 1000;
-            this.tabulateSongs.LoaderImage = ((System.Drawing.Image)(resources.GetObject("tabulateSongs.LoaderImage")));
-            this.tabulateSongs.Location = new System.Drawing.Point(7, 19);
-            this.tabulateSongs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabulateSongs.Name = "tabulateSongs";
-            this.tabulateSongs.ScrollbarsEnabled = false;
-            this.tabulateSongs.Size = new System.Drawing.Size(1600, 860);
-            this.tabulateSongs.TabIndex = 0;
-            this.tabulateSongs.TableBordered = true;
-            this.tabulateSongs.TableCompact = false;
-            this.tabulateSongs.TableConfiguration = ((Tabulate.TableConfig)(resources.GetObject("tabulateSongs.TableConfiguration")));
-            this.tabulateSongs.TableHoverEffect = true;
-            this.tabulateSongs.TableStriped = true;
-            this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
-            // 
             // pageHistory
             // 
             this.pageHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
@@ -1507,7 +1466,6 @@ namespace MusicApp
             this.pageLike.ResumeLayout(false);
             this.tabpagePlaylist.ResumeLayout(false);
             this.fpnPlaylist.ResumeLayout(false);
-            this.pageAllSong.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1537,8 +1495,6 @@ namespace MusicApp
         private TabPage pageGenreMain;
         private TabPage pageCollection;
         private FlowLayoutPanel fpnSongs;
-        private TabPage pageAllSong;
-        private Tabulate.Tabulate tabulateSongs;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAddList;
         private Bunifu.UI.WinForms.BunifuPages ppageGenre;
         private TabPage tabpageGenre;

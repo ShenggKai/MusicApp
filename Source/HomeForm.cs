@@ -128,12 +128,33 @@ namespace MusicApp
         }
         #endregion
 
-        #region when click button
+        #region when click menu
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(0);
+        }
+
+        private void btnGenre_Click(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(1);
+        }
+
+        private void btnCollection_Click(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(2);
+        }
+
+        private void btnHistory_Click(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(3);
+        }
         private void btnMore2_Click(object sender, EventArgs e)
         {
             ppageMain.PageIndex = 3;
         }
+        #endregion
 
+        #region when click button
         private void btnAddList_Click(object sender, EventArgs e)
         {
             Form formBackground = new Form();
@@ -169,5 +190,6 @@ namespace MusicApp
         }
 
         #endregion
+
     }
 }
