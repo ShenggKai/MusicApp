@@ -643,7 +643,7 @@ namespace MusicApp
             this.btnHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
             this.btnHistory.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHistory.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnHistory.IconLeftPadding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnHistory.IconLeftPadding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnHistory.IconMarginLeft = 11;
             this.btnHistory.IconPadding = 0;
             this.btnHistory.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -697,7 +697,7 @@ namespace MusicApp
             this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHistory.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnHistory.TextMarginLeft = 0;
-            this.btnHistory.TextPadding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.btnHistory.TextPadding = new System.Windows.Forms.Padding(73, 0, 0, 0);
             this.btnHistory.UseDefaultRadiusAndThickness = true;
             // 
             // btnCollection
@@ -788,7 +788,7 @@ namespace MusicApp
             this.btnCollection.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCollection.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnCollection.TextMarginLeft = 0;
-            this.btnCollection.TextPadding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.btnCollection.TextPadding = new System.Windows.Forms.Padding(73, 0, 0, 0);
             this.btnCollection.UseDefaultRadiusAndThickness = true;
             // 
             // btnGenre
@@ -825,7 +825,7 @@ namespace MusicApp
             this.btnGenre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
             this.btnGenre.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenre.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnGenre.IconLeftPadding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnGenre.IconLeftPadding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnGenre.IconMarginLeft = 11;
             this.btnGenre.IconPadding = 0;
             this.btnGenre.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -879,7 +879,7 @@ namespace MusicApp
             this.btnGenre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenre.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnGenre.TextMarginLeft = 0;
-            this.btnGenre.TextPadding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.btnGenre.TextPadding = new System.Windows.Forms.Padding(73, 0, 0, 0);
             this.btnGenre.UseDefaultRadiusAndThickness = true;
             // 
             // btnHome
@@ -907,8 +907,8 @@ namespace MusicApp
             borderEdges4.TopRight = true;
             this.btnHome.CustomizableEdges = borderEdges4;
             this.btnHome.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnHome.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnHome.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnHome.DisabledBorderColor = System.Drawing.Color.Yellow;
+            this.btnHome.DisabledFillColor = System.Drawing.Color.Blue;
             this.btnHome.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
@@ -916,7 +916,7 @@ namespace MusicApp
             this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
             this.btnHome.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnHome.IconLeftPadding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnHome.IconLeftPadding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnHome.IconMarginLeft = 11;
             this.btnHome.IconPadding = 0;
             this.btnHome.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -932,11 +932,11 @@ namespace MusicApp
             this.btnHome.IndicateFocus = false;
             this.btnHome.Location = new System.Drawing.Point(0, 86);
             this.btnHome.Name = "btnHome";
-            this.btnHome.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnHome.OnDisabledState.BorderColor = System.Drawing.Color.Yellow;
             this.btnHome.OnDisabledState.BorderRadius = 1;
-            this.btnHome.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnHome.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Dash;
             this.btnHome.OnDisabledState.BorderThickness = 0;
-            this.btnHome.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnHome.OnDisabledState.FillColor = System.Drawing.Color.Blue;
             this.btnHome.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnHome.OnDisabledState.IconLeftImage = null;
             this.btnHome.OnDisabledState.IconRightImage = null;
@@ -970,7 +970,7 @@ namespace MusicApp
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnHome.TextMarginLeft = 0;
-            this.btnHome.TextPadding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.btnHome.TextPadding = new System.Windows.Forms.Padding(73, 0, 0, 0);
             this.btnHome.UseDefaultRadiusAndThickness = true;
             // 
             // lbLogo
