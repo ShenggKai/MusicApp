@@ -131,7 +131,7 @@ namespace MusicApp
         #region when click button
         private void btnMore2_Click(object sender, EventArgs e)
         {
-            pageMain.PageIndex = 3;
+            ppageMain.PageIndex = 3;
         }
 
         private void btnAddList_Click(object sender, EventArgs e)

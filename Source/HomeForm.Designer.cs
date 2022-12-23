@@ -74,42 +74,12 @@ namespace MusicApp
             this.btnGenre = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnHome = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.lbLogo = new System.Windows.Forms.Label();
-            this.pageMain = new Bunifu.UI.WinForms.BunifuPages();
+            this.ppageMain = new Bunifu.UI.WinForms.BunifuPages();
             this.pageHome = new System.Windows.Forms.TabPage();
             this.fpnSongs = new System.Windows.Forms.FlowLayoutPanel();
-            this.song1 = new MusicApp.Source.Song();
-            this.song2 = new MusicApp.Source.Song();
-            this.song3 = new MusicApp.Source.Song();
-            this.song4 = new MusicApp.Source.Song();
-            this.song5 = new MusicApp.Source.Song();
-            this.song6 = new MusicApp.Source.Song();
-            this.song7 = new MusicApp.Source.Song();
-            this.song8 = new MusicApp.Source.Song();
-            this.song9 = new MusicApp.Source.Song();
-            this.song10 = new MusicApp.Source.Song();
-            this.song11 = new MusicApp.Source.Song();
-            this.song12 = new MusicApp.Source.Song();
-            this.song13 = new MusicApp.Source.Song();
-            this.song14 = new MusicApp.Source.Song();
-            this.song15 = new MusicApp.Source.Song();
-            this.song16 = new MusicApp.Source.Song();
-            this.song17 = new MusicApp.Source.Song();
-            this.song18 = new MusicApp.Source.Song();
-            this.song19 = new MusicApp.Source.Song();
-            this.song20 = new MusicApp.Source.Song();
-            this.song21 = new MusicApp.Source.Song();
-            this.song22 = new MusicApp.Source.Song();
-            this.song23 = new MusicApp.Source.Song();
-            this.song24 = new MusicApp.Source.Song();
-            this.song25 = new MusicApp.Source.Song();
-            this.song26 = new MusicApp.Source.Song();
-            this.song27 = new MusicApp.Source.Song();
-            this.song28 = new MusicApp.Source.Song();
-            this.song29 = new MusicApp.Source.Song();
-            this.song30 = new MusicApp.Source.Song();
-            this.pageFind = new System.Windows.Forms.TabPage();
+            this.pageGenreMain = new System.Windows.Forms.TabPage();
             this.pnFind = new System.Windows.Forms.Panel();
-            this.pageGenre = new Bunifu.UI.WinForms.BunifuPages();
+            this.ppageGenre = new Bunifu.UI.WinForms.BunifuPages();
             this.tabpageGenre = new System.Windows.Forms.TabPage();
             this.fpnGenre = new System.Windows.Forms.FlowLayoutPanel();
             this.genre1 = new MusicApp.Source.Genre();
@@ -129,14 +99,15 @@ namespace MusicApp
             this.pageAllSong = new System.Windows.Forms.TabPage();
             this.tabulateSongs = new Tabulate.Tabulate();
             this.txboxFind = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.pnHeader = new System.Windows.Forms.Panel();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
-            this.pageMain.SuspendLayout();
+            this.ppageMain.SuspendLayout();
             this.pageHome.SuspendLayout();
             this.fpnSongs.SuspendLayout();
-            this.pageFind.SuspendLayout();
-            this.pageGenre.SuspendLayout();
+            this.pageGenreMain.SuspendLayout();
+            this.ppageGenre.SuspendLayout();
             this.tabpageGenre.SuspendLayout();
             this.fpnGenre.SuspendLayout();
             this.pageCollection.SuspendLayout();
@@ -983,25 +954,25 @@ namespace MusicApp
             this.lbLogo.Text = "MusicApp";
             this.lbLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pageMain
+            // ppageMain
             // 
-            this.pageMain.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.pageMain.AllowTransitions = false;
-            this.pageMain.Controls.Add(this.pageHome);
-            this.pageMain.Controls.Add(this.pageFind);
-            this.pageMain.Controls.Add(this.pageCollection);
-            this.pageMain.Controls.Add(this.pageAllSong);
-            this.pageMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pageMain.Location = new System.Drawing.Point(272, 0);
-            this.pageMain.Multiline = true;
-            this.pageMain.Name = "pageMain";
-            this.pageMain.Page = this.pageHome;
-            this.pageMain.PageIndex = 0;
-            this.pageMain.PageName = "pageHome";
-            this.pageMain.PageTitle = "Trang chủ";
-            this.pageMain.SelectedIndex = 0;
-            this.pageMain.Size = new System.Drawing.Size(1630, 898);
-            this.pageMain.TabIndex = 2;
+            this.ppageMain.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.ppageMain.AllowTransitions = false;
+            this.ppageMain.Controls.Add(this.pageHome);
+            this.ppageMain.Controls.Add(this.pageGenreMain);
+            this.ppageMain.Controls.Add(this.pageCollection);
+            this.ppageMain.Controls.Add(this.pageAllSong);
+            this.ppageMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ppageMain.Location = new System.Drawing.Point(272, 0);
+            this.ppageMain.Multiline = true;
+            this.ppageMain.Name = "ppageMain";
+            this.ppageMain.Page = this.pageAllSong;
+            this.ppageMain.PageIndex = 3;
+            this.ppageMain.PageName = "pageAllSong";
+            this.ppageMain.PageTitle = "Tất cả bài";
+            this.ppageMain.SelectedIndex = 0;
+            this.ppageMain.Size = new System.Drawing.Size(1630, 898);
+            this.ppageMain.TabIndex = 2;
             animation3.AnimateOnlyDifferences = false;
             animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
             animation3.LeafCoeff = 0F;
@@ -1017,13 +988,13 @@ namespace MusicApp
             animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
             animation3.TimeCoeff = 0F;
             animation3.TransparencyCoeff = 0F;
-            this.pageMain.Transition = animation3;
-            this.pageMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            this.ppageMain.Transition = animation3;
+            this.ppageMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // pageHome
             // 
             this.pageHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageHome.Controls.Add(this.txboxFind);
+            this.pageHome.Controls.Add(this.pnHeader);
             this.pageHome.Controls.Add(this.fpnSongs);
             this.pageHome.Location = new System.Drawing.Point(4, 4);
             this.pageHome.Name = "pageHome";
@@ -1037,443 +1008,24 @@ namespace MusicApp
             this.fpnSongs.AllowDrop = true;
             this.fpnSongs.AutoScroll = true;
             this.fpnSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.fpnSongs.Controls.Add(this.song1);
-            this.fpnSongs.Controls.Add(this.song2);
-            this.fpnSongs.Controls.Add(this.song3);
-            this.fpnSongs.Controls.Add(this.song4);
-            this.fpnSongs.Controls.Add(this.song5);
-            this.fpnSongs.Controls.Add(this.song6);
-            this.fpnSongs.Controls.Add(this.song7);
-            this.fpnSongs.Controls.Add(this.song8);
-            this.fpnSongs.Controls.Add(this.song9);
-            this.fpnSongs.Controls.Add(this.song10);
-            this.fpnSongs.Controls.Add(this.song11);
-            this.fpnSongs.Controls.Add(this.song12);
-            this.fpnSongs.Controls.Add(this.song13);
-            this.fpnSongs.Controls.Add(this.song14);
-            this.fpnSongs.Controls.Add(this.song15);
-            this.fpnSongs.Controls.Add(this.song16);
-            this.fpnSongs.Controls.Add(this.song17);
-            this.fpnSongs.Controls.Add(this.song18);
-            this.fpnSongs.Controls.Add(this.song19);
-            this.fpnSongs.Controls.Add(this.song20);
-            this.fpnSongs.Controls.Add(this.song21);
-            this.fpnSongs.Controls.Add(this.song22);
-            this.fpnSongs.Controls.Add(this.song23);
-            this.fpnSongs.Controls.Add(this.song24);
-            this.fpnSongs.Controls.Add(this.song25);
-            this.fpnSongs.Controls.Add(this.song26);
-            this.fpnSongs.Controls.Add(this.song27);
-            this.fpnSongs.Controls.Add(this.song28);
-            this.fpnSongs.Controls.Add(this.song29);
-            this.fpnSongs.Controls.Add(this.song30);
+            this.fpnSongs.Controls.Add(this.txboxFind);
             this.fpnSongs.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.fpnSongs.Location = new System.Drawing.Point(3, 82);
+            this.fpnSongs.Location = new System.Drawing.Point(3, 298);
             this.fpnSongs.Name = "fpnSongs";
-            this.fpnSongs.Size = new System.Drawing.Size(1616, 780);
+            this.fpnSongs.Size = new System.Drawing.Size(1616, 564);
             this.fpnSongs.TabIndex = 6;
             // 
-            // song1
+            // pageGenreMain
             // 
-            this.song1.Artist = "Tia Hải Châu, Lê Thiện Hiếu";
-            this.song1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song1.ImageSong = global::MusicApp.Properties.Resources.AiDuaEmVe;
-            this.song1.Location = new System.Drawing.Point(3, 3);
-            this.song1.Name = "song1";
-            this.song1.NameSong = "Ai Đưa Em Về";
-            this.song1.Number = "1";
-            this.song1.Size = new System.Drawing.Size(1610, 90);
-            this.song1.TabIndex = 0;
-            this.song1.Time = "03:54";
-            // 
-            // song2
-            // 
-            this.song2.Artist = "Anh Quân Idol";
-            this.song2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song2.ImageSong = ((System.Drawing.Image)(resources.GetObject("song2.ImageSong")));
-            this.song2.Location = new System.Drawing.Point(3, 99);
-            this.song2.Name = "song2";
-            this.song2.NameSong = "Anh Mệt Rồi";
-            this.song2.Number = "2";
-            this.song2.Size = new System.Drawing.Size(1610, 90);
-            this.song2.TabIndex = 1;
-            this.song2.Time = "03:54";
-            // 
-            // song3
-            // 
-            this.song3.Artist = "BTS";
-            this.song3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song3.ImageSong = global::MusicApp.Properties.Resources.AnswerLoveMyself;
-            this.song3.Location = new System.Drawing.Point(3, 195);
-            this.song3.Name = "song3";
-            this.song3.NameSong = "Answer: Love Myself";
-            this.song3.Number = "3";
-            this.song3.Size = new System.Drawing.Size(1610, 90);
-            this.song3.TabIndex = 2;
-            this.song3.Time = "04:11";
-            // 
-            // song4
-            // 
-            this.song4.Artist = "Shaun";
-            this.song4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song4.ImageSong = global::MusicApp.Properties.Resources.BadHabits;
-            this.song4.Location = new System.Drawing.Point(3, 291);
-            this.song4.Name = "song4";
-            this.song4.NameSong = "Bad Habits";
-            this.song4.Number = "4";
-            this.song4.Size = new System.Drawing.Size(1610, 90);
-            this.song4.TabIndex = 3;
-            this.song4.Time = "03:33";
-            // 
-            // song5
-            // 
-            this.song5.Artist = "An Coong";
-            this.song5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song5.ImageSong = global::MusicApp.Properties.Resources.EndlessLove;
-            this.song5.Location = new System.Drawing.Point(3, 387);
-            this.song5.Name = "song5";
-            this.song5.NameSong = "Endless Love (The Myth OST)";
-            this.song5.Number = "5";
-            this.song5.Size = new System.Drawing.Size(1610, 90);
-            this.song5.TabIndex = 4;
-            this.song5.Time = "04:43";
-            // 
-            // song6
-            // 
-            this.song6.Artist = "Joji";
-            this.song6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song6.ImageSong = global::MusicApp.Properties.Resources.GlimpseOfUs;
-            this.song6.Location = new System.Drawing.Point(3, 483);
-            this.song6.Name = "song6";
-            this.song6.NameSong = "Glimpse of Us";
-            this.song6.Number = "6";
-            this.song6.Size = new System.Drawing.Size(1610, 90);
-            this.song6.TabIndex = 5;
-            this.song6.Time = "03:53";
-            // 
-            // song7
-            // 
-            this.song7.Artist = "Kenny G";
-            this.song7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song7.ImageSong = global::MusicApp.Properties.Resources.GoingHome;
-            this.song7.Location = new System.Drawing.Point(3, 579);
-            this.song7.Name = "song7";
-            this.song7.NameSong = "Going Home";
-            this.song7.Number = "7";
-            this.song7.Size = new System.Drawing.Size(1610, 90);
-            this.song7.TabIndex = 6;
-            this.song7.Time = "05:35";
-            // 
-            // song8
-            // 
-            this.song8.Artist = "Hayd";
-            this.song8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song8.ImageSong = global::MusicApp.Properties.Resources.HeadInTheCloud;
-            this.song8.Location = new System.Drawing.Point(3, 675);
-            this.song8.Name = "song8";
-            this.song8.NameSong = "Head In The Clouds";
-            this.song8.Number = "8";
-            this.song8.Size = new System.Drawing.Size(1610, 90);
-            this.song8.TabIndex = 7;
-            this.song8.Time = "03:04";
-            // 
-            // song9
-            // 
-            this.song9.Artist = "Lil Z Poet";
-            this.song9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song9.ImageSong = global::MusicApp.Properties.Resources.HoaVangNayTan2;
-            this.song9.Location = new System.Drawing.Point(3, 771);
-            this.song9.Name = "song9";
-            this.song9.NameSong = "Hoa Vàng Nay Tàn";
-            this.song9.Number = "9";
-            this.song9.Size = new System.Drawing.Size(1610, 90);
-            this.song9.TabIndex = 8;
-            this.song9.Time = "03:51";
-            // 
-            // song10
-            // 
-            this.song10.Artist = "BIGBANG";
-            this.song10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song10.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song10.Location = new System.Drawing.Point(3, 867);
-            this.song10.Name = "song10";
-            this.song10.NameSong = "If You";
-            this.song10.Number = "10";
-            this.song10.Size = new System.Drawing.Size(1610, 90);
-            this.song10.TabIndex = 9;
-            this.song10.Time = "04:24";
-            // 
-            // song11
-            // 
-            this.song11.Artist = "BIGBANG";
-            this.song11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song11.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song11.Location = new System.Drawing.Point(3, 963);
-            this.song11.Name = "song11";
-            this.song11.NameSong = "If You";
-            this.song11.Number = "10";
-            this.song11.Size = new System.Drawing.Size(1610, 90);
-            this.song11.TabIndex = 10;
-            this.song11.Time = "04:24";
-            // 
-            // song12
-            // 
-            this.song12.Artist = "BIGBANG";
-            this.song12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song12.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song12.Location = new System.Drawing.Point(3, 1059);
-            this.song12.Name = "song12";
-            this.song12.NameSong = "If You";
-            this.song12.Number = "10";
-            this.song12.Size = new System.Drawing.Size(1610, 90);
-            this.song12.TabIndex = 11;
-            this.song12.Time = "04:24";
-            // 
-            // song13
-            // 
-            this.song13.Artist = "BIGBANG";
-            this.song13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song13.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song13.Location = new System.Drawing.Point(3, 1155);
-            this.song13.Name = "song13";
-            this.song13.NameSong = "If You";
-            this.song13.Number = "10";
-            this.song13.Size = new System.Drawing.Size(1610, 90);
-            this.song13.TabIndex = 12;
-            this.song13.Time = "04:24";
-            // 
-            // song14
-            // 
-            this.song14.Artist = "BIGBANG";
-            this.song14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song14.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song14.Location = new System.Drawing.Point(3, 1251);
-            this.song14.Name = "song14";
-            this.song14.NameSong = "If You";
-            this.song14.Number = "10";
-            this.song14.Size = new System.Drawing.Size(1610, 90);
-            this.song14.TabIndex = 13;
-            this.song14.Time = "04:24";
-            // 
-            // song15
-            // 
-            this.song15.Artist = "BIGBANG";
-            this.song15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song15.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song15.Location = new System.Drawing.Point(3, 1347);
-            this.song15.Name = "song15";
-            this.song15.NameSong = "If You";
-            this.song15.Number = "10";
-            this.song15.Size = new System.Drawing.Size(1610, 90);
-            this.song15.TabIndex = 14;
-            this.song15.Time = "04:24";
-            // 
-            // song16
-            // 
-            this.song16.Artist = "BIGBANG";
-            this.song16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song16.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song16.Location = new System.Drawing.Point(3, 1443);
-            this.song16.Name = "song16";
-            this.song16.NameSong = "If You";
-            this.song16.Number = "10";
-            this.song16.Size = new System.Drawing.Size(1610, 90);
-            this.song16.TabIndex = 15;
-            this.song16.Time = "04:24";
-            // 
-            // song17
-            // 
-            this.song17.Artist = "BIGBANG";
-            this.song17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song17.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song17.Location = new System.Drawing.Point(3, 1539);
-            this.song17.Name = "song17";
-            this.song17.NameSong = "If You";
-            this.song17.Number = "10";
-            this.song17.Size = new System.Drawing.Size(1610, 90);
-            this.song17.TabIndex = 16;
-            this.song17.Time = "04:24";
-            // 
-            // song18
-            // 
-            this.song18.Artist = "BIGBANG";
-            this.song18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song18.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song18.Location = new System.Drawing.Point(3, 1635);
-            this.song18.Name = "song18";
-            this.song18.NameSong = "If You";
-            this.song18.Number = "10";
-            this.song18.Size = new System.Drawing.Size(1610, 90);
-            this.song18.TabIndex = 17;
-            this.song18.Time = "04:24";
-            // 
-            // song19
-            // 
-            this.song19.Artist = "BIGBANG";
-            this.song19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song19.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song19.Location = new System.Drawing.Point(3, 1731);
-            this.song19.Name = "song19";
-            this.song19.NameSong = "If You";
-            this.song19.Number = "10";
-            this.song19.Size = new System.Drawing.Size(1610, 90);
-            this.song19.TabIndex = 18;
-            this.song19.Time = "04:24";
-            // 
-            // song20
-            // 
-            this.song20.Artist = "BIGBANG";
-            this.song20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song20.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song20.Location = new System.Drawing.Point(3, 1827);
-            this.song20.Name = "song20";
-            this.song20.NameSong = "If You";
-            this.song20.Number = "10";
-            this.song20.Size = new System.Drawing.Size(1610, 90);
-            this.song20.TabIndex = 19;
-            this.song20.Time = "04:24";
-            // 
-            // song21
-            // 
-            this.song21.Artist = "BIGBANG";
-            this.song21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song21.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song21.Location = new System.Drawing.Point(3, 1923);
-            this.song21.Name = "song21";
-            this.song21.NameSong = "If You";
-            this.song21.Number = "10";
-            this.song21.Size = new System.Drawing.Size(1610, 90);
-            this.song21.TabIndex = 20;
-            this.song21.Time = "04:24";
-            // 
-            // song22
-            // 
-            this.song22.Artist = "BIGBANG";
-            this.song22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song22.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song22.Location = new System.Drawing.Point(3, 2019);
-            this.song22.Name = "song22";
-            this.song22.NameSong = "If You";
-            this.song22.Number = "10";
-            this.song22.Size = new System.Drawing.Size(1610, 90);
-            this.song22.TabIndex = 21;
-            this.song22.Time = "04:24";
-            // 
-            // song23
-            // 
-            this.song23.Artist = "BIGBANG";
-            this.song23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song23.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song23.Location = new System.Drawing.Point(3, 2115);
-            this.song23.Name = "song23";
-            this.song23.NameSong = "If You";
-            this.song23.Number = "10";
-            this.song23.Size = new System.Drawing.Size(1610, 90);
-            this.song23.TabIndex = 22;
-            this.song23.Time = "04:24";
-            // 
-            // song24
-            // 
-            this.song24.Artist = "BIGBANG";
-            this.song24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song24.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song24.Location = new System.Drawing.Point(3, 2211);
-            this.song24.Name = "song24";
-            this.song24.NameSong = "If You";
-            this.song24.Number = "10";
-            this.song24.Size = new System.Drawing.Size(1610, 90);
-            this.song24.TabIndex = 23;
-            this.song24.Time = "04:24";
-            // 
-            // song25
-            // 
-            this.song25.Artist = "BIGBANG";
-            this.song25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song25.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song25.Location = new System.Drawing.Point(3, 2307);
-            this.song25.Name = "song25";
-            this.song25.NameSong = "If You";
-            this.song25.Number = "10";
-            this.song25.Size = new System.Drawing.Size(1610, 90);
-            this.song25.TabIndex = 24;
-            this.song25.Time = "04:24";
-            // 
-            // song26
-            // 
-            this.song26.Artist = "BIGBANG";
-            this.song26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song26.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song26.Location = new System.Drawing.Point(3, 2403);
-            this.song26.Name = "song26";
-            this.song26.NameSong = "If You";
-            this.song26.Number = "10";
-            this.song26.Size = new System.Drawing.Size(1610, 90);
-            this.song26.TabIndex = 25;
-            this.song26.Time = "04:24";
-            // 
-            // song27
-            // 
-            this.song27.Artist = "BIGBANG";
-            this.song27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song27.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song27.Location = new System.Drawing.Point(3, 2499);
-            this.song27.Name = "song27";
-            this.song27.NameSong = "If You";
-            this.song27.Number = "10";
-            this.song27.Size = new System.Drawing.Size(1610, 90);
-            this.song27.TabIndex = 26;
-            this.song27.Time = "04:24";
-            // 
-            // song28
-            // 
-            this.song28.Artist = "BIGBANG";
-            this.song28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song28.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song28.Location = new System.Drawing.Point(3, 2595);
-            this.song28.Name = "song28";
-            this.song28.NameSong = "If You";
-            this.song28.Number = "10";
-            this.song28.Size = new System.Drawing.Size(1610, 90);
-            this.song28.TabIndex = 27;
-            this.song28.Time = "04:24";
-            // 
-            // song29
-            // 
-            this.song29.Artist = "BIGBANG";
-            this.song29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song29.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song29.Location = new System.Drawing.Point(3, 2691);
-            this.song29.Name = "song29";
-            this.song29.NameSong = "If You";
-            this.song29.Number = "10";
-            this.song29.Size = new System.Drawing.Size(1610, 90);
-            this.song29.TabIndex = 28;
-            this.song29.Time = "04:24";
-            // 
-            // song30
-            // 
-            this.song30.Artist = "BIGBANG";
-            this.song30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song30.ImageSong = global::MusicApp.Properties.Resources.IfYou;
-            this.song30.Location = new System.Drawing.Point(3, 2787);
-            this.song30.Name = "song30";
-            this.song30.NameSong = "If You";
-            this.song30.Number = "10";
-            this.song30.Size = new System.Drawing.Size(1610, 90);
-            this.song30.TabIndex = 29;
-            this.song30.Time = "04:24";
-            // 
-            // pageFind
-            // 
-            this.pageFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageFind.Controls.Add(this.pnFind);
-            this.pageFind.Controls.Add(this.pageGenre);
-            this.pageFind.Location = new System.Drawing.Point(4, 4);
-            this.pageFind.Name = "pageFind";
-            this.pageFind.Padding = new System.Windows.Forms.Padding(3);
-            this.pageFind.Size = new System.Drawing.Size(1622, 865);
-            this.pageFind.TabIndex = 1;
-            this.pageFind.Text = "Tìm kiếm";
+            this.pageGenreMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageGenreMain.Controls.Add(this.pnFind);
+            this.pageGenreMain.Controls.Add(this.ppageGenre);
+            this.pageGenreMain.Location = new System.Drawing.Point(4, 4);
+            this.pageGenreMain.Name = "pageGenreMain";
+            this.pageGenreMain.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGenreMain.Size = new System.Drawing.Size(1622, 865);
+            this.pageGenreMain.TabIndex = 1;
+            this.pageGenreMain.Text = "Thể loại";
             // 
             // pnFind
             // 
@@ -1484,23 +1036,23 @@ namespace MusicApp
             this.pnFind.Size = new System.Drawing.Size(1616, 85);
             this.pnFind.TabIndex = 3;
             // 
-            // pageGenre
+            // ppageGenre
             // 
-            this.pageGenre.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.pageGenre.AllowTransitions = false;
-            this.pageGenre.Controls.Add(this.tabpageGenre);
-            this.pageGenre.Controls.Add(this.tabPage2);
-            this.pageGenre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pageGenre.Location = new System.Drawing.Point(3, 3);
-            this.pageGenre.Multiline = true;
-            this.pageGenre.Name = "pageGenre";
-            this.pageGenre.Page = this.tabpageGenre;
-            this.pageGenre.PageIndex = 0;
-            this.pageGenre.PageName = "tabpageGenre";
-            this.pageGenre.PageTitle = "Thể loại";
-            this.pageGenre.SelectedIndex = 0;
-            this.pageGenre.Size = new System.Drawing.Size(1616, 859);
-            this.pageGenre.TabIndex = 2;
+            this.ppageGenre.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.ppageGenre.AllowTransitions = false;
+            this.ppageGenre.Controls.Add(this.tabpageGenre);
+            this.ppageGenre.Controls.Add(this.tabPage2);
+            this.ppageGenre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ppageGenre.Location = new System.Drawing.Point(3, 3);
+            this.ppageGenre.Multiline = true;
+            this.ppageGenre.Name = "ppageGenre";
+            this.ppageGenre.Page = this.tabpageGenre;
+            this.ppageGenre.PageIndex = 0;
+            this.ppageGenre.PageName = "tabpageGenre";
+            this.ppageGenre.PageTitle = "Thể loại";
+            this.ppageGenre.SelectedIndex = 0;
+            this.ppageGenre.Size = new System.Drawing.Size(1616, 859);
+            this.ppageGenre.TabIndex = 2;
             animation1.AnimateOnlyDifferences = false;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
             animation1.LeafCoeff = 0F;
@@ -1516,8 +1068,8 @@ namespace MusicApp
             animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
-            this.pageGenre.Transition = animation1;
-            this.pageGenre.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            this.ppageGenre.Transition = animation1;
+            this.ppageGenre.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // tabpageGenre
             // 
@@ -1870,7 +1422,7 @@ namespace MusicApp
             this.txboxFind.IconRight = null;
             this.txboxFind.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txboxFind.Lines = new string[0];
-            this.txboxFind.Location = new System.Drawing.Point(223, 8);
+            this.txboxFind.Location = new System.Drawing.Point(3, 3);
             this.txboxFind.MaxLength = 32767;
             this.txboxFind.MinimumSize = new System.Drawing.Size(1, 1);
             this.txboxFind.Modified = false;
@@ -1917,12 +1469,21 @@ namespace MusicApp
             this.txboxFind.UseSystemPasswordChar = false;
             this.txboxFind.WordWrap = true;
             // 
+            // pnHeader
+            // 
+            this.pnHeader.BackColor = System.Drawing.Color.Transparent;
+            this.pnHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnHeader.Location = new System.Drawing.Point(3, 3);
+            this.pnHeader.Name = "pnHeader";
+            this.pnHeader.Size = new System.Drawing.Size(1616, 137);
+            this.pnHeader.TabIndex = 7;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
-            this.Controls.Add(this.pageMain);
+            this.Controls.Add(this.ppageMain);
             this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.pnPlay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1934,11 +1495,11 @@ namespace MusicApp
             this.pnPlay.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).EndInit();
             this.pnMenu.ResumeLayout(false);
-            this.pageMain.ResumeLayout(false);
+            this.ppageMain.ResumeLayout(false);
             this.pageHome.ResumeLayout(false);
             this.fpnSongs.ResumeLayout(false);
-            this.pageFind.ResumeLayout(false);
-            this.pageGenre.ResumeLayout(false);
+            this.pageGenreMain.ResumeLayout(false);
+            this.ppageGenre.ResumeLayout(false);
             this.tabpageGenre.ResumeLayout(false);
             this.fpnGenre.ResumeLayout(false);
             this.pageCollection.ResumeLayout(false);
@@ -1970,15 +1531,15 @@ namespace MusicApp
         private Bunifu.UI.WinForms.BunifuImageButton btnLyric;
         private Bunifu.UI.WinForms.BunifuImageButton btnVolume;
         private Bunifu.UI.WinForms.BunifuImageButton btnOther;
-        private Bunifu.UI.WinForms.BunifuPages pageMain;
+        private Bunifu.UI.WinForms.BunifuPages ppageMain;
         private TabPage pageHome;
-        private TabPage pageFind;
+        private TabPage pageGenreMain;
         private TabPage pageCollection;
         private FlowLayoutPanel fpnSongs;
         private TabPage pageAllSong;
         private Tabulate.Tabulate tabulateSongs;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAddList;
-        private Bunifu.UI.WinForms.BunifuPages pageGenre;
+        private Bunifu.UI.WinForms.BunifuPages ppageGenre;
         private TabPage tabpageGenre;
         private TabPage tabPage2;
         private Panel pnFind;
@@ -1994,40 +1555,11 @@ namespace MusicApp
         private FlowLayoutPanel fpnPlaylist;
         private Source.Liked liked1;
         private Source.Playlist playlist1;
-        private Source.Song song2;
-        private Source.Song song3;
-        private Source.Song song4;
-        private Source.Song song5;
-        private Source.Song song6;
-        private Source.Song song7;
-        private Source.Song song8;
-        private Source.Song song9;
-        private Source.Song song10;
-        private Source.Song song11;
-        private Source.Song song12;
-        private Source.Song song13;
-        private Source.Song song14;
-        private Source.Song song15;
-        private Source.Song song16;
-        private Source.Song song17;
-        private Source.Song song18;
-        private Source.Song song19;
-        private Source.Song song20;
-        private Source.Song song21;
-        private Source.Song song22;
-        private Source.Song song23;
-        private Source.Song song24;
-        private Source.Song song25;
-        private Source.Song song26;
-        private Source.Song song27;
-        private Source.Song song28;
-        private Source.Song song29;
-        private Source.Song song30;
-        private Source.Song song1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnHome;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnGenre;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnHistory;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnCollection;
         private Bunifu.UI.WinForms.BunifuTextBox txboxFind;
+        private Panel pnHeader;
     }
 }
