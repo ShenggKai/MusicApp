@@ -128,33 +128,46 @@ namespace MusicApp
         }
         #endregion
 
+        //#region change to default
+        //private void changeHome()
+        //{
+        //    btnHome.BackColor = Color.FromArgb();
+        //}
+
+        //#endregion
+
         #region when click menu
         private void btnHome_Click(object sender, EventArgs e)
         {
             ppageMain.SetPage(0);
+            btnHome.Focus();
         }
 
         private void btnGenre_Click(object sender, EventArgs e)
         {
             ppageMain.SetPage(1);
+            btnGenre.Focus();
         }
 
         private void btnCollection_Click(object sender, EventArgs e)
         {
             ppageMain.SetPage(2);
+            btnCollection.Focus();
         }
 
         private void btnHistory_Click(object sender, EventArgs e)
         {
             ppageMain.SetPage(3);
-        }
-        private void btnMore2_Click(object sender, EventArgs e)
-        {
-            ppageMain.PageIndex = 3;
+            btnHistory.Focus();
         }
         #endregion
 
         #region when click button
+        private void btnMore2_Click(object sender, EventArgs e)
+        {
+            ppageMain.PageIndex = 3;
+        }
+
         private void btnAddList_Click(object sender, EventArgs e)
         {
             Form formBackground = new Form();
