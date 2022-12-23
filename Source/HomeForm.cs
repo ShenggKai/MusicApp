@@ -13,67 +13,95 @@ namespace MusicApp
             fpnlist = fpnPlaylist;
         }
 
+        #region change to default menu
+        private void changeHome()
+        {
+            btnHome.BackColor = Color.FromArgb(40, 40, 40);
+            btnHome.ForeColor = Color.FromArgb(179, 179, 179);
+            btnHome.Image = global::MusicApp.Properties.Resources.home;
+        }
+
+        private void changeGenre()
+        {
+            btnGenre.BackColor = Color.FromArgb(40, 40, 40);
+            btnGenre.ForeColor = Color.FromArgb(179, 179, 179);
+            btnGenre.Image = global::MusicApp.Properties.Resources.genre;
+        }
+
+        private void changeCollection()
+        {
+            btnCollection.BackColor = Color.FromArgb(40, 40, 40);
+            btnCollection.ForeColor = Color.FromArgb(179, 179, 179);
+            btnCollection.Image = global::MusicApp.Properties.Resources.music_library;
+        }
+
+        private void changeHistory()
+        {
+            btnHistory.BackColor = Color.FromArgb(40, 40, 40);
+            btnHistory.ForeColor = Color.FromArgb(179, 179, 179);
+            btnHistory.Image = global::MusicApp.Properties.Resources.time_past;
+        }
+        #endregion
+
         #region Effect when click menu
         private void btnHome_Click(object sender, EventArgs e)
         {
             // change color and image
-            btnGenre.BackColor = Color.FromArgb(40, 40, 40);
-            btnGenre.ForeColor = Color.FromArgb(179, 179, 179);
-            btnGenre.Image = global::MusicApp.Properties.Resources.search;
-
-            btnCollection.BackColor = Color.FromArgb(40, 40, 40);
-            btnCollection.ForeColor = Color.FromArgb(179, 179, 179);
-            btnCollection.Image = global::MusicApp.Properties.Resources.folder;
+            changeGenre();
+            changeCollection();
+            changeHistory();
 
             btnHome.BackColor = Color.FromArgb(25, 143, 15);
             btnHome.ForeColor = Color.White;
-            btnHome.Image = global::MusicApp.Properties.Resources.home_white;
+            btnHome.Image = global::MusicApp.Properties.Resources.home_full;
 
             //navigation to trang chu
             pageMain.PageIndex = 0;
         }
 
-        private void btnFind_Click(object sender, EventArgs e)
+        private void btnGenre_Click(object sender, EventArgs e)
         {
             // change color and image
-            btnHome.BackColor = Color.FromArgb(40, 40, 40);
-            btnHome.ForeColor = Color.FromArgb(179, 179, 179);
-            btnHome.Image = global::MusicApp.Properties.Resources.home;
-
-            btnCollection.BackColor = Color.FromArgb(40, 40, 40);
-            btnCollection.ForeColor = Color.FromArgb(179, 179, 179);
-            btnCollection.Image = global::MusicApp.Properties.Resources.folder;
+            changeHome();
+            changeCollection();
+            changeHistory();
 
             btnGenre.BackColor = Color.FromArgb(25, 143, 15);
             btnGenre.ForeColor = Color.White;
-            btnGenre.Image = global::MusicApp.Properties.Resources.search_white;
+            btnGenre.Image = global::MusicApp.Properties.Resources.genre_full;
 
-            //navigation to find
+            //navigation to genre
             pageMain.PageIndex = 1;
         }
 
         private void btnCollection_Click(object sender, EventArgs e)
         {
             // change color and image
-            btnHome.BackColor = Color.FromArgb(40, 40, 40);
-            btnHome.ForeColor = Color.FromArgb(179, 179, 179);
-            btnHome.Image = global::MusicApp.Properties.Resources.home;
-
-            btnGenre.BackColor = Color.FromArgb(40, 40, 40);
-            btnGenre.ForeColor = Color.FromArgb(179, 179, 179);
-            btnGenre.Image = global::MusicApp.Properties.Resources.search;
+            changeHome();
+            changeGenre();
+            changeHistory();
 
             btnCollection.BackColor = Color.FromArgb(25, 143, 15);
             btnCollection.ForeColor = Color.White;
-            btnCollection.Image = global::MusicApp.Properties.Resources.folder_white;
+            btnCollection.Image = global::MusicApp.Properties.Resources.music_library_full;
 
             //navigation to collection
             pageMain.PageIndex = 2;
         }
+
+        private void btnHistory_Click(object sender, EventArgs e)
+        {
+            changeHome();
+            changeGenre();
+            changeCollection();
+
+            btnHistory.BackColor = Color.FromArgb(25, 143, 15);
+            btnHistory.ForeColor = Color.White;
+            btnHistory.Image = global::MusicApp.Properties.Resources.time_past_full;
+        }
         #endregion
 
-        #region  Effect when hover menu
-
+        #region  Effect when hover button
         // shuffle button
         private void btnShuffle_MouseHover(object sender, EventArgs e)
         {
@@ -164,6 +192,32 @@ namespace MusicApp
 
         #endregion
 
+        #region effect when hover menu
+        private void btnHome_MouseHover(object sender, EventArgs e)
+        {
+            btnHome.ForeColor = Color.White;
+            btnHome.Image = global::MusicApp.Properties.Resources.home_white;
+        }
+
+        private void btnGenre_MouseHover(object sender, EventArgs e)
+        {
+            btnGenre.ForeColor= Color.White;
+            btnGenre.Image = global::MusicApp.Properties.Resources.genre_white;
+        }
+
+        private void btnCollection_MouseHover(object sender, EventArgs e)
+        {
+            btnCollection.ForeColor= Color.White;
+            btnCollection.Image = global::MusicApp.Properties.Resources.music_library_white;
+        }
+
+        private void btnHistory_MouseHover(object sender, EventArgs e)
+        {
+            btnHistory.ForeColor= Color.White;
+            btnHistory.Image = global::MusicApp.Properties.Resources.time_past_white;
+        }
+        #endregion
+
         #region temp
         int count = 0;
         private void btnHeart_Click(object sender, EventArgs e)
@@ -227,7 +281,27 @@ namespace MusicApp
                 formBackground.Dispose();
             }
         }
+
         #endregion
 
+        private void btnHome_MouseLeave(object sender, EventArgs e)
+        {
+            changeHome();
+        }
+
+        private void btnGenre_MouseLeave(object sender, EventArgs e)
+        {
+            changeGenre();
+        }
+
+        private void btnCollection_MouseLeave(object sender, EventArgs e)
+        {
+            changeCollection();
+        }
+
+        private void btnHistory_MouseLeave(object sender, EventArgs e)
+        {
+            changeHistory();
+        }
     }
 }

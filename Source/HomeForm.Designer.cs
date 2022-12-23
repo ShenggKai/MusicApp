@@ -65,6 +65,7 @@ namespace MusicApp
             this.btnPlay = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnSlider = new Bunifu.UI.WinForms.BunifuHSlider();
             this.pnMenu = new System.Windows.Forms.Panel();
+            this.btnHistory = new System.Windows.Forms.Button();
             this.btnCollection = new System.Windows.Forms.Button();
             this.btnGenre = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
@@ -125,7 +126,6 @@ namespace MusicApp
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageAllSong = new System.Windows.Forms.TabPage();
             this.tabulateSongs = new Tabulate.Tabulate();
-            this.btnHistory = new System.Windows.Forms.Button();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -605,6 +605,30 @@ namespace MusicApp
             this.pnMenu.Size = new System.Drawing.Size(272, 898);
             this.pnMenu.TabIndex = 1;
             // 
+            // btnHistory
+            // 
+            this.btnHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnHistory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHistory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHistory.FlatAppearance.BorderSize = 0;
+            this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHistory.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.btnHistory.Image = global::MusicApp.Properties.Resources.time_past;
+            this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHistory.Location = new System.Drawing.Point(0, 326);
+            this.btnHistory.Name = "btnHistory";
+            this.btnHistory.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnHistory.Size = new System.Drawing.Size(272, 80);
+            this.btnHistory.TabIndex = 4;
+            this.btnHistory.Text = " Lịch Sử";
+            this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHistory.UseVisualStyleBackColor = false;
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
+            this.btnHistory.MouseLeave += new System.EventHandler(this.btnHistory_MouseLeave);
+            this.btnHistory.MouseHover += new System.EventHandler(this.btnHistory_MouseHover);
+            // 
             // btnCollection
             // 
             this.btnCollection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -626,6 +650,8 @@ namespace MusicApp
             this.btnCollection.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCollection.UseVisualStyleBackColor = false;
             this.btnCollection.Click += new System.EventHandler(this.btnCollection_Click);
+            this.btnCollection.MouseLeave += new System.EventHandler(this.btnCollection_MouseLeave);
+            this.btnCollection.MouseHover += new System.EventHandler(this.btnCollection_MouseHover);
             // 
             // btnGenre
             // 
@@ -647,7 +673,9 @@ namespace MusicApp
             this.btnGenre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenre.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGenre.UseVisualStyleBackColor = false;
-            this.btnGenre.Click += new System.EventHandler(this.btnFind_Click);
+            this.btnGenre.Click += new System.EventHandler(this.btnGenre_Click);
+            this.btnGenre.MouseLeave += new System.EventHandler(this.btnGenre_MouseLeave);
+            this.btnGenre.MouseHover += new System.EventHandler(this.btnGenre_MouseHover);
             // 
             // btnHome
             // 
@@ -670,6 +698,8 @@ namespace MusicApp
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.btnHome.MouseLeave += new System.EventHandler(this.btnHome_MouseLeave);
+            this.btnHome.MouseHover += new System.EventHandler(this.btnHome_MouseHover);
             // 
             // lbLogo
             // 
@@ -1629,27 +1659,6 @@ namespace MusicApp
             this.tabulateSongs.TableHoverEffect = true;
             this.tabulateSongs.TableStriped = true;
             this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
-            // 
-            // btnHistory
-            // 
-            this.btnHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnHistory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHistory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHistory.FlatAppearance.BorderSize = 0;
-            this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistory.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.btnHistory.Image = global::MusicApp.Properties.Resources.time_past;
-            this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistory.Location = new System.Drawing.Point(0, 326);
-            this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnHistory.Size = new System.Drawing.Size(272, 80);
-            this.btnHistory.TabIndex = 4;
-            this.btnHistory.Text = " Lịch Sử";
-            this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHistory.UseVisualStyleBackColor = false;
             // 
             // HomeForm
             // 

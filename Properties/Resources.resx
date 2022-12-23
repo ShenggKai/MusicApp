@@ -121,6 +121,9 @@
   <data name="volume_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\volume_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="time_past_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\time_past_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,6 +163,9 @@
   <data name="left_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\left_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dots_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\dots_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="search_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\search_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,20 +187,26 @@
   <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="genre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\genre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\home_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IfYou" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SongsData\Image\IfYou.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="heart_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\heart_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GoingHome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\GoingHome.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_past_full" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\time_past_full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,11 +232,8 @@
   <data name="GlimpseOfUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\GlimpseOfUs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="heart_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon\heart_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shuffle_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\shuffle_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="green-love" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\green-love.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,17 +247,26 @@
   <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="music_library_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\music_library_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_past" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\time_past.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lyric_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\lyric_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="repeat_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\repeat_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shuffle_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon\shuffle_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IfYou" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\IfYou.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="heart_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon\heart_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="genre_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\genre_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="genre_full" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\genre_full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dots_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\dots_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,10 +280,10 @@
   <data name="search_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\search_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dots_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon\dots_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="heart_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\heart_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="time_past" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon\time_past.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="music_library_full" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\music_library_full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
