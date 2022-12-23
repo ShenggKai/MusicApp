@@ -33,8 +33,8 @@ namespace MusicApp.Source
         [Category("aMusic")]
         public String NameSong
         {
-            get { return txtName.Text; }
-            set { txtName.Text = value; }
+            get { return txtGenre.Text; }
+            set { txtGenre.Text = value; }
         }
 
         [Category("aMusic")]
