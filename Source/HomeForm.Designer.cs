@@ -102,13 +102,11 @@ namespace MusicApp
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageHistory = new System.Windows.Forms.TabPage();
-            this.song1 = new MusicApp.Source.Song();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
             this.ppageMain.SuspendLayout();
             this.pageHome.SuspendLayout();
-            this.fpnSongs.SuspendLayout();
             this.pnHeader.SuspendLayout();
             this.pageGenreMain.SuspendLayout();
             this.ppageGenre.SuspendLayout();
@@ -1014,9 +1012,7 @@ namespace MusicApp
             // 
             this.fpnSongs.AllowDrop = true;
             this.fpnSongs.AutoScroll = true;
-            this.fpnSongs.Controls.Add(this.song1);
             this.fpnSongs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fpnSongs.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.fpnSongs.Location = new System.Drawing.Point(3, 181);
             this.fpnSongs.Name = "fpnSongs";
             this.fpnSongs.Size = new System.Drawing.Size(1616, 681);
@@ -1491,19 +1487,6 @@ namespace MusicApp
             this.pageHistory.TabIndex = 4;
             this.pageHistory.Text = "Lịch sử";
             // 
-            // song1
-            // 
-            this.song1.Artist = "Emcee L, Badbies";
-            this.song1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song1.ImageSong = ((System.Drawing.Image)(resources.GetObject("song1.ImageSong")));
-            this.song1.Location = new System.Drawing.Point(3, 3);
-            this.song1.Name = "song1";
-            this.song1.NameSong = "Nhạc không lời";
-            this.song1.Number = "1";
-            this.song1.Size = new System.Drawing.Size(1630, 90);
-            this.song1.TabIndex = 0;
-            this.song1.Time = "03:54";
-            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1523,7 +1506,6 @@ namespace MusicApp
             this.pnMenu.ResumeLayout(false);
             this.ppageMain.ResumeLayout(false);
             this.pageHome.ResumeLayout(false);
-            this.fpnSongs.ResumeLayout(false);
             this.pnHeader.ResumeLayout(false);
             this.pageGenreMain.ResumeLayout(false);
             this.ppageGenre.ResumeLayout(false);
@@ -1589,6 +1571,5 @@ namespace MusicApp
         private Label txtGenre;
         private Label txtTime;
         private FlowLayoutPanel fpnSongs;
-        private Source.Song song1;
     }
 }
