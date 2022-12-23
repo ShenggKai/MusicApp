@@ -66,12 +66,13 @@ namespace MusicApp
             this.btnSlider = new Bunifu.UI.WinForms.BunifuHSlider();
             this.pnMenu = new System.Windows.Forms.Panel();
             this.btnCollection = new System.Windows.Forms.Button();
-            this.btnFind = new System.Windows.Forms.Button();
+            this.btnGenre = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.lbLogo = new System.Windows.Forms.Label();
             this.pageMain = new Bunifu.UI.WinForms.BunifuPages();
             this.pageHome = new System.Windows.Forms.TabPage();
             this.fpnSongs = new System.Windows.Forms.FlowLayoutPanel();
+            this.song1 = new MusicApp.Source.Song();
             this.song2 = new MusicApp.Source.Song();
             this.song3 = new MusicApp.Source.Song();
             this.song4 = new MusicApp.Source.Song();
@@ -124,7 +125,7 @@ namespace MusicApp
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageAllSong = new System.Windows.Forms.TabPage();
             this.tabulateSongs = new Tabulate.Tabulate();
-            this.song1 = new MusicApp.Source.Song();
+            this.btnHistory = new System.Windows.Forms.Button();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -593,8 +594,9 @@ namespace MusicApp
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.pnMenu.Controls.Add(this.btnHistory);
             this.pnMenu.Controls.Add(this.btnCollection);
-            this.pnMenu.Controls.Add(this.btnFind);
+            this.pnMenu.Controls.Add(this.btnGenre);
             this.pnMenu.Controls.Add(this.btnHome);
             this.pnMenu.Controls.Add(this.lbLogo);
             this.pnMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -612,7 +614,7 @@ namespace MusicApp
             this.btnCollection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCollection.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCollection.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.btnCollection.Image = global::MusicApp.Properties.Resources.folder;
+            this.btnCollection.Image = global::MusicApp.Properties.Resources.music_library;
             this.btnCollection.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCollection.Location = new System.Drawing.Point(0, 246);
             this.btnCollection.Name = "btnCollection";
@@ -625,27 +627,27 @@ namespace MusicApp
             this.btnCollection.UseVisualStyleBackColor = false;
             this.btnCollection.Click += new System.EventHandler(this.btnCollection_Click);
             // 
-            // btnFind
+            // btnGenre
             // 
-            this.btnFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnFind.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFind.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFind.FlatAppearance.BorderSize = 0;
-            this.btnFind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFind.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.btnFind.Image = global::MusicApp.Properties.Resources.search;
-            this.btnFind.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFind.Location = new System.Drawing.Point(0, 166);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnFind.Size = new System.Drawing.Size(272, 80);
-            this.btnFind.TabIndex = 2;
-            this.btnFind.Text = " Tìm Kiếm";
-            this.btnFind.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFind.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFind.UseVisualStyleBackColor = false;
-            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            this.btnGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnGenre.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenre.FlatAppearance.BorderSize = 0;
+            this.btnGenre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenre.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnGenre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.btnGenre.Image = global::MusicApp.Properties.Resources.genre;
+            this.btnGenre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenre.Location = new System.Drawing.Point(0, 166);
+            this.btnGenre.Name = "btnGenre";
+            this.btnGenre.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnGenre.Size = new System.Drawing.Size(272, 80);
+            this.btnGenre.TabIndex = 2;
+            this.btnGenre.Text = " Thể Loại";
+            this.btnGenre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenre.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenre.UseVisualStyleBackColor = false;
+            this.btnGenre.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // btnHome
             // 
@@ -656,7 +658,7 @@ namespace MusicApp
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.btnHome.Image = global::MusicApp.Properties.Resources.home;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.Location = new System.Drawing.Point(0, 86);
             this.btnHome.Name = "btnHome";
@@ -770,6 +772,19 @@ namespace MusicApp
             this.fpnSongs.Name = "fpnSongs";
             this.fpnSongs.Size = new System.Drawing.Size(1616, 780);
             this.fpnSongs.TabIndex = 6;
+            // 
+            // song1
+            // 
+            this.song1.Artist = "Tia Hải Châu, Lê Thiện Hiếu";
+            this.song1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.song1.ImageSong = global::MusicApp.Properties.Resources.AiDuaEmVe;
+            this.song1.Location = new System.Drawing.Point(3, 3);
+            this.song1.Name = "song1";
+            this.song1.NameSong = "Ai Đưa Em Về";
+            this.song1.Number = "1";
+            this.song1.Size = new System.Drawing.Size(1610, 90);
+            this.song1.TabIndex = 0;
+            this.song1.Time = "03:54";
             // 
             // song2
             // 
@@ -1268,10 +1283,10 @@ namespace MusicApp
             this.pageGenre.Location = new System.Drawing.Point(3, 3);
             this.pageGenre.Multiline = true;
             this.pageGenre.Name = "pageGenre";
-            this.pageGenre.Page = this.tabpageGenre;
-            this.pageGenre.PageIndex = 0;
-            this.pageGenre.PageName = "tabpageGenre";
-            this.pageGenre.PageTitle = "Thể loại";
+            this.pageGenre.Page = this.tabPage2;
+            this.pageGenre.PageIndex = 1;
+            this.pageGenre.PageName = "tabPage2";
+            this.pageGenre.PageTitle = "tabPage2";
             this.pageGenre.SelectedIndex = 0;
             this.pageGenre.Size = new System.Drawing.Size(1616, 859);
             this.pageGenre.TabIndex = 2;
@@ -1477,7 +1492,7 @@ namespace MusicApp
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1602, 760);
+            this.tabPage3.Size = new System.Drawing.Size(1608, 712);
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1615,18 +1630,26 @@ namespace MusicApp
             this.tabulateSongs.TableStriped = true;
             this.tabulateSongs.Theme = Tabulate.Tabulate.theme.paper;
             // 
-            // song1
+            // btnHistory
             // 
-            this.song1.Artist = "Tia Hải Châu, Lê Thiện Hiếu";
-            this.song1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.song1.ImageSong = global::MusicApp.Properties.Resources.AiDuaEmVe;
-            this.song1.Location = new System.Drawing.Point(3, 3);
-            this.song1.Name = "song1";
-            this.song1.NameSong = "Ai Đưa Em Về";
-            this.song1.Number = "1";
-            this.song1.Size = new System.Drawing.Size(1610, 90);
-            this.song1.TabIndex = 0;
-            this.song1.Time = "03:54";
+            this.btnHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnHistory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHistory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHistory.FlatAppearance.BorderSize = 0;
+            this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHistory.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.btnHistory.Image = global::MusicApp.Properties.Resources.time_past;
+            this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHistory.Location = new System.Drawing.Point(0, 326);
+            this.btnHistory.Name = "btnHistory";
+            this.btnHistory.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnHistory.Size = new System.Drawing.Size(272, 80);
+            this.btnHistory.TabIndex = 4;
+            this.btnHistory.Text = " Lịch Sử";
+            this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHistory.UseVisualStyleBackColor = false;
             // 
             // HomeForm
             // 
@@ -1670,7 +1693,7 @@ namespace MusicApp
         private Label lbLogo;
         private Button btnHome;
         private Button btnCollection;
-        private Button btnFind;
+        private Button btnGenre;
         private Bunifu.UI.WinForms.BunifuHSlider btnSlider;
         private Bunifu.UI.WinForms.BunifuImageButton btnPlay;
         private Bunifu.UI.WinForms.BunifuImageButton btnPrevious;
@@ -1742,5 +1765,6 @@ namespace MusicApp
         private Source.Song song29;
         private Source.Song song30;
         private Source.Song song1;
+        private Button btnHistory;
     }
 }

@@ -17,9 +17,9 @@ namespace MusicApp
         private void btnHome_Click(object sender, EventArgs e)
         {
             // change color and image
-            btnFind.BackColor = Color.FromArgb(40, 40, 40);
-            btnFind.ForeColor = Color.FromArgb(179, 179, 179);
-            btnFind.Image = global::MusicApp.Properties.Resources.search;
+            btnGenre.BackColor = Color.FromArgb(40, 40, 40);
+            btnGenre.ForeColor = Color.FromArgb(179, 179, 179);
+            btnGenre.Image = global::MusicApp.Properties.Resources.search;
 
             btnCollection.BackColor = Color.FromArgb(40, 40, 40);
             btnCollection.ForeColor = Color.FromArgb(179, 179, 179);
@@ -44,9 +44,9 @@ namespace MusicApp
             btnCollection.ForeColor = Color.FromArgb(179, 179, 179);
             btnCollection.Image = global::MusicApp.Properties.Resources.folder;
 
-            btnFind.BackColor = Color.FromArgb(25, 143, 15);
-            btnFind.ForeColor = Color.White;
-            btnFind.Image = global::MusicApp.Properties.Resources.search_white;
+            btnGenre.BackColor = Color.FromArgb(25, 143, 15);
+            btnGenre.ForeColor = Color.White;
+            btnGenre.Image = global::MusicApp.Properties.Resources.search_white;
 
             //navigation to find
             pageMain.PageIndex = 1;
@@ -59,9 +59,9 @@ namespace MusicApp
             btnHome.ForeColor = Color.FromArgb(179, 179, 179);
             btnHome.Image = global::MusicApp.Properties.Resources.home;
 
-            btnFind.BackColor = Color.FromArgb(40, 40, 40);
-            btnFind.ForeColor = Color.FromArgb(179, 179, 179);
-            btnFind.Image = global::MusicApp.Properties.Resources.search;
+            btnGenre.BackColor = Color.FromArgb(40, 40, 40);
+            btnGenre.ForeColor = Color.FromArgb(179, 179, 179);
+            btnGenre.Image = global::MusicApp.Properties.Resources.search;
 
             btnCollection.BackColor = Color.FromArgb(25, 143, 15);
             btnCollection.ForeColor = Color.White;
