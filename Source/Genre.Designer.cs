@@ -86,7 +86,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.sdPanel);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.Margin = new System.Windows.Forms.Padding(0, 0, 100, 100);
             this.Name = "Genre";
             this.Size = new System.Drawing.Size(261, 292);
             this.sdPanel.ResumeLayout(false);
