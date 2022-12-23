@@ -40,18 +40,18 @@ namespace MusicApp
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation4 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation3 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnPlay = new System.Windows.Forms.Panel();
             this.btnOther = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnVolume = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -76,8 +76,12 @@ namespace MusicApp
             this.lbLogo = new System.Windows.Forms.Label();
             this.ppageMain = new Bunifu.UI.WinForms.BunifuPages();
             this.pageHome = new System.Windows.Forms.TabPage();
-            this.pnHeader = new System.Windows.Forms.Panel();
             this.fpnSongs = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnHeader = new System.Windows.Forms.Panel();
+            this.txtTime = new System.Windows.Forms.Label();
+            this.txtGenre = new System.Windows.Forms.Label();
+            this.txtTitle = new System.Windows.Forms.Label();
+            this.txtNumber = new System.Windows.Forms.Label();
             this.txboxFind = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pageGenreMain = new System.Windows.Forms.TabPage();
             this.ppageGenre = new Bunifu.UI.WinForms.BunifuPages();
@@ -98,15 +102,13 @@ namespace MusicApp
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageHistory = new System.Windows.Forms.TabPage();
-            this.txtNumber = new System.Windows.Forms.Label();
-            this.txtTitle = new System.Windows.Forms.Label();
-            this.txtGenre = new System.Windows.Forms.Label();
-            this.txtTime = new System.Windows.Forms.Label();
+            this.song1 = new MusicApp.Source.Song();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
             this.ppageMain.SuspendLayout();
             this.pageHome.SuspendLayout();
+            this.fpnSongs.SuspendLayout();
             this.pnHeader.SuspendLayout();
             this.pageGenreMain.SuspendLayout();
             this.ppageGenre.SuspendLayout();
@@ -598,11 +600,11 @@ namespace MusicApp
             this.btnHistory.ColorContrastOnClick = 45;
             this.btnHistory.ColorContrastOnHover = 45;
             this.btnHistory.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.btnHistory.CustomizableEdges = borderEdges6;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnHistory.CustomizableEdges = borderEdges1;
             this.btnHistory.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHistory.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnHistory.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -690,11 +692,11 @@ namespace MusicApp
             this.btnCollection.ColorContrastOnClick = 45;
             this.btnCollection.ColorContrastOnHover = 45;
             this.btnCollection.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btnCollection.CustomizableEdges = borderEdges7;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnCollection.CustomizableEdges = borderEdges2;
             this.btnCollection.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCollection.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCollection.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -782,11 +784,11 @@ namespace MusicApp
             this.btnGenre.ColorContrastOnClick = 45;
             this.btnGenre.ColorContrastOnHover = 45;
             this.btnGenre.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btnGenre.CustomizableEdges = borderEdges8;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnGenre.CustomizableEdges = borderEdges3;
             this.btnGenre.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnGenre.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnGenre.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -874,11 +876,11 @@ namespace MusicApp
             this.btnHome.ColorContrastOnClick = 45;
             this.btnHome.ColorContrastOnHover = 45;
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.btnHome.CustomizableEdges = borderEdges9;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnHome.CustomizableEdges = borderEdges4;
             this.btnHome.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHome.DisabledBorderColor = System.Drawing.Color.Yellow;
             this.btnHome.DisabledFillColor = System.Drawing.Color.Blue;
@@ -978,35 +980,47 @@ namespace MusicApp
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
             this.ppageMain.TabIndex = 2;
-            animation4.AnimateOnlyDifferences = false;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.ppageMain.Transition = animation4;
+            animation3.AnimateOnlyDifferences = false;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.ppageMain.Transition = animation3;
             this.ppageMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // pageHome
             // 
             this.pageHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageHome.Controls.Add(this.pnHeader);
             this.pageHome.Controls.Add(this.fpnSongs);
+            this.pageHome.Controls.Add(this.pnHeader);
             this.pageHome.Location = new System.Drawing.Point(4, 4);
             this.pageHome.Name = "pageHome";
             this.pageHome.Padding = new System.Windows.Forms.Padding(3);
             this.pageHome.Size = new System.Drawing.Size(1622, 865);
             this.pageHome.TabIndex = 0;
             this.pageHome.Text = "Trang chủ";
+            // 
+            // fpnSongs
+            // 
+            this.fpnSongs.AllowDrop = true;
+            this.fpnSongs.AutoScroll = true;
+            this.fpnSongs.Controls.Add(this.song1);
+            this.fpnSongs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fpnSongs.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.fpnSongs.Location = new System.Drawing.Point(3, 181);
+            this.fpnSongs.Name = "fpnSongs";
+            this.fpnSongs.Size = new System.Drawing.Size(1616, 681);
+            this.fpnSongs.TabIndex = 8;
             // 
             // pnHeader
             // 
@@ -1022,16 +1036,47 @@ namespace MusicApp
             this.pnHeader.Size = new System.Drawing.Size(1616, 178);
             this.pnHeader.TabIndex = 7;
             // 
-            // fpnSongs
+            // txtTime
             // 
-            this.fpnSongs.AllowDrop = true;
-            this.fpnSongs.AutoScroll = true;
-            this.fpnSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.fpnSongs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fpnSongs.Location = new System.Drawing.Point(3, 3);
-            this.fpnSongs.Name = "fpnSongs";
-            this.fpnSongs.Size = new System.Drawing.Size(1616, 859);
-            this.fpnSongs.TabIndex = 6;
+            this.txtTime.ForeColor = System.Drawing.Color.White;
+            this.txtTime.Image = global::MusicApp.Properties.Resources.clock;
+            this.txtTime.Location = new System.Drawing.Point(1526, 124);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(32, 32);
+            this.txtTime.TabIndex = 9;
+            // 
+            // txtGenre
+            // 
+            this.txtGenre.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtGenre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.txtGenre.Location = new System.Drawing.Point(790, 124);
+            this.txtGenre.Name = "txtGenre";
+            this.txtGenre.Size = new System.Drawing.Size(139, 41);
+            this.txtGenre.TabIndex = 8;
+            this.txtGenre.Text = "Thể Loại";
+            this.txtGenre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.txtTitle.Location = new System.Drawing.Point(88, 124);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(128, 39);
+            this.txtTitle.TabIndex = 8;
+            this.txtTitle.Text = "Tiêu Đề";
+            this.txtTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtNumber
+            // 
+            this.txtNumber.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.txtNumber.Location = new System.Drawing.Point(23, 124);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(21, 39);
+            this.txtNumber.TabIndex = 8;
+            this.txtNumber.Text = "#";
+            this.txtNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txboxFind
             // 
@@ -1068,26 +1113,26 @@ namespace MusicApp
             this.txboxFind.Modified = false;
             this.txboxFind.Multiline = false;
             this.txboxFind.Name = "txboxFind";
-            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txboxFind.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txboxFind.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txboxFind.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txboxFind.OnIdleState = stateProperties8;
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txboxFind.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txboxFind.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txboxFind.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txboxFind.OnIdleState = stateProperties4;
             this.txboxFind.Padding = new System.Windows.Forms.Padding(3);
             this.txboxFind.PasswordChar = '\0';
             this.txboxFind.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
@@ -1137,22 +1182,22 @@ namespace MusicApp
             this.ppageGenre.SelectedIndex = 0;
             this.ppageGenre.Size = new System.Drawing.Size(1616, 859);
             this.ppageGenre.TabIndex = 2;
-            animation3.AnimateOnlyDifferences = false;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.ppageGenre.Transition = animation3;
+            animation1.AnimateOnlyDifferences = false;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.ppageGenre.Transition = animation1;
             this.ppageGenre.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // tabpageGenre
@@ -1273,22 +1318,22 @@ namespace MusicApp
             this.pageLike.SelectedIndex = 0;
             this.pageLike.Size = new System.Drawing.Size(1616, 745);
             this.pageLike.TabIndex = 1;
-            animation1.AnimateOnlyDifferences = false;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.pageLike.Transition = animation1;
+            animation2.AnimateOnlyDifferences = false;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.pageLike.Transition = animation2;
             this.pageLike.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // tabpagePlaylist
@@ -1363,11 +1408,11 @@ namespace MusicApp
             this.btnAddList.ColorContrastOnClick = 45;
             this.btnAddList.ColorContrastOnHover = 45;
             this.btnAddList.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.btnAddList.CustomizableEdges = borderEdges10;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnAddList.CustomizableEdges = borderEdges5;
             this.btnAddList.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddList.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAddList.DisabledFillColor = System.Drawing.Color.Empty;
@@ -1446,47 +1491,18 @@ namespace MusicApp
             this.pageHistory.TabIndex = 4;
             this.pageHistory.Text = "Lịch sử";
             // 
-            // txtNumber
+            // song1
             // 
-            this.txtNumber.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.txtNumber.Location = new System.Drawing.Point(23, 124);
-            this.txtNumber.Name = "txtNumber";
-            this.txtNumber.Size = new System.Drawing.Size(21, 39);
-            this.txtNumber.TabIndex = 8;
-            this.txtNumber.Text = "#";
-            this.txtNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtTitle
-            // 
-            this.txtTitle.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.txtTitle.Location = new System.Drawing.Point(88, 124);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(128, 39);
-            this.txtTitle.TabIndex = 8;
-            this.txtTitle.Text = "Tiêu Đề";
-            this.txtTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtGenre
-            // 
-            this.txtGenre.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtGenre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.txtGenre.Location = new System.Drawing.Point(790, 124);
-            this.txtGenre.Name = "txtGenre";
-            this.txtGenre.Size = new System.Drawing.Size(139, 41);
-            this.txtGenre.TabIndex = 8;
-            this.txtGenre.Text = "Thể Loại";
-            this.txtGenre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtTime
-            // 
-            this.txtTime.ForeColor = System.Drawing.Color.White;
-            this.txtTime.Image = global::MusicApp.Properties.Resources.clock;
-            this.txtTime.Location = new System.Drawing.Point(1526, 124);
-            this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(32, 32);
-            this.txtTime.TabIndex = 9;
+            this.song1.Artist = "Emcee L, Badbies";
+            this.song1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.song1.ImageSong = ((System.Drawing.Image)(resources.GetObject("song1.ImageSong")));
+            this.song1.Location = new System.Drawing.Point(3, 3);
+            this.song1.Name = "song1";
+            this.song1.NameSong = "Nhạc không lời";
+            this.song1.Number = "1";
+            this.song1.Size = new System.Drawing.Size(1630, 90);
+            this.song1.TabIndex = 0;
+            this.song1.Time = "03:54";
             // 
             // HomeForm
             // 
@@ -1507,6 +1523,7 @@ namespace MusicApp
             this.pnMenu.ResumeLayout(false);
             this.ppageMain.ResumeLayout(false);
             this.pageHome.ResumeLayout(false);
+            this.fpnSongs.ResumeLayout(false);
             this.pnHeader.ResumeLayout(false);
             this.pageGenreMain.ResumeLayout(false);
             this.ppageGenre.ResumeLayout(false);
@@ -1544,7 +1561,6 @@ namespace MusicApp
         private TabPage pageHome;
         private TabPage pageGenreMain;
         private TabPage pageCollection;
-        private FlowLayoutPanel fpnSongs;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAddList;
         private Bunifu.UI.WinForms.BunifuPages ppageGenre;
         private TabPage tabpageGenre;
@@ -1572,5 +1588,7 @@ namespace MusicApp
         private Label txtTitle;
         private Label txtGenre;
         private Label txtTime;
+        private FlowLayoutPanel fpnSongs;
+        private Source.Song song1;
     }
 }
