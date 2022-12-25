@@ -10,6 +10,7 @@ namespace MusicApp
         public Label Artist;
         public PictureBox SongPicture;
         public FlowLayoutPanel fpnlist;
+        public FlowLayoutPanel fpnCmt;
         public Label timeEnd;
 
         public HomeForm()
@@ -19,10 +20,13 @@ namespace MusicApp
             //can change from another form
             instance = this;
             fpnlist = fpnPlaylist;
+
             SongName = lbSongName;
             Artist= lbArtist;
             SongPicture = pSong;
             timeEnd = lbTimeEnd;
+
+            fpnCmt = fpnComment;
         }
 
         #region  Effect when hover button

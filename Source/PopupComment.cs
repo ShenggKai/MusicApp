@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +13,12 @@ namespace MusicApp.Source
 {
     public partial class PopupComment : Form
     {
+        public static PopupComment instance;
+
         public PopupComment()
         {
             InitializeComponent();
+            instance= this;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -28,9 +32,41 @@ namespace MusicApp.Source
             pUser.ImageLocation = openFileDialogCmt.FileName;
         }
 
+        private bool ValidateName()
+        {
+            bool bStatus = true;
+
+            if (txtboxName.Text == "")
+            {
+                errorProvider1.SetError(txtboxName, "required");
+                bStatus = false;
+            }
+            else
+            {
+                errorProvider1.SetError(txtboxName, "");
+            }
+            return bStatus;
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            bool bValidName = ValidateName();
+            if (bValidName) 
+            {
+                Comment cmt = new Comment();
+                cmt.Name = txtboxName.Text;
+                
+            }
 
+            else
+            {
+
+            }
+        }
+
+        private void txtboxName_Validated(object sender, EventArgs e)
+        {
+            ValidateName();
         }
     }
 }
