@@ -138,7 +138,12 @@ namespace MusicApp
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageHistory = new System.Windows.Forms.TabPage();
             this.pageInfo = new System.Windows.Forms.TabPage();
-            this.comment1 = new MusicApp.Source.Comment();
+            this.txtNameSong = new System.Windows.Forms.Label();
+            this.pInforSong = new System.Windows.Forms.PictureBox();
+            this.lbComposer = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -152,6 +157,7 @@ namespace MusicApp
             this.pageCollection.SuspendLayout();
             this.fpnPlaylist.SuspendLayout();
             this.pageInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).BeginInit();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -1041,10 +1047,10 @@ namespace MusicApp
             this.ppageMain.Location = new System.Drawing.Point(272, 0);
             this.ppageMain.Multiline = true;
             this.ppageMain.Name = "ppageMain";
-            this.ppageMain.Page = this.pageHome;
-            this.ppageMain.PageIndex = 0;
-            this.ppageMain.PageName = "pageHome";
-            this.ppageMain.PageTitle = "Trang chủ";
+            this.ppageMain.Page = this.pageInfo;
+            this.ppageMain.PageIndex = 4;
+            this.ppageMain.PageName = "pageInfo";
+            this.ppageMain.PageTitle = "Thông Tin";
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
             this.ppageMain.TabIndex = 2;
@@ -2102,7 +2108,12 @@ namespace MusicApp
             // pageInfo
             // 
             this.pageInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageInfo.Controls.Add(this.comment1);
+            this.pageInfo.Controls.Add(this.label3);
+            this.pageInfo.Controls.Add(this.label2);
+            this.pageInfo.Controls.Add(this.label1);
+            this.pageInfo.Controls.Add(this.lbComposer);
+            this.pageInfo.Controls.Add(this.txtNameSong);
+            this.pageInfo.Controls.Add(this.pInforSong);
             this.pageInfo.Location = new System.Drawing.Point(4, 4);
             this.pageInfo.Name = "pageInfo";
             this.pageInfo.Padding = new System.Windows.Forms.Padding(3);
@@ -2110,13 +2121,71 @@ namespace MusicApp
             this.pageInfo.TabIndex = 5;
             this.pageInfo.Text = "Thông Tin";
             // 
-            // comment1
+            // txtNameSong
             // 
-            this.comment1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.comment1.Location = new System.Drawing.Point(46, 205);
-            this.comment1.Name = "comment1";
-            this.comment1.Size = new System.Drawing.Size(1470, 155);
-            this.comment1.TabIndex = 0;
+            this.txtNameSong.Font = new System.Drawing.Font("Segoe UI Semibold", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtNameSong.ForeColor = System.Drawing.Color.White;
+            this.txtNameSong.Location = new System.Drawing.Point(728, 23);
+            this.txtNameSong.Name = "txtNameSong";
+            this.txtNameSong.Size = new System.Drawing.Size(682, 46);
+            this.txtNameSong.TabIndex = 1;
+            this.txtNameSong.Text = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.txtNameSong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtNameSong.Visible = false;
+            // 
+            // pInforSong
+            // 
+            this.pInforSong.Image = global::MusicApp.Properties.Resources.srltdln;
+            this.pInforSong.Location = new System.Drawing.Point(363, 23);
+            this.pInforSong.Name = "pInforSong";
+            this.pInforSong.Size = new System.Drawing.Size(280, 280);
+            this.pInforSong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pInforSong.TabIndex = 0;
+            this.pInforSong.TabStop = false;
+            // 
+            // lbComposer
+            // 
+            this.lbComposer.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbComposer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.lbComposer.Location = new System.Drawing.Point(728, 105);
+            this.lbComposer.Name = "lbComposer";
+            this.lbComposer.Size = new System.Drawing.Size(115, 33);
+            this.lbComposer.TabIndex = 2;
+            this.lbComposer.Text = "Sáng tác:";
+            this.lbComposer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label1.Location = new System.Drawing.Point(728, 162);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 33);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Sáng tác:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label2.Location = new System.Drawing.Point(728, 230);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 33);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Sáng tác:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label3.Location = new System.Drawing.Point(728, 270);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 33);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Sáng tác:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HomeForm
             // 
@@ -2145,6 +2214,7 @@ namespace MusicApp
             this.pageCollection.ResumeLayout(false);
             this.fpnPlaylist.ResumeLayout(false);
             this.pageInfo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2198,7 +2268,6 @@ namespace MusicApp
         private FlowLayoutPanel fpnPlaylist;
         private Source.Liked liked1;
         private Source.Playlist playlist1;
-        private Source.Comment comment1;
         private Source.Song song1;
         private Source.Song song2;
         private Source.Song song3;
@@ -2239,5 +2308,11 @@ namespace MusicApp
         private Source.Song song38;
         private Source.Song song39;
         private Source.Song song40;
+        private PictureBox pInforSong;
+        private Label txtNameSong;
+        private Label lbComposer;
+        private Label label3;
+        private Label label2;
+        private Label label1;
     }
 }

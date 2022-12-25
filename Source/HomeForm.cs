@@ -224,8 +224,7 @@ namespace MusicApp
         {
             ppageMain.SetPage(4);
         }
+
         #endregion
-
-
     }
 }
