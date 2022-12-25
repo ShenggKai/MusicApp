@@ -143,6 +143,26 @@ namespace MusicApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BuocQuaMuaCoDon {
+            get {
+                object obj = ResourceManager.GetObject("BuocQuaMuaCoDon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ChungTaCuaHienTaiCover {
+            get {
+                object obj = ResourceManager.GetObject("ChungTaCuaHienTaiCover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clock {
             get {
                 object obj = ResourceManager.GetObject("clock", resourceCulture);
@@ -156,6 +176,16 @@ namespace MusicApp.Properties {
         internal static System.Drawing.Bitmap close {
             get {
                 object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CoHenVoiThanhXuan {
+            get {
+                object obj = ResourceManager.GetObject("CoHenVoiThanhXuan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

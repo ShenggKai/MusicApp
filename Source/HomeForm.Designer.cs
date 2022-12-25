@@ -1175,48 +1175,48 @@ namespace MusicApp
             // 
             // song8
             // 
-            this.song8.Artist = "Emcee L, Badbies";
+            this.song8.Artist = "Vũ";
             this.song8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.song8.Genre = "Nhạc không lời";
-            this.song8.ImageSong = ((System.Drawing.Image)(resources.GetObject("song8.ImageSong")));
+            this.song8.Genre = "Nhạc Việt";
+            this.song8.ImageSong = global::MusicApp.Properties.Resources.BuocQuaMuaCoDon;
             this.song8.Location = new System.Drawing.Point(0, 651);
             this.song8.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song8.Name = "song8";
-            this.song8.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song8.Number = "1";
+            this.song8.NameSong = "Bước Qua Mùa Cô Đơn";
+            this.song8.Number = "8";
             this.song8.Size = new System.Drawing.Size(1620, 90);
             this.song8.TabIndex = 7;
-            this.song8.Time = "03:54";
+            this.song8.Time = "04:38";
             // 
             // song9
             // 
-            this.song9.Artist = "Emcee L, Badbies";
+            this.song9.Artist = "An Coong";
             this.song9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.song9.Genre = "Nhạc không lời";
-            this.song9.ImageSong = ((System.Drawing.Image)(resources.GetObject("song9.ImageSong")));
+            this.song9.Genre = "Nhạc Không Lời";
+            this.song9.ImageSong = global::MusicApp.Properties.Resources.ChungTaCuaHienTaiCover;
             this.song9.Location = new System.Drawing.Point(0, 744);
             this.song9.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song9.Name = "song9";
-            this.song9.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song9.Number = "1";
+            this.song9.NameSong = "Chúng Ta Của Hiện Tại (Piano cover)";
+            this.song9.Number = "9";
             this.song9.Size = new System.Drawing.Size(1620, 90);
             this.song9.TabIndex = 8;
-            this.song9.Time = "03:54";
+            this.song9.Time = "05:03";
             // 
             // song10
             // 
-            this.song10.Artist = "Emcee L, Badbies";
+            this.song10.Artist = "MONSTAR";
             this.song10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.song10.Genre = "Nhạc không lời";
-            this.song10.ImageSong = ((System.Drawing.Image)(resources.GetObject("song10.ImageSong")));
+            this.song10.Genre = "Nhạc Việt";
+            this.song10.ImageSong = global::MusicApp.Properties.Resources.CoHenVoiThanhXuan;
             this.song10.Location = new System.Drawing.Point(0, 837);
             this.song10.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song10.Name = "song10";
-            this.song10.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song10.Number = "1";
+            this.song10.NameSong = "Có Hẹn Với Thanh Xuân";
+            this.song10.Number = "10";
             this.song10.Size = new System.Drawing.Size(1620, 90);
             this.song10.TabIndex = 9;
-            this.song10.Time = "03:54";
+            this.song10.Time = "03:38";
             // 
             // pnHeader
             // 
