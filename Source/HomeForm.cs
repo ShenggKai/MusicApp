@@ -1,5 +1,6 @@
 using MusicApp.Source;
 using System.Text;
+using Windows.UI.Input;
 
 namespace MusicApp
 {
@@ -381,6 +382,31 @@ namespace MusicApp
             txtInfoGenre.Text = song10.Genre;
             txtYear.Text = "2020";
             txtComposer.Text = "Son Tung M-TP";
+        }
+
+        private void genre1_Click(object sender, EventArgs e)
+        {
+            ppageGenre.SetPage(1);
+        }
+
+        private void genre2_Click(object sender, EventArgs e)
+        {
+            ppageGenre.SetPage(2);
+        }
+
+        private void genre3_Click(object sender, EventArgs e)
+        {
+            ppageGenre.SetPage(3);
+        }
+
+        private void genre4_Click(object sender, EventArgs e)
+        {
+            ppageGenre.SetPage(4);
+        }
+
+        private void genre5_Click(object sender, EventArgs e)
+        {
+            ppageGenre.SetPage(5);
         }
     }
 }
