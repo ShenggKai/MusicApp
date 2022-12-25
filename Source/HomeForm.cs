@@ -217,11 +217,7 @@ namespace MusicApp
             {
                 formBackground.Dispose();
             }
-
-
         }
-
-
         #endregion
 
         #region click songs
