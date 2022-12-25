@@ -174,6 +174,8 @@
             this.Name = "Song";
             this.Size = new System.Drawing.Size(1620, 90);
             this.Click += new System.EventHandler(this.Song_Click);
+            this.MouseLeave += new System.EventHandler(this.Song_MouseLeave);
+            this.MouseHover += new System.EventHandler(this.Song_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInfor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHeart)).EndInit();

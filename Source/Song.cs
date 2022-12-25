@@ -91,6 +91,16 @@ namespace MusicApp.Source
         {
             pDown.Image = global::MusicApp.Properties.Resources.download;
         }
+
+        private void Song_MouseHover(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(80, 80, 80);
+        }
+
+        private void Song_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(24, 24, 24);
+        }
         #endregion
 
         #region effect when click
@@ -111,6 +121,7 @@ namespace MusicApp.Source
             HomeForm.instance.SongPicture.Image = pSong.Image;
         }
         #endregion
+
 
     }
 }
