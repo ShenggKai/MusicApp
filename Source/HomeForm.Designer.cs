@@ -82,6 +82,13 @@ namespace MusicApp
             this.song1 = new MusicApp.Source.Song();
             this.song2 = new MusicApp.Source.Song();
             this.song3 = new MusicApp.Source.Song();
+            this.song4 = new MusicApp.Source.Song();
+            this.song5 = new MusicApp.Source.Song();
+            this.song6 = new MusicApp.Source.Song();
+            this.song7 = new MusicApp.Source.Song();
+            this.song8 = new MusicApp.Source.Song();
+            this.song9 = new MusicApp.Source.Song();
+            this.song10 = new MusicApp.Source.Song();
             this.pnHeader = new System.Windows.Forms.Panel();
             this.txtTime = new System.Windows.Forms.Label();
             this.txtGenre = new System.Windows.Forms.Label();
@@ -1048,6 +1055,13 @@ namespace MusicApp
             this.fpnSongs.Controls.Add(this.song1);
             this.fpnSongs.Controls.Add(this.song2);
             this.fpnSongs.Controls.Add(this.song3);
+            this.fpnSongs.Controls.Add(this.song4);
+            this.fpnSongs.Controls.Add(this.song5);
+            this.fpnSongs.Controls.Add(this.song6);
+            this.fpnSongs.Controls.Add(this.song7);
+            this.fpnSongs.Controls.Add(this.song8);
+            this.fpnSongs.Controls.Add(this.song9);
+            this.fpnSongs.Controls.Add(this.song10);
             this.fpnSongs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fpnSongs.Location = new System.Drawing.Point(3, 181);
             this.fpnSongs.Name = "fpnSongs";
@@ -1056,49 +1070,153 @@ namespace MusicApp
             // 
             // song1
             // 
-            this.song1.Artist = "Emcee L";
+            this.song1.Artist = "TIA, Lê Thiện Hiếu";
             this.song1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.song1.Genre = "Nhạc không lời";
-            this.song1.ImageSong = ((System.Drawing.Image)(resources.GetObject("song1.ImageSong")));
+            this.song1.Genre = "Nhạc Việt";
+            this.song1.ImageSong = global::MusicApp.Properties.Resources.AiDuaEmVe;
             this.song1.Location = new System.Drawing.Point(0, 0);
             this.song1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song1.Name = "song1";
-            this.song1.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.song1.Number = "3";
+            this.song1.NameSong = "Ai Đưa Em Về";
+            this.song1.Number = "1";
             this.song1.Size = new System.Drawing.Size(1620, 90);
             this.song1.TabIndex = 0;
-            this.song1.Time = "03:54";
-            this.song1.InfoClick += new System.EventHandler(this.song1_InfoClick);
+            this.song1.Time = "03:53";
             // 
             // song2
             // 
-            this.song2.Artist = "Emcee L, Badbies";
+            this.song2.Artist = "SOOBIN";
             this.song2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.song2.Genre = "Nhạc không lời";
-            this.song2.ImageSong = ((System.Drawing.Image)(resources.GetObject("song2.ImageSong")));
+            this.song2.Genre = "Nhạc Việt";
+            this.song2.ImageSong = global::MusicApp.Properties.Resources.AnhDaQuenVoiCoDon;
             this.song2.Location = new System.Drawing.Point(0, 93);
             this.song2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song2.Name = "song2";
-            this.song2.NameSong = "Nhạc không lời";
-            this.song2.Number = "1";
+            this.song2.NameSong = "Anh Đã Quen Với Cô Đơn";
+            this.song2.Number = "2";
             this.song2.Size = new System.Drawing.Size(1620, 90);
             this.song2.TabIndex = 1;
-            this.song2.Time = "03:54";
+            this.song2.Time = "03:55";
             // 
             // song3
             // 
-            this.song3.Artist = "Emcee L, Badbies";
+            this.song3.Artist = "Anh Quân Idol";
             this.song3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.song3.Genre = "Nhạc không lời";
-            this.song3.ImageSong = ((System.Drawing.Image)(resources.GetObject("song3.ImageSong")));
+            this.song3.Genre = "Nhạc Việt";
+            this.song3.ImageSong = global::MusicApp.Properties.Resources.AnhMetRoi;
             this.song3.Location = new System.Drawing.Point(0, 186);
             this.song3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song3.Name = "song3";
-            this.song3.NameSong = "Vì Anh Đâu Có Biết dsfajsldkfjasd fasdfj";
-            this.song3.Number = "1";
+            this.song3.NameSong = "Anh Mệt Rồi";
+            this.song3.Number = "3";
             this.song3.Size = new System.Drawing.Size(1620, 90);
             this.song3.TabIndex = 2;
-            this.song3.Time = "03:54";
+            this.song3.Time = "04:56";
+            // 
+            // song4
+            // 
+            this.song4.Artist = "BTS";
+            this.song4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song4.Genre = "Nhạc Hàn";
+            this.song4.ImageSong = global::MusicApp.Properties.Resources.AnswerLoveMyself;
+            this.song4.Location = new System.Drawing.Point(0, 279);
+            this.song4.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song4.Name = "song4";
+            this.song4.NameSong = "Answer: Love Myself";
+            this.song4.Number = "4";
+            this.song4.Size = new System.Drawing.Size(1620, 90);
+            this.song4.TabIndex = 3;
+            this.song4.Time = "03:54";
+            // 
+            // song5
+            // 
+            this.song5.Artist = "Emcee L, Badbies";
+            this.song5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song5.Genre = "Nhạc không lời";
+            this.song5.ImageSong = ((System.Drawing.Image)(resources.GetObject("song5.ImageSong")));
+            this.song5.Location = new System.Drawing.Point(0, 372);
+            this.song5.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song5.Name = "song5";
+            this.song5.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song5.Number = "1";
+            this.song5.Size = new System.Drawing.Size(1620, 90);
+            this.song5.TabIndex = 4;
+            this.song5.Time = "03:54";
+            // 
+            // song6
+            // 
+            this.song6.Artist = "Emcee L, Badbies";
+            this.song6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song6.Genre = "Nhạc không lời";
+            this.song6.ImageSong = ((System.Drawing.Image)(resources.GetObject("song6.ImageSong")));
+            this.song6.Location = new System.Drawing.Point(0, 465);
+            this.song6.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song6.Name = "song6";
+            this.song6.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song6.Number = "1";
+            this.song6.Size = new System.Drawing.Size(1620, 90);
+            this.song6.TabIndex = 5;
+            this.song6.Time = "03:54";
+            // 
+            // song7
+            // 
+            this.song7.Artist = "Emcee L, Badbies";
+            this.song7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song7.Genre = "Nhạc không lời";
+            this.song7.ImageSong = ((System.Drawing.Image)(resources.GetObject("song7.ImageSong")));
+            this.song7.Location = new System.Drawing.Point(0, 558);
+            this.song7.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song7.Name = "song7";
+            this.song7.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song7.Number = "1";
+            this.song7.Size = new System.Drawing.Size(1620, 90);
+            this.song7.TabIndex = 6;
+            this.song7.Time = "03:54";
+            // 
+            // song8
+            // 
+            this.song8.Artist = "Emcee L, Badbies";
+            this.song8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song8.Genre = "Nhạc không lời";
+            this.song8.ImageSong = ((System.Drawing.Image)(resources.GetObject("song8.ImageSong")));
+            this.song8.Location = new System.Drawing.Point(0, 651);
+            this.song8.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song8.Name = "song8";
+            this.song8.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song8.Number = "1";
+            this.song8.Size = new System.Drawing.Size(1620, 90);
+            this.song8.TabIndex = 7;
+            this.song8.Time = "03:54";
+            // 
+            // song9
+            // 
+            this.song9.Artist = "Emcee L, Badbies";
+            this.song9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song9.Genre = "Nhạc không lời";
+            this.song9.ImageSong = ((System.Drawing.Image)(resources.GetObject("song9.ImageSong")));
+            this.song9.Location = new System.Drawing.Point(0, 744);
+            this.song9.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song9.Name = "song9";
+            this.song9.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song9.Number = "1";
+            this.song9.Size = new System.Drawing.Size(1620, 90);
+            this.song9.TabIndex = 8;
+            this.song9.Time = "03:54";
+            // 
+            // song10
+            // 
+            this.song10.Artist = "Emcee L, Badbies";
+            this.song10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song10.Genre = "Nhạc không lời";
+            this.song10.ImageSong = ((System.Drawing.Image)(resources.GetObject("song10.ImageSong")));
+            this.song10.Location = new System.Drawing.Point(0, 837);
+            this.song10.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song10.Name = "song10";
+            this.song10.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song10.Number = "1";
+            this.song10.Size = new System.Drawing.Size(1620, 90);
+            this.song10.TabIndex = 9;
+            this.song10.Time = "03:54";
             // 
             // pnHeader
             // 
@@ -1565,13 +1683,20 @@ namespace MusicApp
         private Label txtGenre;
         private Label txtTime;
         private FlowLayoutPanel fpnSongs;
-        private Source.Song song1;
-        private Source.Song song2;
-        private Source.Song song3;
         private TabPage pageInfo;
         private FlowLayoutPanel fpnPlaylist;
         private Source.Liked liked1;
         private Source.Playlist playlist1;
         private Source.Comment comment1;
+        private Source.Song song1;
+        private Source.Song song2;
+        private Source.Song song3;
+        private Source.Song song4;
+        private Source.Song song5;
+        private Source.Song song6;
+        private Source.Song song7;
+        private Source.Song song8;
+        private Source.Song song9;
+        private Source.Song song10;
     }
 }

@@ -83,6 +83,26 @@ namespace MusicApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AnhDaQuenVoiCoDon {
+            get {
+                object obj = ResourceManager.GetObject("AnhDaQuenVoiCoDon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AnhMetRoi {
+            get {
+                object obj = ResourceManager.GetObject("AnhMetRoi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AnswerLoveMyself {
             get {
                 object obj = ResourceManager.GetObject("AnswerLoveMyself", resourceCulture);
