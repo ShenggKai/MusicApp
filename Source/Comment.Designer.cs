@@ -129,6 +129,8 @@
             this.pUnlike.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pUnlike.TabIndex = 3;
             this.pUnlike.TabStop = false;
+            this.pUnlike.MouseLeave += new System.EventHandler(this.pUnlike_MouseLeave);
+            this.pUnlike.MouseHover += new System.EventHandler(this.pUnlike_MouseHover);
             // 
             // pTrash
             // 
@@ -140,6 +142,8 @@
             this.pTrash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pTrash.TabIndex = 3;
             this.pTrash.TabStop = false;
+            this.pTrash.MouseLeave += new System.EventHandler(this.pTrash_MouseLeave);
+            this.pTrash.MouseHover += new System.EventHandler(this.pTrash_MouseHover);
             // 
             // Comment
             // 

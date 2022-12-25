@@ -61,8 +61,27 @@ namespace MusicApp.Source
         {
             pLike.Image = global::MusicApp.Properties.Resources.like;
         }
+
+        private void pUnlike_MouseLeave(object sender, EventArgs e)
+        {
+            pUnlike.Image = global::MusicApp.Properties.Resources.unlike;
+        }
+
+        private void pUnlike_MouseHover(object sender, EventArgs e)
+        {
+            pUnlike.Image = global::MusicApp.Properties.Resources.unlike_white;
+        }
+
         #endregion
 
+        private void pTrash_MouseHover(object sender, EventArgs e)
+        {
+            pTrash.Image = global::MusicApp.Properties.Resources.trash_white;
+        }
 
+        private void pTrash_MouseLeave(object sender, EventArgs e)
+        {
+            pTrash.Image = global::MusicApp.Properties.Resources.trash;
+        }
     }
 }
