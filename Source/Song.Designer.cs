@@ -53,9 +53,11 @@
             this.txtNum.TabIndex = 0;
             this.txtNum.Text = "1";
             this.txtNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtNum.Click += new System.EventHandler(this.Song_Click);
             // 
             // pSong
             // 
+            this.pSong.Enabled = false;
             this.pSong.Image = global::MusicApp.Properties.Resources.srltdln1;
             this.pSong.Location = new System.Drawing.Point(88, 5);
             this.pSong.Name = "pSong";
@@ -66,13 +68,15 @@
             // 
             // txtArtist
             // 
-            this.txtArtist.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtArtist.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtArtist.ForeColor = System.Drawing.Color.White;
             this.txtArtist.Location = new System.Drawing.Point(188, 55);
             this.txtArtist.Name = "txtArtist";
             this.txtArtist.Size = new System.Drawing.Size(529, 26);
             this.txtArtist.TabIndex = 3;
             this.txtArtist.Text = "Emcee L, Badbies";
+            this.txtArtist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtArtist.Click += new System.EventHandler(this.Song_Click);
             // 
             // pInfor
             // 
@@ -126,6 +130,7 @@
             this.txtTime.TabIndex = 5;
             this.txtTime.Text = "03:54";
             this.txtTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtTime.Click += new System.EventHandler(this.Song_Click);
             // 
             // txtName
             // 
@@ -136,6 +141,8 @@
             this.txtName.Size = new System.Drawing.Size(529, 36);
             this.txtName.TabIndex = 2;
             this.txtName.Text = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.txtName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtName.Click += new System.EventHandler(this.Song_Click);
             // 
             // txtGenre
             // 
@@ -147,6 +154,7 @@
             this.txtGenre.TabIndex = 6;
             this.txtGenre.Text = "Nhạc không lời";
             this.txtGenre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtGenre.Click += new System.EventHandler(this.Song_Click);
             // 
             // Song
             // 

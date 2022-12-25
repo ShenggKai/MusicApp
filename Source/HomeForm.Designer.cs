@@ -321,10 +321,10 @@ namespace MusicApp
             this.lbArtist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.lbArtist.Location = new System.Drawing.Point(135, 79);
             this.lbArtist.Name = "lbArtist";
-            this.lbArtist.Size = new System.Drawing.Size(168, 24);
+            this.lbArtist.Size = new System.Drawing.Size(440, 24);
             this.lbArtist.TabIndex = 8;
             this.lbArtist.Text = "Emcee L, Badbies";
-            this.lbArtist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbArtist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbSongName
             // 
@@ -332,10 +332,10 @@ namespace MusicApp
             this.lbSongName.ForeColor = System.Drawing.Color.White;
             this.lbSongName.Location = new System.Drawing.Point(135, 33);
             this.lbSongName.Name = "lbSongName";
-            this.lbSongName.Size = new System.Drawing.Size(430, 34);
+            this.lbSongName.Size = new System.Drawing.Size(543, 34);
             this.lbSongName.TabIndex = 7;
             this.lbSongName.Text = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
-            this.lbSongName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSongName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pSong
             // 
