@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pUser = new System.Windows.Forms.PictureBox();
+            this.txtUserName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,11 +43,22 @@
             this.pUser.TabIndex = 0;
             this.pUser.TabStop = false;
             // 
+            // txtUserName
+            // 
+            this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtUserName.ForeColor = System.Drawing.Color.White;
+            this.txtUserName.Location = new System.Drawing.Point(151, 12);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(151, 33);
+            this.txtUserName.TabIndex = 1;
+            this.txtUserName.Text = "ShengKai";
+            // 
             // Comment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.pUser);
             this.Name = "Comment";
             this.Size = new System.Drawing.Size(1176, 124);
@@ -58,5 +70,6 @@
         #endregion
 
         private PictureBox pUser;
+        private Label txtUserName;
     }
 }
