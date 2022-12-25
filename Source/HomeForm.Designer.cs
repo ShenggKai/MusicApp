@@ -99,6 +99,16 @@ namespace MusicApp
             this.song18 = new MusicApp.Source.Song();
             this.song19 = new MusicApp.Source.Song();
             this.song20 = new MusicApp.Source.Song();
+            this.song21 = new MusicApp.Source.Song();
+            this.song22 = new MusicApp.Source.Song();
+            this.song23 = new MusicApp.Source.Song();
+            this.song24 = new MusicApp.Source.Song();
+            this.song25 = new MusicApp.Source.Song();
+            this.song26 = new MusicApp.Source.Song();
+            this.song27 = new MusicApp.Source.Song();
+            this.song28 = new MusicApp.Source.Song();
+            this.song29 = new MusicApp.Source.Song();
+            this.song30 = new MusicApp.Source.Song();
             this.pnHeader = new System.Windows.Forms.Panel();
             this.txtTime = new System.Windows.Forms.Label();
             this.txtGenre = new System.Windows.Forms.Label();
@@ -1082,6 +1092,16 @@ namespace MusicApp
             this.fpnSongs.Controls.Add(this.song18);
             this.fpnSongs.Controls.Add(this.song19);
             this.fpnSongs.Controls.Add(this.song20);
+            this.fpnSongs.Controls.Add(this.song21);
+            this.fpnSongs.Controls.Add(this.song22);
+            this.fpnSongs.Controls.Add(this.song23);
+            this.fpnSongs.Controls.Add(this.song24);
+            this.fpnSongs.Controls.Add(this.song25);
+            this.fpnSongs.Controls.Add(this.song26);
+            this.fpnSongs.Controls.Add(this.song27);
+            this.fpnSongs.Controls.Add(this.song28);
+            this.fpnSongs.Controls.Add(this.song29);
+            this.fpnSongs.Controls.Add(this.song30);
             this.fpnSongs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fpnSongs.Location = new System.Drawing.Point(3, 181);
             this.fpnSongs.Name = "fpnSongs";
@@ -1387,6 +1407,156 @@ namespace MusicApp
             this.song20.Size = new System.Drawing.Size(1620, 90);
             this.song20.TabIndex = 19;
             this.song20.Time = "03:04";
+            // 
+            // song21
+            // 
+            this.song21.Artist = "Lil Z Poet";
+            this.song21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song21.Genre = "Nhạc Việt";
+            this.song21.ImageSong = global::MusicApp.Properties.Resources.HoaVangNayTan21;
+            this.song21.Location = new System.Drawing.Point(0, 1860);
+            this.song21.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song21.Name = "song21";
+            this.song21.NameSong = "Hoa Vàng Nay Tàn";
+            this.song21.Number = "21";
+            this.song21.Size = new System.Drawing.Size(1620, 90);
+            this.song21.TabIndex = 20;
+            this.song21.Time = "03:51";
+            // 
+            // song22
+            // 
+            this.song22.Artist = "BIGBANG";
+            this.song22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song22.Genre = "Nhạc Hàn";
+            this.song22.ImageSong = global::MusicApp.Properties.Resources.IfYou1;
+            this.song22.Location = new System.Drawing.Point(0, 1953);
+            this.song22.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song22.Name = "song22";
+            this.song22.NameSong = "If You";
+            this.song22.Number = "22";
+            this.song22.Size = new System.Drawing.Size(1620, 90);
+            this.song22.TabIndex = 21;
+            this.song22.Time = "04:24";
+            // 
+            // song23
+            // 
+            this.song23.Artist = "P!nk, Nate Ruess";
+            this.song23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song23.Genre = "Nhạc Âu Mỹ";
+            this.song23.ImageSong = global::MusicApp.Properties.Resources.JustGiveMeAReason;
+            this.song23.Location = new System.Drawing.Point(0, 2046);
+            this.song23.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song23.Name = "song23";
+            this.song23.NameSong = "Just Give Me A Reason";
+            this.song23.Number = "23";
+            this.song23.Size = new System.Drawing.Size(1620, 90);
+            this.song23.TabIndex = 22;
+            this.song23.Time = "04:02";
+            // 
+            // song24
+            // 
+            this.song24.Artist = "Lil Z Poet";
+            this.song24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song24.Genre = "Nhạc Việt";
+            this.song24.ImageSong = global::MusicApp.Properties.Resources.KeDienTinVaoTinhYeu;
+            this.song24.Location = new System.Drawing.Point(0, 2139);
+            this.song24.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song24.Name = "song24";
+            this.song24.NameSong = "Kẻ Điên Tin Vào Tình Yêu";
+            this.song24.Number = "24";
+            this.song24.Size = new System.Drawing.Size(1620, 90);
+            this.song24.TabIndex = 23;
+            this.song24.Time = "04:36";
+            // 
+            // song25
+            // 
+            this.song25.Artist = "Yiruma";
+            this.song25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song25.Genre = "Nhạc không lời";
+            this.song25.ImageSong = global::MusicApp.Properties.Resources.KissTheRain;
+            this.song25.Location = new System.Drawing.Point(0, 2232);
+            this.song25.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song25.Name = "song25";
+            this.song25.NameSong = "Kiss The Rain";
+            this.song25.Number = "25";
+            this.song25.Size = new System.Drawing.Size(1620, 90);
+            this.song25.TabIndex = 24;
+            this.song25.Time = "04:14";
+            // 
+            // song26
+            // 
+            this.song26.Artist = "Lệ Quyên";
+            this.song26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song26.Genre = "Nhạc Trịnh";
+            this.song26.ImageSong = global::MusicApp.Properties.Resources.MuaHong;
+            this.song26.Location = new System.Drawing.Point(0, 2325);
+            this.song26.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song26.Name = "song26";
+            this.song26.NameSong = "Mưa Hồng";
+            this.song26.Number = "26";
+            this.song26.Size = new System.Drawing.Size(1620, 90);
+            this.song26.TabIndex = 25;
+            this.song26.Time = "04:38";
+            // 
+            // song27
+            // 
+            this.song27.Artist = "Only C";
+            this.song27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song27.Genre = "Nhạc Việt";
+            this.song27.ImageSong = global::MusicApp.Properties.Resources.NguoiDangThuongLaAnh;
+            this.song27.Location = new System.Drawing.Point(0, 2418);
+            this.song27.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song27.Name = "song27";
+            this.song27.NameSong = "Người Đáng Thương Là Anh";
+            this.song27.Number = "27";
+            this.song27.Size = new System.Drawing.Size(1620, 90);
+            this.song27.TabIndex = 26;
+            this.song27.Time = "05:12";
+            // 
+            // song28
+            // 
+            this.song28.Artist = "SOOBIN";
+            this.song28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song28.Genre = "Nhạc Việt";
+            this.song28.ImageSong = global::MusicApp.Properties.Resources.SayGoodBye;
+            this.song28.Location = new System.Drawing.Point(0, 2511);
+            this.song28.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song28.Name = "song28";
+            this.song28.NameSong = "Say Goodbye";
+            this.song28.Number = "28";
+            this.song28.Size = new System.Drawing.Size(1620, 90);
+            this.song28.TabIndex = 27;
+            this.song28.Time = "04:06";
+            // 
+            // song29
+            // 
+            this.song29.Artist = "Wiz Khalifa, Charlie Puth";
+            this.song29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song29.Genre = "Nhạc Âu Mỹ";
+            this.song29.ImageSong = global::MusicApp.Properties.Resources.SeeYouAgain;
+            this.song29.Location = new System.Drawing.Point(0, 2604);
+            this.song29.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song29.Name = "song29";
+            this.song29.NameSong = "See You Again";
+            this.song29.Number = "29";
+            this.song29.Size = new System.Drawing.Size(1620, 90);
+            this.song29.TabIndex = 28;
+            this.song29.Time = "03:49";
+            // 
+            // song30
+            // 
+            this.song30.Artist = "Emcee L (Da LAB), Badbies";
+            this.song30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song30.Genre = "Nhạc Việt";
+            this.song30.ImageSong = global::MusicApp.Properties.Resources.srltdln;
+            this.song30.Location = new System.Drawing.Point(0, 2697);
+            this.song30.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song30.Name = "song30";
+            this.song30.NameSong = "Sinh Ra Là Thứ Đối Lập Nhau";
+            this.song30.Number = "30";
+            this.song30.Size = new System.Drawing.Size(1620, 90);
+            this.song30.TabIndex = 29;
+            this.song30.Time = "03:54";
             // 
             // pnHeader
             // 
@@ -1878,5 +2048,15 @@ namespace MusicApp
         private Source.Song song18;
         private Source.Song song19;
         private Source.Song song20;
+        private Source.Song song21;
+        private Source.Song song22;
+        private Source.Song song23;
+        private Source.Song song24;
+        private Source.Song song25;
+        private Source.Song song26;
+        private Source.Song song27;
+        private Source.Song song28;
+        private Source.Song song29;
+        private Source.Song song30;
     }
 }
