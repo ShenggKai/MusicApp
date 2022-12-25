@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace MusicApp.Source
 {
@@ -120,7 +121,18 @@ namespace MusicApp.Source
 
         private void pTrash_Click(object sender, EventArgs e)
         {
-            
+            const string message =
+        "Xác nhận xóa bình luận?";
+            const string caption = "MusicApp";
+            var result = MessageBox.Show(message, caption,
+                                MessageBoxButtons.YesNo,
+                                MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Controls.Clear();
+                this.Dispose();
+            }
         }
     }
 }

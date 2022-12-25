@@ -144,6 +144,7 @@ namespace MusicApp
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageHistory = new System.Windows.Forms.TabPage();
             this.pageInfo = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.fpnComment = new System.Windows.Forms.FlowLayoutPanel();
             this.comment1 = new MusicApp.Source.Comment();
             this.txtOneStar = new System.Windows.Forms.Label();
@@ -184,6 +185,7 @@ namespace MusicApp
             this.pageCollection.SuspendLayout();
             this.fpnPlaylist.SuspendLayout();
             this.pageInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.fpnComment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).BeginInit();
@@ -2138,6 +2140,7 @@ namespace MusicApp
             // pageInfo
             // 
             this.pageInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageInfo.Controls.Add(this.pictureBox1);
             this.pageInfo.Controls.Add(this.fpnComment);
             this.pageInfo.Controls.Add(this.txtOneStar);
             this.pageInfo.Controls.Add(this.txtTwoStar);
@@ -2171,6 +2174,16 @@ namespace MusicApp
             this.pageInfo.TabIndex = 5;
             this.pageInfo.Text = "Thông Tin";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MusicApp.Properties.Resources.star_green;
+            this.pictureBox1.Location = new System.Drawing.Point(191, 442);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // fpnComment
             // 
             this.fpnComment.AllowDrop = true;
@@ -2185,11 +2198,15 @@ namespace MusicApp
             // comment1
             // 
             this.comment1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.comment1.ImageUser = ((System.Drawing.Image)(resources.GetObject("comment1.ImageUser")));
             this.comment1.Location = new System.Drawing.Point(0, 0);
             this.comment1.Margin = new System.Windows.Forms.Padding(0);
             this.comment1.Name = "comment1";
+            this.comment1.NameUser = "ShengKai";
+            this.comment1.Ratting = 5;
             this.comment1.Size = new System.Drawing.Size(1170, 124);
             this.comment1.TabIndex = 0;
+            this.comment1.TextCmt = "Bài hát hay";
             // 
             // txtOneStar
             // 
@@ -2811,15 +2828,14 @@ namespace MusicApp
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 22.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(67, 430);
+            this.label2.Location = new System.Drawing.Point(96, 430);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 51);
+            this.label2.Size = new System.Drawing.Size(89, 50);
             this.label2.TabIndex = 5;
             this.label2.Text = "5";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pBack
             // 
@@ -2980,7 +2996,7 @@ namespace MusicApp
             this.pageCollection.ResumeLayout(false);
             this.fpnPlaylist.ResumeLayout(false);
             this.pageInfo.ResumeLayout(false);
-            this.pageInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.fpnComment.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).EndInit();
@@ -3104,5 +3120,6 @@ namespace MusicApp
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BtnFourStar;
         private FlowLayoutPanel fpnComment;
         private Source.Comment comment1;
+        private PictureBox pictureBox1;
     }
 }
