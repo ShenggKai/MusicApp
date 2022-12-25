@@ -54,6 +54,8 @@
             this.txtNum.Text = "1";
             this.txtNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.txtNum.Click += new System.EventHandler(this.Song_Click);
+            this.txtNum.MouseLeave += new System.EventHandler(this.Song_MouseLeave);
+            this.txtNum.MouseHover += new System.EventHandler(this.Song_MouseHover);
             // 
             // pSong
             // 
@@ -77,6 +79,8 @@
             this.txtArtist.Text = "Emcee L, Badbies";
             this.txtArtist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.txtArtist.Click += new System.EventHandler(this.Song_Click);
+            this.txtArtist.MouseLeave += new System.EventHandler(this.Song_MouseLeave);
+            this.txtArtist.MouseHover += new System.EventHandler(this.Song_MouseHover);
             // 
             // pInfor
             // 
@@ -143,6 +147,8 @@
             this.txtName.Text = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
             this.txtName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.txtName.Click += new System.EventHandler(this.Song_Click);
+            this.txtName.MouseLeave += new System.EventHandler(this.Song_MouseLeave);
+            this.txtName.MouseHover += new System.EventHandler(this.Song_MouseHover);
             // 
             // txtGenre
             // 
@@ -155,6 +161,8 @@
             this.txtGenre.Text = "Nhạc không lời";
             this.txtGenre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.txtGenre.Click += new System.EventHandler(this.Song_Click);
+            this.txtGenre.MouseLeave += new System.EventHandler(this.Song_MouseLeave);
+            this.txtGenre.MouseHover += new System.EventHandler(this.Song_MouseHover);
             // 
             // Song
             // 
