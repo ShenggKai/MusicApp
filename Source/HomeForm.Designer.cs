@@ -2208,7 +2208,7 @@ namespace MusicApp
             this.txtFourStar.Name = "txtFourStar";
             this.txtFourStar.Size = new System.Drawing.Size(15, 27);
             this.txtFourStar.TabIndex = 8;
-            this.txtFourStar.Text = "1";
+            this.txtFourStar.Text = "0";
             this.txtFourStar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtFiveStar
@@ -2791,9 +2791,9 @@ namespace MusicApp
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(67, 430);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 51);
+            this.label2.Size = new System.Drawing.Size(42, 51);
             this.label2.TabIndex = 5;
-            this.label2.Text = "4.8";
+            this.label2.Text = "5";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pBack
