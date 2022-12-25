@@ -1002,10 +1002,10 @@ namespace MusicApp
             this.ppageMain.Location = new System.Drawing.Point(272, 0);
             this.ppageMain.Multiline = true;
             this.ppageMain.Name = "ppageMain";
-            this.ppageMain.Page = this.pageCollection;
-            this.ppageMain.PageIndex = 2;
-            this.ppageMain.PageName = "pageCollection";
-            this.ppageMain.PageTitle = "Thư viện";
+            this.ppageMain.Page = this.pageInfo;
+            this.ppageMain.PageIndex = 4;
+            this.ppageMain.PageName = "pageInfo";
+            this.ppageMain.PageTitle = "Thông Tin";
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
             this.ppageMain.TabIndex = 2;
@@ -1466,13 +1466,13 @@ namespace MusicApp
             // 
             // pageInfo
             // 
+            this.pageInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.pageInfo.Location = new System.Drawing.Point(4, 4);
             this.pageInfo.Name = "pageInfo";
             this.pageInfo.Padding = new System.Windows.Forms.Padding(3);
             this.pageInfo.Size = new System.Drawing.Size(1622, 865);
             this.pageInfo.TabIndex = 5;
-            this.pageInfo.Text = "tabPage1";
-            this.pageInfo.UseVisualStyleBackColor = true;
+            this.pageInfo.Text = "Thông Tin";
             // 
             // HomeForm
             // 
