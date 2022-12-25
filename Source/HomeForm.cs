@@ -25,7 +25,6 @@ namespace MusicApp
             Artist= lbArtist;
             SongPicture = pSong;
             timeEnd = lbTimeEnd;
-
             fpnCmt = fpnComment;
         }
 
@@ -264,5 +263,15 @@ namespace MusicApp
         }
 
         #endregion
+
+        private void UpDate()
+        {
+            int rat5, rat4, rat3, rat2, rat1;
+            rat5 = int.Parse(txtFiveStar.Text);
+            rat4 = int.Parse(txtFourStar.Text);
+            rat3 = int.Parse(txtThreeStar.Text);
+            rat2 = int.Parse(txtTwoStar.Text);
+            rat1 = int.Parse(txtOneStar.Text);
+        }
     }
 }
