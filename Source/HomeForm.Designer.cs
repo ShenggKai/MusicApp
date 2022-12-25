@@ -95,6 +95,7 @@ namespace MusicApp
             this.genre4 = new MusicApp.Source.Genre();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pageCollection = new System.Windows.Forms.TabPage();
+            this.fpnPlaylist = new System.Windows.Forms.FlowLayoutPanel();
             this.liked1 = new MusicApp.Source.Liked();
             this.playlist1 = new MusicApp.Source.Playlist();
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -111,6 +112,7 @@ namespace MusicApp
             this.ppageGenre.SuspendLayout();
             this.tabpageGenre.SuspendLayout();
             this.pageCollection.SuspendLayout();
+            this.fpnPlaylist.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -563,8 +565,6 @@ namespace MusicApp
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.pnMenu.Controls.Add(this.playlist1);
-            this.pnMenu.Controls.Add(this.liked1);
             this.pnMenu.Controls.Add(this.btnHistory);
             this.pnMenu.Controls.Add(this.btnCollection);
             this.pnMenu.Controls.Add(this.btnGenre);
@@ -1322,19 +1322,31 @@ namespace MusicApp
             // pageCollection
             // 
             this.pageCollection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageCollection.Controls.Add(this.fpnPlaylist);
             this.pageCollection.Controls.Add(this.btnAddList);
             this.pageCollection.Location = new System.Drawing.Point(4, 4);
             this.pageCollection.Name = "pageCollection";
-            this.pageCollection.Padding = new System.Windows.Forms.Padding(3);
             this.pageCollection.Size = new System.Drawing.Size(1622, 865);
             this.pageCollection.TabIndex = 2;
             this.pageCollection.Text = "Thư viện";
             // 
+            // fpnPlaylist
+            // 
+            this.fpnPlaylist.AllowDrop = true;
+            this.fpnPlaylist.AutoScroll = true;
+            this.fpnPlaylist.Controls.Add(this.liked1);
+            this.fpnPlaylist.Controls.Add(this.playlist1);
+            this.fpnPlaylist.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.fpnPlaylist.Location = new System.Drawing.Point(0, 94);
+            this.fpnPlaylist.Name = "fpnPlaylist";
+            this.fpnPlaylist.Size = new System.Drawing.Size(1622, 771);
+            this.fpnPlaylist.TabIndex = 1;
+            // 
             // liked1
             // 
             this.liked1.BackColor = System.Drawing.Color.Transparent;
-            this.liked1.Location = new System.Drawing.Point(0, 454);
-            this.liked1.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.liked1.Location = new System.Drawing.Point(50, 0);
+            this.liked1.Margin = new System.Windows.Forms.Padding(50, 0, 0, 50);
             this.liked1.Name = "liked1";
             this.liked1.Size = new System.Drawing.Size(261, 292);
             this.liked1.TabIndex = 0;
@@ -1343,8 +1355,8 @@ namespace MusicApp
             // 
             this.playlist1.BackColor = System.Drawing.Color.Transparent;
             this.playlist1.Image = ((System.Drawing.Image)(resources.GetObject("playlist1.Image")));
-            this.playlist1.Location = new System.Drawing.Point(-10, 141);
-            this.playlist1.Margin = new System.Windows.Forms.Padding(0, 0, 50, 60);
+            this.playlist1.Location = new System.Drawing.Point(361, 0);
+            this.playlist1.Margin = new System.Windows.Forms.Padding(50, 0, 0, 50);
             this.playlist1.Name = "playlist1";
             this.playlist1.Size = new System.Drawing.Size(261, 292);
             this.playlist1.TabIndex = 1;
@@ -1487,6 +1499,7 @@ namespace MusicApp
             this.ppageGenre.ResumeLayout(false);
             this.tabpageGenre.ResumeLayout(false);
             this.pageCollection.ResumeLayout(false);
+            this.fpnPlaylist.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1524,8 +1537,6 @@ namespace MusicApp
         private Source.Genre genre3;
         private Source.Genre genre4;
         private Source.Genre genre5;
-        private Source.Liked liked1;
-        private Source.Playlist playlist1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnHome;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnGenre;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnHistory;
@@ -1542,5 +1553,8 @@ namespace MusicApp
         private Source.Song song2;
         private Source.Song song3;
         private TabPage pageInfo;
+        private FlowLayoutPanel fpnPlaylist;
+        private Source.Liked liked1;
+        private Source.Playlist playlist1;
     }
 }
