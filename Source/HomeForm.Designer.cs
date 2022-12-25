@@ -2826,7 +2826,7 @@ namespace MusicApp
             this.pBack.Image = global::MusicApp.Properties.Resources.back;
             this.pBack.Location = new System.Drawing.Point(23, 20);
             this.pBack.Name = "pBack";
-            this.pBack.Size = new System.Drawing.Size(35, 35);
+            this.pBack.Size = new System.Drawing.Size(30, 30);
             this.pBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBack.TabIndex = 4;
             this.pBack.TabStop = false;
