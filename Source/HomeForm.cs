@@ -283,5 +283,38 @@ namespace MusicApp
             float kq = (rat5 + rat4 + rat3 + rat2 + rat1)/5;
             txtRattingPoint.Text = Convert.ToString(kq);
         }
+
+        private void song2_InfoClick(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(4);
+            pInforSong.Image = song2.ImageSong;
+            txtNameSong.Text = song2.NameSong;
+            txtInfoArtist.Text = song2.Artist;
+            txtYear.Text = "2020";
+            txtGenre.Text = song2.Genre;
+            txtComposer.Text = "Soobin Hoàng Son";
+        }
+
+        private void song3_InfoClick(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(4);
+            pInforSong.Image = song3.ImageSong;
+            txtNameSong.Text = song3.NameSong;
+            txtInfoArtist.Text = song3.Artist;
+            txtGenre.Text = song3.Genre;
+            txtYear.Text = "2020";
+            txtComposer.Text = "Khac Anh";
+        }
+
+        private void song4_InfoClick(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(4);
+            pInforSong.Image = song4.ImageSong;
+            txtNameSong.Text = song4.NameSong;
+            txtInfoArtist.Text = song4.Artist;
+            txtGenre.Text = song4.Genre;
+            txtYear.Text = "2020";
+            txtComposer.Text = "SUGA, RM, J-Hope, Pdogg, Candace Sosa,...";
+        }
     }
 }
