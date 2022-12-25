@@ -1002,10 +1002,10 @@ namespace MusicApp
             this.ppageMain.Location = new System.Drawing.Point(272, 0);
             this.ppageMain.Multiline = true;
             this.ppageMain.Name = "ppageMain";
-            this.ppageMain.Page = this.pageInfo;
-            this.ppageMain.PageIndex = 4;
-            this.ppageMain.PageName = "pageInfo";
-            this.ppageMain.PageTitle = "Thông Tin";
+            this.ppageMain.Page = this.pageHome;
+            this.ppageMain.PageIndex = 0;
+            this.ppageMain.PageName = "pageHome";
+            this.ppageMain.PageTitle = "Trang chủ";
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
             this.ppageMain.TabIndex = 2;
@@ -1054,14 +1054,15 @@ namespace MusicApp
             // 
             // song1
             // 
-            this.song1.Artist = "Emcee L, Badbies";
+            this.song1.Artist = "Emcee L";
             this.song1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song1.Genre = "Nhạc không lời";
             this.song1.ImageSong = ((System.Drawing.Image)(resources.GetObject("song1.ImageSong")));
             this.song1.Location = new System.Drawing.Point(0, 0);
             this.song1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song1.Name = "song1";
-            this.song1.NameSong = "Nhạc không lời";
-            this.song1.Number = "1";
+            this.song1.NameSong = "Sinh Ra Đã Là Thứ Đối Lập Nhau";
+            this.song1.Number = "3";
             this.song1.Size = new System.Drawing.Size(1620, 90);
             this.song1.TabIndex = 0;
             this.song1.Time = "03:54";
@@ -1070,6 +1071,7 @@ namespace MusicApp
             // 
             this.song2.Artist = "Emcee L, Badbies";
             this.song2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song2.Genre = "Nhạc không lời";
             this.song2.ImageSong = ((System.Drawing.Image)(resources.GetObject("song2.ImageSong")));
             this.song2.Location = new System.Drawing.Point(0, 93);
             this.song2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
@@ -1084,11 +1086,12 @@ namespace MusicApp
             // 
             this.song3.Artist = "Emcee L, Badbies";
             this.song3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song3.Genre = "Nhạc không lời";
             this.song3.ImageSong = ((System.Drawing.Image)(resources.GetObject("song3.ImageSong")));
             this.song3.Location = new System.Drawing.Point(0, 186);
             this.song3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song3.Name = "song3";
-            this.song3.NameSong = "Nhạc không lời";
+            this.song3.NameSong = "Vì Anh Đâu Có Biết dsfajsldkfjasd fasdfj";
             this.song3.Number = "1";
             this.song3.Size = new System.Drawing.Size(1620, 90);
             this.song3.TabIndex = 2;

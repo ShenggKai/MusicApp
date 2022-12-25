@@ -17,7 +17,6 @@ namespace MusicApp.Source
             InitializeComponent();
         }
 
-
         #region custom attribute
         [Category("aMusic")]
         public Image ImageSong
@@ -33,10 +32,17 @@ namespace MusicApp.Source
         }
 
         [Category("aMusic")]
-        public String NameSong
+        public String Genre
         {
             get { return txtGenre.Text; }
             set { txtGenre.Text = value; }
+        }
+
+        [Category("aMusic")]
+        public String NameSong
+        {
+            get { return txtName.Text; }
+            set { txtName.Text = value; }
         }
 
         [Category("aMusic")]
