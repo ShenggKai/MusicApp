@@ -175,6 +175,12 @@ namespace MusicApp
         #endregion
 
         #region when click button
+        private void btnComment_Click(object sender, EventArgs e)
+        {
+            PopupComment pu = new PopupComment();
+            pu.ShowDialog();
+        }
+
         private void pBack_Click(object sender, EventArgs e)
         {
             ppageMain.SetPage(0);
@@ -227,10 +233,5 @@ namespace MusicApp
         }
 
         #endregion
-
-        private void btnComment_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("ch ma me");
-        }
     }
 }

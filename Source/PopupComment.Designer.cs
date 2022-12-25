@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopupComment));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnComment = new Bunifu.UI.WinForms.BunifuPanel();
-            this.lbCmt = new System.Windows.Forms.Label();
-            this.btnClose = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.btnAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.pUser = new System.Windows.Forms.PictureBox();
+            this.tboxCmt = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtboxName = new System.Windows.Forms.TextBox();
             this.pnLine = new System.Windows.Forms.Panel();
-            this.tboxCmt = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.pUser = new System.Windows.Forms.PictureBox();
-            this.btnAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnClose = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.lbCmt = new System.Windows.Forms.Label();
             this.pnComment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             this.SuspendLayout();
@@ -68,160 +68,6 @@
             this.pnComment.ShowBorders = true;
             this.pnComment.Size = new System.Drawing.Size(729, 589);
             this.pnComment.TabIndex = 0;
-            // 
-            // lbCmt
-            // 
-            this.lbCmt.BackColor = System.Drawing.Color.Transparent;
-            this.lbCmt.Font = new System.Drawing.Font("Segoe UI Semibold", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbCmt.ForeColor = System.Drawing.Color.White;
-            this.lbCmt.Location = new System.Drawing.Point(231, 30);
-            this.lbCmt.Name = "lbCmt";
-            this.lbCmt.Size = new System.Drawing.Size(390, 38);
-            this.lbCmt.TabIndex = 0;
-            this.lbCmt.Text = "Bình luận";
-            this.lbCmt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnClose
-            // 
-            this.btnClose.ActiveImage = null;
-            this.btnClose.AllowAnimations = true;
-            this.btnClose.AllowBuffering = false;
-            this.btnClose.AllowToggling = false;
-            this.btnClose.AllowZooming = true;
-            this.btnClose.AllowZoomingOnFocus = false;
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnClose.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnClose.ErrorImage")));
-            this.btnClose.FadeWhenInactive = false;
-            this.btnClose.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.btnClose.Image = global::MusicApp.Properties.Resources.close;
-            this.btnClose.ImageActive = null;
-            this.btnClose.ImageLocation = null;
-            this.btnClose.ImageMargin = 0;
-            this.btnClose.ImageSize = new System.Drawing.Size(21, 21);
-            this.btnClose.ImageZoomSize = new System.Drawing.Size(22, 22);
-            this.btnClose.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.btnClose.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnClose.InitialImage")));
-            this.btnClose.Location = new System.Drawing.Point(677, 30);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Rotation = 0;
-            this.btnClose.ShowActiveImage = true;
-            this.btnClose.ShowCursorChanges = true;
-            this.btnClose.ShowImageBorders = true;
-            this.btnClose.ShowSizeMarkers = false;
-            this.btnClose.Size = new System.Drawing.Size(22, 22);
-            this.btnClose.TabIndex = 1;
-            this.btnClose.ToolTipText = "";
-            this.btnClose.WaitOnLoad = false;
-            this.btnClose.Zoom = 0;
-            this.btnClose.ZoomSpeed = 10;
-            // 
-            // txtboxName
-            // 
-            this.txtboxName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.txtboxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxName.Font = new System.Drawing.Font("Segoe UI", 14.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.txtboxName.Location = new System.Drawing.Point(231, 98);
-            this.txtboxName.Name = "txtboxName";
-            this.txtboxName.PlaceholderText = "Nhập tên";
-            this.txtboxName.Size = new System.Drawing.Size(390, 32);
-            this.txtboxName.TabIndex = 5;
-            // 
-            // pnLine
-            // 
-            this.pnLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.pnLine.Location = new System.Drawing.Point(231, 132);
-            this.pnLine.Name = "pnLine";
-            this.pnLine.Size = new System.Drawing.Size(390, 1);
-            this.pnLine.TabIndex = 4;
-            // 
-            // tboxCmt
-            // 
-            this.tboxCmt.AcceptsReturn = false;
-            this.tboxCmt.AcceptsTab = false;
-            this.tboxCmt.AnimationSpeed = 200;
-            this.tboxCmt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.tboxCmt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.tboxCmt.AutoSizeHeight = true;
-            this.tboxCmt.BackColor = System.Drawing.Color.Transparent;
-            this.tboxCmt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tboxCmt.BackgroundImage")));
-            this.tboxCmt.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.tboxCmt.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.tboxCmt.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.tboxCmt.BorderColorIdle = System.Drawing.Color.Silver;
-            this.tboxCmt.BorderRadius = 20;
-            this.tboxCmt.BorderThickness = 0;
-            this.tboxCmt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.tboxCmt.DefaultFont = new System.Drawing.Font("Segoe UI", 14.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tboxCmt.DefaultText = "";
-            this.tboxCmt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.tboxCmt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.tboxCmt.HideSelection = true;
-            this.tboxCmt.IconLeft = null;
-            this.tboxCmt.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.tboxCmt.IconPadding = 10;
-            this.tboxCmt.IconRight = null;
-            this.tboxCmt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.tboxCmt.Lines = new string[0];
-            this.tboxCmt.Location = new System.Drawing.Point(211, 222);
-            this.tboxCmt.MaxLength = 32767;
-            this.tboxCmt.MinimumSize = new System.Drawing.Size(1, 1);
-            this.tboxCmt.Modified = false;
-            this.tboxCmt.Multiline = true;
-            this.tboxCmt.Name = "tboxCmt";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tboxCmt.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.tboxCmt.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tboxCmt.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tboxCmt.OnIdleState = stateProperties4;
-            this.tboxCmt.Padding = new System.Windows.Forms.Padding(3);
-            this.tboxCmt.PasswordChar = '\0';
-            this.tboxCmt.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.tboxCmt.PlaceholderText = "Nhập bình luận";
-            this.tboxCmt.ReadOnly = false;
-            this.tboxCmt.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tboxCmt.SelectedText = "";
-            this.tboxCmt.SelectionLength = 0;
-            this.tboxCmt.SelectionStart = 0;
-            this.tboxCmt.ShortcutsEnabled = true;
-            this.tboxCmt.Size = new System.Drawing.Size(430, 256);
-            this.tboxCmt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.tboxCmt.TabIndex = 6;
-            this.tboxCmt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.tboxCmt.TextMarginBottom = 0;
-            this.tboxCmt.TextMarginLeft = 20;
-            this.tboxCmt.TextMarginTop = 14;
-            this.tboxCmt.TextPlaceholder = "Nhập bình luận";
-            this.tboxCmt.UseSystemPasswordChar = false;
-            this.tboxCmt.WordWrap = true;
-            // 
-            // pUser
-            // 
-            this.pUser.BackColor = System.Drawing.Color.Transparent;
-            this.pUser.Image = global::MusicApp.Properties.Resources.user;
-            this.pUser.Location = new System.Drawing.Point(30, 98);
-            this.pUser.Name = "pUser";
-            this.pUser.Size = new System.Drawing.Size(150, 150);
-            this.pUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pUser.TabIndex = 7;
-            this.pUser.TabStop = false;
             // 
             // btnAdd
             // 
@@ -313,6 +159,161 @@
             this.btnAdd.TextMarginLeft = 0;
             this.btnAdd.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnAdd.UseDefaultRadiusAndThickness = true;
+            // 
+            // pUser
+            // 
+            this.pUser.BackColor = System.Drawing.Color.Transparent;
+            this.pUser.Image = global::MusicApp.Properties.Resources.user;
+            this.pUser.Location = new System.Drawing.Point(30, 98);
+            this.pUser.Name = "pUser";
+            this.pUser.Size = new System.Drawing.Size(150, 150);
+            this.pUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pUser.TabIndex = 7;
+            this.pUser.TabStop = false;
+            // 
+            // tboxCmt
+            // 
+            this.tboxCmt.AcceptsReturn = false;
+            this.tboxCmt.AcceptsTab = false;
+            this.tboxCmt.AnimationSpeed = 200;
+            this.tboxCmt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.tboxCmt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.tboxCmt.AutoSizeHeight = true;
+            this.tboxCmt.BackColor = System.Drawing.Color.Transparent;
+            this.tboxCmt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tboxCmt.BackgroundImage")));
+            this.tboxCmt.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.tboxCmt.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.tboxCmt.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.tboxCmt.BorderColorIdle = System.Drawing.Color.Silver;
+            this.tboxCmt.BorderRadius = 20;
+            this.tboxCmt.BorderThickness = 0;
+            this.tboxCmt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.tboxCmt.DefaultFont = new System.Drawing.Font("Segoe UI", 14.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tboxCmt.DefaultText = "";
+            this.tboxCmt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.tboxCmt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            this.tboxCmt.HideSelection = true;
+            this.tboxCmt.IconLeft = null;
+            this.tboxCmt.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.tboxCmt.IconPadding = 10;
+            this.tboxCmt.IconRight = null;
+            this.tboxCmt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.tboxCmt.Lines = new string[0];
+            this.tboxCmt.Location = new System.Drawing.Point(211, 222);
+            this.tboxCmt.MaxLength = 32767;
+            this.tboxCmt.MinimumSize = new System.Drawing.Size(1, 1);
+            this.tboxCmt.Modified = false;
+            this.tboxCmt.Multiline = true;
+            this.tboxCmt.Name = "tboxCmt";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tboxCmt.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.tboxCmt.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tboxCmt.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tboxCmt.OnIdleState = stateProperties4;
+            this.tboxCmt.Padding = new System.Windows.Forms.Padding(3);
+            this.tboxCmt.PasswordChar = '\0';
+            this.tboxCmt.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            this.tboxCmt.PlaceholderText = "Nhập bình luận";
+            this.tboxCmt.ReadOnly = false;
+            this.tboxCmt.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tboxCmt.SelectedText = "";
+            this.tboxCmt.SelectionLength = 0;
+            this.tboxCmt.SelectionStart = 0;
+            this.tboxCmt.ShortcutsEnabled = true;
+            this.tboxCmt.Size = new System.Drawing.Size(430, 256);
+            this.tboxCmt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.tboxCmt.TabIndex = 6;
+            this.tboxCmt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tboxCmt.TextMarginBottom = 0;
+            this.tboxCmt.TextMarginLeft = 20;
+            this.tboxCmt.TextMarginTop = 14;
+            this.tboxCmt.TextPlaceholder = "Nhập bình luận";
+            this.tboxCmt.UseSystemPasswordChar = false;
+            this.tboxCmt.WordWrap = true;
+            // 
+            // txtboxName
+            // 
+            this.txtboxName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.txtboxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxName.Font = new System.Drawing.Font("Segoe UI", 14.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            this.txtboxName.Location = new System.Drawing.Point(231, 98);
+            this.txtboxName.Name = "txtboxName";
+            this.txtboxName.PlaceholderText = "Nhập tên";
+            this.txtboxName.Size = new System.Drawing.Size(390, 32);
+            this.txtboxName.TabIndex = 5;
+            // 
+            // pnLine
+            // 
+            this.pnLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            this.pnLine.Location = new System.Drawing.Point(231, 132);
+            this.pnLine.Name = "pnLine";
+            this.pnLine.Size = new System.Drawing.Size(390, 1);
+            this.pnLine.TabIndex = 4;
+            // 
+            // btnClose
+            // 
+            this.btnClose.ActiveImage = null;
+            this.btnClose.AllowAnimations = true;
+            this.btnClose.AllowBuffering = false;
+            this.btnClose.AllowToggling = false;
+            this.btnClose.AllowZooming = true;
+            this.btnClose.AllowZoomingOnFocus = false;
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnClose.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnClose.ErrorImage")));
+            this.btnClose.FadeWhenInactive = false;
+            this.btnClose.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.btnClose.Image = global::MusicApp.Properties.Resources.close;
+            this.btnClose.ImageActive = null;
+            this.btnClose.ImageLocation = null;
+            this.btnClose.ImageMargin = 0;
+            this.btnClose.ImageSize = new System.Drawing.Size(21, 21);
+            this.btnClose.ImageZoomSize = new System.Drawing.Size(22, 22);
+            this.btnClose.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.btnClose.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnClose.InitialImage")));
+            this.btnClose.Location = new System.Drawing.Point(677, 30);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Rotation = 0;
+            this.btnClose.ShowActiveImage = true;
+            this.btnClose.ShowCursorChanges = true;
+            this.btnClose.ShowImageBorders = true;
+            this.btnClose.ShowSizeMarkers = false;
+            this.btnClose.Size = new System.Drawing.Size(22, 22);
+            this.btnClose.TabIndex = 1;
+            this.btnClose.ToolTipText = "";
+            this.btnClose.WaitOnLoad = false;
+            this.btnClose.Zoom = 0;
+            this.btnClose.ZoomSpeed = 10;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // lbCmt
+            // 
+            this.lbCmt.BackColor = System.Drawing.Color.Transparent;
+            this.lbCmt.Font = new System.Drawing.Font("Segoe UI Semibold", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbCmt.ForeColor = System.Drawing.Color.White;
+            this.lbCmt.Location = new System.Drawing.Point(231, 30);
+            this.lbCmt.Name = "lbCmt";
+            this.lbCmt.Size = new System.Drawing.Size(390, 38);
+            this.lbCmt.TabIndex = 0;
+            this.lbCmt.Text = "Bình luận";
+            this.lbCmt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PopupComment
             // 
