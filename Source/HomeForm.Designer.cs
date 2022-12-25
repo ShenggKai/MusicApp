@@ -22,13 +22,13 @@ namespace MusicApp
             base.Dispose(disposing);
         }
 
-        // Auto click button 'Trang Chu' when the form start
-        //protected override void OnShown(EventArgs e)
-        //{
-        //    //base.OnShown(e);
-        //    //this.btnHome_Click(null, null);
-        //    btnHome.PerformClick();
-        //}
+        //Auto click button 'Trang Chu' when the form start
+        protected override void OnShown(EventArgs e)
+        {
+            //base.OnShown(e);
+            //this.btnHome_Click(null, null);
+            btnHome.PerformClick();
+        }
 
         #region Windows Form Designer generated code
 
