@@ -169,6 +169,7 @@ namespace MusicApp
             this.lbComposer = new System.Windows.Forms.Label();
             this.txtNameSong = new System.Windows.Forms.Label();
             this.pInforSong = new System.Windows.Forms.PictureBox();
+            this.fpnComment = new System.Windows.Forms.FlowLayoutPanel();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -2135,6 +2136,7 @@ namespace MusicApp
             // pageInfo
             // 
             this.pageInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageInfo.Controls.Add(this.fpnComment);
             this.pageInfo.Controls.Add(this.txtOneStar);
             this.pageInfo.Controls.Add(this.txtTwoStar);
             this.pageInfo.Controls.Add(this.txtThreeStar);
@@ -2928,6 +2930,16 @@ namespace MusicApp
             this.pInforSong.TabIndex = 0;
             this.pInforSong.TabStop = false;
             // 
+            // fpnComment
+            // 
+            this.fpnComment.AllowDrop = true;
+            this.fpnComment.AutoScroll = true;
+            this.fpnComment.Location = new System.Drawing.Point(454, 430);
+            this.fpnComment.Margin = new System.Windows.Forms.Padding(0);
+            this.fpnComment.Name = "fpnComment";
+            this.fpnComment.Size = new System.Drawing.Size(1176, 435);
+            this.fpnComment.TabIndex = 9;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -3076,5 +3088,6 @@ namespace MusicApp
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnTwoStar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnThreeStar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BtnFourStar;
+        private FlowLayoutPanel fpnComment;
     }
 }
