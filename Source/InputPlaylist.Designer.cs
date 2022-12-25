@@ -52,7 +52,7 @@
             this.pnPlaylist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnPlaylist.BorderColor = System.Drawing.Color.Transparent;
             this.pnPlaylist.BorderRadius = 30;
-            this.pnPlaylist.BorderThickness = 1;
+            this.pnPlaylist.BorderThickness = 0;
             this.pnPlaylist.Controls.Add(this.pPlaylist);
             this.pnPlaylist.Controls.Add(this.btnAdd);
             this.pnPlaylist.Controls.Add(this.txtboxName);
