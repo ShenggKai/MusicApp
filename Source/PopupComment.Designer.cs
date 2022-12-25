@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopupComment));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.pnComment = new Bunifu.UI.WinForms.BunifuPanel();
+            this.btnRatting = new Bunifu.UI.WinForms.BunifuRating();
             this.btnAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pUser = new System.Windows.Forms.PictureBox();
             this.tboxCmt = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -42,6 +43,7 @@
             this.pnLine = new System.Windows.Forms.Panel();
             this.btnClose = new Bunifu.UI.WinForms.BunifuImageButton();
             this.lbCmt = new System.Windows.Forms.Label();
+            this.openFileDialogCmt = new System.Windows.Forms.OpenFileDialog();
             this.pnComment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +56,7 @@
             this.pnComment.BorderColor = System.Drawing.Color.Transparent;
             this.pnComment.BorderRadius = 30;
             this.pnComment.BorderThickness = 0;
+            this.pnComment.Controls.Add(this.btnRatting);
             this.pnComment.Controls.Add(this.btnAdd);
             this.pnComment.Controls.Add(this.pUser);
             this.pnComment.Controls.Add(this.tboxCmt);
@@ -68,6 +71,30 @@
             this.pnComment.ShowBorders = true;
             this.pnComment.Size = new System.Drawing.Size(729, 589);
             this.pnComment.TabIndex = 0;
+            // 
+            // btnRatting
+            // 
+            this.btnRatting.BackColor = System.Drawing.Color.Transparent;
+            this.btnRatting.DisabledEmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.btnRatting.DisabledRatedFillColor = System.Drawing.Color.DarkGray;
+            this.btnRatting.EmptyBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.btnRatting.EmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.btnRatting.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRatting.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.btnRatting.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.btnRatting.InnerRadius = 2F;
+            this.btnRatting.Location = new System.Drawing.Point(351, 170);
+            this.btnRatting.Name = "btnRatting";
+            this.btnRatting.OuterRadius = 10F;
+            this.btnRatting.RatedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.btnRatting.RatedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.btnRatting.ReadOnly = false;
+            this.btnRatting.RightClickToClear = true;
+            this.btnRatting.Size = new System.Drawing.Size(151, 22);
+            this.btnRatting.Spacing = 10;
+            this.btnRatting.TabIndex = 10;
+            this.btnRatting.Text = "bunifuRating2";
+            this.btnRatting.Value = 3;
             // 
             // btnAdd
             // 
@@ -88,11 +115,11 @@
             this.btnAdd.ColorContrastOnClick = 45;
             this.btnAdd.ColorContrastOnHover = 45;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnAdd.CustomizableEdges = borderEdges1;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnAdd.CustomizableEdges = borderEdges4;
             this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAdd.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAdd.DisabledFillColor = System.Drawing.Color.Empty;
@@ -170,6 +197,7 @@
             this.pUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pUser.TabIndex = 7;
             this.pUser.TabStop = false;
+            this.pUser.Click += new System.EventHandler(this.pUser_Click);
             // 
             // tboxCmt
             // 
@@ -191,7 +219,7 @@
             this.tboxCmt.DefaultFont = new System.Drawing.Font("Segoe UI", 14.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tboxCmt.DefaultText = "";
             this.tboxCmt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.tboxCmt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            this.tboxCmt.ForeColor = System.Drawing.Color.White;
             this.tboxCmt.HideSelection = true;
             this.tboxCmt.IconLeft = null;
             this.tboxCmt.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -205,26 +233,26 @@
             this.tboxCmt.Modified = false;
             this.tboxCmt.Multiline = true;
             this.tboxCmt.Name = "tboxCmt";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tboxCmt.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.tboxCmt.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tboxCmt.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tboxCmt.OnIdleState = stateProperties4;
+            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tboxCmt.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.tboxCmt.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tboxCmt.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.Silver;
+            stateProperties16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            stateProperties16.ForeColor = System.Drawing.Color.White;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tboxCmt.OnIdleState = stateProperties16;
             this.tboxCmt.Padding = new System.Windows.Forms.Padding(3);
             this.tboxCmt.PasswordChar = '\0';
             this.tboxCmt.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
@@ -235,7 +263,7 @@
             this.tboxCmt.SelectionLength = 0;
             this.tboxCmt.SelectionStart = 0;
             this.tboxCmt.ShortcutsEnabled = true;
-            this.tboxCmt.Size = new System.Drawing.Size(430, 256);
+            this.tboxCmt.Size = new System.Drawing.Size(430, 247);
             this.tboxCmt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tboxCmt.TabIndex = 6;
             this.tboxCmt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -315,6 +343,11 @@
             this.lbCmt.Text = "Bình luận";
             this.lbCmt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // openFileDialogCmt
+            // 
+            this.openFileDialogCmt.Filter = "(*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
+            this.openFileDialogCmt.Title = "Chọn ảnh đại diện";
+            // 
             // PopupComment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -347,5 +380,7 @@
         private PictureBox pUser;
         private Bunifu.UI.WinForms.BunifuTextBox tboxCmt;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAdd;
+        private Bunifu.UI.WinForms.BunifuRating btnRatting;
+        private OpenFileDialog openFileDialogCmt;
     }
 }

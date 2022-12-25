@@ -21,5 +21,10 @@ namespace MusicApp.Source
         {
             this.Close();
         }
+
+        private void pUser_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
