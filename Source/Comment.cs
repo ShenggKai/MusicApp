@@ -50,5 +50,19 @@ namespace MusicApp.Source
             string DayTemp = DateTime.Now.ToShortDateString();
             txtTime.Text = TimeTemp + ", " + DayTemp;
         }
+
+        #region when hover
+        private void pLike_MouseHover(object sender, EventArgs e)
+        {
+            pLike.Image = global::MusicApp.Properties.Resources.like_white;
+        }
+
+        private void pLike_MouseLeave(object sender, EventArgs e)
+        {
+            pLike.Image = global::MusicApp.Properties.Resources.like;
+        }
+        #endregion
+
+
     }
 }

@@ -116,6 +116,8 @@
             this.pLike.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pLike.TabIndex = 3;
             this.pLike.TabStop = false;
+            this.pLike.MouseLeave += new System.EventHandler(this.pLike_MouseLeave);
+            this.pLike.MouseHover += new System.EventHandler(this.pLike_MouseHover);
             // 
             // pUnlike
             // 
