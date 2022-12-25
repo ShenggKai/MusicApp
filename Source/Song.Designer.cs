@@ -165,6 +165,7 @@
             this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.Name = "Song";
             this.Size = new System.Drawing.Size(1620, 90);
+            this.Click += new System.EventHandler(this.Song_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInfor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHeart)).EndInit();

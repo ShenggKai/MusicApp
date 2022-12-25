@@ -4,13 +4,23 @@ namespace MusicApp
 {
     public partial class HomeForm : Form //form 1
     {
+        // can change from another form
         public static HomeForm instance;
+        public Label SongName;
+        public Label Artist;
+        public PictureBox SongPicture;
         public FlowLayoutPanel fpnlist;
+
         public HomeForm()
         {
             InitializeComponent();
-            instance= this;
+
+            //can change from another form
+            instance = this;
             fpnlist = fpnPlaylist;
+            SongName = lbSongName;
+            Artist= lbArtist;
+            SongPicture = pSong;
         }
 
         #region  Effect when hover button

@@ -12,11 +12,13 @@ namespace MusicApp.Source
 {
     public partial class Song : UserControl
     {
+        public static Song instance;
         public event EventHandler InfoClick;
 
         public Song()
         {
             InitializeComponent();
+            instance = this;
         }
 
         #region custom attribute
@@ -101,6 +103,14 @@ namespace MusicApp.Source
             if (this.InfoClick != null)
                 InfoClick.Invoke(this, e);
         }
+
+        private void Song_Click(object sender, EventArgs e)
+        {
+            HomeForm.instance.SongName.Text = txtName.Text;
+            HomeForm.instance.Artist.Text = txtArtist.Text;
+            HomeForm.instance.SongPicture.Image = pSong.Image;
+        }
         #endregion
+
     }
 }
