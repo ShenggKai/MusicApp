@@ -181,8 +181,35 @@ namespace MusicApp
         #region when click button
         private void btnComment_Click(object sender, EventArgs e)
         {
-            PopupComment pu = new PopupComment();
-            pu.ShowDialog();
+            Form formBackground = new Form();
+            try
+            {
+                using (PopupComment pu = new PopupComment())
+                {
+                    formBackground.StartPosition = FormStartPosition.Manual;
+                    formBackground.FormBorderStyle = FormBorderStyle.None;
+                    formBackground.Opacity = .50d;
+                    formBackground.BackColor = Color.Black;
+                    formBackground.WindowState = FormWindowState.Maximized;
+                    formBackground.TopMost = true;
+                    formBackground.Location = this.Location;
+                    formBackground.ShowInTaskbar = false;
+                    formBackground.Show();
+
+                    pu.Owner= formBackground;
+                    pu.ShowDialog();
+
+                    formBackground.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                formBackground.Dispose();
+            }
         }
 
         private void pBack_Click(object sender, EventArgs e)
