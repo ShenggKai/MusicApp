@@ -128,6 +128,10 @@ namespace MusicApp
             this.txtNumber = new System.Windows.Forms.Label();
             this.txboxFind = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pageGenre = new System.Windows.Forms.TabPage();
+            this.genre4 = new MusicApp.Source.Genre();
+            this.genre3 = new MusicApp.Source.Genre();
+            this.genre2 = new MusicApp.Source.Genre();
+            this.genre5 = new MusicApp.Source.Genre();
             this.genre1 = new MusicApp.Source.Genre();
             this.pageCollection = new System.Windows.Forms.TabPage();
             this.fpnPlaylist = new System.Windows.Forms.FlowLayoutPanel();
@@ -170,10 +174,30 @@ namespace MusicApp
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.genre2 = new MusicApp.Source.Genre();
-            this.genre3 = new MusicApp.Source.Genre();
-            this.genre4 = new MusicApp.Source.Genre();
-            this.genre5 = new MusicApp.Source.Genre();
+            this.pageKpop = new System.Windows.Forms.TabPage();
+            this.pageUS = new System.Windows.Forms.TabPage();
+            this.pageKL = new System.Windows.Forms.TabPage();
+            this.pageTrinh = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -191,6 +215,14 @@ namespace MusicApp
             ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.pageKpop.SuspendLayout();
+            this.pageUS.SuspendLayout();
+            this.pageKL.SuspendLayout();
+            this.pageTrinh.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -1045,14 +1077,18 @@ namespace MusicApp
             this.ppageMain.Controls.Add(this.pageHistory);
             this.ppageMain.Controls.Add(this.pageInfo);
             this.ppageMain.Controls.Add(this.tabPage1);
+            this.ppageMain.Controls.Add(this.pageKpop);
+            this.ppageMain.Controls.Add(this.pageUS);
+            this.ppageMain.Controls.Add(this.pageKL);
+            this.ppageMain.Controls.Add(this.pageTrinh);
             this.ppageMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ppageMain.Location = new System.Drawing.Point(272, 0);
             this.ppageMain.Multiline = true;
             this.ppageMain.Name = "ppageMain";
-            this.ppageMain.Page = this.pageGenre;
-            this.ppageMain.PageIndex = 1;
-            this.ppageMain.PageName = "pageGenre";
-            this.ppageMain.PageTitle = "Thể loại";
+            this.ppageMain.Page = this.pageTrinh;
+            this.ppageMain.PageIndex = 9;
+            this.ppageMain.PageName = "pageTrinh";
+            this.ppageMain.PageTitle = "Nhạc Trịnh";
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
             this.ppageMain.TabIndex = 2;
@@ -1892,6 +1928,51 @@ namespace MusicApp
             this.pageGenre.Size = new System.Drawing.Size(1622, 865);
             this.pageGenre.TabIndex = 1;
             this.pageGenre.Text = "Thể loại";
+            // 
+            // genre4
+            // 
+            this.genre4.BackColor = System.Drawing.Color.Transparent;
+            this.genre4.Image = global::MusicApp.Properties.Resources.NhacKLoi;
+            this.genre4.Label = "Nhạc không lời";
+            this.genre4.Location = new System.Drawing.Point(1226, 107);
+            this.genre4.Margin = new System.Windows.Forms.Padding(0);
+            this.genre4.Name = "genre4";
+            this.genre4.Size = new System.Drawing.Size(261, 292);
+            this.genre4.TabIndex = 2;
+            // 
+            // genre3
+            // 
+            this.genre3.BackColor = System.Drawing.Color.Transparent;
+            this.genre3.Image = ((System.Drawing.Image)(resources.GetObject("genre3.Image")));
+            this.genre3.Label = "Nhạc Âu Mĩ";
+            this.genre3.Location = new System.Drawing.Point(865, 107);
+            this.genre3.Margin = new System.Windows.Forms.Padding(0);
+            this.genre3.Name = "genre3";
+            this.genre3.Size = new System.Drawing.Size(261, 292);
+            this.genre3.TabIndex = 2;
+            // 
+            // genre2
+            // 
+            this.genre2.BackColor = System.Drawing.Color.Transparent;
+            this.genre2.Image = ((System.Drawing.Image)(resources.GetObject("genre2.Image")));
+            this.genre2.Label = "Nhạc Hàn";
+            this.genre2.Location = new System.Drawing.Point(504, 107);
+            this.genre2.Margin = new System.Windows.Forms.Padding(0);
+            this.genre2.Name = "genre2";
+            this.genre2.Size = new System.Drawing.Size(261, 292);
+            this.genre2.TabIndex = 1;
+            // 
+            // genre5
+            // 
+            this.genre5.BackColor = System.Drawing.Color.Transparent;
+            this.genre5.Image = ((System.Drawing.Image)(resources.GetObject("genre5.Image")));
+            this.genre5.Label = "Nhạc Trịnh";
+            this.genre5.Location = new System.Drawing.Point(143, 499);
+            this.genre5.Margin = new System.Windows.Forms.Padding(0);
+            this.genre5.Name = "genre5";
+            this.genre5.Size = new System.Drawing.Size(261, 292);
+            this.genre5.TabIndex = 0;
+            this.genre5.PicClick += new System.EventHandler(this.genre1_PicClick);
             // 
             // genre1
             // 
@@ -2949,50 +3030,273 @@ namespace MusicApp
             this.label25.Text = "#";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // genre2
+            // pageKpop
             // 
-            this.genre2.BackColor = System.Drawing.Color.Transparent;
-            this.genre2.Image = ((System.Drawing.Image)(resources.GetObject("genre2.Image")));
-            this.genre2.Label = "Nhạc Hàn";
-            this.genre2.Location = new System.Drawing.Point(504, 107);
-            this.genre2.Margin = new System.Windows.Forms.Padding(0);
-            this.genre2.Name = "genre2";
-            this.genre2.Size = new System.Drawing.Size(261, 292);
-            this.genre2.TabIndex = 1;
+            this.pageKpop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageKpop.Controls.Add(this.panel1);
+            this.pageKpop.Location = new System.Drawing.Point(4, 4);
+            this.pageKpop.Name = "pageKpop";
+            this.pageKpop.Padding = new System.Windows.Forms.Padding(3);
+            this.pageKpop.Size = new System.Drawing.Size(1622, 865);
+            this.pageKpop.TabIndex = 7;
+            this.pageKpop.Text = "Nhạc Hàn";
             // 
-            // genre3
+            // pageUS
             // 
-            this.genre3.BackColor = System.Drawing.Color.Transparent;
-            this.genre3.Image = ((System.Drawing.Image)(resources.GetObject("genre3.Image")));
-            this.genre3.Label = "Nhạc Âu Mĩ";
-            this.genre3.Location = new System.Drawing.Point(865, 107);
-            this.genre3.Margin = new System.Windows.Forms.Padding(0);
-            this.genre3.Name = "genre3";
-            this.genre3.Size = new System.Drawing.Size(261, 292);
-            this.genre3.TabIndex = 2;
+            this.pageUS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageUS.Controls.Add(this.panel2);
+            this.pageUS.Location = new System.Drawing.Point(4, 4);
+            this.pageUS.Name = "pageUS";
+            this.pageUS.Padding = new System.Windows.Forms.Padding(3);
+            this.pageUS.Size = new System.Drawing.Size(1622, 865);
+            this.pageUS.TabIndex = 8;
+            this.pageUS.Text = "Nhạc Âu Mĩ";
             // 
-            // genre4
+            // pageKL
             // 
-            this.genre4.BackColor = System.Drawing.Color.Transparent;
-            this.genre4.Image = global::MusicApp.Properties.Resources.NhacKLoi;
-            this.genre4.Label = "Nhạc không lời";
-            this.genre4.Location = new System.Drawing.Point(1226, 107);
-            this.genre4.Margin = new System.Windows.Forms.Padding(0);
-            this.genre4.Name = "genre4";
-            this.genre4.Size = new System.Drawing.Size(261, 292);
-            this.genre4.TabIndex = 2;
+            this.pageKL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageKL.Controls.Add(this.panel3);
+            this.pageKL.Location = new System.Drawing.Point(4, 4);
+            this.pageKL.Name = "pageKL";
+            this.pageKL.Padding = new System.Windows.Forms.Padding(3);
+            this.pageKL.Size = new System.Drawing.Size(1622, 865);
+            this.pageKL.TabIndex = 9;
+            this.pageKL.Text = "Nhạc không lời";
             // 
-            // genre5
+            // pageTrinh
             // 
-            this.genre5.BackColor = System.Drawing.Color.Transparent;
-            this.genre5.Image = ((System.Drawing.Image)(resources.GetObject("genre5.Image")));
-            this.genre5.Label = "Nhạc Trịnh";
-            this.genre5.Location = new System.Drawing.Point(143, 499);
-            this.genre5.Margin = new System.Windows.Forms.Padding(0);
-            this.genre5.Name = "genre5";
-            this.genre5.Size = new System.Drawing.Size(261, 292);
-            this.genre5.TabIndex = 0;
-            this.genre5.PicClick += new System.EventHandler(this.genre1_PicClick);
+            this.pageTrinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageTrinh.Controls.Add(this.panel4);
+            this.pageTrinh.Location = new System.Drawing.Point(4, 4);
+            this.pageTrinh.Name = "pageTrinh";
+            this.pageTrinh.Padding = new System.Windows.Forms.Padding(3);
+            this.pageTrinh.Size = new System.Drawing.Size(1622, 865);
+            this.pageTrinh.TabIndex = 10;
+            this.pageTrinh.Text = "Nhạc Trịnh";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1616, 107);
+            this.panel1.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Image = global::MusicApp.Properties.Resources.clock;
+            this.label2.Location = new System.Drawing.Point(1526, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 32);
+            this.label2.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label3.Location = new System.Drawing.Point(764, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(139, 41);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Thể Loại";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label4.Location = new System.Drawing.Point(88, 46);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(128, 39);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Tiêu Đề";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label5.Location = new System.Drawing.Point(23, 46);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(21, 39);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "#";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1616, 107);
+            this.panel2.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Image = global::MusicApp.Properties.Resources.clock;
+            this.label6.Location = new System.Drawing.Point(1526, 46);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(32, 32);
+            this.label6.TabIndex = 9;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label7.Location = new System.Drawing.Point(764, 46);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(139, 41);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Thể Loại";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label8.Location = new System.Drawing.Point(88, 46);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(128, 39);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Tiêu Đề";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label9.Location = new System.Drawing.Point(23, 46);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(21, 39);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "#";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1616, 107);
+            this.panel3.TabIndex = 10;
+            // 
+            // label10
+            // 
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Image = global::MusicApp.Properties.Resources.clock;
+            this.label10.Location = new System.Drawing.Point(1526, 46);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(32, 32);
+            this.label10.TabIndex = 9;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label11.Location = new System.Drawing.Point(764, 46);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(139, 41);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Thể Loại";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label12.Location = new System.Drawing.Point(88, 46);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(128, 39);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "Tiêu Đề";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label13.Location = new System.Drawing.Point(23, 46);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(21, 39);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "#";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.label14);
+            this.panel4.Controls.Add(this.label15);
+            this.panel4.Controls.Add(this.label16);
+            this.panel4.Controls.Add(this.label17);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1616, 107);
+            this.panel4.TabIndex = 10;
+            // 
+            // label14
+            // 
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Image = global::MusicApp.Properties.Resources.clock;
+            this.label14.Location = new System.Drawing.Point(1526, 46);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(32, 32);
+            this.label14.TabIndex = 9;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label15.Location = new System.Drawing.Point(764, 46);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(139, 41);
+            this.label15.TabIndex = 8;
+            this.label15.Text = "Thể Loại";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label16.Location = new System.Drawing.Point(88, 46);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(128, 39);
+            this.label16.TabIndex = 8;
+            this.label16.Text = "Tiêu Đề";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label17.Location = new System.Drawing.Point(23, 46);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(21, 39);
+            this.label17.TabIndex = 8;
+            this.label17.Text = "#";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HomeForm
             // 
@@ -3025,6 +3329,14 @@ namespace MusicApp
             ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.pageKpop.ResumeLayout(false);
+            this.pageUS.ResumeLayout(false);
+            this.pageKL.ResumeLayout(false);
+            this.pageTrinh.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3149,5 +3461,29 @@ namespace MusicApp
         private Source.Genre genre3;
         private Source.Genre genre2;
         private Source.Genre genre5;
+        private TabPage pageKpop;
+        private Panel panel1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private TabPage pageUS;
+        private Panel panel2;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private TabPage pageKL;
+        private Panel panel3;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private Label label13;
+        private TabPage pageTrinh;
+        private Panel panel4;
+        private Label label14;
+        private Label label15;
+        private Label label16;
+        private Label label17;
     }
 }

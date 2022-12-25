@@ -386,7 +386,7 @@ namespace MusicApp
 
         private void genre1_PicClick(object sender, EventArgs e)
         {
-            MessageBox.Show("mo phat");
+            ppageMain.SetPage(5);
         }
     }
 }
