@@ -10,6 +10,7 @@ namespace MusicApp
         public Label Artist;
         public PictureBox SongPicture;
         public FlowLayoutPanel fpnlist;
+        public Label timeEnd;
 
         public HomeForm()
         {
@@ -21,6 +22,7 @@ namespace MusicApp
             SongName = lbSongName;
             Artist= lbArtist;
             SongPicture = pSong;
+            timeEnd = lbTimeEnd;
         }
 
         #region  Effect when hover button
@@ -218,10 +220,12 @@ namespace MusicApp
         #endregion
 
         #region click songs
-        private void song1_InfoClick(object sender, EventArgs e)
+        private void song1_InfoClick_1(object sender, EventArgs e)
         {
-            MessageBox.Show("button clicked");
+            ppageMain.SetPage(4);
         }
         #endregion
+
+
     }
 }

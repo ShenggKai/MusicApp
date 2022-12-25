@@ -329,21 +329,21 @@ namespace MusicApp
             this.lbTimeEnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
             this.lbTimeEnd.Location = new System.Drawing.Point(1277, 86);
             this.lbTimeEnd.Name = "lbTimeEnd";
-            this.lbTimeEnd.Size = new System.Drawing.Size(49, 24);
+            this.lbTimeEnd.Size = new System.Drawing.Size(63, 26);
             this.lbTimeEnd.TabIndex = 10;
             this.lbTimeEnd.Text = "4:50";
-            this.lbTimeEnd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbTimeEnd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbTimeStart
             // 
             this.lbTimeStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbTimeStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.lbTimeStart.Location = new System.Drawing.Point(581, 86);
+            this.lbTimeStart.Location = new System.Drawing.Point(571, 86);
             this.lbTimeStart.Name = "lbTimeStart";
-            this.lbTimeStart.Size = new System.Drawing.Size(49, 24);
+            this.lbTimeStart.Size = new System.Drawing.Size(59, 26);
             this.lbTimeStart.TabIndex = 9;
             this.lbTimeStart.Text = "0:30";
-            this.lbTimeStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbTimeStart.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lbArtist
             // 
@@ -1142,6 +1142,7 @@ namespace MusicApp
             this.song1.Size = new System.Drawing.Size(1620, 90);
             this.song1.TabIndex = 0;
             this.song1.Time = "03:53";
+            this.song1.InfoClick += new System.EventHandler(this.song1_InfoClick_1);
             // 
             // song2
             // 

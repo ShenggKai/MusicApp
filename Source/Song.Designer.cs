@@ -135,6 +135,8 @@
             this.txtTime.Text = "03:54";
             this.txtTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.txtTime.Click += new System.EventHandler(this.Song_Click);
+            this.txtTime.MouseLeave += new System.EventHandler(this.Song_MouseLeave);
+            this.txtTime.MouseHover += new System.EventHandler(this.Song_MouseHover);
             // 
             // txtName
             // 

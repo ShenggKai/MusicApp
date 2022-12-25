@@ -119,6 +119,7 @@ namespace MusicApp.Source
             HomeForm.instance.SongName.Text = txtName.Text;
             HomeForm.instance.Artist.Text = txtArtist.Text;
             HomeForm.instance.SongPicture.Image = pSong.Image;
+            HomeForm.instance.timeEnd.Text = txtTime.Text;
         }
         #endregion
 
