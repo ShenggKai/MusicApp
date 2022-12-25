@@ -159,7 +159,7 @@ namespace MusicApp
             this.btnFiveStar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnComment = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.line = new Bunifu.UI.WinForms.BunifuSeparator();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtRattingPoint = new System.Windows.Forms.Label();
             this.pBack = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbGenre = new System.Windows.Forms.Label();
@@ -2154,7 +2154,7 @@ namespace MusicApp
             this.pageInfo.Controls.Add(this.btnFiveStar);
             this.pageInfo.Controls.Add(this.btnComment);
             this.pageInfo.Controls.Add(this.line);
-            this.pageInfo.Controls.Add(this.label2);
+            this.pageInfo.Controls.Add(this.txtRattingPoint);
             this.pageInfo.Controls.Add(this.pBack);
             this.pageInfo.Controls.Add(this.label1);
             this.pageInfo.Controls.Add(this.lbGenre);
@@ -2216,7 +2216,7 @@ namespace MusicApp
             this.txtOneStar.Name = "txtOneStar";
             this.txtOneStar.Size = new System.Drawing.Size(15, 27);
             this.txtOneStar.TabIndex = 8;
-            this.txtOneStar.Text = "0";
+            this.txtOneStar.Text = "1";
             this.txtOneStar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtTwoStar
@@ -2826,16 +2826,16 @@ namespace MusicApp
             this.line.Size = new System.Drawing.Size(23, 473);
             this.line.TabIndex = 6;
             // 
-            // label2
+            // txtRattingPoint
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(96, 430);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 50);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "5";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txtRattingPoint.Font = new System.Drawing.Font("Segoe UI Semibold", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtRattingPoint.ForeColor = System.Drawing.Color.White;
+            this.txtRattingPoint.Location = new System.Drawing.Point(96, 430);
+            this.txtRattingPoint.Name = "txtRattingPoint";
+            this.txtRattingPoint.Size = new System.Drawing.Size(89, 50);
+            this.txtRattingPoint.TabIndex = 5;
+            this.txtRattingPoint.Text = "5";
+            this.txtRattingPoint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pBack
             // 
@@ -3106,7 +3106,7 @@ namespace MusicApp
         private PictureBox pBack;
         private Label label1;
         private Bunifu.UI.WinForms.BunifuSeparator line;
-        private Label label2;
+        private Label txtRattingPoint;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnComment;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnFiveStar;
         private Label txtOneStar;

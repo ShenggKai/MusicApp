@@ -61,6 +61,8 @@ namespace MusicApp.Source
 
                 HomeForm.instance.fpnCmt.Controls.Add(cmt);
                 this.Close();
+
+                Update();
             }
         }
 

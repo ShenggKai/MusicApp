@@ -1,4 +1,5 @@
 using MusicApp.Source;
+using System.Text;
 
 namespace MusicApp
 {
@@ -256,22 +257,31 @@ namespace MusicApp
         }
         #endregion
 
-        #region click songs
+        #region click songs info
         private void song1_InfoClick_1(object sender, EventArgs e)
         {
             ppageMain.SetPage(4);
+            pInforSong.Image = song1.ImageSong;
+            txtNameSong.Text = song1.NameSong;
+            txtInfoArtist.Text = song1.Artist;
+            txtYear.Text = "2020";
+            txtGenre.Text = song1.Genre;
+            txtComposer.Text = "Nguyen Bao Trong";
         }
 
         #endregion
 
-        private void UpDate()
+        public void UpDate()
         {
-            int rat5, rat4, rat3, rat2, rat1;
-            rat5 = int.Parse(txtFiveStar.Text);
-            rat4 = int.Parse(txtFourStar.Text);
-            rat3 = int.Parse(txtThreeStar.Text);
-            rat2 = int.Parse(txtTwoStar.Text);
-            rat1 = int.Parse(txtOneStar.Text);
+            float rat5, rat4, rat3, rat2, rat1;
+            rat5 = float.Parse(txtFiveStar.Text);
+            rat4 = float.Parse(txtFourStar.Text);
+            rat3 = float.Parse(txtThreeStar.Text);
+            rat2 = float.Parse(txtTwoStar.Text);
+            rat1 = float.Parse(txtOneStar.Text);
+
+            float kq = (rat5 + rat4 + rat3 + rat2 + rat1)/5;
+            txtRattingPoint.Text = Convert.ToString(kq);
         }
     }
 }
