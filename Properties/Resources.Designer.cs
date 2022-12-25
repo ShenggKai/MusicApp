@@ -643,6 +643,16 @@ namespace MusicApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap like_green {
+            get {
+                object obj = ResourceManager.GetObject("like_green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap like_white {
             get {
                 object obj = ResourceManager.GetObject("like_white", resourceCulture);
@@ -1006,6 +1016,16 @@ namespace MusicApp.Properties {
         internal static System.Drawing.Bitmap unlike {
             get {
                 object obj = ResourceManager.GetObject("unlike", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unlike_green {
+            get {
+                object obj = ResourceManager.GetObject("unlike_green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

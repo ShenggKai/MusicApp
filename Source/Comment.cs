@@ -15,11 +15,15 @@ namespace MusicApp.Source
 {
     public partial class Comment : UserControl
     {
+        bool liked = false;
+        bool unliked = false;
+
         public Comment()
         {
             InitializeComponent();
         }
 
+        #region custom attribute
         public Image ImageUser
         {
             get { return pUser.Image; }
@@ -43,6 +47,7 @@ namespace MusicApp.Source
             get { return bunifuRating1.Value; }
             set { bunifuRating1.Value = value;}
         }
+        #endregion
 
         private void Comment_Load(object sender, EventArgs e)
         {
@@ -59,20 +64,24 @@ namespace MusicApp.Source
 
         private void pLike_MouseLeave(object sender, EventArgs e)
         {
-            pLike.Image = global::MusicApp.Properties.Resources.like;
+            if (!liked)
+            {
+                pLike.Image = global::MusicApp.Properties.Resources.like;
+            }
         }
 
         private void pUnlike_MouseLeave(object sender, EventArgs e)
         {
-            pUnlike.Image = global::MusicApp.Properties.Resources.unlike;
+            if (!unliked)
+            {
+                pUnlike.Image = global::MusicApp.Properties.Resources.unlike;
+            }            
         }
 
         private void pUnlike_MouseHover(object sender, EventArgs e)
         {
             pUnlike.Image = global::MusicApp.Properties.Resources.unlike_white;
         }
-
-        #endregion
 
         private void pTrash_MouseHover(object sender, EventArgs e)
         {
@@ -82,6 +91,36 @@ namespace MusicApp.Source
         private void pTrash_MouseLeave(object sender, EventArgs e)
         {
             pTrash.Image = global::MusicApp.Properties.Resources.trash;
+        }
+
+        #endregion
+
+        #region effect when click
+        private void pLike_Click(object sender, EventArgs e)
+        {
+            pLike.Image = global::MusicApp.Properties.Resources.like_green;
+
+            pUnlike.Image = global::MusicApp.Properties.Resources.unlike;
+
+            liked = true;
+            unliked = false;
+        }
+
+        private void pUnlike_Click(object sender, EventArgs e)
+        {
+            pUnlike.Image = global::MusicApp.Properties.Resources.unlike_green;
+
+            pLike.Image = global::MusicApp.Properties.Resources.like;
+
+            unliked = true;
+            liked = false;
+        }
+
+        #endregion
+
+        private void pTrash_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
