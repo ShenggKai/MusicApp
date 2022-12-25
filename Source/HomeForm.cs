@@ -349,5 +349,38 @@ namespace MusicApp
             txtYear.Text = "2020";
             txtComposer.Text = "Imagine Dragons";
         }
+
+        private void song8_Load(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(4);
+            pInforSong.Image = song8.ImageSong;
+            txtNameSong.Text = song8.NameSong;
+            txtInfoArtist.Text = song8.Artist;
+            txtInfoGenre.Text = song8.Genre;
+            txtYear.Text = "2020";
+            txtComposer.Text = "Vu";
+        }
+
+        private void song9_InfoClick(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(4);
+            pInforSong.Image = song9.ImageSong;
+            txtNameSong.Text = song9.NameSong;
+            txtInfoArtist.Text = song9.Artist;
+            txtInfoGenre.Text = song9.Genre;
+            txtYear.Text = "2020";
+            txtComposer.Text = "Son Tung M-TP";
+        }
+
+        private void song10_InfoClick(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(4);
+            pInforSong.Image = song10.ImageSong;
+            txtNameSong.Text = song10.NameSong;
+            txtInfoArtist.Text = song10.Artist;
+            txtInfoGenre.Text = song10.Genre;
+            txtYear.Text = "2020";
+            txtComposer.Text = "Son Tung M-TP";
+        }
     }
 }
