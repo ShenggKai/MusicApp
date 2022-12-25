@@ -175,6 +175,11 @@ namespace MusicApp
         #endregion
 
         #region when click button
+        private void pBack_Click(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(0);
+        }
+
         private void btnMore2_Click(object sender, EventArgs e)
         {
             ppageMain.PageIndex = 3;
@@ -227,9 +232,9 @@ namespace MusicApp
 
         #endregion
 
-        private void pBack_Click(object sender, EventArgs e)
+        private void btnComment_Click(object sender, EventArgs e)
         {
-            ppageMain.SetPage(0);
+            MessageBox.Show("ch ma me");
         }
     }
 }
