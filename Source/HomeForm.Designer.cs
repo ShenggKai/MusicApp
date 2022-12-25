@@ -144,6 +144,8 @@ namespace MusicApp
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageHistory = new System.Windows.Forms.TabPage();
             this.pageInfo = new System.Windows.Forms.TabPage();
+            this.fpnComment = new System.Windows.Forms.FlowLayoutPanel();
+            this.comment1 = new MusicApp.Source.Comment();
             this.txtOneStar = new System.Windows.Forms.Label();
             this.txtTwoStar = new System.Windows.Forms.Label();
             this.txtThreeStar = new System.Windows.Forms.Label();
@@ -169,7 +171,6 @@ namespace MusicApp
             this.lbComposer = new System.Windows.Forms.Label();
             this.txtNameSong = new System.Windows.Forms.Label();
             this.pInforSong = new System.Windows.Forms.PictureBox();
-            this.fpnComment = new System.Windows.Forms.FlowLayoutPanel();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -183,6 +184,7 @@ namespace MusicApp
             this.pageCollection.SuspendLayout();
             this.fpnPlaylist.SuspendLayout();
             this.pageInfo.SuspendLayout();
+            this.fpnComment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).BeginInit();
             this.SuspendLayout();
@@ -2169,6 +2171,26 @@ namespace MusicApp
             this.pageInfo.TabIndex = 5;
             this.pageInfo.Text = "Thông Tin";
             // 
+            // fpnComment
+            // 
+            this.fpnComment.AllowDrop = true;
+            this.fpnComment.AutoScroll = true;
+            this.fpnComment.Controls.Add(this.comment1);
+            this.fpnComment.Location = new System.Drawing.Point(442, 430);
+            this.fpnComment.Margin = new System.Windows.Forms.Padding(0);
+            this.fpnComment.Name = "fpnComment";
+            this.fpnComment.Size = new System.Drawing.Size(1202, 435);
+            this.fpnComment.TabIndex = 9;
+            // 
+            // comment1
+            // 
+            this.comment1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.comment1.Location = new System.Drawing.Point(0, 0);
+            this.comment1.Margin = new System.Windows.Forms.Padding(0);
+            this.comment1.Name = "comment1";
+            this.comment1.Size = new System.Drawing.Size(1170, 124);
+            this.comment1.TabIndex = 0;
+            // 
             // txtOneStar
             // 
             this.txtOneStar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -2930,16 +2952,6 @@ namespace MusicApp
             this.pInforSong.TabIndex = 0;
             this.pInforSong.TabStop = false;
             // 
-            // fpnComment
-            // 
-            this.fpnComment.AllowDrop = true;
-            this.fpnComment.AutoScroll = true;
-            this.fpnComment.Location = new System.Drawing.Point(454, 430);
-            this.fpnComment.Margin = new System.Windows.Forms.Padding(0);
-            this.fpnComment.Name = "fpnComment";
-            this.fpnComment.Size = new System.Drawing.Size(1176, 435);
-            this.fpnComment.TabIndex = 9;
-            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -2968,6 +2980,7 @@ namespace MusicApp
             this.fpnPlaylist.ResumeLayout(false);
             this.pageInfo.ResumeLayout(false);
             this.pageInfo.PerformLayout();
+            this.fpnComment.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).EndInit();
             this.ResumeLayout(false);
@@ -3089,5 +3102,6 @@ namespace MusicApp
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnThreeStar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BtnFourStar;
         private FlowLayoutPanel fpnComment;
+        private Source.Comment comment1;
     }
 }

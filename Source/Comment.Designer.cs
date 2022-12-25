@@ -104,7 +104,7 @@
             this.txtTime.Name = "txtTime";
             this.txtTime.Size = new System.Drawing.Size(213, 33);
             this.txtTime.TabIndex = 1;
-            this.txtTime.Text = "18:20, 22/12/2022";
+            this.txtTime.Text = "22:22, 22/12/2022";
             // 
             // pLike
             // 
@@ -152,8 +152,9 @@
             this.Controls.Add(this.txtTime);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.pUser);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Comment";
-            this.Size = new System.Drawing.Size(1176, 124);
+            this.Size = new System.Drawing.Size(1170, 124);
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pLike)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUnlike)).EndInit();
