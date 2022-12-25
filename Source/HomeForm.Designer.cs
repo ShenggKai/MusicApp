@@ -144,10 +144,10 @@ namespace MusicApp
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageHistory = new System.Windows.Forms.TabPage();
             this.pageInfo = new System.Windows.Forms.TabPage();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtOneStar = new System.Windows.Forms.Label();
+            this.txtTwoStar = new System.Windows.Forms.Label();
+            this.txtThreeStar = new System.Windows.Forms.Label();
+            this.txtFourStar = new System.Windows.Forms.Label();
             this.txtFiveStar = new System.Windows.Forms.Label();
             this.btnOneStar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnTwoStar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -2135,10 +2135,10 @@ namespace MusicApp
             // pageInfo
             // 
             this.pageInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageInfo.Controls.Add(this.label6);
-            this.pageInfo.Controls.Add(this.label5);
-            this.pageInfo.Controls.Add(this.label4);
-            this.pageInfo.Controls.Add(this.label3);
+            this.pageInfo.Controls.Add(this.txtOneStar);
+            this.pageInfo.Controls.Add(this.txtTwoStar);
+            this.pageInfo.Controls.Add(this.txtThreeStar);
+            this.pageInfo.Controls.Add(this.txtFourStar);
             this.pageInfo.Controls.Add(this.txtFiveStar);
             this.pageInfo.Controls.Add(this.btnOneStar);
             this.pageInfo.Controls.Add(this.btnTwoStar);
@@ -2167,49 +2167,49 @@ namespace MusicApp
             this.pageInfo.TabIndex = 5;
             this.pageInfo.Text = "Thông Tin";
             // 
-            // label6
+            // txtOneStar
             // 
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(245, 816);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(15, 27);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "2";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtOneStar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtOneStar.ForeColor = System.Drawing.Color.White;
+            this.txtOneStar.Location = new System.Drawing.Point(245, 806);
+            this.txtOneStar.Name = "txtOneStar";
+            this.txtOneStar.Size = new System.Drawing.Size(15, 27);
+            this.txtOneStar.TabIndex = 8;
+            this.txtOneStar.Text = "0";
+            this.txtOneStar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // txtTwoStar
             // 
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(245, 746);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(15, 27);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "2";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtTwoStar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTwoStar.ForeColor = System.Drawing.Color.White;
+            this.txtTwoStar.Location = new System.Drawing.Point(245, 736);
+            this.txtTwoStar.Name = "txtTwoStar";
+            this.txtTwoStar.Size = new System.Drawing.Size(15, 27);
+            this.txtTwoStar.TabIndex = 8;
+            this.txtTwoStar.Text = "0";
+            this.txtTwoStar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // txtThreeStar
             // 
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(245, 676);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(15, 27);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "2";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtThreeStar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtThreeStar.ForeColor = System.Drawing.Color.White;
+            this.txtThreeStar.Location = new System.Drawing.Point(245, 666);
+            this.txtThreeStar.Name = "txtThreeStar";
+            this.txtThreeStar.Size = new System.Drawing.Size(15, 27);
+            this.txtThreeStar.TabIndex = 8;
+            this.txtThreeStar.Text = "0";
+            this.txtThreeStar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // txtFourStar
             // 
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(245, 606);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(15, 27);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "2";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtFourStar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtFourStar.ForeColor = System.Drawing.Color.White;
+            this.txtFourStar.Location = new System.Drawing.Point(245, 596);
+            this.txtFourStar.Name = "txtFourStar";
+            this.txtFourStar.Size = new System.Drawing.Size(15, 27);
+            this.txtFourStar.TabIndex = 8;
+            this.txtFourStar.Text = "1";
+            this.txtFourStar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtFiveStar
             // 
@@ -2219,7 +2219,7 @@ namespace MusicApp
             this.txtFiveStar.Name = "txtFiveStar";
             this.txtFiveStar.Size = new System.Drawing.Size(15, 27);
             this.txtFiveStar.TabIndex = 8;
-            this.txtFiveStar.Text = "2";
+            this.txtFiveStar.Text = "1";
             this.txtFiveStar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnOneStar
@@ -3067,10 +3067,10 @@ namespace MusicApp
         private Label label2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnFiveStar;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label label3;
+        private Label txtOneStar;
+        private Label txtTwoStar;
+        private Label txtThreeStar;
+        private Label txtFourStar;
         private Label txtFiveStar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnOneStar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnTwoStar;
