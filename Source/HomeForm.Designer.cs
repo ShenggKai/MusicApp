@@ -69,14 +69,14 @@ namespace MusicApp
             this.btnPlay = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnSlider = new Bunifu.UI.WinForms.BunifuHSlider();
             this.pnMenu = new System.Windows.Forms.Panel();
-            this.genre3 = new MusicApp.Source.Genre();
-            this.genre2 = new MusicApp.Source.Genre();
-            this.genre1 = new MusicApp.Source.Genre();
             this.btnHistory = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnCollection = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnGenre = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnHome = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.lbLogo = new System.Windows.Forms.Label();
+            this.genre3 = new MusicApp.Source.Genre();
+            this.genre2 = new MusicApp.Source.Genre();
+            this.genre1 = new MusicApp.Source.Genre();
             this.ppageMain = new Bunifu.UI.WinForms.BunifuPages();
             this.pageHome = new System.Windows.Forms.TabPage();
             this.fpnSongs = new System.Windows.Forms.FlowLayoutPanel();
@@ -581,39 +581,6 @@ namespace MusicApp
             this.pnMenu.Size = new System.Drawing.Size(272, 898);
             this.pnMenu.TabIndex = 1;
             // 
-            // genre3
-            // 
-            this.genre3.BackColor = System.Drawing.Color.Transparent;
-            this.genre3.Image = ((System.Drawing.Image)(resources.GetObject("genre3.Image")));
-            this.genre3.Label = "Nhạc Âu Mĩ";
-            this.genre3.Location = new System.Drawing.Point(858, 75);
-            this.genre3.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre3.Name = "genre3";
-            this.genre3.Size = new System.Drawing.Size(261, 292);
-            this.genre3.TabIndex = 2;
-            // 
-            // genre2
-            // 
-            this.genre2.BackColor = System.Drawing.Color.Transparent;
-            this.genre2.Image = ((System.Drawing.Image)(resources.GetObject("genre2.Image")));
-            this.genre2.Label = "Nhạc Hàn";
-            this.genre2.Location = new System.Drawing.Point(513, 61);
-            this.genre2.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre2.Name = "genre2";
-            this.genre2.Size = new System.Drawing.Size(261, 292);
-            this.genre2.TabIndex = 1;
-            // 
-            // genre1
-            // 
-            this.genre1.BackColor = System.Drawing.Color.Transparent;
-            this.genre1.Image = ((System.Drawing.Image)(resources.GetObject("genre1.Image")));
-            this.genre1.Label = "Nhạc Việt";
-            this.genre1.Location = new System.Drawing.Point(86, 61);
-            this.genre1.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre1.Name = "genre1";
-            this.genre1.Size = new System.Drawing.Size(261, 292);
-            this.genre1.TabIndex = 0;
-            // 
             // btnHistory
             // 
             this.btnHistory.AllowAnimations = false;
@@ -994,6 +961,39 @@ namespace MusicApp
             this.lbLogo.Text = "MusicApp";
             this.lbLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // genre3
+            // 
+            this.genre3.BackColor = System.Drawing.Color.Transparent;
+            this.genre3.Image = ((System.Drawing.Image)(resources.GetObject("genre3.Image")));
+            this.genre3.Label = "Nhạc Âu Mĩ";
+            this.genre3.Location = new System.Drawing.Point(865, 107);
+            this.genre3.Margin = new System.Windows.Forms.Padding(0);
+            this.genre3.Name = "genre3";
+            this.genre3.Size = new System.Drawing.Size(261, 292);
+            this.genre3.TabIndex = 2;
+            // 
+            // genre2
+            // 
+            this.genre2.BackColor = System.Drawing.Color.Transparent;
+            this.genre2.Image = ((System.Drawing.Image)(resources.GetObject("genre2.Image")));
+            this.genre2.Label = "Nhạc Hàn";
+            this.genre2.Location = new System.Drawing.Point(504, 107);
+            this.genre2.Margin = new System.Windows.Forms.Padding(0);
+            this.genre2.Name = "genre2";
+            this.genre2.Size = new System.Drawing.Size(261, 292);
+            this.genre2.TabIndex = 1;
+            // 
+            // genre1
+            // 
+            this.genre1.BackColor = System.Drawing.Color.Transparent;
+            this.genre1.Image = ((System.Drawing.Image)(resources.GetObject("genre1.Image")));
+            this.genre1.Label = "Nhạc Việt";
+            this.genre1.Location = new System.Drawing.Point(143, 107);
+            this.genre1.Margin = new System.Windows.Forms.Padding(0);
+            this.genre1.Name = "genre1";
+            this.genre1.Size = new System.Drawing.Size(261, 292);
+            this.genre1.TabIndex = 0;
+            // 
             // ppageMain
             // 
             this.ppageMain.Alignment = System.Windows.Forms.TabAlignment.Bottom;
@@ -1296,8 +1296,8 @@ namespace MusicApp
             this.genre5.BackColor = System.Drawing.Color.Transparent;
             this.genre5.Image = ((System.Drawing.Image)(resources.GetObject("genre5.Image")));
             this.genre5.Label = "Nhạc Trịnh";
-            this.genre5.Location = new System.Drawing.Point(86, 435);
-            this.genre5.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre5.Location = new System.Drawing.Point(143, 499);
+            this.genre5.Margin = new System.Windows.Forms.Padding(0);
             this.genre5.Name = "genre5";
             this.genre5.Size = new System.Drawing.Size(261, 292);
             this.genre5.TabIndex = 4;
@@ -1307,8 +1307,8 @@ namespace MusicApp
             this.genre4.BackColor = System.Drawing.Color.Transparent;
             this.genre4.Image = ((System.Drawing.Image)(resources.GetObject("genre4.Image")));
             this.genre4.Label = "Nhạc không lời";
-            this.genre4.Location = new System.Drawing.Point(1219, 75);
-            this.genre4.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre4.Location = new System.Drawing.Point(1226, 107);
+            this.genre4.Margin = new System.Windows.Forms.Padding(0);
             this.genre4.Name = "genre4";
             this.genre4.Size = new System.Drawing.Size(261, 292);
             this.genre4.TabIndex = 3;
