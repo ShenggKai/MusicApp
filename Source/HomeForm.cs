@@ -384,29 +384,9 @@ namespace MusicApp
             txtComposer.Text = "Son Tung M-TP";
         }
 
-        private void genre1_Click(object sender, EventArgs e)
+        private void genre1_PicClick(object sender, EventArgs e)
         {
-            ppageMain.SetPage(5);
-        }
-
-        private void genre2_Click(object sender, EventArgs e)
-        {
-            ppageGenre.SetPage(2);
-        }
-
-        private void genre3_Click(object sender, EventArgs e)
-        {
-            ppageGenre.SetPage(3);
-        }
-
-        private void genre4_Click(object sender, EventArgs e)
-        {
-            ppageGenre.SetPage(4);
-        }
-
-        private void genre5_Click(object sender, EventArgs e)
-        {
-            ppageGenre.SetPage(5);
+            MessageBox.Show("mo phat");
         }
     }
 }

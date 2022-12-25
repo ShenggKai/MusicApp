@@ -40,22 +40,22 @@ namespace MusicApp
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges20 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnPlay = new System.Windows.Forms.Panel();
             this.btnOther = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnVolume = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -78,9 +78,6 @@ namespace MusicApp
             this.btnGenre = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnHome = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.lbLogo = new System.Windows.Forms.Label();
-            this.genre3 = new MusicApp.Source.Genre();
-            this.genre2 = new MusicApp.Source.Genre();
-            this.genre1 = new MusicApp.Source.Genre();
             this.ppageMain = new Bunifu.UI.WinForms.BunifuPages();
             this.pageHome = new System.Windows.Forms.TabPage();
             this.fpnSongs = new System.Windows.Forms.FlowLayoutPanel();
@@ -131,8 +128,7 @@ namespace MusicApp
             this.txtNumber = new System.Windows.Forms.Label();
             this.txboxFind = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pageGenre = new System.Windows.Forms.TabPage();
-            this.genre5 = new MusicApp.Source.Genre();
-            this.genre4 = new MusicApp.Source.Genre();
+            this.genre1 = new MusicApp.Source.Genre();
             this.pageCollection = new System.Windows.Forms.TabPage();
             this.fpnPlaylist = new System.Windows.Forms.FlowLayoutPanel();
             this.liked1 = new MusicApp.Source.Liked();
@@ -174,6 +170,10 @@ namespace MusicApp
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.genre2 = new MusicApp.Source.Genre();
+            this.genre3 = new MusicApp.Source.Genre();
+            this.genre4 = new MusicApp.Source.Genre();
+            this.genre5 = new MusicApp.Source.Genre();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -181,6 +181,7 @@ namespace MusicApp
             this.pageHome.SuspendLayout();
             this.fpnSongs.SuspendLayout();
             this.pnHeader.SuspendLayout();
+            this.pageGenre.SuspendLayout();
             this.pageCollection.SuspendLayout();
             this.fpnPlaylist.SuspendLayout();
             this.pageInfo.SuspendLayout();
@@ -643,13 +644,8 @@ namespace MusicApp
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.pnMenu.Controls.Add(this.genre3);
-            this.pnMenu.Controls.Add(this.genre2);
-            this.pnMenu.Controls.Add(this.genre4);
             this.pnMenu.Controls.Add(this.btnHistory);
             this.pnMenu.Controls.Add(this.btnCollection);
-            this.pnMenu.Controls.Add(this.genre5);
-            this.pnMenu.Controls.Add(this.genre1);
             this.pnMenu.Controls.Add(this.btnGenre);
             this.pnMenu.Controls.Add(this.btnHome);
             this.pnMenu.Controls.Add(this.lbLogo);
@@ -678,11 +674,11 @@ namespace MusicApp
             this.btnHistory.ColorContrastOnClick = 45;
             this.btnHistory.ColorContrastOnHover = 45;
             this.btnHistory.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.btnHistory.CustomizableEdges = borderEdges12;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnHistory.CustomizableEdges = borderEdges1;
             this.btnHistory.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHistory.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnHistory.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -770,11 +766,11 @@ namespace MusicApp
             this.btnCollection.ColorContrastOnClick = 45;
             this.btnCollection.ColorContrastOnHover = 45;
             this.btnCollection.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges13.BottomLeft = true;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = true;
-            borderEdges13.TopRight = true;
-            this.btnCollection.CustomizableEdges = borderEdges13;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnCollection.CustomizableEdges = borderEdges2;
             this.btnCollection.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCollection.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCollection.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -862,11 +858,11 @@ namespace MusicApp
             this.btnGenre.ColorContrastOnClick = 45;
             this.btnGenre.ColorContrastOnHover = 45;
             this.btnGenre.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges14.BottomLeft = true;
-            borderEdges14.BottomRight = true;
-            borderEdges14.TopLeft = true;
-            borderEdges14.TopRight = true;
-            this.btnGenre.CustomizableEdges = borderEdges14;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnGenre.CustomizableEdges = borderEdges3;
             this.btnGenre.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnGenre.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnGenre.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -954,11 +950,11 @@ namespace MusicApp
             this.btnHome.ColorContrastOnClick = 45;
             this.btnHome.ColorContrastOnHover = 45;
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges15.BottomLeft = true;
-            borderEdges15.BottomRight = true;
-            borderEdges15.TopLeft = true;
-            borderEdges15.TopRight = true;
-            this.btnHome.CustomizableEdges = borderEdges15;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnHome.CustomizableEdges = borderEdges4;
             this.btnHome.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHome.DisabledBorderColor = System.Drawing.Color.Yellow;
             this.btnHome.DisabledFillColor = System.Drawing.Color.Blue;
@@ -1039,42 +1035,6 @@ namespace MusicApp
             this.lbLogo.Text = "MusicApp";
             this.lbLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // genre3
-            // 
-            this.genre3.BackColor = System.Drawing.Color.Transparent;
-            this.genre3.Image = ((System.Drawing.Image)(resources.GetObject("genre3.Image")));
-            this.genre3.Label = "Nhạc Âu Mĩ";
-            this.genre3.Location = new System.Drawing.Point(0, 225);
-            this.genre3.Margin = new System.Windows.Forms.Padding(0);
-            this.genre3.Name = "genre3";
-            this.genre3.Size = new System.Drawing.Size(261, 292);
-            this.genre3.TabIndex = 2;
-            this.genre3.Click += new System.EventHandler(this.genre3_Click);
-            // 
-            // genre2
-            // 
-            this.genre2.BackColor = System.Drawing.Color.Transparent;
-            this.genre2.Image = ((System.Drawing.Image)(resources.GetObject("genre2.Image")));
-            this.genre2.Label = "Nhạc Hàn";
-            this.genre2.Location = new System.Drawing.Point(8, 76);
-            this.genre2.Margin = new System.Windows.Forms.Padding(0);
-            this.genre2.Name = "genre2";
-            this.genre2.Size = new System.Drawing.Size(261, 292);
-            this.genre2.TabIndex = 1;
-            this.genre2.Click += new System.EventHandler(this.genre2_Click);
-            // 
-            // genre1
-            // 
-            this.genre1.BackColor = System.Drawing.Color.Transparent;
-            this.genre1.Image = ((System.Drawing.Image)(resources.GetObject("genre1.Image")));
-            this.genre1.Label = "Nhạc Việt";
-            this.genre1.Location = new System.Drawing.Point(0, 274);
-            this.genre1.Margin = new System.Windows.Forms.Padding(0);
-            this.genre1.Name = "genre1";
-            this.genre1.Size = new System.Drawing.Size(261, 292);
-            this.genre1.TabIndex = 0;
-            this.genre1.Click += new System.EventHandler(this.genre1_Click);
-            // 
             // ppageMain
             // 
             this.ppageMain.Alignment = System.Windows.Forms.TabAlignment.Bottom;
@@ -1096,22 +1056,22 @@ namespace MusicApp
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
             this.ppageMain.TabIndex = 2;
-            animation2.AnimateOnlyDifferences = false;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.ppageMain.Transition = animation2;
+            animation1.AnimateOnlyDifferences = false;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.ppageMain.Transition = animation1;
             this.ppageMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // pageHome
@@ -1877,26 +1837,26 @@ namespace MusicApp
             this.txboxFind.Modified = false;
             this.txboxFind.Multiline = false;
             this.txboxFind.Name = "txboxFind";
-            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txboxFind.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txboxFind.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txboxFind.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txboxFind.OnIdleState = stateProperties8;
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txboxFind.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txboxFind.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txboxFind.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txboxFind.OnIdleState = stateProperties4;
             this.txboxFind.Padding = new System.Windows.Forms.Padding(3);
             this.txboxFind.PasswordChar = '\0';
             this.txboxFind.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
@@ -1921,6 +1881,11 @@ namespace MusicApp
             // pageGenre
             // 
             this.pageGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageGenre.Controls.Add(this.genre4);
+            this.pageGenre.Controls.Add(this.genre3);
+            this.pageGenre.Controls.Add(this.genre2);
+            this.pageGenre.Controls.Add(this.genre5);
+            this.pageGenre.Controls.Add(this.genre1);
             this.pageGenre.Location = new System.Drawing.Point(4, 4);
             this.pageGenre.Name = "pageGenre";
             this.pageGenre.Padding = new System.Windows.Forms.Padding(3);
@@ -1928,29 +1893,17 @@ namespace MusicApp
             this.pageGenre.TabIndex = 1;
             this.pageGenre.Text = "Thể loại";
             // 
-            // genre5
+            // genre1
             // 
-            this.genre5.BackColor = System.Drawing.Color.Transparent;
-            this.genre5.Image = ((System.Drawing.Image)(resources.GetObject("genre5.Image")));
-            this.genre5.Label = "Nhạc Trịnh";
-            this.genre5.Location = new System.Drawing.Point(19, 603);
-            this.genre5.Margin = new System.Windows.Forms.Padding(0);
-            this.genre5.Name = "genre5";
-            this.genre5.Size = new System.Drawing.Size(261, 292);
-            this.genre5.TabIndex = 4;
-            this.genre5.Click += new System.EventHandler(this.genre5_Click);
-            // 
-            // genre4
-            // 
-            this.genre4.BackColor = System.Drawing.Color.Transparent;
-            this.genre4.Image = ((System.Drawing.Image)(resources.GetObject("genre4.Image")));
-            this.genre4.Label = "Nhạc không lời";
-            this.genre4.Location = new System.Drawing.Point(8, 114);
-            this.genre4.Margin = new System.Windows.Forms.Padding(0);
-            this.genre4.Name = "genre4";
-            this.genre4.Size = new System.Drawing.Size(261, 292);
-            this.genre4.TabIndex = 3;
-            this.genre4.Click += new System.EventHandler(this.genre4_Click);
+            this.genre1.BackColor = System.Drawing.Color.Transparent;
+            this.genre1.Image = ((System.Drawing.Image)(resources.GetObject("genre1.Image")));
+            this.genre1.Label = "Nhạc Việt";
+            this.genre1.Location = new System.Drawing.Point(143, 107);
+            this.genre1.Margin = new System.Windows.Forms.Padding(0);
+            this.genre1.Name = "genre1";
+            this.genre1.Size = new System.Drawing.Size(261, 292);
+            this.genre1.TabIndex = 0;
+            this.genre1.PicClick += new System.EventHandler(this.genre1_PicClick);
             // 
             // pageCollection
             // 
@@ -2014,11 +1967,11 @@ namespace MusicApp
             this.btnAddList.ColorContrastOnClick = 45;
             this.btnAddList.ColorContrastOnHover = 45;
             this.btnAddList.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges16.BottomLeft = true;
-            borderEdges16.BottomRight = true;
-            borderEdges16.TopLeft = true;
-            borderEdges16.TopRight = true;
-            this.btnAddList.CustomizableEdges = borderEdges16;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnAddList.CustomizableEdges = borderEdges5;
             this.btnAddList.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddList.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAddList.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2242,11 +2195,11 @@ namespace MusicApp
             this.btnOneStar.ColorContrastOnClick = 45;
             this.btnOneStar.ColorContrastOnHover = 45;
             this.btnOneStar.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges17.BottomLeft = true;
-            borderEdges17.BottomRight = true;
-            borderEdges17.TopLeft = true;
-            borderEdges17.TopRight = true;
-            this.btnOneStar.CustomizableEdges = borderEdges17;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnOneStar.CustomizableEdges = borderEdges6;
             this.btnOneStar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnOneStar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnOneStar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2333,11 +2286,11 @@ namespace MusicApp
             this.btnTwoStar.ColorContrastOnClick = 45;
             this.btnTwoStar.ColorContrastOnHover = 45;
             this.btnTwoStar.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges18.BottomLeft = true;
-            borderEdges18.BottomRight = true;
-            borderEdges18.TopLeft = true;
-            borderEdges18.TopRight = true;
-            this.btnTwoStar.CustomizableEdges = borderEdges18;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnTwoStar.CustomizableEdges = borderEdges7;
             this.btnTwoStar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnTwoStar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnTwoStar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2424,11 +2377,11 @@ namespace MusicApp
             this.btnThreeStar.ColorContrastOnClick = 45;
             this.btnThreeStar.ColorContrastOnHover = 45;
             this.btnThreeStar.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges19.BottomLeft = true;
-            borderEdges19.BottomRight = true;
-            borderEdges19.TopLeft = true;
-            borderEdges19.TopRight = true;
-            this.btnThreeStar.CustomizableEdges = borderEdges19;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnThreeStar.CustomizableEdges = borderEdges8;
             this.btnThreeStar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnThreeStar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThreeStar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2515,11 +2468,11 @@ namespace MusicApp
             this.BtnFourStar.ColorContrastOnClick = 45;
             this.BtnFourStar.ColorContrastOnHover = 45;
             this.BtnFourStar.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges20.BottomLeft = true;
-            borderEdges20.BottomRight = true;
-            borderEdges20.TopLeft = true;
-            borderEdges20.TopRight = true;
-            this.BtnFourStar.CustomizableEdges = borderEdges20;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.BtnFourStar.CustomizableEdges = borderEdges9;
             this.BtnFourStar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnFourStar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BtnFourStar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2606,11 +2559,11 @@ namespace MusicApp
             this.btnFiveStar.ColorContrastOnClick = 45;
             this.btnFiveStar.ColorContrastOnHover = 45;
             this.btnFiveStar.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges21.BottomLeft = true;
-            borderEdges21.BottomRight = true;
-            borderEdges21.TopLeft = true;
-            borderEdges21.TopRight = true;
-            this.btnFiveStar.CustomizableEdges = borderEdges21;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.btnFiveStar.CustomizableEdges = borderEdges10;
             this.btnFiveStar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnFiveStar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnFiveStar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2697,11 +2650,11 @@ namespace MusicApp
             this.btnComment.ColorContrastOnClick = 45;
             this.btnComment.ColorContrastOnHover = 45;
             this.btnComment.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges22.BottomLeft = true;
-            borderEdges22.BottomRight = true;
-            borderEdges22.TopLeft = true;
-            borderEdges22.TopRight = true;
-            this.btnComment.CustomizableEdges = borderEdges22;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.btnComment.CustomizableEdges = borderEdges11;
             this.btnComment.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnComment.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnComment.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2996,6 +2949,51 @@ namespace MusicApp
             this.label25.Text = "#";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // genre2
+            // 
+            this.genre2.BackColor = System.Drawing.Color.Transparent;
+            this.genre2.Image = ((System.Drawing.Image)(resources.GetObject("genre2.Image")));
+            this.genre2.Label = "Nhạc Hàn";
+            this.genre2.Location = new System.Drawing.Point(504, 107);
+            this.genre2.Margin = new System.Windows.Forms.Padding(0);
+            this.genre2.Name = "genre2";
+            this.genre2.Size = new System.Drawing.Size(261, 292);
+            this.genre2.TabIndex = 1;
+            // 
+            // genre3
+            // 
+            this.genre3.BackColor = System.Drawing.Color.Transparent;
+            this.genre3.Image = ((System.Drawing.Image)(resources.GetObject("genre3.Image")));
+            this.genre3.Label = "Nhạc Âu Mĩ";
+            this.genre3.Location = new System.Drawing.Point(865, 107);
+            this.genre3.Margin = new System.Windows.Forms.Padding(0);
+            this.genre3.Name = "genre3";
+            this.genre3.Size = new System.Drawing.Size(261, 292);
+            this.genre3.TabIndex = 2;
+            // 
+            // genre4
+            // 
+            this.genre4.BackColor = System.Drawing.Color.Transparent;
+            this.genre4.Image = global::MusicApp.Properties.Resources.NhacKLoi;
+            this.genre4.Label = "Nhạc không lời";
+            this.genre4.Location = new System.Drawing.Point(1226, 107);
+            this.genre4.Margin = new System.Windows.Forms.Padding(0);
+            this.genre4.Name = "genre4";
+            this.genre4.Size = new System.Drawing.Size(261, 292);
+            this.genre4.TabIndex = 2;
+            // 
+            // genre5
+            // 
+            this.genre5.BackColor = System.Drawing.Color.Transparent;
+            this.genre5.Image = ((System.Drawing.Image)(resources.GetObject("genre5.Image")));
+            this.genre5.Label = "Nhạc Trịnh";
+            this.genre5.Location = new System.Drawing.Point(143, 499);
+            this.genre5.Margin = new System.Windows.Forms.Padding(0);
+            this.genre5.Name = "genre5";
+            this.genre5.Size = new System.Drawing.Size(261, 292);
+            this.genre5.TabIndex = 0;
+            this.genre5.PicClick += new System.EventHandler(this.genre1_PicClick);
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -3017,6 +3015,7 @@ namespace MusicApp
             this.pageHome.ResumeLayout(false);
             this.fpnSongs.ResumeLayout(false);
             this.pnHeader.ResumeLayout(false);
+            this.pageGenre.ResumeLayout(false);
             this.pageCollection.ResumeLayout(false);
             this.fpnPlaylist.ResumeLayout(false);
             this.pageInfo.ResumeLayout(false);
@@ -3055,11 +3054,6 @@ namespace MusicApp
         private TabPage pageGenre;
         private TabPage pageCollection;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAddList;
-        private Source.Genre genre1;
-        private Source.Genre genre2;
-        private Source.Genre genre3;
-        private Source.Genre genre4;
-        private Source.Genre genre5;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnHome;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnGenre;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnHistory;
@@ -3150,5 +3144,10 @@ namespace MusicApp
         private Label label23;
         private Label label24;
         private Label label25;
+        private Source.Genre genre1;
+        private Source.Genre genre4;
+        private Source.Genre genre3;
+        private Source.Genre genre2;
+        private Source.Genre genre5;
     }
 }

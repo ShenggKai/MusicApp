@@ -12,6 +12,8 @@ namespace MusicApp.Source
 {
     public partial class Genre : UserControl
     {
+        public event EventHandler PicClick;
+
         public Genre()
         {
             InitializeComponent();
@@ -41,6 +43,12 @@ namespace MusicApp.Source
             {
                 lbGenre.Text = value;
             }
+        }
+
+        private void pGenre_Click(object sender, EventArgs e)
+        {
+            if (this.PicClick != null)
+                PicClick.Invoke(this, e);
         }
     }
 }

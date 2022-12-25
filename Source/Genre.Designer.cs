@@ -67,6 +67,7 @@
             this.pGenre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pGenre.TabIndex = 2;
             this.pGenre.TabStop = false;
+            this.pGenre.Click += new System.EventHandler(this.pGenre_Click);
             // 
             // lbGenre
             // 
