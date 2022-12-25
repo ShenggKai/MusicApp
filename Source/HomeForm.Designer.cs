@@ -1244,6 +1244,7 @@ namespace MusicApp
             this.song5.Size = new System.Drawing.Size(1620, 90);
             this.song5.TabIndex = 4;
             this.song5.Time = "03:39";
+            this.song5.InfoClick += new System.EventHandler(this.song5_InfoClick);
             // 
             // song6
             // 
@@ -1259,6 +1260,7 @@ namespace MusicApp
             this.song6.Size = new System.Drawing.Size(1620, 90);
             this.song6.TabIndex = 5;
             this.song6.Time = "03:33";
+            this.song6.InfoClick += new System.EventHandler(this.song6_InfoClick);
             // 
             // song7
             // 
@@ -1274,6 +1276,7 @@ namespace MusicApp
             this.song7.Size = new System.Drawing.Size(1620, 90);
             this.song7.TabIndex = 6;
             this.song7.Time = "02:45";
+            this.song7.InfoClick += new System.EventHandler(this.song7_InfoClick);
             // 
             // song8
             // 

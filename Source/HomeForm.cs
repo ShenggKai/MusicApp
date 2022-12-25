@@ -265,7 +265,7 @@ namespace MusicApp
             txtNameSong.Text = song1.NameSong;
             txtInfoArtist.Text = song1.Artist;
             txtYear.Text = "2020";
-            txtGenre.Text = song1.Genre;
+            txtInfoGenre.Text = song1.Genre;
             txtComposer.Text = "Nguyen Bao Trong";
         }
 
@@ -291,7 +291,7 @@ namespace MusicApp
             txtNameSong.Text = song2.NameSong;
             txtInfoArtist.Text = song2.Artist;
             txtYear.Text = "2020";
-            txtGenre.Text = song2.Genre;
+            txtInfoGenre.Text = song2.Genre;
             txtComposer.Text = "Soobin Hoàng Son";
         }
 
@@ -301,7 +301,7 @@ namespace MusicApp
             pInforSong.Image = song3.ImageSong;
             txtNameSong.Text = song3.NameSong;
             txtInfoArtist.Text = song3.Artist;
-            txtGenre.Text = song3.Genre;
+            txtInfoGenre.Text = song3.Genre;
             txtYear.Text = "2020";
             txtComposer.Text = "Khac Anh";
         }
@@ -312,9 +312,42 @@ namespace MusicApp
             pInforSong.Image = song4.ImageSong;
             txtNameSong.Text = song4.NameSong;
             txtInfoArtist.Text = song4.Artist;
-            txtGenre.Text = song4.Genre;
+            txtInfoGenre.Text = song4.Genre;
             txtYear.Text = "2020";
             txtComposer.Text = "SUGA, RM, J-Hope, Pdogg, Candace Sosa,...";
+        }
+
+        private void song5_InfoClick(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(4);
+            pInforSong.Image = song5.ImageSong;
+            txtNameSong.Text = song5.NameSong;
+            txtInfoArtist.Text = song5.Artist;
+            txtInfoGenre.Text = song5.Genre;
+            txtYear.Text = "2020";
+            txtComposer.Text = "Justin Bieber, Ludacris, Christina Milian";
+        }
+
+        private void song6_InfoClick(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(4);
+            pInforSong.Image = song6.ImageSong;
+            txtNameSong.Text = song6.NameSong;
+            txtInfoArtist.Text = song6.Artist;
+            txtInfoGenre.Text = song6.Genre;
+            txtYear.Text = "2020";
+            txtComposer.Text = "John Mcdaid, Ed Sheeran, Fred Again";
+        }
+
+        private void song7_InfoClick(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(4);
+            pInforSong.Image = song7.ImageSong;
+            txtNameSong.Text = song7.NameSong;
+            txtInfoArtist.Text = song7.Artist;
+            txtInfoGenre.Text = song7.Genre;
+            txtYear.Text = "2020";
+            txtComposer.Text = "Imagine Dragons";
         }
     }
 }
