@@ -386,7 +386,7 @@ namespace MusicApp
 
         private void genre1_Click(object sender, EventArgs e)
         {
-            ppageGenre.SetPage(1);
+            ppageMain.SetPage(5);
         }
 
         private void genre2_Click(object sender, EventArgs e)

@@ -40,23 +40,22 @@ namespace MusicApp
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges20 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnPlay = new System.Windows.Forms.Panel();
             this.btnOther = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnVolume = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -131,46 +130,9 @@ namespace MusicApp
             this.txtTitle = new System.Windows.Forms.Label();
             this.txtNumber = new System.Windows.Forms.Label();
             this.txboxFind = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.pageGenreMain = new System.Windows.Forms.TabPage();
-            this.ppageGenre = new Bunifu.UI.WinForms.BunifuPages();
-            this.tabpageGenre = new System.Windows.Forms.TabPage();
+            this.pageGenre = new System.Windows.Forms.TabPage();
             this.genre5 = new MusicApp.Source.Genre();
             this.genre4 = new MusicApp.Source.Genre();
-            this.pageVpop = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pageKpop = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pageUS = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.pageKL = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pageTrinh = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.pageCollection = new System.Windows.Forms.TabPage();
             this.fpnPlaylist = new System.Windows.Forms.FlowLayoutPanel();
             this.liked1 = new MusicApp.Source.Liked();
@@ -206,6 +168,12 @@ namespace MusicApp
             this.lbComposer = new System.Windows.Forms.Label();
             this.txtNameSong = new System.Windows.Forms.Label();
             this.pInforSong = new System.Windows.Forms.PictureBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -213,19 +181,6 @@ namespace MusicApp
             this.pageHome.SuspendLayout();
             this.fpnSongs.SuspendLayout();
             this.pnHeader.SuspendLayout();
-            this.pageGenreMain.SuspendLayout();
-            this.ppageGenre.SuspendLayout();
-            this.tabpageGenre.SuspendLayout();
-            this.pageVpop.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.pageKpop.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.pageUS.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.pageKL.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.pageTrinh.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.pageCollection.SuspendLayout();
             this.fpnPlaylist.SuspendLayout();
             this.pageInfo.SuspendLayout();
@@ -233,6 +188,8 @@ namespace MusicApp
             this.fpnComment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -686,8 +643,13 @@ namespace MusicApp
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.pnMenu.Controls.Add(this.genre3);
+            this.pnMenu.Controls.Add(this.genre2);
+            this.pnMenu.Controls.Add(this.genre4);
             this.pnMenu.Controls.Add(this.btnHistory);
             this.pnMenu.Controls.Add(this.btnCollection);
+            this.pnMenu.Controls.Add(this.genre5);
+            this.pnMenu.Controls.Add(this.genre1);
             this.pnMenu.Controls.Add(this.btnGenre);
             this.pnMenu.Controls.Add(this.btnHome);
             this.pnMenu.Controls.Add(this.lbLogo);
@@ -716,11 +678,11 @@ namespace MusicApp
             this.btnHistory.ColorContrastOnClick = 45;
             this.btnHistory.ColorContrastOnHover = 45;
             this.btnHistory.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnHistory.CustomizableEdges = borderEdges1;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.btnHistory.CustomizableEdges = borderEdges12;
             this.btnHistory.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHistory.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnHistory.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -808,11 +770,11 @@ namespace MusicApp
             this.btnCollection.ColorContrastOnClick = 45;
             this.btnCollection.ColorContrastOnHover = 45;
             this.btnCollection.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnCollection.CustomizableEdges = borderEdges2;
+            borderEdges13.BottomLeft = true;
+            borderEdges13.BottomRight = true;
+            borderEdges13.TopLeft = true;
+            borderEdges13.TopRight = true;
+            this.btnCollection.CustomizableEdges = borderEdges13;
             this.btnCollection.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCollection.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCollection.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -900,11 +862,11 @@ namespace MusicApp
             this.btnGenre.ColorContrastOnClick = 45;
             this.btnGenre.ColorContrastOnHover = 45;
             this.btnGenre.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnGenre.CustomizableEdges = borderEdges3;
+            borderEdges14.BottomLeft = true;
+            borderEdges14.BottomRight = true;
+            borderEdges14.TopLeft = true;
+            borderEdges14.TopRight = true;
+            this.btnGenre.CustomizableEdges = borderEdges14;
             this.btnGenre.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnGenre.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnGenre.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -992,11 +954,11 @@ namespace MusicApp
             this.btnHome.ColorContrastOnClick = 45;
             this.btnHome.ColorContrastOnHover = 45;
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnHome.CustomizableEdges = borderEdges4;
+            borderEdges15.BottomLeft = true;
+            borderEdges15.BottomRight = true;
+            borderEdges15.TopLeft = true;
+            borderEdges15.TopRight = true;
+            this.btnHome.CustomizableEdges = borderEdges15;
             this.btnHome.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHome.DisabledBorderColor = System.Drawing.Color.Yellow;
             this.btnHome.DisabledFillColor = System.Drawing.Color.Blue;
@@ -1082,7 +1044,7 @@ namespace MusicApp
             this.genre3.BackColor = System.Drawing.Color.Transparent;
             this.genre3.Image = ((System.Drawing.Image)(resources.GetObject("genre3.Image")));
             this.genre3.Label = "Nhạc Âu Mĩ";
-            this.genre3.Location = new System.Drawing.Point(865, 107);
+            this.genre3.Location = new System.Drawing.Point(0, 225);
             this.genre3.Margin = new System.Windows.Forms.Padding(0);
             this.genre3.Name = "genre3";
             this.genre3.Size = new System.Drawing.Size(261, 292);
@@ -1094,7 +1056,7 @@ namespace MusicApp
             this.genre2.BackColor = System.Drawing.Color.Transparent;
             this.genre2.Image = ((System.Drawing.Image)(resources.GetObject("genre2.Image")));
             this.genre2.Label = "Nhạc Hàn";
-            this.genre2.Location = new System.Drawing.Point(504, 107);
+            this.genre2.Location = new System.Drawing.Point(8, 76);
             this.genre2.Margin = new System.Windows.Forms.Padding(0);
             this.genre2.Name = "genre2";
             this.genre2.Size = new System.Drawing.Size(261, 292);
@@ -1106,7 +1068,7 @@ namespace MusicApp
             this.genre1.BackColor = System.Drawing.Color.Transparent;
             this.genre1.Image = ((System.Drawing.Image)(resources.GetObject("genre1.Image")));
             this.genre1.Label = "Nhạc Việt";
-            this.genre1.Location = new System.Drawing.Point(143, 107);
+            this.genre1.Location = new System.Drawing.Point(0, 274);
             this.genre1.Margin = new System.Windows.Forms.Padding(0);
             this.genre1.Name = "genre1";
             this.genre1.Size = new System.Drawing.Size(261, 292);
@@ -1118,17 +1080,18 @@ namespace MusicApp
             this.ppageMain.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.ppageMain.AllowTransitions = false;
             this.ppageMain.Controls.Add(this.pageHome);
-            this.ppageMain.Controls.Add(this.pageGenreMain);
+            this.ppageMain.Controls.Add(this.pageGenre);
             this.ppageMain.Controls.Add(this.pageCollection);
             this.ppageMain.Controls.Add(this.pageHistory);
             this.ppageMain.Controls.Add(this.pageInfo);
+            this.ppageMain.Controls.Add(this.tabPage1);
             this.ppageMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ppageMain.Location = new System.Drawing.Point(272, 0);
             this.ppageMain.Multiline = true;
             this.ppageMain.Name = "ppageMain";
-            this.ppageMain.Page = this.pageGenreMain;
+            this.ppageMain.Page = this.pageGenre;
             this.ppageMain.PageIndex = 1;
-            this.ppageMain.PageName = "pageGenreMain";
+            this.ppageMain.PageName = "pageGenre";
             this.ppageMain.PageTitle = "Thể loại";
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
@@ -1914,26 +1877,26 @@ namespace MusicApp
             this.txboxFind.Modified = false;
             this.txboxFind.Multiline = false;
             this.txboxFind.Name = "txboxFind";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txboxFind.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txboxFind.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txboxFind.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txboxFind.OnIdleState = stateProperties4;
+            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txboxFind.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txboxFind.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txboxFind.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            stateProperties8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txboxFind.OnIdleState = stateProperties8;
             this.txboxFind.Padding = new System.Windows.Forms.Padding(3);
             this.txboxFind.PasswordChar = '\0';
             this.txboxFind.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
@@ -1955,77 +1918,22 @@ namespace MusicApp
             this.txboxFind.UseSystemPasswordChar = false;
             this.txboxFind.WordWrap = true;
             // 
-            // pageGenreMain
+            // pageGenre
             // 
-            this.pageGenreMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageGenreMain.Controls.Add(this.ppageGenre);
-            this.pageGenreMain.Location = new System.Drawing.Point(4, 4);
-            this.pageGenreMain.Name = "pageGenreMain";
-            this.pageGenreMain.Padding = new System.Windows.Forms.Padding(3);
-            this.pageGenreMain.Size = new System.Drawing.Size(1622, 865);
-            this.pageGenreMain.TabIndex = 1;
-            this.pageGenreMain.Text = "Thể loại";
-            // 
-            // ppageGenre
-            // 
-            this.ppageGenre.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.ppageGenre.AllowTransitions = false;
-            this.ppageGenre.Controls.Add(this.tabpageGenre);
-            this.ppageGenre.Controls.Add(this.pageVpop);
-            this.ppageGenre.Controls.Add(this.pageKpop);
-            this.ppageGenre.Controls.Add(this.pageUS);
-            this.ppageGenre.Controls.Add(this.pageKL);
-            this.ppageGenre.Controls.Add(this.pageTrinh);
-            this.ppageGenre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ppageGenre.Location = new System.Drawing.Point(3, 3);
-            this.ppageGenre.Multiline = true;
-            this.ppageGenre.Name = "ppageGenre";
-            this.ppageGenre.Page = this.tabpageGenre;
-            this.ppageGenre.PageIndex = 0;
-            this.ppageGenre.PageName = "tabpageGenre";
-            this.ppageGenre.PageTitle = "Thể loại";
-            this.ppageGenre.SelectedIndex = 0;
-            this.ppageGenre.Size = new System.Drawing.Size(1616, 859);
-            this.ppageGenre.TabIndex = 2;
-            animation1.AnimateOnlyDifferences = false;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.ppageGenre.Transition = animation1;
-            this.ppageGenre.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
-            // 
-            // tabpageGenre
-            // 
-            this.tabpageGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.tabpageGenre.Controls.Add(this.genre2);
-            this.tabpageGenre.Controls.Add(this.genre3);
-            this.tabpageGenre.Controls.Add(this.genre1);
-            this.tabpageGenre.Controls.Add(this.genre5);
-            this.tabpageGenre.Controls.Add(this.genre4);
-            this.tabpageGenre.Location = new System.Drawing.Point(4, 4);
-            this.tabpageGenre.Name = "tabpageGenre";
-            this.tabpageGenre.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpageGenre.Size = new System.Drawing.Size(1608, 826);
-            this.tabpageGenre.TabIndex = 0;
-            this.tabpageGenre.Text = "Thể loại";
+            this.pageGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageGenre.Location = new System.Drawing.Point(4, 4);
+            this.pageGenre.Name = "pageGenre";
+            this.pageGenre.Padding = new System.Windows.Forms.Padding(3);
+            this.pageGenre.Size = new System.Drawing.Size(1622, 865);
+            this.pageGenre.TabIndex = 1;
+            this.pageGenre.Text = "Thể loại";
             // 
             // genre5
             // 
             this.genre5.BackColor = System.Drawing.Color.Transparent;
             this.genre5.Image = ((System.Drawing.Image)(resources.GetObject("genre5.Image")));
             this.genre5.Label = "Nhạc Trịnh";
-            this.genre5.Location = new System.Drawing.Point(143, 499);
+            this.genre5.Location = new System.Drawing.Point(19, 603);
             this.genre5.Margin = new System.Windows.Forms.Padding(0);
             this.genre5.Name = "genre5";
             this.genre5.Size = new System.Drawing.Size(261, 292);
@@ -2037,391 +1945,12 @@ namespace MusicApp
             this.genre4.BackColor = System.Drawing.Color.Transparent;
             this.genre4.Image = ((System.Drawing.Image)(resources.GetObject("genre4.Image")));
             this.genre4.Label = "Nhạc không lời";
-            this.genre4.Location = new System.Drawing.Point(1226, 107);
+            this.genre4.Location = new System.Drawing.Point(8, 114);
             this.genre4.Margin = new System.Windows.Forms.Padding(0);
             this.genre4.Name = "genre4";
             this.genre4.Size = new System.Drawing.Size(261, 292);
             this.genre4.TabIndex = 3;
             this.genre4.Click += new System.EventHandler(this.genre4_Click);
-            // 
-            // pageVpop
-            // 
-            this.pageVpop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageVpop.Controls.Add(this.flowLayoutPanel1);
-            this.pageVpop.Controls.Add(this.panel1);
-            this.pageVpop.Location = new System.Drawing.Point(4, 4);
-            this.pageVpop.Name = "pageVpop";
-            this.pageVpop.Padding = new System.Windows.Forms.Padding(3);
-            this.pageVpop.Size = new System.Drawing.Size(1608, 826);
-            this.pageVpop.TabIndex = 1;
-            this.pageVpop.Text = "Nhạc Việt";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 110);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1602, 713);
-            this.flowLayoutPanel1.TabIndex = 9;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1602, 107);
-            this.panel1.TabIndex = 8;
-            // 
-            // label2
-            // 
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Image = global::MusicApp.Properties.Resources.clock;
-            this.label2.Location = new System.Drawing.Point(1526, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 32);
-            this.label2.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label3.Location = new System.Drawing.Point(764, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 41);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Thể Loại";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label4.Location = new System.Drawing.Point(88, 46);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 39);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Tiêu Đề";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label5.Location = new System.Drawing.Point(23, 46);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 39);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "#";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pageKpop
-            // 
-            this.pageKpop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageKpop.Controls.Add(this.flowLayoutPanel2);
-            this.pageKpop.Controls.Add(this.panel2);
-            this.pageKpop.Location = new System.Drawing.Point(4, 4);
-            this.pageKpop.Name = "pageKpop";
-            this.pageKpop.Padding = new System.Windows.Forms.Padding(3);
-            this.pageKpop.Size = new System.Drawing.Size(1608, 826);
-            this.pageKpop.TabIndex = 2;
-            this.pageKpop.Text = "Nhạc Hàn";
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 110);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1602, 713);
-            this.flowLayoutPanel2.TabIndex = 10;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1602, 107);
-            this.panel2.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Image = global::MusicApp.Properties.Resources.clock;
-            this.label6.Location = new System.Drawing.Point(1526, 46);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 32);
-            this.label6.TabIndex = 9;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label7.Location = new System.Drawing.Point(764, 46);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(139, 41);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Thể Loại";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label8.Location = new System.Drawing.Point(88, 46);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(128, 39);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Tiêu Đề";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label9.Location = new System.Drawing.Point(23, 46);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(21, 39);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "#";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pageUS
-            // 
-            this.pageUS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageUS.Controls.Add(this.flowLayoutPanel3);
-            this.pageUS.Controls.Add(this.panel3);
-            this.pageUS.Location = new System.Drawing.Point(4, 4);
-            this.pageUS.Name = "pageUS";
-            this.pageUS.Size = new System.Drawing.Size(1608, 826);
-            this.pageUS.TabIndex = 3;
-            this.pageUS.Text = "Nhạc Âu Mĩ";
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 107);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1608, 719);
-            this.flowLayoutPanel3.TabIndex = 10;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1608, 107);
-            this.panel3.TabIndex = 9;
-            // 
-            // label10
-            // 
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Image = global::MusicApp.Properties.Resources.clock;
-            this.label10.Location = new System.Drawing.Point(1526, 46);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(32, 32);
-            this.label10.TabIndex = 9;
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label11.Location = new System.Drawing.Point(764, 46);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(139, 41);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Thể Loại";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label12.Location = new System.Drawing.Point(88, 46);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(128, 39);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "Tiêu Đề";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label13.Location = new System.Drawing.Point(23, 46);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(21, 39);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "#";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pageKL
-            // 
-            this.pageKL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageKL.Controls.Add(this.flowLayoutPanel4);
-            this.pageKL.Controls.Add(this.panel4);
-            this.pageKL.Location = new System.Drawing.Point(4, 4);
-            this.pageKL.Name = "pageKL";
-            this.pageKL.Size = new System.Drawing.Size(1608, 826);
-            this.pageKL.TabIndex = 4;
-            this.pageKL.Text = "Nhạc không lời";
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(0, 107);
-            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(1608, 719);
-            this.flowLayoutPanel4.TabIndex = 10;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.label15);
-            this.panel4.Controls.Add(this.label16);
-            this.panel4.Controls.Add(this.label17);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1608, 107);
-            this.panel4.TabIndex = 9;
-            // 
-            // label14
-            // 
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Image = global::MusicApp.Properties.Resources.clock;
-            this.label14.Location = new System.Drawing.Point(1526, 46);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(32, 32);
-            this.label14.TabIndex = 9;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label15.Location = new System.Drawing.Point(764, 46);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(139, 41);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "Thể Loại";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label16
-            // 
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label16.Location = new System.Drawing.Point(88, 46);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(128, 39);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "Tiêu Đề";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label17
-            // 
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label17.Location = new System.Drawing.Point(23, 46);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(21, 39);
-            this.label17.TabIndex = 8;
-            this.label17.Text = "#";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pageTrinh
-            // 
-            this.pageTrinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageTrinh.Controls.Add(this.flowLayoutPanel5);
-            this.pageTrinh.Controls.Add(this.panel5);
-            this.pageTrinh.Location = new System.Drawing.Point(4, 4);
-            this.pageTrinh.Name = "pageTrinh";
-            this.pageTrinh.Size = new System.Drawing.Size(1608, 826);
-            this.pageTrinh.TabIndex = 5;
-            this.pageTrinh.Text = "Nhạc Trịnh";
-            // 
-            // flowLayoutPanel5
-            // 
-            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 107);
-            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(1608, 719);
-            this.flowLayoutPanel5.TabIndex = 10;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.label18);
-            this.panel5.Controls.Add(this.label19);
-            this.panel5.Controls.Add(this.label20);
-            this.panel5.Controls.Add(this.label21);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1608, 107);
-            this.panel5.TabIndex = 9;
-            // 
-            // label18
-            // 
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Image = global::MusicApp.Properties.Resources.clock;
-            this.label18.Location = new System.Drawing.Point(1526, 46);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(32, 32);
-            this.label18.TabIndex = 9;
-            // 
-            // label19
-            // 
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label19.Location = new System.Drawing.Point(764, 46);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(139, 41);
-            this.label19.TabIndex = 8;
-            this.label19.Text = "Thể Loại";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label20
-            // 
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label20.Location = new System.Drawing.Point(88, 46);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(128, 39);
-            this.label20.TabIndex = 8;
-            this.label20.Text = "Tiêu Đề";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label21
-            // 
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label21.Location = new System.Drawing.Point(23, 46);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(21, 39);
-            this.label21.TabIndex = 8;
-            this.label21.Text = "#";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pageCollection
             // 
@@ -2485,11 +2014,11 @@ namespace MusicApp
             this.btnAddList.ColorContrastOnClick = 45;
             this.btnAddList.ColorContrastOnHover = 45;
             this.btnAddList.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btnAddList.CustomizableEdges = borderEdges5;
+            borderEdges16.BottomLeft = true;
+            borderEdges16.BottomRight = true;
+            borderEdges16.TopLeft = true;
+            borderEdges16.TopRight = true;
+            this.btnAddList.CustomizableEdges = borderEdges16;
             this.btnAddList.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddList.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAddList.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2713,11 +2242,11 @@ namespace MusicApp
             this.btnOneStar.ColorContrastOnClick = 45;
             this.btnOneStar.ColorContrastOnHover = 45;
             this.btnOneStar.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.btnOneStar.CustomizableEdges = borderEdges6;
+            borderEdges17.BottomLeft = true;
+            borderEdges17.BottomRight = true;
+            borderEdges17.TopLeft = true;
+            borderEdges17.TopRight = true;
+            this.btnOneStar.CustomizableEdges = borderEdges17;
             this.btnOneStar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnOneStar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnOneStar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2804,11 +2333,11 @@ namespace MusicApp
             this.btnTwoStar.ColorContrastOnClick = 45;
             this.btnTwoStar.ColorContrastOnHover = 45;
             this.btnTwoStar.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btnTwoStar.CustomizableEdges = borderEdges7;
+            borderEdges18.BottomLeft = true;
+            borderEdges18.BottomRight = true;
+            borderEdges18.TopLeft = true;
+            borderEdges18.TopRight = true;
+            this.btnTwoStar.CustomizableEdges = borderEdges18;
             this.btnTwoStar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnTwoStar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnTwoStar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2895,11 +2424,11 @@ namespace MusicApp
             this.btnThreeStar.ColorContrastOnClick = 45;
             this.btnThreeStar.ColorContrastOnHover = 45;
             this.btnThreeStar.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btnThreeStar.CustomizableEdges = borderEdges8;
+            borderEdges19.BottomLeft = true;
+            borderEdges19.BottomRight = true;
+            borderEdges19.TopLeft = true;
+            borderEdges19.TopRight = true;
+            this.btnThreeStar.CustomizableEdges = borderEdges19;
             this.btnThreeStar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnThreeStar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThreeStar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2986,11 +2515,11 @@ namespace MusicApp
             this.BtnFourStar.ColorContrastOnClick = 45;
             this.BtnFourStar.ColorContrastOnHover = 45;
             this.BtnFourStar.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.BtnFourStar.CustomizableEdges = borderEdges9;
+            borderEdges20.BottomLeft = true;
+            borderEdges20.BottomRight = true;
+            borderEdges20.TopLeft = true;
+            borderEdges20.TopRight = true;
+            this.BtnFourStar.CustomizableEdges = borderEdges20;
             this.BtnFourStar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnFourStar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BtnFourStar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -3077,11 +2606,11 @@ namespace MusicApp
             this.btnFiveStar.ColorContrastOnClick = 45;
             this.btnFiveStar.ColorContrastOnHover = 45;
             this.btnFiveStar.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.btnFiveStar.CustomizableEdges = borderEdges10;
+            borderEdges21.BottomLeft = true;
+            borderEdges21.BottomRight = true;
+            borderEdges21.TopLeft = true;
+            borderEdges21.TopRight = true;
+            this.btnFiveStar.CustomizableEdges = borderEdges21;
             this.btnFiveStar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnFiveStar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnFiveStar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -3168,11 +2697,11 @@ namespace MusicApp
             this.btnComment.ColorContrastOnClick = 45;
             this.btnComment.ColorContrastOnHover = 45;
             this.btnComment.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.btnComment.CustomizableEdges = borderEdges11;
+            borderEdges22.BottomLeft = true;
+            borderEdges22.BottomRight = true;
+            borderEdges22.TopLeft = true;
+            borderEdges22.TopRight = true;
+            this.btnComment.CustomizableEdges = borderEdges22;
             this.btnComment.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnComment.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnComment.DisabledFillColor = System.Drawing.Color.Empty;
@@ -3400,6 +2929,73 @@ namespace MusicApp
             this.pInforSong.TabIndex = 0;
             this.pInforSong.TabStop = false;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.tabPage1.Controls.Add(this.panel6);
+            this.tabPage1.Location = new System.Drawing.Point(4, 4);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1622, 865);
+            this.tabPage1.TabIndex = 6;
+            this.tabPage1.Text = "Nhạc Việt";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.Controls.Add(this.label22);
+            this.panel6.Controls.Add(this.label23);
+            this.panel6.Controls.Add(this.label24);
+            this.panel6.Controls.Add(this.label25);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(3, 3);
+            this.panel6.Margin = new System.Windows.Forms.Padding(0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1616, 107);
+            this.panel6.TabIndex = 9;
+            // 
+            // label22
+            // 
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Image = global::MusicApp.Properties.Resources.clock;
+            this.label22.Location = new System.Drawing.Point(1526, 46);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(32, 32);
+            this.label22.TabIndex = 9;
+            // 
+            // label23
+            // 
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label23.Location = new System.Drawing.Point(764, 46);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(139, 41);
+            this.label23.TabIndex = 8;
+            this.label23.Text = "Thể Loại";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label24
+            // 
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label24.Location = new System.Drawing.Point(88, 46);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(128, 39);
+            this.label24.TabIndex = 8;
+            this.label24.Text = "Tiêu Đề";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label25
+            // 
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label25.Location = new System.Drawing.Point(23, 46);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(21, 39);
+            this.label25.TabIndex = 8;
+            this.label25.Text = "#";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -3421,19 +3017,6 @@ namespace MusicApp
             this.pageHome.ResumeLayout(false);
             this.fpnSongs.ResumeLayout(false);
             this.pnHeader.ResumeLayout(false);
-            this.pageGenreMain.ResumeLayout(false);
-            this.ppageGenre.ResumeLayout(false);
-            this.tabpageGenre.ResumeLayout(false);
-            this.pageVpop.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.pageKpop.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.pageUS.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.pageKL.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.pageTrinh.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.pageCollection.ResumeLayout(false);
             this.fpnPlaylist.ResumeLayout(false);
             this.pageInfo.ResumeLayout(false);
@@ -3441,6 +3024,8 @@ namespace MusicApp
             this.fpnComment.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3467,12 +3052,9 @@ namespace MusicApp
         private Bunifu.UI.WinForms.BunifuImageButton btnOther;
         private Bunifu.UI.WinForms.BunifuPages ppageMain;
         private TabPage pageHome;
-        private TabPage pageGenreMain;
+        private TabPage pageGenre;
         private TabPage pageCollection;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAddList;
-        private Bunifu.UI.WinForms.BunifuPages ppageGenre;
-        private TabPage tabpageGenre;
-        private TabPage pageVpop;
         private Source.Genre genre1;
         private Source.Genre genre2;
         private Source.Genre genre3;
@@ -3562,39 +3144,11 @@ namespace MusicApp
         private FlowLayoutPanel fpnComment;
         private Source.Comment comment1;
         private PictureBox pictureBox1;
-        private TabPage pageKpop;
-        private TabPage pageUS;
-        private TabPage pageKL;
-        private TabPage pageTrinh;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private Panel panel1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private FlowLayoutPanel flowLayoutPanel2;
-        private Panel panel2;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private FlowLayoutPanel flowLayoutPanel3;
-        private Panel panel3;
-        private Label label10;
-        private Label label11;
-        private Label label12;
-        private Label label13;
-        private FlowLayoutPanel flowLayoutPanel4;
-        private Panel panel4;
-        private Label label14;
-        private Label label15;
-        private Label label16;
-        private Label label17;
-        private FlowLayoutPanel flowLayoutPanel5;
-        private Panel panel5;
-        private Label label18;
-        private Label label19;
-        private Label label20;
-        private Label label21;
+        private TabPage tabPage1;
+        private Panel panel6;
+        private Label label22;
+        private Label label23;
+        private Label label24;
+        private Label label25;
     }
 }
