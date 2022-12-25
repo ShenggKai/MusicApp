@@ -141,9 +141,13 @@ namespace MusicApp
             this.txtNameSong = new System.Windows.Forms.Label();
             this.pInforSong = new System.Windows.Forms.PictureBox();
             this.lbComposer = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbArtirst = new System.Windows.Forms.Label();
+            this.lbYear = new System.Windows.Forms.Label();
+            this.lbGenre = new System.Windows.Forms.Label();
+            this.txtComposer = new System.Windows.Forms.Label();
+            this.txtInfoArtist = new System.Windows.Forms.Label();
+            this.txtYear = new System.Windows.Forms.Label();
+            this.txtInfoGenre = new System.Windows.Forms.Label();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -2108,9 +2112,13 @@ namespace MusicApp
             // pageInfo
             // 
             this.pageInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageInfo.Controls.Add(this.label3);
-            this.pageInfo.Controls.Add(this.label2);
-            this.pageInfo.Controls.Add(this.label1);
+            this.pageInfo.Controls.Add(this.lbGenre);
+            this.pageInfo.Controls.Add(this.lbYear);
+            this.pageInfo.Controls.Add(this.lbArtirst);
+            this.pageInfo.Controls.Add(this.txtInfoGenre);
+            this.pageInfo.Controls.Add(this.txtYear);
+            this.pageInfo.Controls.Add(this.txtInfoArtist);
+            this.pageInfo.Controls.Add(this.txtComposer);
             this.pageInfo.Controls.Add(this.lbComposer);
             this.pageInfo.Controls.Add(this.txtNameSong);
             this.pageInfo.Controls.Add(this.pInforSong);
@@ -2154,38 +2162,82 @@ namespace MusicApp
             this.lbComposer.Text = "Sáng tác:";
             this.lbComposer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // lbArtirst
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label1.Location = new System.Drawing.Point(728, 162);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 33);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Sáng tác:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbArtirst.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbArtirst.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.lbArtirst.Location = new System.Drawing.Point(728, 160);
+            this.lbArtirst.Name = "lbArtirst";
+            this.lbArtirst.Size = new System.Drawing.Size(121, 33);
+            this.lbArtirst.TabIndex = 2;
+            this.lbArtirst.Text = "Trình bày:";
+            this.lbArtirst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lbYear
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label2.Location = new System.Drawing.Point(728, 230);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 33);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Sáng tác:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbYear.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.lbYear.Location = new System.Drawing.Point(728, 215);
+            this.lbYear.Name = "lbYear";
+            this.lbYear.Size = new System.Drawing.Size(193, 33);
+            this.lbYear.TabIndex = 2;
+            this.lbYear.Text = "Năm phát hành:";
+            this.lbYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // lbGenre
             // 
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.label3.Location = new System.Drawing.Point(728, 270);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 33);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Sáng tác:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbGenre.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbGenre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.lbGenre.Location = new System.Drawing.Point(728, 270);
+            this.lbGenre.Name = "lbGenre";
+            this.lbGenre.Size = new System.Drawing.Size(115, 33);
+            this.lbGenre.TabIndex = 2;
+            this.lbGenre.Text = "Thể loại:";
+            this.lbGenre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtComposer
+            // 
+            this.txtComposer.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtComposer.ForeColor = System.Drawing.Color.White;
+            this.txtComposer.Location = new System.Drawing.Point(986, 105);
+            this.txtComposer.Name = "txtComposer";
+            this.txtComposer.Size = new System.Drawing.Size(628, 33);
+            this.txtComposer.TabIndex = 2;
+            this.txtComposer.Text = "Emcee L";
+            this.txtComposer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtInfoArtist
+            // 
+            this.txtInfoArtist.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtInfoArtist.ForeColor = System.Drawing.Color.White;
+            this.txtInfoArtist.Location = new System.Drawing.Point(986, 160);
+            this.txtInfoArtist.Name = "txtInfoArtist";
+            this.txtInfoArtist.Size = new System.Drawing.Size(628, 33);
+            this.txtInfoArtist.TabIndex = 2;
+            this.txtInfoArtist.Text = "Emcee L, Badbies";
+            this.txtInfoArtist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtYear
+            // 
+            this.txtYear.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtYear.ForeColor = System.Drawing.Color.White;
+            this.txtYear.Location = new System.Drawing.Point(986, 215);
+            this.txtYear.Name = "txtYear";
+            this.txtYear.Size = new System.Drawing.Size(78, 33);
+            this.txtYear.TabIndex = 2;
+            this.txtYear.Text = "2020";
+            this.txtYear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtInfoGenre
+            // 
+            this.txtInfoGenre.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtInfoGenre.ForeColor = System.Drawing.Color.White;
+            this.txtInfoGenre.Location = new System.Drawing.Point(986, 270);
+            this.txtInfoGenre.Name = "txtInfoGenre";
+            this.txtInfoGenre.Size = new System.Drawing.Size(191, 35);
+            this.txtInfoGenre.TabIndex = 2;
+            this.txtInfoGenre.Text = "Nhạc Việt";
+            this.txtInfoGenre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // HomeForm
             // 
@@ -2311,8 +2363,12 @@ namespace MusicApp
         private PictureBox pInforSong;
         private Label txtNameSong;
         private Label lbComposer;
-        private Label label3;
-        private Label label2;
-        private Label label1;
+        private Label lbGenre;
+        private Label lbYear;
+        private Label lbArtirst;
+        private Label txtInfoGenre;
+        private Label txtYear;
+        private Label txtInfoArtist;
+        private Label txtComposer;
     }
 }
