@@ -1004,10 +1004,10 @@ namespace MusicApp
             this.ppageMain.Location = new System.Drawing.Point(272, 0);
             this.ppageMain.Multiline = true;
             this.ppageMain.Name = "ppageMain";
-            this.ppageMain.Page = this.pageInfo;
-            this.ppageMain.PageIndex = 4;
-            this.ppageMain.PageName = "pageInfo";
-            this.ppageMain.PageTitle = "Thông Tin";
+            this.ppageMain.Page = this.pageHome;
+            this.ppageMain.PageIndex = 0;
+            this.ppageMain.PageName = "pageHome";
+            this.ppageMain.PageTitle = "Trang chủ";
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
             this.ppageMain.TabIndex = 2;
@@ -1068,6 +1068,7 @@ namespace MusicApp
             this.song1.Size = new System.Drawing.Size(1620, 90);
             this.song1.TabIndex = 0;
             this.song1.Time = "03:54";
+            this.song1.InfoClick += new System.EventHandler(this.song1_InfoClick);
             // 
             // song2
             // 
@@ -1126,7 +1127,7 @@ namespace MusicApp
             // 
             this.txtGenre.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtGenre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.txtGenre.Location = new System.Drawing.Point(790, 124);
+            this.txtGenre.Location = new System.Drawing.Point(764, 124);
             this.txtGenre.Name = "txtGenre";
             this.txtGenre.Size = new System.Drawing.Size(139, 41);
             this.txtGenre.TabIndex = 8;

@@ -204,8 +204,14 @@ namespace MusicApp
 
         }
 
-        
+
         #endregion
 
+        #region click songs
+        private void song1_InfoClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("button clicked");
+        }
+        #endregion
     }
 }
