@@ -226,5 +226,10 @@ namespace MusicApp
         }
 
         #endregion
+
+        private void pBack_Click(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(0);
+        }
     }
 }
