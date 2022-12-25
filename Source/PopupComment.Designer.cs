@@ -29,10 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopupComment));
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnComment = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbCmt = new System.Windows.Forms.Label();
             this.btnClose = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.txtboxName = new System.Windows.Forms.TextBox();
+            this.pnLine = new System.Windows.Forms.Panel();
+            this.tboxCmt = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.pUser = new System.Windows.Forms.PictureBox();
+            this.btnAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pnComment.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             this.SuspendLayout();
             // 
             // pnComment
@@ -43,8 +54,13 @@
             this.pnComment.BorderColor = System.Drawing.Color.Transparent;
             this.pnComment.BorderRadius = 30;
             this.pnComment.BorderThickness = 0;
+            this.pnComment.Controls.Add(this.btnAdd);
+            this.pnComment.Controls.Add(this.pUser);
+            this.pnComment.Controls.Add(this.tboxCmt);
+            this.pnComment.Controls.Add(this.txtboxName);
+            this.pnComment.Controls.Add(this.pnLine);
             this.pnComment.Controls.Add(this.btnClose);
-            this.pnComment.Controls.Add(this.label1);
+            this.pnComment.Controls.Add(this.lbCmt);
             this.pnComment.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnComment.Location = new System.Drawing.Point(0, 0);
             this.pnComment.Margin = new System.Windows.Forms.Padding(0);
@@ -53,17 +69,17 @@
             this.pnComment.Size = new System.Drawing.Size(729, 589);
             this.pnComment.TabIndex = 0;
             // 
-            // label1
+            // lbCmt
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(186, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(390, 38);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bình luận";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbCmt.BackColor = System.Drawing.Color.Transparent;
+            this.lbCmt.Font = new System.Drawing.Font("Segoe UI Semibold", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbCmt.ForeColor = System.Drawing.Color.White;
+            this.lbCmt.Location = new System.Drawing.Point(231, 30);
+            this.lbCmt.Name = "lbCmt";
+            this.lbCmt.Size = new System.Drawing.Size(390, 38);
+            this.lbCmt.TabIndex = 0;
+            this.lbCmt.Text = "Bình luận";
+            this.lbCmt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnClose
             // 
@@ -101,6 +117,203 @@
             this.btnClose.Zoom = 0;
             this.btnClose.ZoomSpeed = 10;
             // 
+            // txtboxName
+            // 
+            this.txtboxName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.txtboxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxName.Font = new System.Drawing.Font("Segoe UI", 14.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            this.txtboxName.Location = new System.Drawing.Point(231, 98);
+            this.txtboxName.Name = "txtboxName";
+            this.txtboxName.PlaceholderText = "Nhập tên";
+            this.txtboxName.Size = new System.Drawing.Size(390, 32);
+            this.txtboxName.TabIndex = 5;
+            // 
+            // pnLine
+            // 
+            this.pnLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            this.pnLine.Location = new System.Drawing.Point(231, 132);
+            this.pnLine.Name = "pnLine";
+            this.pnLine.Size = new System.Drawing.Size(390, 1);
+            this.pnLine.TabIndex = 4;
+            // 
+            // tboxCmt
+            // 
+            this.tboxCmt.AcceptsReturn = false;
+            this.tboxCmt.AcceptsTab = false;
+            this.tboxCmt.AnimationSpeed = 200;
+            this.tboxCmt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.tboxCmt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.tboxCmt.AutoSizeHeight = true;
+            this.tboxCmt.BackColor = System.Drawing.Color.Transparent;
+            this.tboxCmt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tboxCmt.BackgroundImage")));
+            this.tboxCmt.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.tboxCmt.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.tboxCmt.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.tboxCmt.BorderColorIdle = System.Drawing.Color.Silver;
+            this.tboxCmt.BorderRadius = 20;
+            this.tboxCmt.BorderThickness = 0;
+            this.tboxCmt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.tboxCmt.DefaultFont = new System.Drawing.Font("Segoe UI", 14.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tboxCmt.DefaultText = "";
+            this.tboxCmt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.tboxCmt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            this.tboxCmt.HideSelection = true;
+            this.tboxCmt.IconLeft = null;
+            this.tboxCmt.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.tboxCmt.IconPadding = 10;
+            this.tboxCmt.IconRight = null;
+            this.tboxCmt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.tboxCmt.Lines = new string[0];
+            this.tboxCmt.Location = new System.Drawing.Point(211, 222);
+            this.tboxCmt.MaxLength = 32767;
+            this.tboxCmt.MinimumSize = new System.Drawing.Size(1, 1);
+            this.tboxCmt.Modified = false;
+            this.tboxCmt.Multiline = true;
+            this.tboxCmt.Name = "tboxCmt";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tboxCmt.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.tboxCmt.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tboxCmt.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tboxCmt.OnIdleState = stateProperties4;
+            this.tboxCmt.Padding = new System.Windows.Forms.Padding(3);
+            this.tboxCmt.PasswordChar = '\0';
+            this.tboxCmt.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
+            this.tboxCmt.PlaceholderText = "Nhập bình luận";
+            this.tboxCmt.ReadOnly = false;
+            this.tboxCmt.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tboxCmt.SelectedText = "";
+            this.tboxCmt.SelectionLength = 0;
+            this.tboxCmt.SelectionStart = 0;
+            this.tboxCmt.ShortcutsEnabled = true;
+            this.tboxCmt.Size = new System.Drawing.Size(430, 256);
+            this.tboxCmt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.tboxCmt.TabIndex = 6;
+            this.tboxCmt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tboxCmt.TextMarginBottom = 0;
+            this.tboxCmt.TextMarginLeft = 20;
+            this.tboxCmt.TextMarginTop = 14;
+            this.tboxCmt.TextPlaceholder = "Nhập bình luận";
+            this.tboxCmt.UseSystemPasswordChar = false;
+            this.tboxCmt.WordWrap = true;
+            // 
+            // pUser
+            // 
+            this.pUser.BackColor = System.Drawing.Color.Transparent;
+            this.pUser.Image = global::MusicApp.Properties.Resources.user;
+            this.pUser.Location = new System.Drawing.Point(30, 98);
+            this.pUser.Name = "pUser";
+            this.pUser.Size = new System.Drawing.Size(150, 150);
+            this.pUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pUser.TabIndex = 7;
+            this.pUser.TabStop = false;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.AllowAnimations = true;
+            this.btnAdd.AllowMouseEffects = true;
+            this.btnAdd.AllowToggling = false;
+            this.btnAdd.AnimationSpeed = 200;
+            this.btnAdd.AutoGenerateColors = false;
+            this.btnAdd.AutoRoundBorders = false;
+            this.btnAdd.AutoSizeLeftIcon = true;
+            this.btnAdd.AutoSizeRightIcon = true;
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
+            this.btnAdd.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAdd.ButtonText = "Đăng";
+            this.btnAdd.ButtonTextMarginLeft = 0;
+            this.btnAdd.ColorContrastOnClick = 45;
+            this.btnAdd.ColorContrastOnHover = 45;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnAdd.CustomizableEdges = borderEdges1;
+            this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAdd.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnAdd.DisabledFillColor = System.Drawing.Color.Empty;
+            this.btnAdd.DisabledForecolor = System.Drawing.Color.Empty;
+            this.btnAdd.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 14.4F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.IconLeft = null;
+            this.btnAdd.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnAdd.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnAdd.IconMarginLeft = 11;
+            this.btnAdd.IconPadding = 10;
+            this.btnAdd.IconRight = null;
+            this.btnAdd.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdd.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnAdd.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnAdd.IconSize = 25;
+            this.btnAdd.IdleBorderColor = System.Drawing.Color.Empty;
+            this.btnAdd.IdleBorderRadius = 0;
+            this.btnAdd.IdleBorderThickness = 0;
+            this.btnAdd.IdleFillColor = System.Drawing.Color.Empty;
+            this.btnAdd.IdleIconLeftImage = null;
+            this.btnAdd.IdleIconRightImage = null;
+            this.btnAdd.IndicateFocus = false;
+            this.btnAdd.Location = new System.Drawing.Point(231, 499);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnAdd.OnDisabledState.BorderRadius = 40;
+            this.btnAdd.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAdd.OnDisabledState.BorderThickness = 0;
+            this.btnAdd.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnAdd.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnAdd.OnDisabledState.IconLeftImage = null;
+            this.btnAdd.OnDisabledState.IconRightImage = null;
+            this.btnAdd.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(196)))), ((int)(((byte)(125)))));
+            this.btnAdd.onHoverState.BorderRadius = 40;
+            this.btnAdd.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAdd.onHoverState.BorderThickness = 0;
+            this.btnAdd.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(196)))), ((int)(((byte)(125)))));
+            this.btnAdd.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.onHoverState.IconLeftImage = null;
+            this.btnAdd.onHoverState.IconRightImage = null;
+            this.btnAdd.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(148)))), ((int)(((byte)(20)))));
+            this.btnAdd.OnIdleState.BorderRadius = 40;
+            this.btnAdd.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAdd.OnIdleState.BorderThickness = 0;
+            this.btnAdd.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(148)))), ((int)(((byte)(20)))));
+            this.btnAdd.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.OnIdleState.IconLeftImage = null;
+            this.btnAdd.OnIdleState.IconRightImage = null;
+            this.btnAdd.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(148)))), ((int)(((byte)(20)))));
+            this.btnAdd.OnPressedState.BorderRadius = 40;
+            this.btnAdd.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAdd.OnPressedState.BorderThickness = 0;
+            this.btnAdd.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(148)))), ((int)(((byte)(20)))));
+            this.btnAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.OnPressedState.IconLeftImage = null;
+            this.btnAdd.OnPressedState.IconRightImage = null;
+            this.btnAdd.Size = new System.Drawing.Size(390, 60);
+            this.btnAdd.TabIndex = 8;
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAdd.TextMarginLeft = 0;
+            this.btnAdd.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnAdd.UseDefaultRadiusAndThickness = true;
+            // 
             // PopupComment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -117,6 +330,8 @@
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.pnComment.ResumeLayout(false);
+            this.pnComment.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pUser)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -124,7 +339,12 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuPanel pnComment;
-        private Label label1;
+        private Label lbCmt;
         private Bunifu.UI.WinForms.BunifuImageButton btnClose;
+        private TextBox txtboxName;
+        private Panel pnLine;
+        private PictureBox pUser;
+        private Bunifu.UI.WinForms.BunifuTextBox tboxCmt;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAdd;
     }
 }
