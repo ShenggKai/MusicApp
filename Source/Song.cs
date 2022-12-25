@@ -12,6 +12,8 @@ namespace MusicApp.Source
 {
     public partial class Song : UserControl
     {
+        public event EventHandler InfoClick;
+
         public Song()
         {
             InitializeComponent();
@@ -86,6 +88,18 @@ namespace MusicApp.Source
         private void pDown_MouseLeave(object sender, EventArgs e)
         {
             pDown.Image = global::MusicApp.Properties.Resources.download;
+        }
+        #endregion
+
+        #region effect when click
+        [Browsable(true)]
+        [Category("Action")]
+        [Description("Invoked when user clicks button")]
+
+        protected void pInfor_Click(object sender, EventArgs e)
+        {
+            if (this.InfoClick != null)
+                InfoClick.Invoke(this, e);
         }
         #endregion
     }

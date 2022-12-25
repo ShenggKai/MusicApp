@@ -101,6 +101,7 @@ namespace MusicApp
             this.btnAddList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pageHistory = new System.Windows.Forms.TabPage();
             this.pageInfo = new System.Windows.Forms.TabPage();
+            this.comment1 = new MusicApp.Source.Comment();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -113,6 +114,7 @@ namespace MusicApp
             this.tabpageGenre.SuspendLayout();
             this.pageCollection.SuspendLayout();
             this.fpnPlaylist.SuspendLayout();
+            this.pageInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -1002,10 +1004,10 @@ namespace MusicApp
             this.ppageMain.Location = new System.Drawing.Point(272, 0);
             this.ppageMain.Multiline = true;
             this.ppageMain.Name = "ppageMain";
-            this.ppageMain.Page = this.pageHome;
-            this.ppageMain.PageIndex = 0;
-            this.ppageMain.PageName = "pageHome";
-            this.ppageMain.PageTitle = "Trang chủ";
+            this.ppageMain.Page = this.pageInfo;
+            this.ppageMain.PageIndex = 4;
+            this.ppageMain.PageName = "pageInfo";
+            this.ppageMain.PageTitle = "Thông Tin";
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
             this.ppageMain.TabIndex = 2;
@@ -1470,12 +1472,21 @@ namespace MusicApp
             // pageInfo
             // 
             this.pageInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageInfo.Controls.Add(this.comment1);
             this.pageInfo.Location = new System.Drawing.Point(4, 4);
             this.pageInfo.Name = "pageInfo";
             this.pageInfo.Padding = new System.Windows.Forms.Padding(3);
             this.pageInfo.Size = new System.Drawing.Size(1622, 865);
             this.pageInfo.TabIndex = 5;
             this.pageInfo.Text = "Thông Tin";
+            // 
+            // comment1
+            // 
+            this.comment1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.comment1.Location = new System.Drawing.Point(46, 205);
+            this.comment1.Name = "comment1";
+            this.comment1.Size = new System.Drawing.Size(1470, 155);
+            this.comment1.TabIndex = 0;
             // 
             // HomeForm
             // 
@@ -1503,6 +1514,7 @@ namespace MusicApp
             this.tabpageGenre.ResumeLayout(false);
             this.pageCollection.ResumeLayout(false);
             this.fpnPlaylist.ResumeLayout(false);
+            this.pageInfo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1559,5 +1571,6 @@ namespace MusicApp
         private FlowLayoutPanel fpnPlaylist;
         private Source.Liked liked1;
         private Source.Playlist playlist1;
+        private Source.Comment comment1;
     }
 }

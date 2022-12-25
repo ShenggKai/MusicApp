@@ -85,6 +85,7 @@
             this.pInfor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pInfor.TabIndex = 4;
             this.pInfor.TabStop = false;
+            this.pInfor.Click += new System.EventHandler(this.pInfor_Click);
             this.pInfor.MouseLeave += new System.EventHandler(this.pInfor_MouseLeave);
             this.pInfor.MouseHover += new System.EventHandler(this.pInfor_MouseHover);
             // 

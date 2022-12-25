@@ -200,8 +200,11 @@ namespace MusicApp
             {
                 formBackground.Dispose();
             }
+
+
         }
 
+        
         #endregion
 
     }
