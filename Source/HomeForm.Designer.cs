@@ -136,7 +136,7 @@ namespace MusicApp
             this.tabpageGenre = new System.Windows.Forms.TabPage();
             this.genre5 = new MusicApp.Source.Genre();
             this.genre4 = new MusicApp.Source.Genre();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pageVpop = new System.Windows.Forms.TabPage();
             this.pageCollection = new System.Windows.Forms.TabPage();
             this.fpnPlaylist = new System.Windows.Forms.FlowLayoutPanel();
             this.liked1 = new MusicApp.Source.Liked();
@@ -172,6 +172,10 @@ namespace MusicApp
             this.lbComposer = new System.Windows.Forms.Label();
             this.txtNameSong = new System.Windows.Forms.Label();
             this.pInforSong = new System.Windows.Forms.PictureBox();
+            this.pageKpop = new System.Windows.Forms.TabPage();
+            this.pageUS = new System.Windows.Forms.TabPage();
+            this.pageKL = new System.Windows.Forms.TabPage();
+            this.pageTrinh = new System.Windows.Forms.TabPage();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -1079,10 +1083,10 @@ namespace MusicApp
             this.ppageMain.Location = new System.Drawing.Point(272, 0);
             this.ppageMain.Multiline = true;
             this.ppageMain.Name = "ppageMain";
-            this.ppageMain.Page = this.pageHome;
-            this.ppageMain.PageIndex = 0;
-            this.ppageMain.PageName = "pageHome";
-            this.ppageMain.PageTitle = "Trang chủ";
+            this.ppageMain.Page = this.pageGenreMain;
+            this.ppageMain.PageIndex = 1;
+            this.ppageMain.PageName = "pageGenreMain";
+            this.ppageMain.PageTitle = "Thể loại";
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
             this.ppageMain.TabIndex = 2;
@@ -1924,15 +1928,19 @@ namespace MusicApp
             this.ppageGenre.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.ppageGenre.AllowTransitions = false;
             this.ppageGenre.Controls.Add(this.tabpageGenre);
-            this.ppageGenre.Controls.Add(this.tabPage2);
+            this.ppageGenre.Controls.Add(this.pageVpop);
+            this.ppageGenre.Controls.Add(this.pageKpop);
+            this.ppageGenre.Controls.Add(this.pageUS);
+            this.ppageGenre.Controls.Add(this.pageKL);
+            this.ppageGenre.Controls.Add(this.pageTrinh);
             this.ppageGenre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ppageGenre.Location = new System.Drawing.Point(3, 3);
             this.ppageGenre.Multiline = true;
             this.ppageGenre.Name = "ppageGenre";
-            this.ppageGenre.Page = this.tabpageGenre;
-            this.ppageGenre.PageIndex = 0;
-            this.ppageGenre.PageName = "tabpageGenre";
-            this.ppageGenre.PageTitle = "Thể loại";
+            this.ppageGenre.Page = this.pageTrinh;
+            this.ppageGenre.PageIndex = 5;
+            this.ppageGenre.PageName = "pageTrinh";
+            this.ppageGenre.PageTitle = "Nhạc Trịnh";
             this.ppageGenre.SelectedIndex = 0;
             this.ppageGenre.Size = new System.Drawing.Size(1616, 859);
             this.ppageGenre.TabIndex = 2;
@@ -1991,15 +1999,15 @@ namespace MusicApp
             this.genre4.Size = new System.Drawing.Size(261, 292);
             this.genre4.TabIndex = 3;
             // 
-            // tabPage2
+            // pageVpop
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1608, 826);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.pageVpop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageVpop.Location = new System.Drawing.Point(4, 4);
+            this.pageVpop.Name = "pageVpop";
+            this.pageVpop.Padding = new System.Windows.Forms.Padding(3);
+            this.pageVpop.Size = new System.Drawing.Size(1608, 826);
+            this.pageVpop.TabIndex = 1;
+            this.pageVpop.Text = "Nhạc Việt";
             // 
             // pageCollection
             // 
@@ -2978,6 +2986,46 @@ namespace MusicApp
             this.pInforSong.TabIndex = 0;
             this.pInforSong.TabStop = false;
             // 
+            // pageKpop
+            // 
+            this.pageKpop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageKpop.Location = new System.Drawing.Point(4, 4);
+            this.pageKpop.Name = "pageKpop";
+            this.pageKpop.Padding = new System.Windows.Forms.Padding(3);
+            this.pageKpop.Size = new System.Drawing.Size(1608, 826);
+            this.pageKpop.TabIndex = 2;
+            this.pageKpop.Text = "Nhạc Hàn";
+            // 
+            // pageUS
+            // 
+            this.pageUS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageUS.Location = new System.Drawing.Point(4, 4);
+            this.pageUS.Name = "pageUS";
+            this.pageUS.Padding = new System.Windows.Forms.Padding(3);
+            this.pageUS.Size = new System.Drawing.Size(1608, 826);
+            this.pageUS.TabIndex = 3;
+            this.pageUS.Text = "Nhạc Âu Mĩ";
+            // 
+            // pageKL
+            // 
+            this.pageKL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageKL.Location = new System.Drawing.Point(4, 4);
+            this.pageKL.Name = "pageKL";
+            this.pageKL.Padding = new System.Windows.Forms.Padding(3);
+            this.pageKL.Size = new System.Drawing.Size(1608, 826);
+            this.pageKL.TabIndex = 4;
+            this.pageKL.Text = "Nhạc không lời";
+            // 
+            // pageTrinh
+            // 
+            this.pageTrinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageTrinh.Location = new System.Drawing.Point(4, 4);
+            this.pageTrinh.Name = "pageTrinh";
+            this.pageTrinh.Padding = new System.Windows.Forms.Padding(3);
+            this.pageTrinh.Size = new System.Drawing.Size(1608, 826);
+            this.pageTrinh.TabIndex = 5;
+            this.pageTrinh.Text = "Nhạc Trịnh";
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -3040,7 +3088,7 @@ namespace MusicApp
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAddList;
         private Bunifu.UI.WinForms.BunifuPages ppageGenre;
         private TabPage tabpageGenre;
-        private TabPage tabPage2;
+        private TabPage pageVpop;
         private Source.Genre genre1;
         private Source.Genre genre2;
         private Source.Genre genre3;
@@ -3130,5 +3178,9 @@ namespace MusicApp
         private FlowLayoutPanel fpnComment;
         private Source.Comment comment1;
         private PictureBox pictureBox1;
+        private TabPage pageKpop;
+        private TabPage pageUS;
+        private TabPage pageKL;
+        private TabPage pageTrinh;
     }
 }
