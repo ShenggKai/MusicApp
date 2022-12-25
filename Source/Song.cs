@@ -66,5 +66,27 @@ namespace MusicApp.Source
             set { txtTime.Text = value; }
         }
         #endregion
+
+        #region effect when hover
+        private void pInfor_MouseHover(object sender, EventArgs e)
+        {
+            pInfor.Image = global::MusicApp.Properties.Resources.info_white;
+        }
+
+        private void pInfor_MouseLeave(object sender, EventArgs e)
+        {
+            pInfor.Image = global::MusicApp.Properties.Resources.info;
+        }
+
+        private void pDown_MouseHover(object sender, EventArgs e)
+        {
+            pDown.Image = global::MusicApp.Properties.Resources.download_white;
+        }
+
+        private void pDown_MouseLeave(object sender, EventArgs e)
+        {
+            pDown.Image = global::MusicApp.Properties.Resources.download;
+        }
+        #endregion
     }
 }

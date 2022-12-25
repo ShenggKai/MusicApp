@@ -85,6 +85,8 @@
             this.pInfor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pInfor.TabIndex = 4;
             this.pInfor.TabStop = false;
+            this.pInfor.MouseLeave += new System.EventHandler(this.pInfor_MouseLeave);
+            this.pInfor.MouseHover += new System.EventHandler(this.pInfor_MouseHover);
             // 
             // pHeart
             // 
@@ -109,6 +111,8 @@
             this.pDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pDown.TabIndex = 4;
             this.pDown.TabStop = false;
+            this.pDown.MouseLeave += new System.EventHandler(this.pDown_MouseLeave);
+            this.pDown.MouseHover += new System.EventHandler(this.pDown_MouseHover);
             // 
             // txtTime
             // 
@@ -157,7 +161,6 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.pSong);
             this.Controls.Add(this.txtNum);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.Name = "Song";
             this.Size = new System.Drawing.Size(1620, 90);
