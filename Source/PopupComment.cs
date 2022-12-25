@@ -54,13 +54,13 @@ namespace MusicApp.Source
             if (bValidName) 
             {
                 Comment cmt = new Comment();
-                cmt.Name = txtboxName.Text;
-                
-            }
+                cmt.NameUser = txtboxName.Text;
+                cmt.ImageUser = pUser.Image;
+                cmt.Ratting = btnRatting.Value;
+                cmt.TextCmt = tboxCmt.Text;
 
-            else
-            {
-
+                HomeForm.instance.fpnCmt.Controls.Add(cmt);
+                this.Close();
             }
         }
 
