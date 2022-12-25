@@ -1,9 +1,11 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Printing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,6 +42,13 @@ namespace MusicApp.Source
         {
             get { return bunifuRating1.Value; }
             set { bunifuRating1.Value = value;}
+        }
+
+        private void Comment_Load(object sender, EventArgs e)
+        {
+            string TimeTemp = DateTime.Now.ToShortTimeString();
+            string DayTemp = DateTime.Now.ToShortDateString();
+            txtTime.Text = TimeTemp + ", " + DayTemp;
         }
     }
 }

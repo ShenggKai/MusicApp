@@ -58,7 +58,7 @@
             this.txtUserName.ForeColor = System.Drawing.Color.White;
             this.txtUserName.Location = new System.Drawing.Point(151, 12);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(166, 33);
+            this.txtUserName.Size = new System.Drawing.Size(129, 33);
             this.txtUserName.TabIndex = 1;
             this.txtUserName.Text = "ShengKai";
             // 
@@ -83,7 +83,7 @@
             this.bunifuRating1.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             this.bunifuRating1.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             this.bunifuRating1.InnerRadius = 2F;
-            this.bunifuRating1.Location = new System.Drawing.Point(339, 20);
+            this.bunifuRating1.Location = new System.Drawing.Point(299, 20);
             this.bunifuRating1.Name = "bunifuRating1";
             this.bunifuRating1.OuterRadius = 10F;
             this.bunifuRating1.RatedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
@@ -100,9 +100,9 @@
             // 
             this.txtTime.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtTime.ForeColor = System.Drawing.Color.White;
-            this.txtTime.Location = new System.Drawing.Point(523, 12);
+            this.txtTime.Location = new System.Drawing.Point(490, 12);
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(213, 33);
+            this.txtTime.Size = new System.Drawing.Size(243, 33);
             this.txtTime.TabIndex = 1;
             this.txtTime.Text = "22:22, 22/12/2022";
             // 
@@ -155,6 +155,7 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Comment";
             this.Size = new System.Drawing.Size(1170, 124);
+            this.Load += new System.EventHandler(this.Comment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pLike)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pUnlike)).EndInit();
