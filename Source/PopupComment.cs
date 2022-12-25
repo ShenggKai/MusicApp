@@ -24,6 +24,12 @@ namespace MusicApp.Source
 
         private void pUser_Click(object sender, EventArgs e)
         {
+            openFileDialogCmt.ShowDialog();
+            pUser.ImageLocation = openFileDialogCmt.FileName;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
 
         }
     }
