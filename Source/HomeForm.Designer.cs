@@ -69,6 +69,9 @@ namespace MusicApp
             this.btnPlay = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnSlider = new Bunifu.UI.WinForms.BunifuHSlider();
             this.pnMenu = new System.Windows.Forms.Panel();
+            this.genre3 = new MusicApp.Source.Genre();
+            this.genre2 = new MusicApp.Source.Genre();
+            this.genre1 = new MusicApp.Source.Genre();
             this.btnHistory = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnCollection = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnGenre = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -89,11 +92,8 @@ namespace MusicApp
             this.pageGenreMain = new System.Windows.Forms.TabPage();
             this.ppageGenre = new Bunifu.UI.WinForms.BunifuPages();
             this.tabpageGenre = new System.Windows.Forms.TabPage();
-            this.genre1 = new MusicApp.Source.Genre();
-            this.genre2 = new MusicApp.Source.Genre();
-            this.genre3 = new MusicApp.Source.Genre();
-            this.genre4 = new MusicApp.Source.Genre();
             this.genre5 = new MusicApp.Source.Genre();
+            this.genre4 = new MusicApp.Source.Genre();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pageCollection = new System.Windows.Forms.TabPage();
             this.pageLike = new Bunifu.UI.WinForms.BunifuPages();
@@ -570,9 +570,6 @@ namespace MusicApp
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.pnMenu.Controls.Add(this.genre3);
-            this.pnMenu.Controls.Add(this.genre2);
-            this.pnMenu.Controls.Add(this.genre1);
             this.pnMenu.Controls.Add(this.btnHistory);
             this.pnMenu.Controls.Add(this.btnCollection);
             this.pnMenu.Controls.Add(this.btnGenre);
@@ -583,6 +580,39 @@ namespace MusicApp
             this.pnMenu.Name = "pnMenu";
             this.pnMenu.Size = new System.Drawing.Size(272, 898);
             this.pnMenu.TabIndex = 1;
+            // 
+            // genre3
+            // 
+            this.genre3.BackColor = System.Drawing.Color.Transparent;
+            this.genre3.Image = ((System.Drawing.Image)(resources.GetObject("genre3.Image")));
+            this.genre3.Label = "Nhạc Âu Mĩ";
+            this.genre3.Location = new System.Drawing.Point(858, 75);
+            this.genre3.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre3.Name = "genre3";
+            this.genre3.Size = new System.Drawing.Size(261, 292);
+            this.genre3.TabIndex = 2;
+            // 
+            // genre2
+            // 
+            this.genre2.BackColor = System.Drawing.Color.Transparent;
+            this.genre2.Image = ((System.Drawing.Image)(resources.GetObject("genre2.Image")));
+            this.genre2.Label = "Nhạc Hàn";
+            this.genre2.Location = new System.Drawing.Point(513, 61);
+            this.genre2.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre2.Name = "genre2";
+            this.genre2.Size = new System.Drawing.Size(261, 292);
+            this.genre2.TabIndex = 1;
+            // 
+            // genre1
+            // 
+            this.genre1.BackColor = System.Drawing.Color.Transparent;
+            this.genre1.Image = ((System.Drawing.Image)(resources.GetObject("genre1.Image")));
+            this.genre1.Label = "Nhạc Việt";
+            this.genre1.Location = new System.Drawing.Point(86, 61);
+            this.genre1.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre1.Name = "genre1";
+            this.genre1.Size = new System.Drawing.Size(261, 292);
+            this.genre1.TabIndex = 0;
             // 
             // btnHistory
             // 
@@ -1249,6 +1279,9 @@ namespace MusicApp
             // tabpageGenre
             // 
             this.tabpageGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.tabpageGenre.Controls.Add(this.genre2);
+            this.tabpageGenre.Controls.Add(this.genre3);
+            this.tabpageGenre.Controls.Add(this.genre1);
             this.tabpageGenre.Controls.Add(this.genre5);
             this.tabpageGenre.Controls.Add(this.genre4);
             this.tabpageGenre.Location = new System.Drawing.Point(4, 4);
@@ -1258,60 +1291,27 @@ namespace MusicApp
             this.tabpageGenre.TabIndex = 0;
             this.tabpageGenre.Text = "Thể loại";
             // 
-            // genre1
+            // genre5
             // 
-            this.genre1.BackColor = System.Drawing.Color.Transparent;
-            this.genre1.Image = ((System.Drawing.Image)(resources.GetObject("genre1.Image")));
-            this.genre1.Label = "Nhạc Việt";
-            this.genre1.Location = new System.Drawing.Point(42, 383);
-            this.genre1.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre1.Name = "genre1";
-            this.genre1.Size = new System.Drawing.Size(261, 292);
-            this.genre1.TabIndex = 0;
-            // 
-            // genre2
-            // 
-            this.genre2.BackColor = System.Drawing.Color.Transparent;
-            this.genre2.Image = ((System.Drawing.Image)(resources.GetObject("genre2.Image")));
-            this.genre2.Label = "Nhạc Hàn";
-            this.genre2.Location = new System.Drawing.Point(42, 72);
-            this.genre2.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre2.Name = "genre2";
-            this.genre2.Size = new System.Drawing.Size(261, 292);
-            this.genre2.TabIndex = 1;
-            // 
-            // genre3
-            // 
-            this.genre3.BackColor = System.Drawing.Color.Transparent;
-            this.genre3.Image = ((System.Drawing.Image)(resources.GetObject("genre3.Image")));
-            this.genre3.Label = "Nhạc Âu Mĩ";
-            this.genre3.Location = new System.Drawing.Point(62, 374);
-            this.genre3.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre3.Name = "genre3";
-            this.genre3.Size = new System.Drawing.Size(261, 292);
-            this.genre3.TabIndex = 2;
+            this.genre5.BackColor = System.Drawing.Color.Transparent;
+            this.genre5.Image = ((System.Drawing.Image)(resources.GetObject("genre5.Image")));
+            this.genre5.Label = "Nhạc Trịnh";
+            this.genre5.Location = new System.Drawing.Point(86, 435);
+            this.genre5.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
+            this.genre5.Name = "genre5";
+            this.genre5.Size = new System.Drawing.Size(261, 292);
+            this.genre5.TabIndex = 4;
             // 
             // genre4
             // 
             this.genre4.BackColor = System.Drawing.Color.Transparent;
             this.genre4.Image = ((System.Drawing.Image)(resources.GetObject("genre4.Image")));
             this.genre4.Label = "Nhạc không lời";
-            this.genre4.Location = new System.Drawing.Point(-163, 274);
+            this.genre4.Location = new System.Drawing.Point(1219, 75);
             this.genre4.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
             this.genre4.Name = "genre4";
             this.genre4.Size = new System.Drawing.Size(261, 292);
             this.genre4.TabIndex = 3;
-            // 
-            // genre5
-            // 
-            this.genre5.BackColor = System.Drawing.Color.Transparent;
-            this.genre5.Image = ((System.Drawing.Image)(resources.GetObject("genre5.Image")));
-            this.genre5.Label = "Nhạc Trịnh";
-            this.genre5.Location = new System.Drawing.Point(-133, 44);
-            this.genre5.Margin = new System.Windows.Forms.Padding(0, 0, 100, 82);
-            this.genre5.Name = "genre5";
-            this.genre5.Size = new System.Drawing.Size(261, 292);
-            this.genre5.TabIndex = 4;
             // 
             // tabPage2
             // 
