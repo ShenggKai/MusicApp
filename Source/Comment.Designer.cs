@@ -33,7 +33,13 @@
             this.txtCmt = new System.Windows.Forms.Label();
             this.bunifuRating1 = new Bunifu.UI.WinForms.BunifuRating();
             this.txtTime = new System.Windows.Forms.Label();
+            this.pLike = new System.Windows.Forms.PictureBox();
+            this.pUnlike = new System.Windows.Forms.PictureBox();
+            this.pTrash = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pLike)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pUnlike)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pTrash)).BeginInit();
             this.SuspendLayout();
             // 
             // pUser
@@ -100,11 +106,47 @@
             this.txtTime.TabIndex = 1;
             this.txtTime.Text = "18:20, 22/12/2022";
             // 
+            // pLike
+            // 
+            this.pLike.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pLike.Image = global::MusicApp.Properties.Resources.like;
+            this.pLike.Location = new System.Drawing.Point(822, 45);
+            this.pLike.Name = "pLike";
+            this.pLike.Size = new System.Drawing.Size(35, 35);
+            this.pLike.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pLike.TabIndex = 3;
+            this.pLike.TabStop = false;
+            // 
+            // pUnlike
+            // 
+            this.pUnlike.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pUnlike.Image = global::MusicApp.Properties.Resources.unlike;
+            this.pUnlike.Location = new System.Drawing.Point(952, 45);
+            this.pUnlike.Name = "pUnlike";
+            this.pUnlike.Size = new System.Drawing.Size(35, 35);
+            this.pUnlike.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pUnlike.TabIndex = 3;
+            this.pUnlike.TabStop = false;
+            // 
+            // pTrash
+            // 
+            this.pTrash.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pTrash.Image = global::MusicApp.Properties.Resources.trash;
+            this.pTrash.Location = new System.Drawing.Point(1082, 45);
+            this.pTrash.Name = "pTrash";
+            this.pTrash.Size = new System.Drawing.Size(35, 35);
+            this.pTrash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pTrash.TabIndex = 3;
+            this.pTrash.TabStop = false;
+            // 
             // Comment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.Controls.Add(this.pTrash);
+            this.Controls.Add(this.pUnlike);
+            this.Controls.Add(this.pLike);
             this.Controls.Add(this.bunifuRating1);
             this.Controls.Add(this.txtCmt);
             this.Controls.Add(this.txtTime);
@@ -113,6 +155,9 @@
             this.Name = "Comment";
             this.Size = new System.Drawing.Size(1176, 124);
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pLike)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pUnlike)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pTrash)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -124,5 +169,8 @@
         private Label txtCmt;
         private Bunifu.UI.WinForms.BunifuRating bunifuRating1;
         private Label txtTime;
+        private PictureBox pLike;
+        private PictureBox pUnlike;
+        private PictureBox pTrash;
     }
 }
