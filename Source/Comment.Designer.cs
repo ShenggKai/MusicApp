@@ -31,6 +31,8 @@
             this.pUser = new System.Windows.Forms.PictureBox();
             this.txtUserName = new System.Windows.Forms.Label();
             this.txtCmt = new System.Windows.Forms.Label();
+            this.bunifuRating1 = new Bunifu.UI.WinForms.BunifuRating();
+            this.txtTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             this.txtUserName.ForeColor = System.Drawing.Color.White;
             this.txtUserName.Location = new System.Drawing.Point(151, 12);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(151, 33);
+            this.txtUserName.Size = new System.Drawing.Size(166, 33);
             this.txtUserName.TabIndex = 1;
             this.txtUserName.Text = "ShengKai";
             // 
@@ -64,12 +66,48 @@
             this.txtCmt.TabIndex = 1;
             this.txtCmt.Text = "Bài hát hay";
             // 
+            // bunifuRating1
+            // 
+            this.bunifuRating1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuRating1.DisabledEmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.bunifuRating1.DisabledRatedFillColor = System.Drawing.Color.DarkGray;
+            this.bunifuRating1.EmptyBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.bunifuRating1.EmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.bunifuRating1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuRating1.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.bunifuRating1.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.bunifuRating1.InnerRadius = 2F;
+            this.bunifuRating1.Location = new System.Drawing.Point(339, 20);
+            this.bunifuRating1.Name = "bunifuRating1";
+            this.bunifuRating1.OuterRadius = 10F;
+            this.bunifuRating1.RatedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.bunifuRating1.RatedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.bunifuRating1.ReadOnly = false;
+            this.bunifuRating1.RightClickToClear = true;
+            this.bunifuRating1.Size = new System.Drawing.Size(151, 22);
+            this.bunifuRating1.Spacing = 10;
+            this.bunifuRating1.TabIndex = 2;
+            this.bunifuRating1.Text = "bunifuRating1";
+            this.bunifuRating1.Value = 3;
+            // 
+            // txtTime
+            // 
+            this.txtTime.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTime.ForeColor = System.Drawing.Color.White;
+            this.txtTime.Location = new System.Drawing.Point(523, 12);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(213, 33);
+            this.txtTime.TabIndex = 1;
+            this.txtTime.Text = "18:20, 22/12/2022";
+            // 
             // Comment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.Controls.Add(this.bunifuRating1);
             this.Controls.Add(this.txtCmt);
+            this.Controls.Add(this.txtTime);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.pUser);
             this.Name = "Comment";
@@ -84,5 +122,7 @@
         private PictureBox pUser;
         private Label txtUserName;
         private Label txtCmt;
+        private Bunifu.UI.WinForms.BunifuRating bunifuRating1;
+        private Label txtTime;
     }
 }
