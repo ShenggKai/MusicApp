@@ -136,6 +136,12 @@
   <data name="AiDuaEmVe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\AiDuaEmVe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GlimpseOfUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\GlimpseOfUs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TheOnlyPerson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\TheOnlyPerson.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="repeat_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\repeat_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,6 +175,9 @@
   <data name="home_full" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\home_full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="EndlessLove1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\EndlessLove.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,6 +208,9 @@
   <data name="like" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\like.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="StayWithMe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\StayWithMe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="JustGiveMeAReason" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\JustGiveMeAReason.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,11 +223,11 @@
   <data name="GlimpseOfUs1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\GlimpseOfUs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="left_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon\left_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ThangDien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\ThangDien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon\download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SayGoodBye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\SayGoodBye.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\home_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,6 +301,9 @@
   <data name="NguoiDangThuongLaAnh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\NguoiDangThuongLaAnh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WhateverItTakes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\WhateverItTakes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dots_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\dots_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -331,8 +346,8 @@
   <data name="HoaVangNayTan2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\HoaVangNayTan2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GlimpseOfUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SongsData\Image\GlimpseOfUs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Victory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\Victory.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="unlike_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\unlike_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -346,6 +361,9 @@
   <data name="srltdln" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\srltdln.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ViAnhDauCoBiet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\ViAnhDauCoBiet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -355,11 +373,17 @@
   <data name="GoingHome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\GoingHome.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SayGoodBye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SongsData\Image\SayGoodBye.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SweetButPsycho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\SweetButPsycho.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MuaHong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\MuaHong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TuoiDaBuon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\TuoiDaBuon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\left_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shuffle_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon\shuffle_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -372,6 +396,9 @@
   </data>
   <data name="HoaVangNayTan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\HoaVangNayTan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Turtle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\Turtle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Baby" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\Baby.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -393,5 +420,8 @@
   </data>
   <data name="SeeYouAgain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SongsData\Image\SeeYouAgain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YeuDonPhuong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SongsData\Image\YeuDonPhuong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
