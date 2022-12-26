@@ -169,41 +169,62 @@ namespace MusicApp
             this.txtNameSong = new System.Windows.Forms.Label();
             this.pInforSong = new System.Windows.Forms.PictureBox();
             this.pageVpop = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.song41 = new MusicApp.Source.Song();
+            this.song42 = new MusicApp.Source.Song();
+            this.song43 = new MusicApp.Source.Song();
+            this.song48 = new MusicApp.Source.Song();
+            this.song50 = new MusicApp.Source.Song();
+            this.song52 = new MusicApp.Source.Song();
+            this.song53 = new MusicApp.Source.Song();
+            this.song56 = new MusicApp.Source.Song();
+            this.song59 = new MusicApp.Source.Song();
+            this.song61 = new MusicApp.Source.Song();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.pageKpop = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.song44 = new MusicApp.Source.Song();
+            this.song46 = new MusicApp.Source.Song();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pageUS = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.song45 = new MusicApp.Source.Song();
+            this.song47 = new MusicApp.Source.Song();
+            this.song51 = new MusicApp.Source.Song();
+            this.song55 = new MusicApp.Source.Song();
+            this.song57 = new MusicApp.Source.Song();
+            this.song60 = new MusicApp.Source.Song();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pageKL = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.song49 = new MusicApp.Source.Song();
+            this.song54 = new MusicApp.Source.Song();
+            this.song58 = new MusicApp.Source.Song();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pageTrinh = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.song41 = new MusicApp.Source.Song();
+            this.song62 = new MusicApp.Source.Song();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -220,16 +241,20 @@ namespace MusicApp
             ((System.ComponentModel.ISupportInitialize)(this.pBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).BeginInit();
             this.pageVpop.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.pageKpop.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pageUS.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pageKL.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.pageTrinh.SuspendLayout();
+            this.flowLayoutPanel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -1092,10 +1117,10 @@ namespace MusicApp
             this.ppageMain.Location = new System.Drawing.Point(272, 0);
             this.ppageMain.Multiline = true;
             this.ppageMain.Name = "ppageMain";
-            this.ppageMain.Page = this.pageVpop;
-            this.ppageMain.PageIndex = 5;
-            this.ppageMain.PageName = "pageVpop";
-            this.ppageMain.PageTitle = "Nhạc Việt";
+            this.ppageMain.Page = this.pageTrinh;
+            this.ppageMain.PageIndex = 9;
+            this.ppageMain.PageName = "pageTrinh";
+            this.ppageMain.PageTitle = "Nhạc Trịnh";
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
             this.ppageMain.TabIndex = 2;
@@ -1946,6 +1971,7 @@ namespace MusicApp
             this.genre4.Name = "genre4";
             this.genre4.Size = new System.Drawing.Size(261, 292);
             this.genre4.TabIndex = 2;
+            this.genre4.PicClick += new System.EventHandler(this.genre4_PicClick);
             // 
             // genre3
             // 
@@ -1957,6 +1983,7 @@ namespace MusicApp
             this.genre3.Name = "genre3";
             this.genre3.Size = new System.Drawing.Size(261, 292);
             this.genre3.TabIndex = 2;
+            this.genre3.PicClick += new System.EventHandler(this.genre3_PicClick);
             // 
             // genre2
             // 
@@ -1968,6 +1995,7 @@ namespace MusicApp
             this.genre2.Name = "genre2";
             this.genre2.Size = new System.Drawing.Size(261, 292);
             this.genre2.TabIndex = 1;
+            this.genre2.PicClick += new System.EventHandler(this.genre2_PicClick);
             // 
             // genre5
             // 
@@ -1979,7 +2007,7 @@ namespace MusicApp
             this.genre5.Name = "genre5";
             this.genre5.Size = new System.Drawing.Size(261, 292);
             this.genre5.TabIndex = 0;
-            this.genre5.PicClick += new System.EventHandler(this.genre1_PicClick);
+            this.genre5.PicClick += new System.EventHandler(this.genre5_PicClick);
             // 
             // genre1
             // 
@@ -2982,6 +3010,176 @@ namespace MusicApp
             this.pageVpop.TabIndex = 6;
             this.pageVpop.Text = "Nhạc Việt";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AllowDrop = true;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.song41);
+            this.flowLayoutPanel1.Controls.Add(this.song42);
+            this.flowLayoutPanel1.Controls.Add(this.song43);
+            this.flowLayoutPanel1.Controls.Add(this.song48);
+            this.flowLayoutPanel1.Controls.Add(this.song50);
+            this.flowLayoutPanel1.Controls.Add(this.song52);
+            this.flowLayoutPanel1.Controls.Add(this.song53);
+            this.flowLayoutPanel1.Controls.Add(this.song56);
+            this.flowLayoutPanel1.Controls.Add(this.song59);
+            this.flowLayoutPanel1.Controls.Add(this.song61);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 110);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1616, 752);
+            this.flowLayoutPanel1.TabIndex = 10;
+            // 
+            // song41
+            // 
+            this.song41.Artist = "TIA, Lê Thiện Hiếu";
+            this.song41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song41.Genre = "Nhạc Việt";
+            this.song41.ImageSong = global::MusicApp.Properties.Resources.AiDuaEmVe;
+            this.song41.Location = new System.Drawing.Point(0, 0);
+            this.song41.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song41.Name = "song41";
+            this.song41.NameSong = "Ai Đưa Em Về";
+            this.song41.Number = "1";
+            this.song41.Size = new System.Drawing.Size(1620, 90);
+            this.song41.TabIndex = 1;
+            this.song41.Time = "03:53";
+            // 
+            // song42
+            // 
+            this.song42.Artist = "SOOBIN";
+            this.song42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song42.Genre = "Nhạc Việt";
+            this.song42.ImageSong = global::MusicApp.Properties.Resources.AnhDaQuenVoiCoDon;
+            this.song42.Location = new System.Drawing.Point(0, 93);
+            this.song42.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song42.Name = "song42";
+            this.song42.NameSong = "Anh Đã Quen Với Cô Đơn";
+            this.song42.Number = "2";
+            this.song42.Size = new System.Drawing.Size(1620, 90);
+            this.song42.TabIndex = 2;
+            this.song42.Time = "03:55";
+            // 
+            // song43
+            // 
+            this.song43.Artist = "Anh Quân Idol";
+            this.song43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song43.Genre = "Nhạc Việt";
+            this.song43.ImageSong = global::MusicApp.Properties.Resources.AnhMetRoi;
+            this.song43.Location = new System.Drawing.Point(0, 186);
+            this.song43.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song43.Name = "song43";
+            this.song43.NameSong = "Anh Mệt Rồi";
+            this.song43.Number = "3";
+            this.song43.Size = new System.Drawing.Size(1620, 90);
+            this.song43.TabIndex = 3;
+            this.song43.Time = "04:56";
+            // 
+            // song48
+            // 
+            this.song48.Artist = "Vũ";
+            this.song48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song48.Genre = "Nhạc Việt";
+            this.song48.ImageSong = global::MusicApp.Properties.Resources.BuocQuaMuaCoDon;
+            this.song48.Location = new System.Drawing.Point(0, 279);
+            this.song48.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song48.Name = "song48";
+            this.song48.NameSong = "Bước Qua Mùa Cô Đơn";
+            this.song48.Number = "8";
+            this.song48.Size = new System.Drawing.Size(1620, 90);
+            this.song48.TabIndex = 8;
+            this.song48.Time = "04:38";
+            // 
+            // song50
+            // 
+            this.song50.Artist = "MONSTAR";
+            this.song50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song50.Genre = "Nhạc Việt";
+            this.song50.ImageSong = global::MusicApp.Properties.Resources.CoHenVoiThanhXuan;
+            this.song50.Location = new System.Drawing.Point(0, 372);
+            this.song50.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song50.Name = "song50";
+            this.song50.NameSong = "Có Hẹn Với Thanh Xuân";
+            this.song50.Number = "10";
+            this.song50.Size = new System.Drawing.Size(1620, 90);
+            this.song50.TabIndex = 10;
+            this.song50.Time = "03:38";
+            // 
+            // song52
+            // 
+            this.song52.Artist = "Only C, Lou Hoàng";
+            this.song52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song52.Genre = "Nhạc Việt";
+            this.song52.ImageSong = global::MusicApp.Properties.Resources.DemNgayXaEm;
+            this.song52.Location = new System.Drawing.Point(0, 465);
+            this.song52.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song52.Name = "song52";
+            this.song52.NameSong = "Đếm Ngày Xa Em";
+            this.song52.Number = "12";
+            this.song52.Size = new System.Drawing.Size(1620, 90);
+            this.song52.TabIndex = 12;
+            this.song52.Time = "04:23";
+            // 
+            // song53
+            // 
+            this.song53.Artist = "Sơn Tùng M-TP";
+            this.song53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song53.Genre = "Nhạc Việt";
+            this.song53.ImageSong = global::MusicApp.Properties.Resources.EmCuaNgayHomQua;
+            this.song53.Location = new System.Drawing.Point(0, 558);
+            this.song53.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song53.Name = "song53";
+            this.song53.NameSong = "Em Của Ngày Hôm Qua";
+            this.song53.Number = "13";
+            this.song53.Size = new System.Drawing.Size(1620, 90);
+            this.song53.TabIndex = 13;
+            this.song53.Time = "03:45";
+            // 
+            // song56
+            // 
+            this.song56.Artist = "LadyKillah All Star";
+            this.song56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song56.Genre = "Nhạc Việt";
+            this.song56.ImageSong = global::MusicApp.Properties.Resources.ForeverLove;
+            this.song56.Location = new System.Drawing.Point(0, 651);
+            this.song56.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song56.Name = "song56";
+            this.song56.NameSong = "Forever Love";
+            this.song56.Number = "16";
+            this.song56.Size = new System.Drawing.Size(1620, 90);
+            this.song56.TabIndex = 16;
+            this.song56.Time = "07:29";
+            // 
+            // song59
+            // 
+            this.song59.Artist = "Sơn Tùng M-TP";
+            this.song59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song59.Genre = "Nhạc Việt";
+            this.song59.ImageSong = global::MusicApp.Properties.Resources.HayTraoChoAnh;
+            this.song59.Location = new System.Drawing.Point(0, 744);
+            this.song59.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song59.Name = "song59";
+            this.song59.NameSong = "Hãy Trao Cho Anh";
+            this.song59.Number = "19";
+            this.song59.Size = new System.Drawing.Size(1620, 90);
+            this.song59.TabIndex = 19;
+            this.song59.Time = "04:05";
+            // 
+            // song61
+            // 
+            this.song61.Artist = "Lil Z Poet";
+            this.song61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song61.Genre = "Nhạc Việt";
+            this.song61.ImageSong = global::MusicApp.Properties.Resources.HoaVangNayTan21;
+            this.song61.Location = new System.Drawing.Point(0, 837);
+            this.song61.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song61.Name = "song61";
+            this.song61.NameSong = "Hoa Vàng Nay Tàn";
+            this.song61.Number = "21";
+            this.song61.Size = new System.Drawing.Size(1620, 90);
+            this.song61.TabIndex = 21;
+            this.song61.Time = "03:51";
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
@@ -3049,6 +3247,48 @@ namespace MusicApp
             this.pageKpop.Size = new System.Drawing.Size(1622, 865);
             this.pageKpop.TabIndex = 7;
             this.pageKpop.Text = "Nhạc Hàn";
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.AllowDrop = true;
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.Controls.Add(this.song44);
+            this.flowLayoutPanel2.Controls.Add(this.song46);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 110);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1616, 752);
+            this.flowLayoutPanel2.TabIndex = 11;
+            // 
+            // song44
+            // 
+            this.song44.Artist = "BTS";
+            this.song44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song44.Genre = "Nhạc Hàn";
+            this.song44.ImageSong = global::MusicApp.Properties.Resources.AnswerLoveMyself;
+            this.song44.Location = new System.Drawing.Point(0, 0);
+            this.song44.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song44.Name = "song44";
+            this.song44.NameSong = "Answer: Love Myself";
+            this.song44.Number = "4";
+            this.song44.Size = new System.Drawing.Size(1620, 90);
+            this.song44.TabIndex = 4;
+            this.song44.Time = "03:54";
+            // 
+            // song46
+            // 
+            this.song46.Artist = "Shaun";
+            this.song46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song46.Genre = "Nhạc Hàn";
+            this.song46.ImageSong = global::MusicApp.Properties.Resources.BadHabits;
+            this.song46.Location = new System.Drawing.Point(0, 93);
+            this.song46.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song46.Name = "song46";
+            this.song46.NameSong = "Bad Habits";
+            this.song46.Number = "6";
+            this.song46.Size = new System.Drawing.Size(1620, 90);
+            this.song46.TabIndex = 6;
+            this.song46.Time = "03:33";
             // 
             // panel1
             // 
@@ -3118,6 +3358,112 @@ namespace MusicApp
             this.pageUS.TabIndex = 8;
             this.pageUS.Text = "Nhạc Âu Mĩ";
             // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.AllowDrop = true;
+            this.flowLayoutPanel3.AutoScroll = true;
+            this.flowLayoutPanel3.Controls.Add(this.song45);
+            this.flowLayoutPanel3.Controls.Add(this.song47);
+            this.flowLayoutPanel3.Controls.Add(this.song51);
+            this.flowLayoutPanel3.Controls.Add(this.song55);
+            this.flowLayoutPanel3.Controls.Add(this.song57);
+            this.flowLayoutPanel3.Controls.Add(this.song60);
+            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 110);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1616, 752);
+            this.flowLayoutPanel3.TabIndex = 11;
+            // 
+            // song45
+            // 
+            this.song45.Artist = "Justin Bieber, Ludacris";
+            this.song45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song45.Genre = "Nhạc Âu Mỹ";
+            this.song45.ImageSong = global::MusicApp.Properties.Resources.Baby;
+            this.song45.Location = new System.Drawing.Point(0, 0);
+            this.song45.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song45.Name = "song45";
+            this.song45.NameSong = "Baby";
+            this.song45.Number = "5";
+            this.song45.Size = new System.Drawing.Size(1620, 90);
+            this.song45.TabIndex = 5;
+            this.song45.Time = "03:39";
+            // 
+            // song47
+            // 
+            this.song47.Artist = "Imagine Dragons";
+            this.song47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song47.Genre = "Nhạc Âu Mỹ";
+            this.song47.ImageSong = global::MusicApp.Properties.Resources.Bones;
+            this.song47.Location = new System.Drawing.Point(0, 93);
+            this.song47.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song47.Name = "song47";
+            this.song47.NameSong = "Bones";
+            this.song47.Number = "7";
+            this.song47.Size = new System.Drawing.Size(1620, 90);
+            this.song47.TabIndex = 7;
+            this.song47.Time = "02:45";
+            // 
+            // song51
+            // 
+            this.song51.Artist = "Katy Perry, Tee";
+            this.song51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song51.Genre = "Nhạc Âu Mỹ";
+            this.song51.ImageSong = global::MusicApp.Properties.Resources.DarkHorse;
+            this.song51.Location = new System.Drawing.Point(0, 186);
+            this.song51.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song51.Name = "song51";
+            this.song51.NameSong = "Dark Horse";
+            this.song51.Number = "11";
+            this.song51.Size = new System.Drawing.Size(1620, 90);
+            this.song51.TabIndex = 11;
+            this.song51.Time = "03:35";
+            // 
+            // song55
+            // 
+            this.song55.Artist = "Alan Walker";
+            this.song55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song55.Genre = "Nhạc Âu Mỹ";
+            this.song55.ImageSong = global::MusicApp.Properties.Resources.Faded;
+            this.song55.Location = new System.Drawing.Point(0, 279);
+            this.song55.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song55.Name = "song55";
+            this.song55.NameSong = "Faded";
+            this.song55.Number = "15";
+            this.song55.Size = new System.Drawing.Size(1620, 90);
+            this.song55.TabIndex = 15;
+            this.song55.Time = "03:32";
+            // 
+            // song57
+            // 
+            this.song57.Artist = "Joji";
+            this.song57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song57.Genre = "Nhạc Âu Mỹ";
+            this.song57.ImageSong = global::MusicApp.Properties.Resources.GlimpseOfUs1;
+            this.song57.Location = new System.Drawing.Point(0, 372);
+            this.song57.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song57.Name = "song57";
+            this.song57.NameSong = "Glimpse of Us";
+            this.song57.Number = "17";
+            this.song57.Size = new System.Drawing.Size(1620, 90);
+            this.song57.TabIndex = 17;
+            this.song57.Time = "03:53";
+            // 
+            // song60
+            // 
+            this.song60.Artist = "Hayd";
+            this.song60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song60.Genre = "Nhạc Âu Mỹ";
+            this.song60.ImageSong = global::MusicApp.Properties.Resources.HeadInTheCloud1;
+            this.song60.Location = new System.Drawing.Point(0, 465);
+            this.song60.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song60.Name = "song60";
+            this.song60.NameSong = "Head In The Clouds";
+            this.song60.Number = "20";
+            this.song60.Size = new System.Drawing.Size(1620, 90);
+            this.song60.TabIndex = 20;
+            this.song60.Time = "03:04";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
@@ -3185,6 +3531,64 @@ namespace MusicApp
             this.pageKL.Size = new System.Drawing.Size(1622, 865);
             this.pageKL.TabIndex = 9;
             this.pageKL.Text = "Nhạc không lời";
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.AllowDrop = true;
+            this.flowLayoutPanel4.AutoScroll = true;
+            this.flowLayoutPanel4.Controls.Add(this.song49);
+            this.flowLayoutPanel4.Controls.Add(this.song54);
+            this.flowLayoutPanel4.Controls.Add(this.song58);
+            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 110);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(1616, 752);
+            this.flowLayoutPanel4.TabIndex = 11;
+            // 
+            // song49
+            // 
+            this.song49.Artist = "An Coong";
+            this.song49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song49.Genre = "Nhạc không lời";
+            this.song49.ImageSong = global::MusicApp.Properties.Resources.ChungTaCuaHienTaiCover;
+            this.song49.Location = new System.Drawing.Point(0, 0);
+            this.song49.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song49.Name = "song49";
+            this.song49.NameSong = "Chúng Ta Của Hiện Tại (Piano cover)";
+            this.song49.Number = "9";
+            this.song49.Size = new System.Drawing.Size(1620, 90);
+            this.song49.TabIndex = 9;
+            this.song49.Time = "05:03";
+            // 
+            // song54
+            // 
+            this.song54.Artist = "An Coong";
+            this.song54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song54.Genre = "Nhạc không lời";
+            this.song54.ImageSong = global::MusicApp.Properties.Resources.EndlessLove1;
+            this.song54.Location = new System.Drawing.Point(0, 93);
+            this.song54.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song54.Name = "song54";
+            this.song54.NameSong = "Endless Love (The Myth OST)";
+            this.song54.Number = "14";
+            this.song54.Size = new System.Drawing.Size(1620, 90);
+            this.song54.TabIndex = 14;
+            this.song54.Time = "04:43";
+            // 
+            // song58
+            // 
+            this.song58.Artist = "Kenny G";
+            this.song58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song58.Genre = "Nhạc không lời";
+            this.song58.ImageSong = global::MusicApp.Properties.Resources.GoingHome1;
+            this.song58.Location = new System.Drawing.Point(0, 186);
+            this.song58.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song58.Name = "song58";
+            this.song58.NameSong = "Going Home";
+            this.song58.Number = "18";
+            this.song58.Size = new System.Drawing.Size(1620, 90);
+            this.song58.TabIndex = 18;
+            this.song58.Time = "05:35";
             // 
             // panel3
             // 
@@ -3254,6 +3658,17 @@ namespace MusicApp
             this.pageTrinh.TabIndex = 10;
             this.pageTrinh.Text = "Nhạc Trịnh";
             // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.AllowDrop = true;
+            this.flowLayoutPanel5.AutoScroll = true;
+            this.flowLayoutPanel5.Controls.Add(this.song62);
+            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 110);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(1616, 752);
+            this.flowLayoutPanel5.TabIndex = 11;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -3310,71 +3725,20 @@ namespace MusicApp
             this.label17.Text = "#";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // flowLayoutPanel1
+            // song62
             // 
-            this.flowLayoutPanel1.AllowDrop = true;
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.song41);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 110);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1616, 752);
-            this.flowLayoutPanel1.TabIndex = 10;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.AllowDrop = true;
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 110);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1616, 752);
-            this.flowLayoutPanel2.TabIndex = 11;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.AllowDrop = true;
-            this.flowLayoutPanel3.AutoScroll = true;
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 110);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1616, 752);
-            this.flowLayoutPanel3.TabIndex = 11;
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.AllowDrop = true;
-            this.flowLayoutPanel4.AutoScroll = true;
-            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 110);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(1616, 752);
-            this.flowLayoutPanel4.TabIndex = 11;
-            // 
-            // flowLayoutPanel5
-            // 
-            this.flowLayoutPanel5.AllowDrop = true;
-            this.flowLayoutPanel5.AutoScroll = true;
-            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 110);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(1616, 752);
-            this.flowLayoutPanel5.TabIndex = 11;
-            // 
-            // song41
-            // 
-            this.song41.Artist = "TIA, Lê Thiện Hiếu";
-            this.song41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.song41.Genre = "Nhạc Việt";
-            this.song41.ImageSong = global::MusicApp.Properties.Resources.AiDuaEmVe;
-            this.song41.Location = new System.Drawing.Point(0, 0);
-            this.song41.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.song41.Name = "song41";
-            this.song41.NameSong = "Ai Đưa Em Về";
-            this.song41.Number = "1";
-            this.song41.Size = new System.Drawing.Size(1620, 90);
-            this.song41.TabIndex = 1;
-            this.song41.Time = "03:53";
+            this.song62.Artist = "Lệ Quyên";
+            this.song62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song62.Genre = "Nhạc Trịnh";
+            this.song62.ImageSong = global::MusicApp.Properties.Resources.MuaHong;
+            this.song62.Location = new System.Drawing.Point(0, 0);
+            this.song62.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song62.Name = "song62";
+            this.song62.NameSong = "Mưa Hồng";
+            this.song62.Number = "26";
+            this.song62.Size = new System.Drawing.Size(1620, 90);
+            this.song62.TabIndex = 26;
+            this.song62.Time = "04:38";
             // 
             // HomeForm
             // 
@@ -3406,16 +3770,20 @@ namespace MusicApp
             ((System.ComponentModel.ISupportInitialize)(this.pBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).EndInit();
             this.pageVpop.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.pageKpop.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.pageUS.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.pageKL.ResumeLayout(false);
+            this.flowLayoutPanel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.pageTrinh.ResumeLayout(false);
+            this.flowLayoutPanel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3570,5 +3938,26 @@ namespace MusicApp
         private FlowLayoutPanel flowLayoutPanel3;
         private FlowLayoutPanel flowLayoutPanel4;
         private FlowLayoutPanel flowLayoutPanel5;
+        private Source.Song song42;
+        private Source.Song song43;
+        private Source.Song song48;
+        private Source.Song song44;
+        private Source.Song song46;
+        private Source.Song song45;
+        private Source.Song song47;
+        private Source.Song song50;
+        private Source.Song song52;
+        private Source.Song song53;
+        private Source.Song song56;
+        private Source.Song song59;
+        private Source.Song song61;
+        private Source.Song song51;
+        private Source.Song song55;
+        private Source.Song song57;
+        private Source.Song song60;
+        private Source.Song song49;
+        private Source.Song song54;
+        private Source.Song song58;
+        private Source.Song song62;
     }
 }

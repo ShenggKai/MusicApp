@@ -388,5 +388,25 @@ namespace MusicApp
         {
             ppageMain.SetPage(5);
         }
+
+        private void genre2_PicClick(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(6);
+        }
+
+        private void genre3_PicClick(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(7);
+        }
+
+        private void genre4_PicClick(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(8);
+        }
+
+        private void genre5_PicClick(object sender, EventArgs e)
+        {
+            ppageMain.SetPage(9);
+        }
     }
 }
