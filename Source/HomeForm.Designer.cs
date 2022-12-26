@@ -168,36 +168,42 @@ namespace MusicApp
             this.lbComposer = new System.Windows.Forms.Label();
             this.txtNameSong = new System.Windows.Forms.Label();
             this.pInforSong = new System.Windows.Forms.PictureBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pageVpop = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.pageKpop = new System.Windows.Forms.TabPage();
-            this.pageUS = new System.Windows.Forms.TabPage();
-            this.pageKL = new System.Windows.Forms.TabPage();
-            this.pageTrinh = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pageUS = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.pageKL = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.pageTrinh = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.song41 = new MusicApp.Source.Song();
             this.pnPlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pSong)).BeginInit();
             this.pnMenu.SuspendLayout();
@@ -213,16 +219,17 @@ namespace MusicApp
             this.fpnComment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.pageVpop.SuspendLayout();
             this.panel6.SuspendLayout();
             this.pageKpop.SuspendLayout();
-            this.pageUS.SuspendLayout();
-            this.pageKL.SuspendLayout();
-            this.pageTrinh.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.pageUS.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.pageKL.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.pageTrinh.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnPlay
@@ -1076,7 +1083,7 @@ namespace MusicApp
             this.ppageMain.Controls.Add(this.pageCollection);
             this.ppageMain.Controls.Add(this.pageHistory);
             this.ppageMain.Controls.Add(this.pageInfo);
-            this.ppageMain.Controls.Add(this.tabPage1);
+            this.ppageMain.Controls.Add(this.pageVpop);
             this.ppageMain.Controls.Add(this.pageKpop);
             this.ppageMain.Controls.Add(this.pageUS);
             this.ppageMain.Controls.Add(this.pageKL);
@@ -1085,10 +1092,10 @@ namespace MusicApp
             this.ppageMain.Location = new System.Drawing.Point(272, 0);
             this.ppageMain.Multiline = true;
             this.ppageMain.Name = "ppageMain";
-            this.ppageMain.Page = this.pageTrinh;
-            this.ppageMain.PageIndex = 9;
-            this.ppageMain.PageName = "pageTrinh";
-            this.ppageMain.PageTitle = "Nhạc Trịnh";
+            this.ppageMain.Page = this.pageVpop;
+            this.ppageMain.PageIndex = 5;
+            this.ppageMain.PageName = "pageVpop";
+            this.ppageMain.PageTitle = "Nhạc Việt";
             this.ppageMain.SelectedIndex = 0;
             this.ppageMain.Size = new System.Drawing.Size(1630, 898);
             this.ppageMain.TabIndex = 2;
@@ -2963,16 +2970,17 @@ namespace MusicApp
             this.pInforSong.TabIndex = 0;
             this.pInforSong.TabStop = false;
             // 
-            // tabPage1
+            // pageVpop
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.tabPage1.Controls.Add(this.panel6);
-            this.tabPage1.Location = new System.Drawing.Point(4, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1622, 865);
-            this.tabPage1.TabIndex = 6;
-            this.tabPage1.Text = "Nhạc Việt";
+            this.pageVpop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageVpop.Controls.Add(this.flowLayoutPanel1);
+            this.pageVpop.Controls.Add(this.panel6);
+            this.pageVpop.Location = new System.Drawing.Point(4, 4);
+            this.pageVpop.Name = "pageVpop";
+            this.pageVpop.Padding = new System.Windows.Forms.Padding(3);
+            this.pageVpop.Size = new System.Drawing.Size(1622, 865);
+            this.pageVpop.TabIndex = 6;
+            this.pageVpop.Text = "Nhạc Việt";
             // 
             // panel6
             // 
@@ -3033,6 +3041,7 @@ namespace MusicApp
             // pageKpop
             // 
             this.pageKpop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageKpop.Controls.Add(this.flowLayoutPanel2);
             this.pageKpop.Controls.Add(this.panel1);
             this.pageKpop.Location = new System.Drawing.Point(4, 4);
             this.pageKpop.Name = "pageKpop";
@@ -3040,39 +3049,6 @@ namespace MusicApp
             this.pageKpop.Size = new System.Drawing.Size(1622, 865);
             this.pageKpop.TabIndex = 7;
             this.pageKpop.Text = "Nhạc Hàn";
-            // 
-            // pageUS
-            // 
-            this.pageUS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageUS.Controls.Add(this.panel2);
-            this.pageUS.Location = new System.Drawing.Point(4, 4);
-            this.pageUS.Name = "pageUS";
-            this.pageUS.Padding = new System.Windows.Forms.Padding(3);
-            this.pageUS.Size = new System.Drawing.Size(1622, 865);
-            this.pageUS.TabIndex = 8;
-            this.pageUS.Text = "Nhạc Âu Mĩ";
-            // 
-            // pageKL
-            // 
-            this.pageKL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageKL.Controls.Add(this.panel3);
-            this.pageKL.Location = new System.Drawing.Point(4, 4);
-            this.pageKL.Name = "pageKL";
-            this.pageKL.Padding = new System.Windows.Forms.Padding(3);
-            this.pageKL.Size = new System.Drawing.Size(1622, 865);
-            this.pageKL.TabIndex = 9;
-            this.pageKL.Text = "Nhạc không lời";
-            // 
-            // pageTrinh
-            // 
-            this.pageTrinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pageTrinh.Controls.Add(this.panel4);
-            this.pageTrinh.Location = new System.Drawing.Point(4, 4);
-            this.pageTrinh.Name = "pageTrinh";
-            this.pageTrinh.Padding = new System.Windows.Forms.Padding(3);
-            this.pageTrinh.Size = new System.Drawing.Size(1622, 865);
-            this.pageTrinh.TabIndex = 10;
-            this.pageTrinh.Text = "Nhạc Trịnh";
             // 
             // panel1
             // 
@@ -3130,6 +3106,18 @@ namespace MusicApp
             this.label5.Text = "#";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pageUS
+            // 
+            this.pageUS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageUS.Controls.Add(this.flowLayoutPanel3);
+            this.pageUS.Controls.Add(this.panel2);
+            this.pageUS.Location = new System.Drawing.Point(4, 4);
+            this.pageUS.Name = "pageUS";
+            this.pageUS.Padding = new System.Windows.Forms.Padding(3);
+            this.pageUS.Size = new System.Drawing.Size(1622, 865);
+            this.pageUS.TabIndex = 8;
+            this.pageUS.Text = "Nhạc Âu Mĩ";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
@@ -3185,6 +3173,18 @@ namespace MusicApp
             this.label9.TabIndex = 8;
             this.label9.Text = "#";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pageKL
+            // 
+            this.pageKL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageKL.Controls.Add(this.flowLayoutPanel4);
+            this.pageKL.Controls.Add(this.panel3);
+            this.pageKL.Location = new System.Drawing.Point(4, 4);
+            this.pageKL.Name = "pageKL";
+            this.pageKL.Padding = new System.Windows.Forms.Padding(3);
+            this.pageKL.Size = new System.Drawing.Size(1622, 865);
+            this.pageKL.TabIndex = 9;
+            this.pageKL.Text = "Nhạc không lời";
             // 
             // panel3
             // 
@@ -3242,6 +3242,18 @@ namespace MusicApp
             this.label13.Text = "#";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pageTrinh
+            // 
+            this.pageTrinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pageTrinh.Controls.Add(this.flowLayoutPanel5);
+            this.pageTrinh.Controls.Add(this.panel4);
+            this.pageTrinh.Location = new System.Drawing.Point(4, 4);
+            this.pageTrinh.Name = "pageTrinh";
+            this.pageTrinh.Padding = new System.Windows.Forms.Padding(3);
+            this.pageTrinh.Size = new System.Drawing.Size(1622, 865);
+            this.pageTrinh.TabIndex = 10;
+            this.pageTrinh.Text = "Nhạc Trịnh";
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -3298,6 +3310,72 @@ namespace MusicApp
             this.label17.Text = "#";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AllowDrop = true;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.song41);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 110);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1616, 752);
+            this.flowLayoutPanel1.TabIndex = 10;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.AllowDrop = true;
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 110);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1616, 752);
+            this.flowLayoutPanel2.TabIndex = 11;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.AllowDrop = true;
+            this.flowLayoutPanel3.AutoScroll = true;
+            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 110);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1616, 752);
+            this.flowLayoutPanel3.TabIndex = 11;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.AllowDrop = true;
+            this.flowLayoutPanel4.AutoScroll = true;
+            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 110);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(1616, 752);
+            this.flowLayoutPanel4.TabIndex = 11;
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.AllowDrop = true;
+            this.flowLayoutPanel5.AutoScroll = true;
+            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 110);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(1616, 752);
+            this.flowLayoutPanel5.TabIndex = 11;
+            // 
+            // song41
+            // 
+            this.song41.Artist = "TIA, Lê Thiện Hiếu";
+            this.song41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.song41.Genre = "Nhạc Việt";
+            this.song41.ImageSong = global::MusicApp.Properties.Resources.AiDuaEmVe;
+            this.song41.Location = new System.Drawing.Point(0, 0);
+            this.song41.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.song41.Name = "song41";
+            this.song41.NameSong = "Ai Đưa Em Về";
+            this.song41.Number = "1";
+            this.song41.Size = new System.Drawing.Size(1620, 90);
+            this.song41.TabIndex = 1;
+            this.song41.Time = "03:53";
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -3327,16 +3405,17 @@ namespace MusicApp
             this.fpnComment.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pInforSong)).EndInit();
-            this.tabPage1.ResumeLayout(false);
+            this.pageVpop.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.pageKpop.ResumeLayout(false);
-            this.pageUS.ResumeLayout(false);
-            this.pageKL.ResumeLayout(false);
-            this.pageTrinh.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.pageUS.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.pageKL.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.pageTrinh.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3450,7 +3529,7 @@ namespace MusicApp
         private FlowLayoutPanel fpnComment;
         private Source.Comment comment1;
         private PictureBox pictureBox1;
-        private TabPage tabPage1;
+        private TabPage pageVpop;
         private Panel panel6;
         private Label label22;
         private Label label23;
@@ -3485,5 +3564,11 @@ namespace MusicApp
         private Label label15;
         private Label label16;
         private Label label17;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Source.Song song41;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private FlowLayoutPanel flowLayoutPanel3;
+        private FlowLayoutPanel flowLayoutPanel4;
+        private FlowLayoutPanel flowLayoutPanel5;
     }
 }
