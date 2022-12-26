@@ -3085,7 +3085,7 @@ namespace MusicApp
             this.song48.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song48.Name = "song48";
             this.song48.NameSong = "Bước Qua Mùa Cô Đơn";
-            this.song48.Number = "8";
+            this.song48.Number = "4";
             this.song48.Size = new System.Drawing.Size(1620, 90);
             this.song48.TabIndex = 8;
             this.song48.Time = "04:38";
@@ -3100,7 +3100,7 @@ namespace MusicApp
             this.song50.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song50.Name = "song50";
             this.song50.NameSong = "Có Hẹn Với Thanh Xuân";
-            this.song50.Number = "10";
+            this.song50.Number = "5";
             this.song50.Size = new System.Drawing.Size(1620, 90);
             this.song50.TabIndex = 10;
             this.song50.Time = "03:38";
@@ -3115,7 +3115,7 @@ namespace MusicApp
             this.song52.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song52.Name = "song52";
             this.song52.NameSong = "Đếm Ngày Xa Em";
-            this.song52.Number = "12";
+            this.song52.Number = "6";
             this.song52.Size = new System.Drawing.Size(1620, 90);
             this.song52.TabIndex = 12;
             this.song52.Time = "04:23";
@@ -3130,7 +3130,7 @@ namespace MusicApp
             this.song53.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song53.Name = "song53";
             this.song53.NameSong = "Em Của Ngày Hôm Qua";
-            this.song53.Number = "13";
+            this.song53.Number = "7";
             this.song53.Size = new System.Drawing.Size(1620, 90);
             this.song53.TabIndex = 13;
             this.song53.Time = "03:45";
@@ -3145,7 +3145,7 @@ namespace MusicApp
             this.song56.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song56.Name = "song56";
             this.song56.NameSong = "Forever Love";
-            this.song56.Number = "16";
+            this.song56.Number = "8";
             this.song56.Size = new System.Drawing.Size(1620, 90);
             this.song56.TabIndex = 16;
             this.song56.Time = "07:29";
@@ -3160,7 +3160,7 @@ namespace MusicApp
             this.song59.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song59.Name = "song59";
             this.song59.NameSong = "Hãy Trao Cho Anh";
-            this.song59.Number = "19";
+            this.song59.Number = "9";
             this.song59.Size = new System.Drawing.Size(1620, 90);
             this.song59.TabIndex = 19;
             this.song59.Time = "04:05";
@@ -3175,7 +3175,7 @@ namespace MusicApp
             this.song61.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song61.Name = "song61";
             this.song61.NameSong = "Hoa Vàng Nay Tàn";
-            this.song61.Number = "21";
+            this.song61.Number = "10";
             this.song61.Size = new System.Drawing.Size(1620, 90);
             this.song61.TabIndex = 21;
             this.song61.Time = "03:51";
@@ -3270,7 +3270,7 @@ namespace MusicApp
             this.song44.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song44.Name = "song44";
             this.song44.NameSong = "Answer: Love Myself";
-            this.song44.Number = "4";
+            this.song44.Number = "1";
             this.song44.Size = new System.Drawing.Size(1620, 90);
             this.song44.TabIndex = 4;
             this.song44.Time = "03:54";
@@ -3285,7 +3285,7 @@ namespace MusicApp
             this.song46.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song46.Name = "song46";
             this.song46.NameSong = "Bad Habits";
-            this.song46.Number = "6";
+            this.song46.Number = "2";
             this.song46.Size = new System.Drawing.Size(1620, 90);
             this.song46.TabIndex = 6;
             this.song46.Time = "03:33";
@@ -3384,7 +3384,7 @@ namespace MusicApp
             this.song45.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song45.Name = "song45";
             this.song45.NameSong = "Baby";
-            this.song45.Number = "5";
+            this.song45.Number = "1";
             this.song45.Size = new System.Drawing.Size(1620, 90);
             this.song45.TabIndex = 5;
             this.song45.Time = "03:39";
@@ -3399,7 +3399,7 @@ namespace MusicApp
             this.song47.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song47.Name = "song47";
             this.song47.NameSong = "Bones";
-            this.song47.Number = "7";
+            this.song47.Number = "2";
             this.song47.Size = new System.Drawing.Size(1620, 90);
             this.song47.TabIndex = 7;
             this.song47.Time = "02:45";
@@ -3414,7 +3414,7 @@ namespace MusicApp
             this.song51.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song51.Name = "song51";
             this.song51.NameSong = "Dark Horse";
-            this.song51.Number = "11";
+            this.song51.Number = "3";
             this.song51.Size = new System.Drawing.Size(1620, 90);
             this.song51.TabIndex = 11;
             this.song51.Time = "03:35";
@@ -3429,7 +3429,7 @@ namespace MusicApp
             this.song55.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song55.Name = "song55";
             this.song55.NameSong = "Faded";
-            this.song55.Number = "15";
+            this.song55.Number = "4";
             this.song55.Size = new System.Drawing.Size(1620, 90);
             this.song55.TabIndex = 15;
             this.song55.Time = "03:32";
@@ -3444,7 +3444,7 @@ namespace MusicApp
             this.song57.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song57.Name = "song57";
             this.song57.NameSong = "Glimpse of Us";
-            this.song57.Number = "17";
+            this.song57.Number = "5";
             this.song57.Size = new System.Drawing.Size(1620, 90);
             this.song57.TabIndex = 17;
             this.song57.Time = "03:53";
@@ -3459,7 +3459,7 @@ namespace MusicApp
             this.song60.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song60.Name = "song60";
             this.song60.NameSong = "Head In The Clouds";
-            this.song60.Number = "20";
+            this.song60.Number = "6";
             this.song60.Size = new System.Drawing.Size(1620, 90);
             this.song60.TabIndex = 20;
             this.song60.Time = "03:04";
@@ -3555,7 +3555,7 @@ namespace MusicApp
             this.song49.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song49.Name = "song49";
             this.song49.NameSong = "Chúng Ta Của Hiện Tại (Piano cover)";
-            this.song49.Number = "9";
+            this.song49.Number = "1";
             this.song49.Size = new System.Drawing.Size(1620, 90);
             this.song49.TabIndex = 9;
             this.song49.Time = "05:03";
@@ -3570,7 +3570,7 @@ namespace MusicApp
             this.song54.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song54.Name = "song54";
             this.song54.NameSong = "Endless Love (The Myth OST)";
-            this.song54.Number = "14";
+            this.song54.Number = "2";
             this.song54.Size = new System.Drawing.Size(1620, 90);
             this.song54.TabIndex = 14;
             this.song54.Time = "04:43";
@@ -3585,7 +3585,7 @@ namespace MusicApp
             this.song58.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song58.Name = "song58";
             this.song58.NameSong = "Going Home";
-            this.song58.Number = "18";
+            this.song58.Number = "3";
             this.song58.Size = new System.Drawing.Size(1620, 90);
             this.song58.TabIndex = 18;
             this.song58.Time = "05:35";
@@ -3735,7 +3735,7 @@ namespace MusicApp
             this.song62.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.song62.Name = "song62";
             this.song62.NameSong = "Mưa Hồng";
-            this.song62.Number = "26";
+            this.song62.Number = "1";
             this.song62.Size = new System.Drawing.Size(1620, 90);
             this.song62.TabIndex = 26;
             this.song62.Time = "04:38";
